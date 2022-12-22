@@ -4,14 +4,104 @@ version: 0.0.1-SNAPSHOT
 author: sparklearner123@gmail.com
 language: python
 buildSystem: wheel
-pipelines: {}
-datasets: {}
+pipelines:
+  pipelines/CreateMetrics:
+    name: CreateMetrics
+    description: ''
+    author: sparklearner123@gmail.com
+    mode: batch
+    language: python
+    createdAt: '2022-12-16 19:19:58'
+    datasets:
+      inputs:
+      - datasets/BNPL_LexisNexis_v1
+      - datasets/credit_report_and_tradelines_v2
+      - datasets/credit_score_table
+      - datasets/customer_info_v1
+      - datasets/loan_data
+      outputs:
+      - datasets/credit_metrics
+      - datasets/credit_score_table
+    dependencies: {}
+datasets:
+  datasets/credit_report_and_tradelines_v2:
+    name: credit_report_and_tradelines_v2
+    description: ''
+    author: sparklearner123@gmail.com
+    createdAt: '2022-12-16 19:36:23'
+    physicalDatasets:
+      dev:
+        fabricId: 990
+        datasetType: File
+        description: ''
+        author: sparklearner123@gmail.com
+        createdAt: '2022-12-16 19:36:23'
+  datasets/credit_metrics:
+    name: credit_metrics
+    description: ''
+    author: sparklearner123@gmail.com
+    createdAt: '2022-12-16 20:38:57'
+    physicalDatasets:
+      dev:
+        fabricId: 990
+        datasetType: File
+        description: ''
+        author: sparklearner123@gmail.com
+        createdAt: '2022-12-16 20:38:57'
+  datasets/loan_data:
+    name: loan_data
+    description: ''
+    author: sparklearner123@gmail.com
+    createdAt: '2022-12-21 21:29:18'
+    physicalDatasets:
+      Photon:
+        fabricId: 1045
+        datasetType: File
+        description: ''
+        author: sparklearner123@gmail.com
+        createdAt: '2022-12-21 21:29:18'
+  datasets/BNPL_LexisNexis_v1:
+    name: BNPL_LexisNexis_v1
+    description: ''
+    author: sparklearner123@gmail.com
+    createdAt: '2022-12-16 20:29:33'
+    physicalDatasets:
+      dev:
+        fabricId: 990
+        datasetType: File
+        description: ''
+        author: sparklearner123@gmail.com
+        createdAt: '2022-12-16 20:29:33'
+  datasets/credit_score_table:
+    name: credit_score_table
+    description: ''
+    author: sparklearner123@gmail.com
+    createdAt: '2022-12-21 21:43:54'
+    physicalDatasets:
+      Photon:
+        fabricId: 1045
+        datasetType: File
+        description: ''
+        author: sparklearner123@gmail.com
+        createdAt: '2022-12-21 21:43:54'
+  datasets/customer_info_v1:
+    name: customer_info_v1
+    description: ''
+    author: sparklearner123@gmail.com
+    createdAt: '2022-12-16 20:24:38'
+    physicalDatasets:
+      dev:
+        fabricId: 990
+        datasetType: File
+        description: ''
+        author: sparklearner123@gmail.com
+        createdAt: '2022-12-16 20:24:38'
 templates: {}
 jobs: {}
 libraries: []
 subgraphs: {}
 sqlModels: {}
 sqlPipeline: null
-dependencies: '[]'
+dependencies: []
 projectDependencies: {}
 pipelineConfigurations: {}

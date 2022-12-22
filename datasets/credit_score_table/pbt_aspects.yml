@@ -1,0 +1,53 @@
+version: 1
+schema:
+  type: struct
+  fields:
+  - name: CUSTOMER_NAME
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: Range
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: Range_valid_until_date
+    type: date
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: Range_valid_boolean_case
+    type: string
+    nullable: false
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: date_of_FICO_score
+    type: date
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: minFlag
+    type: boolean
+    nullable: false
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: maxFlag
+    type: boolean
+    nullable: false
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
