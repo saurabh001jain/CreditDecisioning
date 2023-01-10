@@ -5,6 +5,17 @@ author: sparklearner123@gmail.com
 language: python
 buildSystem: wheel
 pipelines:
+  pipelines/CannonizeName:
+    name: CannonizeName
+    description: ''
+    author: sparklearner123@gmail.com
+    mode: batch
+    language: python
+    createdAt: '2023-01-09 23:41:51'
+    datasets:
+      inputs: []
+      outputs: []
+    dependencies: {}
   pipelines/CreateMetrics:
     name: CreateMetrics
     description: ''

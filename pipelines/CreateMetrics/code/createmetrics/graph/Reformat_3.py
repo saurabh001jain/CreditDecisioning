@@ -4,5 +4,5 @@ from pyspark.sql.types import *
 from createmetrics.config.ConfigStore import *
 from createmetrics.udfs.UDFs import *
 
-def credit_score_table_1(spark: SparkSession) -> DataFrame:
-    return spark.sql(f"SELECT * FROM test_delta.credit_score_table VERSION AS OF 1")
+def Reformat_3(spark: SparkSession, in0: DataFrame) -> DataFrame:
+    return in0.select(explode(split(col("api_output.content"), "\n")).alias("content"))
