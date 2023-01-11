@@ -2,22 +2,22 @@ version: 1
 schema:
   type: struct
   fields:
-  - name: ID
+  - name: name
     type: string
     nullable: true
     metadata:
       description: ''
       mappings: []
       tags: []
-  - name: FICORange
-    type: string
+  - name: income
+    type: integer
     nullable: true
     metadata:
       description: ''
       mappings: []
       tags: []
-  - name: date_FICORange_obtained
-    type: string
+  - name: debt
+    type: long
     nullable: true
     metadata:
       description: ''

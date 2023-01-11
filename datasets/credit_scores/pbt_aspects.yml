@@ -2,7 +2,7 @@ version: 1
 schema:
   type: struct
   fields:
-  - name: ID
+  - name: CUSTOMER_NAME
     type: string
     nullable: true
     metadata:
@@ -18,6 +18,20 @@ schema:
       tags: []
   - name: date_FICORange_obtained
     type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: minFlag
+    type: boolean
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: maxFlag
+    type: boolean
     nullable: true
     metadata:
       description: ''
