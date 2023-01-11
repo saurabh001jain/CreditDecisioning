@@ -4,11 +4,11 @@ from pyspark.sql.types import *
 from createmetrics.config.ConfigStore import *
 from createmetrics.udfs.UDFs import *
 
-def SCD2_report(spark: SparkSession, in0: DataFrame):
+def FICO_table(spark: SparkSession, in0: DataFrame):
     from delta.tables import DeltaTable, DeltaMergeBuilder
 
-    if DeltaTable.isDeltaTable(spark, "dbfs:/FileStore/data/FICO_delta_table"):
-        existingTable = DeltaTable.forPath(spark, "dbfs:/FileStore/data/FICO_delta_table")
+    if DeltaTable.isDeltaTable(spark, "dbfs:/FileStore/data/FICO_table_history"):
+        existingTable = DeltaTable.forPath(spark, "dbfs:/FileStore/data/FICO_table_history")
         updatesDF = in0.withColumn("minFlag", lit("true")).withColumn("maxFlag", lit("true"))
         existingDF = existingTable.toDF()
         updateColumns = updatesDF.columns
@@ -41,4 +41,4 @@ def SCD2_report(spark: SparkSession, in0: DataFrame):
             .whenNotMatchedInsertAll()\
             .execute()
     else:
-        in0.write.format("delta").mode("overwrite").save("dbfs:/FileStore/data/FICO_delta_table")
+        in0.write.format("delta").mode("overwrite").save("dbfs:/FileStore/data/FICO_table_history")

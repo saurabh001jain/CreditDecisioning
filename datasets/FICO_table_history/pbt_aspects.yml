@@ -2,13 +2,6 @@ version: 1
 schema:
   type: struct
   fields:
-  - name: CUSTOMER_ID
-    type: string
-    nullable: true
-    metadata:
-      description: ''
-      mappings: []
-      tags: []
   - name: CUSTOMER_NAME
     type: string
     nullable: true
@@ -16,16 +9,37 @@ schema:
       description: ''
       mappings: []
       tags: []
-  - name: REPORTED_INCOME
-    type: long
+  - name: FICORange
+    type: string
     nullable: true
     metadata:
       description: ''
       mappings: []
       tags: []
-  - name: DOB
+  - name: date_FICORange_obtained
     type: date
     nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: FICO_valid_until_date
+    type: date
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: minFlag
+    type: boolean
+    nullable: false
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: maxFlag
+    type: boolean
+    nullable: false
     metadata:
       description: ''
       mappings: []
