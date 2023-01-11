@@ -6,11 +6,10 @@ from createmetrics.udfs.UDFs import *
 
 def Reformat_4(spark: SparkSession, in0: DataFrame) -> DataFrame:
     return in0.select(
-        col("content_parsed.balance").alias("balance"), 
-        col("content_parsed.lender_name").alias("lender_name"), 
-        col("content_parsed.loan_id").alias("loan_id"), 
-        col("content_parsed.monthly_loan_amount").alias("monthly_loan_amount"), 
-        col("content_parsed.name").alias("name"), 
-        col("content_parsed.past_due").alias("past_due"), 
-        col("content_parsed.processor").alias("processor")
+        col("CUSTOMER_NAME"), 
+        col("FICORange"), 
+        date_add(to_date(col("date_FICORange_obtained"), "dd-MM-yy"), 3).alias("date_FICORange_obtained"), 
+        date_add(to_date(col("date_FICORange_obtained"), "dd-MM-yy"), 123).alias("FICO_valid_until_date"), 
+        lit(True).alias("minFlag"), 
+        lit(True).alias("maxFlag")
     )

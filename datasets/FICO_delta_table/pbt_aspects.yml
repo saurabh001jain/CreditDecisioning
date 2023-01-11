@@ -16,21 +16,14 @@ schema:
       description: ''
       mappings: []
       tags: []
-  - name: FICORange_valid_until_date
+  - name: date_FICORange_obtained
     type: date
     nullable: true
     metadata:
       description: ''
       mappings: []
       tags: []
-  - name: Range_valid_boolean_case
-    type: string
-    nullable: false
-    metadata:
-      description: ''
-      mappings: []
-      tags: []
-  - name: date_of_FICO_score
+  - name: FICO_valid_until_date
     type: date
     nullable: true
     metadata:
