@@ -4,7 +4,7 @@ from pyspark.sql.types import *
 from createmetrics.config.ConfigStore import *
 from createmetrics.udfs.UDFs import *
 
-def SchemaTransform_2(spark: SparkSession, in0: DataFrame) -> DataFrame:
+def Cleanup(spark: SparkSession, in0: DataFrame) -> DataFrame:
     df1 = in0.drop("balance")
     df2 = df1.drop("lender_name")
     df3 = df2.drop("loan_id")

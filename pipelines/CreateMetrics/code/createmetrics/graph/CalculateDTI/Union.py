@@ -4,5 +4,5 @@ from pyspark.sql.types import *
 from createmetrics.config.ConfigStore import *
 from createmetrics.udfs.UDFs import *
 
-def Reformat_1(spark: SparkSession, in0: DataFrame) -> DataFrame:
-    return in0.select(col("REPORTED_INCOME"), col("Name"), col("monthly_loan_amount"))
+def Union(spark: SparkSession, in0: DataFrame, in1: DataFrame, ) -> DataFrame:
+    return in0.unionAll(in1)

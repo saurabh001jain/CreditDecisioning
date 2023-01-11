@@ -32,7 +32,7 @@ pipelines:
       - datasets/loan_data
       outputs:
       - datasets/FICO_delta_table
-      - datasets/credit_metrics
+      - datasets/credit_metrics_2
     dependencies: {}
 datasets:
   datasets/credit_report_and_tradelines_v2:
@@ -143,6 +143,18 @@ datasets:
         description: ''
         author: sparklearner123@gmail.com
         createdAt: '2022-12-16 20:24:38'
+  datasets/credit_metrics_2:
+    name: credit_metrics_2
+    description: ''
+    author: sparklearner123@gmail.com
+    createdAt: '2023-01-11 02:34:39'
+    physicalDatasets:
+      dev:
+        fabricId: 990
+        datasetType: File
+        description: ''
+        author: sparklearner123@gmail.com
+        createdAt: '2023-01-11 02:34:39'
 templates: {}
 jobs: {}
 libraries: []

@@ -4,7 +4,7 @@ from pyspark.sql.types import *
 from createmetrics.config.ConfigStore import *
 from createmetrics.udfs.UDFs import *
 
-def loan_data(spark: SparkSession) -> DataFrame:
+def FICOScores(spark: SparkSession) -> DataFrame:
     return spark.read\
         .schema(
           StructType([
