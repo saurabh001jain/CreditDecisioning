@@ -152,7 +152,7 @@
         "isCustomOutputSchema" : false
       },
       "properties" : {
-        "columnsSelector" : [ ],
+        "columnsSelector" : [ "f4GiPh6pcNvIe4T6zZ8xP$$7q-pPiWVphrqiWE1L06h3##SSN" ],
         "transformations" : [ {
           "kind" : "AddReplaceColumn",
           "AddReplaceColumn" : {
