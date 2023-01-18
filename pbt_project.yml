@@ -1,6 +1,6 @@
 name: CreditDecisioningV1
 description: ''
-version: 0.0.1
+version: 0.0.4
 author: sparklearner123@gmail.com
 language: python
 buildSystem: wheel
