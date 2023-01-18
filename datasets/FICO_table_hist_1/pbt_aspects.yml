@@ -18,7 +18,7 @@ schema:
       tags: []
   - name: FICORange
     type: string
-    nullable: true
+    nullable: false
     metadata:
       description: ''
       mappings: []

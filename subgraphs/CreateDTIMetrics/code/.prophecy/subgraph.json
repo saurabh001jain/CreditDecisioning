@@ -51,12 +51,6 @@
     "target" : "p9A1y7lVdVF6J23peqas1",
     "targetPort" : "-AISZsQ3Hn6-JoSv9B6WY"
   }, {
-    "id" : "IoWDh09Nm9UIH6p7YDJEq",
-    "source" : "t8JUbzljSLBB0-kE2h3RM",
-    "sourcePort" : "gL92OdzNt9Enil1vTikvV",
-    "target" : "T4HQ9EaS5gRE4SESmp6Eq",
-    "targetPort" : "TDvRD7WskQOFMfMJl6d_r"
-  }, {
     "id" : "kxiXB62oo-7H3QweH5wIO",
     "source" : "1J2Klg5vnWR4ns8l7Yqci",
     "sourcePort" : "HgL5HZNTcWF3HAJwERkNs",
@@ -75,12 +69,6 @@
     "target" : "T4HQ9EaS5gRE4SESmp6Eq",
     "targetPort" : "XFzkoDc1jvHIdjz9idOyt"
   }, {
-    "id" : "TItRTkWdwAX067JyXsZXS",
-    "source" : "you8xe-5wjsiUFIWvIIvT",
-    "sourcePort" : "kWQPvlqsXqP4PXQJFTnMr",
-    "target" : "t8JUbzljSLBB0-kE2h3RM",
-    "targetPort" : "f4GiPh6pcNvIe4T6zZ8xP"
-  }, {
     "id" : "Yh_7tYC6s4Gl1kpuqJFaK",
     "source" : "you8xe-5wjsiUFIWvIIvT",
     "sourcePort" : "ZewEhpFF0WKgnpncy5OpS",
@@ -92,6 +80,12 @@
     "sourcePort" : "Z5Q9Ul1DBv2_YakhKLGna",
     "target" : "you8xe-5wjsiUFIWvIIvT",
     "targetPort" : "K8sEgh2vbonRO9fMl4gEu"
+  }, {
+    "id" : "MHh6JJlDqqWI4HImSf4-W",
+    "source" : "you8xe-5wjsiUFIWvIIvT",
+    "sourcePort" : "kWQPvlqsXqP4PXQJFTnMr",
+    "target" : "T4HQ9EaS5gRE4SESmp6Eq",
+    "targetPort" : "TDvRD7WskQOFMfMJl6d_r"
   } ],
   "processes" : {
     "lMKji1McCOk2kegorAnu2" : {
@@ -124,52 +118,6 @@
       },
       "properties" : {
         "operationType" : "unionAll"
-      }
-    },
-    "t8JUbzljSLBB0-kE2h3RM" : {
-      "id" : "t8JUbzljSLBB0-kE2h3RM",
-      "component" : "SchemaTransform",
-      "metadata" : {
-        "label" : "HidePII_1_1",
-        "slug" : "HidePII_1_1",
-        "x" : 408.0003154696314,
-        "y" : 340.99999999999994,
-        "phase" : 0,
-        "cache" : false,
-        "detailedStats" : false,
-        "isImported" : false
-      },
-      "ports" : {
-        "inputs" : [ {
-          "id" : "f4GiPh6pcNvIe4T6zZ8xP",
-          "slug" : "in0"
-        } ],
-        "outputs" : [ {
-          "id" : "gL92OdzNt9Enil1vTikvV",
-          "slug" : "out"
-        } ],
-        "selectedInputFields" : [ ],
-        "isCustomOutputSchema" : false
-      },
-      "properties" : {
-        "columnsSelector" : [ "f4GiPh6pcNvIe4T6zZ8xP$$7q-pPiWVphrqiWE1L06h3##SSN" ],
-        "transformations" : [ {
-          "kind" : "AddReplaceColumn",
-          "AddReplaceColumn" : {
-            "sourceColumn" : "SSN",
-            "expression" : {
-              "format" : "sql",
-              "expression" : "base64(SSN)"
-            }
-          },
-          "DropColumn" : {
-            "sourceColumn" : ""
-          },
-          "RenameColumn" : {
-            "sourceColumn" : "",
-            "targetColumn" : ""
-          }
-        } ]
       }
     },
     "T4HQ9EaS5gRE4SESmp6Eq" : {

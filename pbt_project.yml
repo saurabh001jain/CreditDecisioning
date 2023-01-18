@@ -107,6 +107,18 @@ datasets:
         description: ''
         author: sparklearner123@gmail.com
         createdAt: '2023-01-10 22:43:09'
+  datasets/FICO_table_hist_1:
+    name: FICO_table_hist_1
+    description: ''
+    author: sparklearner123@gmail.com
+    createdAt: '2023-01-12 21:30:07'
+    physicalDatasets:
+      dev:
+        fabricId: 990
+        datasetType: File
+        description: ''
+        author: sparklearner123@gmail.com
+        createdAt: '2023-01-12 21:30:07'
   datasets/FICO_historical_table:
     name: FICO_historical_table
     description: ''
@@ -119,6 +131,18 @@ datasets:
         description: ''
         author: sparklearner123@gmail.com
         createdAt: '2023-01-10 23:23:18'
+  datasets/FICO_delta:
+    name: FICO_delta
+    description: ''
+    author: sparklearner123@gmail.com
+    createdAt: '2023-01-12 19:51:50'
+    physicalDatasets:
+      dev:
+        fabricId: 990
+        datasetType: File
+        description: ''
+        author: sparklearner123@gmail.com
+        createdAt: '2023-01-12 19:51:50'
   datasets/BNPL_LexisNexis_v1:
     name: BNPL_LexisNexis_v1
     description: ''
@@ -207,6 +231,12 @@ subgraphs:
     author: sparklearner123@gmail.com
     language: python
     createdAt: '2023-01-11 16:35:29'
+  subgraphs/BNPL_API:
+    name: BNPL_API
+    description: ''
+    author: sparklearner123@gmail.com
+    language: python
+    createdAt: '2023-01-18 01:53:19'
 sqlModels: {}
 sqlPipeline: null
 dependencies: []
