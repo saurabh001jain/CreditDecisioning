@@ -17,14 +17,14 @@ schema:
       mappings: []
       tags: []
   - name: REPORTED_INCOME
-    type: string
+    type: long
     nullable: true
     metadata:
       description: ''
       mappings: []
       tags: []
   - name: DOB
-    type: string
+    type: date
     nullable: true
     metadata:
       description: ''

@@ -7,17 +7,25 @@ from prophecy.utils import *
 from createmetrics.graph import *
 
 def pipeline(spark: SparkSession) -> None:
-    df_Reported_Income = Reported_Income(spark)
     df_Bureau_Source = Bureau_Source(spark)
-    df_BNPL_LexisNexis = BNPL_LexisNexis(spark)
-    df_CalculateDTI = CalculateDTI(spark, df_Reported_Income, df_Bureau_Source, df_BNPL_LexisNexis)
+    df_BNPL_LexisNexis_v1 = BNPL_LexisNexis_v1(spark)
+    df_DropCols = DropCols(spark, df_BNPL_LexisNexis_v1)
+    df_ReorderCols = ReorderCols(spark, df_DropCols)
+    df_Reported_Income = Reported_Income(spark)
+    df_FICO_table_history = FICO_table_history(spark)
+    df_OrderBy_1 = OrderBy_1(spark, df_FICO_table_history)
+    df_Filter_1 = Filter_1(spark, df_OrderBy_1)
+    df_ReportedIncome = ReportedIncome(spark)
+    df_ByCustomerID_1_1_1 = ByCustomerID_1_1_1(spark, df_ReportedIncome, df_Bureau_Source)
+    df_SplitByTrade_1_1_1 = SplitByTrade_1_1_1(spark, df_ByCustomerID_1_1_1)
+    df_UnionDatasets = UnionDatasets(spark, df_SplitByTrade_1_1_1, df_ReorderCols)
+    df_SumDebts = SumDebts(spark, df_UnionDatasets)
     df_FICOScores = FICOScores(spark)
-    df_Join_3 = Join_3(spark, df_FICOScores, df_Reported_Income)
-    df_Reformat_4 = Reformat_4(spark, df_Join_3)
-    SCD2_report(spark, df_Reformat_4)
-    ReportMetrics(spark, df_CalculateDTI)
-    df_FICO_historical_table = FICO_historical_table(spark)
-    df_Filter_3 = Filter_3(spark, df_FICO_historical_table)
+    df_Fico_Mod = Fico_Mod(spark, df_FICOScores)
+    df_ByCustomer = ByCustomer(spark, df_Fico_Mod, df_Reported_Income)
+    df_ForSCD2 = ForSCD2(spark, df_ByCustomer)
+    ReportMetrics_1(spark, df_SumDebts)
+    FICO_table_hist(spark, df_ForSCD2)
 
 def main():
     spark = SparkSession.builder\
