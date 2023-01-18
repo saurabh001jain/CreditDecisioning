@@ -489,8 +489,8 @@
       "metadata" : {
         "label" : "SumDebts",
         "slug" : "SumDebts",
-        "x" : 1009.6003647684474,
-        "y" : -565.1999999999998,
+        "x" : 1008.4003647684474,
+        "y" : -526.7999999999998,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -715,8 +715,8 @@
       "metadata" : {
         "label" : "ReportMetrics_1",
         "slug" : "ReportMetrics_1",
-        "x" : 1235.7170472918926,
-        "y" : -561.5888888888884,
+        "x" : 1239.3170472918925,
+        "y" : -527.9888888888884,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,

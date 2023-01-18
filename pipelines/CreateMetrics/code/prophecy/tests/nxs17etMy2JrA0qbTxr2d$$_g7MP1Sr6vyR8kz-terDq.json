@@ -1,0 +1,80 @@
+{
+  "unitTests" : [ {
+    "data" : {
+      "uet0K5Tww25kjOQG00Zvt$$khUMDreTSJMyE0SYRhA23" : {
+        "values" : [ [ "Gloria Estefan", "1000", "300" ] ],
+        "schema" : {
+          "type" : "struct",
+          "fields" : [ {
+            "name" : "name",
+            "type" : "string",
+            "nullable" : true,
+            "metadata" : {
+              "description" : "",
+              "mappings" : [ ],
+              "tags" : [ ]
+            }
+          }, {
+            "name" : "income",
+            "type" : "integer",
+            "nullable" : true,
+            "metadata" : {
+              "description" : "",
+              "mappings" : [ ],
+              "tags" : [ ]
+            }
+          }, {
+            "name" : "debt",
+            "type" : "long",
+            "nullable" : true,
+            "metadata" : {
+              "description" : "",
+              "mappings" : [ ],
+              "tags" : [ ]
+            }
+          } ]
+        },
+        "predicates" : [ ]
+      },
+      "Lw66VrbixX5DoLwwGkMIH$$cz15Me1cpIPmHsUUy1HEU" : {
+        "values" : [ [ "Gloria Estefan", "12000", "200" ], [ "Gloria Estefan", "5", "100" ] ],
+        "schema" : {
+          "type" : "struct",
+          "fields" : [ {
+            "name" : "Name",
+            "type" : "string",
+            "nullable" : true,
+            "metadata" : {
+              "description" : "",
+              "mappings" : [ ],
+              "tags" : [ ]
+            }
+          }, {
+            "name" : "REPORTED_INCOME",
+            "type" : "long",
+            "nullable" : true,
+            "metadata" : {
+              "description" : "",
+              "mappings" : [ ],
+              "tags" : [ ]
+            }
+          }, {
+            "name" : "monthly_loan_amount",
+            "type" : "long",
+            "nullable" : true,
+            "metadata" : {
+              "description" : "",
+              "mappings" : [ ],
+              "tags" : [ ]
+            }
+          } ]
+        },
+        "predicates" : [ ]
+      }
+    },
+    "name" : "Unit Test 0",
+    "testType" : "outputRow",
+    "language" : "python"
+  } ],
+  "language" : "python"
+}
