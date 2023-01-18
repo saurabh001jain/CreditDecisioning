@@ -216,7 +216,31 @@ datasets:
         author: sparklearner123@gmail.com
         createdAt: '2023-01-11 02:34:39'
 templates: {}
-jobs: {}
+jobs:
+  jobs/DTIjob:
+    name: DTIjob
+    description: CalculatesDebtToIncomeRatio
+    fabricUID: 990
+    scheduler:
+      Databricks: {}
+    cloudProvider: null
+    jobSize: small
+    scheduleCron: 0 0 0 1/1 * ? *
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines:
+    - pipelines/CreateMetrics
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: true
+    createdAt: '2023-01-18 02:30:06'
+    author: sparklearner123@gmail.com
 libraries: []
 subgraphs:
   subgraphs/CalculateDebtAndIncome:
