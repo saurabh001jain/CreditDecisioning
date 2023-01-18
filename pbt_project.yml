@@ -16,6 +16,18 @@ pipelines:
       inputs: []
       outputs: []
     dependencies: {}
+  pipelines/Cleanup:
+    name: Cleanup
+    description: For repeated usage, remove previously written data
+    author: sparklearner123@gmail.com
+    mode: batch
+    language: python
+    createdAt: '2023-01-18 04:04:53'
+    datasets:
+      inputs:
+      - datasets/FICO_table_history
+      outputs: []
+    dependencies: {}
   pipelines/CreateMetrics:
     name: CreateMetrics
     description: ''
@@ -167,6 +179,18 @@ datasets:
         description: ''
         author: sparklearner123@gmail.com
         createdAt: '2023-01-11 16:07:03'
+  datasets/loan_data_with_name:
+    name: loan_data_with_name
+    description: ''
+    author: sparklearner123@gmail.com
+    createdAt: '2023-01-18 16:27:57'
+    physicalDatasets:
+      dev:
+        fabricId: 990
+        datasetType: File
+        description: ''
+        author: sparklearner123@gmail.com
+        createdAt: '2023-01-18 16:27:57'
   datasets/FICO_table:
     name: FICO_table
     description: ''

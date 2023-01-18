@@ -12,9 +12,6 @@ def pipeline(spark: SparkSession) -> None:
     df_DropCols = DropCols(spark, df_BNPL_LexisNexis_v1)
     df_ReorderCols = ReorderCols(spark, df_DropCols)
     df_Reported_Income = Reported_Income(spark)
-    df_FICO_table_history = FICO_table_history(spark)
-    df_OrderBy_1 = OrderBy_1(spark, df_FICO_table_history)
-    df_Filter_1 = Filter_1(spark, df_OrderBy_1)
     df_ReportedIncome = ReportedIncome(spark)
     df_ByCustomerID_1_1_1 = ByCustomerID_1_1_1(spark, df_ReportedIncome, df_Bureau_Source)
     df_SplitByTrade_1_1_1 = SplitByTrade_1_1_1(spark, df_ByCustomerID_1_1_1)
@@ -26,6 +23,9 @@ def pipeline(spark: SparkSession) -> None:
     df_ForSCD2 = ForSCD2(spark, df_ByCustomer)
     ReportMetrics_1(spark, df_SumDebts)
     FICO_table_hist(spark, df_ForSCD2)
+    df_FICO_table_history = FICO_table_history(spark)
+    df_OrderBy_1 = OrderBy_1(spark, df_FICO_table_history)
+    df_Filter_1 = Filter_1(spark, df_OrderBy_1)
 
 def main():
     spark = SparkSession.builder\
