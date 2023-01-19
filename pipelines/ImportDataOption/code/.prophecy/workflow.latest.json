@@ -51,14 +51,38 @@
     "targetPort" : "8E4LlyeQjscvXzoX9lbsm$$zH7lmi5lcX6TmYpPjy7h7"
   } ],
   "processes" : {
+    "BmIIufSDFIbgrpmT51DhV$$rZ2-VNP0QE7JFHYc3cl7t" : {
+      "id" : "BmIIufSDFIbgrpmT51DhV$$rZ2-VNP0QE7JFHYc3cl7t",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "CustomerCSV",
+        "slug" : "CustomerCSV",
+        "x" : 482.31666666666683,
+        "y" : 231.24445054796,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "bxsfsmLOGeqdnrqQOyeG6$$MsA9ojFJxU7Grs_WIjrEt",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : { }
+    },
     "fz7_3SHQ9YM_uEF6qRJDP$$2kAxV9zcn3OdYVOMj0Akz" : {
       "id" : "fz7_3SHQ9YM_uEF6qRJDP$$2kAxV9zcn3OdYVOMj0Akz",
       "component" : "Subgraph",
       "metadata" : {
         "label" : "BNPL_API",
         "slug" : "BNPL_API",
-        "x" : 436,
-        "y" : 573.9333333333333,
+        "x" : 242.79999999999995,
+        "y" : 704.7333333333333,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -79,37 +103,37 @@
         "name" : "BNPL_API"
       },
       "connections" : [ {
-        "id" : "hR9N8Abue4Cu8RrHJJemm",
+        "id" : "BL5-FBXNKYSEPqfyIuYQT",
         "source" : "mG20M7nmhXNAYpDIkC0R1$$lBVkbD_4tKgGk-C4TU9e-",
         "sourcePort" : "M3U1cbm9iSr5SxR4H9KyU$$fUvoDlwySZ7A7vj-Ivgv9",
         "target" : "sLibTvRCxSz9kt5Wd5eVm$$Br9NgBr8L3167coL61sVT",
         "targetPort" : "1J1RZG4E1dmrJZndGgvlt$$mvEhflCaskHpfEMPoP-q6"
       }, {
-        "id" : "eRBrE-TD1F1rQj3J4gJBN",
+        "id" : "PB6zpev4Gowg2F_PVczJu",
         "source" : "sLibTvRCxSz9kt5Wd5eVm$$Br9NgBr8L3167coL61sVT",
         "sourcePort" : "PFVjcMS1mJZ2wEbbYN_tV$$nQWyBpYg53wmJeEPcgKLo",
         "target" : "BH-jWbUAdcDb-1x0u5lhz$$oWd5thX1_hPEZ3MBE_MQY",
         "targetPort" : "o88Cp-uwL3rBoI982Dhpv$$iC7taIVmTCB_4h2dhTR8X"
       }, {
-        "id" : "mByCvbF7RwkCiyEWeGjXD",
+        "id" : "LyIemTsm-Yv2h_yqfv32Z",
         "source" : "BH-jWbUAdcDb-1x0u5lhz$$oWd5thX1_hPEZ3MBE_MQY",
         "sourcePort" : "Q5ygDL41gP5MmFqfOgfQp$$uIzo9yruasGzrctzskYcd",
         "target" : "xmzXEFeDoYOVQHjRYYHzf$$XF4dz2b3jIRAoa9qUOX-f",
         "targetPort" : "4h9tLR40kA6KkdcD5RSum$$R_qZ3gE92us8wKo1q_5fW"
       }, {
-        "id" : "Gqtg0H2B5NSR9TPgEDcZm",
+        "id" : "-wVDEUqqQ57LvfY3UK2EA",
         "source" : "xmzXEFeDoYOVQHjRYYHzf$$XF4dz2b3jIRAoa9qUOX-f",
         "sourcePort" : "BBNj-5E6OtJN503zbTo7L$$YD3-fREFXulK78uT7O9pD",
         "target" : "7c0yWal6q3luOfuMyYNeH$$seemB7m_RUE7ZaUaNNWJV",
         "targetPort" : "PFFlnWKUVoY709Hu4fcMi$$hvnOcFCWIKnDTU358Qf_0"
       }, {
-        "id" : "A1azIEmYUHNA2IJummXcI",
+        "id" : "ZbxGR8qszVHeaRkXpYLvl",
         "source" : "7c0yWal6q3luOfuMyYNeH$$seemB7m_RUE7ZaUaNNWJV",
         "sourcePort" : "Ln410pBfqsJIzUnGMY68B$$Iw1nbsTAdlicdA37v3beS",
         "target" : "-01TDsgklmgNqDEFXlTUT$$KSFcxINTYShkVVVztqyAw",
         "targetPort" : "kvXZHexNdM42jd0H81X1z$$oXm9YvRYuqnM-oou5TwQ0"
       }, {
-        "id" : "imoQmT_Md0hfvYfmqW03X",
+        "id" : "TTT9cQsvAQqQL36Rz1jYq",
         "source" : "-01TDsgklmgNqDEFXlTUT$$KSFcxINTYShkVVVztqyAw",
         "sourcePort" : "rV9QzZ-6YP_ziO4Eg3CMK$$ASlUu36eQbuE3H0DFca4z",
         "target" : "fz7_3SHQ9YM_uEF6qRJDP$$2kAxV9zcn3OdYVOMj0Akz",
@@ -122,8 +146,8 @@
           "metadata" : {
             "label" : "JSON_BNPL_2_1",
             "slug" : "JSON_BNPL_2_1",
-            "x" : 340.0008425657863,
-            "y" : 140,
+            "x" : 360.0008425657863,
+            "y" : 160,
             "phase" : 0,
             "cache" : false,
             "detailedStats" : false,
@@ -245,8 +269,8 @@
           "metadata" : {
             "label" : "ParseJson",
             "slug" : "ParseJson",
-            "x" : 740.0005848666484,
-            "y" : 140,
+            "x" : 760.0005848666484,
+            "y" : 160,
             "phase" : 0,
             "cache" : false,
             "detailedStats" : false,
@@ -373,8 +397,8 @@
           "metadata" : {
             "label" : "Explode",
             "slug" : "Explode",
-            "x" : 540.0007497586245,
-            "y" : 140,
+            "x" : 560.0007497586245,
+            "y" : 160,
             "phase" : 0,
             "cache" : false,
             "detailedStats" : false,
@@ -413,8 +437,8 @@
           "metadata" : {
             "label" : "GenericInput_1",
             "slug" : "GenericInput_1",
-            "x" : 140.00045673980839,
-            "y" : 140,
+            "x" : 160.00045673980839,
+            "y" : 160,
             "phase" : 0,
             "cache" : false,
             "detailedStats" : false,
@@ -445,8 +469,8 @@
           "metadata" : {
             "label" : "ColumnDefinition",
             "slug" : "ColumnDefinition",
-            "x" : 940.0003528779424,
-            "y" : 140,
+            "x" : 960.0003528779424,
+            "y" : 160,
             "phase" : 0,
             "cache" : false,
             "detailedStats" : false,
@@ -527,8 +551,8 @@
           "metadata" : {
             "label" : "Display",
             "slug" : "Display",
-            "x" : 1140.0002646818364,
-            "y" : 140,
+            "x" : 1160.0002646818364,
+            "y" : 160,
             "phase" : 0,
             "cache" : false,
             "detailedStats" : false,
@@ -556,14 +580,92 @@
         }
       }
     },
+    "cTZ0ScA_GzFiyd6ZE_JQ9$$relrQAw24Ewyxc9XaEo5k" : {
+      "id" : "cTZ0ScA_GzFiyd6ZE_JQ9$$relrQAw24Ewyxc9XaEo5k",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "BNPLjson",
+        "slug" : "BNPLjson",
+        "x" : 481.9000000000002,
+        "y" : 400.5333333333334,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "8y9e97HoMwP-xfS8B0E-e$$RvWJEiQNtartstZDIEkT4",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/BNPLjson"
+      }
+    },
+    "UYs4hI5e6kExXkOyZDDZV$$D3mGBbXpGie2p9fFX3RGM" : {
+      "id" : "UYs4hI5e6kExXkOyZDDZV$$D3mGBbXpGie2p9fFX3RGM",
+      "component" : "Script",
+      "metadata" : {
+        "label" : "wgetCUSTcsv",
+        "slug" : "wgetCUSTcsv",
+        "x" : 243.4000000000001,
+        "y" : 233.13333333333333,
+        "phase" : -1,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : true
+      },
+      "properties" : {
+        "script" : "import os\nos.system(\n    'wget https://raw.githubusercontent.com/databricks/terraform-databricks-lakehouse-blueprints/prophecy_quickstart/industry/fsi/data/customer.csv'\n    )\n ",
+        "scriptMethodHeader" : "def Script(spark: SparkSession) -> None:",
+        "scriptMethodFooter" : "    return "
+      }
+    },
+    "n8fQ8llqEuRnBRm7alknn$$cKG9STLRhpBcgZRYunjUk" : {
+      "id" : "n8fQ8llqEuRnBRm7alknn$$cKG9STLRhpBcgZRYunjUk",
+      "component" : "FileOperation",
+      "metadata" : {
+        "label" : "FileOperation_2_1",
+        "slug" : "FileOperation_2_1",
+        "x" : 368.3000000000002,
+        "y" : 401.3333333333332,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "recurse" : true,
+        "source" : "file:/databricks/driver/bnpl.json",
+        "filesystem" : "dbfs",
+        "operation" : "copy",
+        "destination" : "dbfs:/Prophecy/sparklearner123@gmail.com/finserv/prophecy/bnpl/bnpl.json"
+      }
+    },
     "9eiUp1_F64vEXgffB-Mtb$$KHUqYPEVjEYGXiSXiTfz5" : {
       "id" : "9eiUp1_F64vEXgffB-Mtb$$KHUqYPEVjEYGXiSXiTfz5",
       "component" : "Filter",
       "metadata" : {
         "label" : "Filter_1",
         "slug" : "Filter_1",
-        "x" : 624.4000000000001,
-        "y" : 578.3333333333333,
+        "x" : 376.00000000000006,
+        "y" : 706.7333333333332,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -587,6 +689,136 @@
           "format" : "sql",
           "expression" : "true"
         }
+      }
+    },
+    "lpo7VDjhBusoey2rkEeNh$$ncNljmUy8EllX5pK0e1ua" : {
+      "id" : "lpo7VDjhBusoey2rkEeNh$$ncNljmUy8EllX5pK0e1ua",
+      "component" : "FileOperation",
+      "metadata" : {
+        "label" : "FileOperation_2",
+        "slug" : "FileOperation_2",
+        "x" : 362.70000000000016,
+        "y" : 234.9333333333333,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "recurse" : true,
+        "source" : "file:/databricks/driver/customer.csv ",
+        "filesystem" : "dbfs",
+        "operation" : "copy",
+        "destination" : "dbfs:/Prophecy/sparklearner123@gmail.com/finserv/prophecy/customer/customer.csv"
+      }
+    },
+    "1zAiSSHfWMi_KS3mJISgG$$-EHgC1YcxOu05ff6mfVMg" : {
+      "id" : "1zAiSSHfWMi_KS3mJISgG$$-EHgC1YcxOu05ff6mfVMg",
+      "component" : "FileOperation",
+      "metadata" : {
+        "label" : "FileOperation_1",
+        "slug" : "FileOperation_1",
+        "x" : 356.70000000000005,
+        "y" : 73.73333333333326,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "recurse" : true,
+        "source" : "file:/databricks/driver/credit_report.xml",
+        "filesystem" : "dbfs",
+        "operation" : "copy",
+        "destination" : "dbfs:/Prophecy/sparklearner123@gmail.com/finserv/prophecy/credit/credit_report.xml"
+      }
+    },
+    "ft5FvWgShosVUMW-Rozs4$$axQK23JxHaMs5BywFTWOI" : {
+      "id" : "ft5FvWgShosVUMW-Rozs4$$axQK23JxHaMs5BywFTWOI",
+      "component" : "Script",
+      "metadata" : {
+        "label" : "wgetCREDxml",
+        "slug" : "wgetCREDxml",
+        "x" : 242.70000000000016,
+        "y" : 70.13333333333333,
+        "phase" : -1,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : true
+      },
+      "properties" : {
+        "script" : "import os\nos.system(\n    'wget https://raw.githubusercontent.com/databricks/terraform-databricks-lakehouse-blueprints/prophecy_quickstart/industry/fsi/data/credit_report.xml'\n    )\n ",
+        "scriptMethodHeader" : "def Script(spark: SparkSession) -> None:",
+        "scriptMethodFooter" : "    return "
+      }
+    },
+    "o771GcIMgd55_GadjQAxn$$eMlSBHI5d2faguMgpRRqq" : {
+      "id" : "o771GcIMgd55_GadjQAxn$$eMlSBHI5d2faguMgpRRqq",
+      "component" : "Script",
+      "metadata" : {
+        "label" : "wgetBNPLjson",
+        "slug" : "wgetBNPLjson",
+        "x" : 245.40000000000012,
+        "y" : 404.33333333333314,
+        "phase" : -1,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : true
+      },
+      "properties" : {
+        "script" : "import os\nos.system(\n    'wget https://raw.githubusercontent.com/databricks/terraform-databricks-lakehouse-blueprints/prophecy_quickstart/industry/fsi/data/bnpl.json'\n    )\n ",
+        "scriptMethodHeader" : "def Script(spark: SparkSession) -> None:",
+        "scriptMethodFooter" : "    return "
+      }
+    },
+    "v_HcDe3DZNAdBIBavoFi9$$rdGMCnhBQlFxKAJhHVqmA" : {
+      "id" : "v_HcDe3DZNAdBIBavoFi9$$rdGMCnhBQlFxKAJhHVqmA",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "CreditXML",
+        "slug" : "CreditXML",
+        "x" : 479.9000000000002,
+        "y" : 70.53333333333327,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "tYrEeeB0CVRjl1m2BPWCg$$a6Wva7rnXChRaBoaXfFdW",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/CreditReportXML"
       }
     }
   },

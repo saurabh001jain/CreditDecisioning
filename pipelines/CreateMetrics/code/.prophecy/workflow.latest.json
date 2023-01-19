@@ -47,53 +47,17 @@
     "topLevelPackage" : "createmetrics"
   },
   "connections" : [ {
-    "id" : "wwn0ywHhZC_DG5oM6_2n1",
-    "source" : "tVScpXlriINaOWiQid7uI$$XjZbWakLxwaypKViMZ0jY",
-    "sourcePort" : "XO8lzz3d99Y39tTDTzrbM$$jw9V5f1t9lbFEhDW2zzak",
-    "target" : "ckJ5qZmmZolGdZItr9rZR$$AKDZJMbW0SyvewvwX2oaW",
-    "targetPort" : "sfazQfk8N1M9JnPJD6SAy$$xBo0ts6EFqSTlzRafEuX7"
-  }, {
     "id" : "x281CKAAZ_Pf8kRhVQo-m",
     "source" : "ckJ5qZmmZolGdZItr9rZR$$AKDZJMbW0SyvewvwX2oaW",
     "sourcePort" : "sSYtukI8XzDqOm1Z7Nn1d$$6VictUtr9kdg_3jnsaRY9",
     "target" : "IncF52PcfgKKsikp__Tae$$VoWRNlz84IakC9R3JgHEd",
     "targetPort" : "fcIHy5zA6P0xL7DxuMZwr$$HmnfWWOILH4kkS3rDmJvt"
   }, {
-    "id" : "TxWKcnLRSa7cr9BHB9g6p",
-    "source" : "pg1f2RNNICh6ZC1q1HJJI$$tE6MdfV8yIb2h8HjcIGvj",
-    "sourcePort" : "hhaYH8660Fpqa2qqGmHdy$$mil4Y0MBn9JFO33RIgfmR",
-    "target" : "MLn_R6FfvRwuTqDPDxzQl$$8JmSCg9vfuSSZFNdota6J",
-    "targetPort" : "WNupvmJuVkRQdV7IfM8aM$$4fYShl6PFVKo4OJ3orYFm"
-  }, {
-    "id" : "RJjW8AYbm0hVAXME-hISY",
-    "source" : "MLn_R6FfvRwuTqDPDxzQl$$8JmSCg9vfuSSZFNdota6J",
-    "sourcePort" : "pu3bFFzJ7KcCxGs3roDpB$$OFemanG3IUO_xJOycqoVE",
-    "target" : "ckJ5qZmmZolGdZItr9rZR$$AKDZJMbW0SyvewvwX2oaW",
-    "targetPort" : "iiK-fNmMV0NQibICZ2VdF$$6CVO6WeK6KAAMazX5SsrZ"
-  }, {
-    "id" : "gesukUF_pdD-CsHKtxUdn",
-    "source" : "nT3GgufGfztV6JAMErQBY$$iO3DXxaJ0tSoqlY-XnfRU",
-    "sourcePort" : "-iMp0yJayLx5sD-fqmm5C$$tYSWPWE2BB37HuvpA_GxS",
-    "target" : "W1YohIEarksA65LmhADDI$$RNPOWYM7AvpvAbHEnUb6l",
-    "targetPort" : "x-pKAcfXwHwvDBXibtccP$$O7hBGnS33pFSFVhgL6GjV"
-  }, {
     "id" : "5_m3F452TEODz0tQN0CHF",
     "source" : "W1YohIEarksA65LmhADDI$$RNPOWYM7AvpvAbHEnUb6l",
     "sourcePort" : "zz2XJu8ENg8JEZRkBawcb$$cZNBzclHZegEDSxhuM5K4",
     "target" : "1yHRYSCNwpl6y26Khbq4T$$0cbnV45VsxpxRqW3KBlCj",
     "targetPort" : "WIq_STrubAwE0WBMQU6W6$$ZhY39Nx5N0Bmd1bdx7w8E"
-  }, {
-    "id" : "IJ575dTLYCP5k3tPTyjjV",
-    "source" : "1yHRYSCNwpl6y26Khbq4T$$0cbnV45VsxpxRqW3KBlCj",
-    "sourcePort" : "RjuKMFcvA3mIpzJ9Mn2yp$$EaLg-6OifVQOcgXY7h_Bf",
-    "target" : "nxs17etMy2JrA0qbTxr2d$$_g7MP1Sr6vyR8kz-terDq",
-    "targetPort" : "Lw66VrbixX5DoLwwGkMIH$$cz15Me1cpIPmHsUUy1HEU"
-  }, {
-    "id" : "PieF3oYdM3eOVSJ3-Z7Pm",
-    "source" : "_WcsMdKbDH5IxCJUxUNrq$$sr0eFpRiqutL3APNJD8pJ",
-    "sourcePort" : "4Kwq2z5WoziMjek63PKfY$$vIfGBlpdQQvqWsZXlqzgw",
-    "target" : "X0U8jqSqGgbnC-SnIvotT$$C0YP5ZW6VtC4p2ly4K9YU",
-    "targetPort" : "1rH3FR_qDxOHT2HBygw8P$$ygd0aubwPLkeUOeTASRMR"
   }, {
     "id" : "qRvs9ZRJ7jiPAjJ_H9uSv",
     "source" : "X0U8jqSqGgbnC-SnIvotT$$C0YP5ZW6VtC4p2ly4K9YU",
@@ -131,15 +95,51 @@
     "target" : "nT3GgufGfztV6JAMErQBY$$iO3DXxaJ0tSoqlY-XnfRU",
     "targetPort" : "7i1kJ6wpbfMcl5gvR3Ed_$$QlhC-X2dyF3LyPI1eAtNo"
   }, {
-    "id" : "xvLNmpPlZiQBIJ16fRdd7",
+    "id" : "L3E3pMR0x0zJGeGFnsygd",
+    "source" : "MLn_R6FfvRwuTqDPDxzQl$$8JmSCg9vfuSSZFNdota6J",
+    "sourcePort" : "pu3bFFzJ7KcCxGs3roDpB$$OFemanG3IUO_xJOycqoVE",
+    "target" : "ckJ5qZmmZolGdZItr9rZR$$AKDZJMbW0SyvewvwX2oaW",
+    "targetPort" : "iiK-fNmMV0NQibICZ2VdF$$6CVO6WeK6KAAMazX5SsrZ"
+  }, {
+    "id" : "suw9ZCB-y3QBleqmEi0ei",
+    "source" : "_WcsMdKbDH5IxCJUxUNrq$$sr0eFpRiqutL3APNJD8pJ",
+    "sourcePort" : "4Kwq2z5WoziMjek63PKfY$$vIfGBlpdQQvqWsZXlqzgw",
+    "target" : "X0U8jqSqGgbnC-SnIvotT$$C0YP5ZW6VtC4p2ly4K9YU",
+    "targetPort" : "1rH3FR_qDxOHT2HBygw8P$$ygd0aubwPLkeUOeTASRMR"
+  }, {
+    "id" : "I8coB1clZfyzSK5Nku6De",
     "source" : "AXSJ_uJOjqA8QYp28QuvO$$5rvaqkUposmReGInOwXS4",
     "sourcePort" : "fwirLzy4K8Nu6E08Utwgk$$5zFRDALN4DVVRA3iGKYcC",
     "target" : "_WcsMdKbDH5IxCJUxUNrq$$sr0eFpRiqutL3APNJD8pJ",
     "targetPort" : "3RkFMj3lehNgZZTiNRJFj$$LgjJWM003NP65-HIHe890"
   }, {
-    "id" : "bODIMlUTy3jsiUF_Kv8Lo",
-    "source" : "IncF52PcfgKKsikp__Tae$$VoWRNlz84IakC9R3JgHEd",
-    "sourcePort" : "KhTlUQZXQh7GLdXud6ZeF$$rLwwPB5UZixbZxt6rZLNH",
+    "id" : "-VVBn7F1T11N3eFm0AeSe",
+    "source" : "nT3GgufGfztV6JAMErQBY$$iO3DXxaJ0tSoqlY-XnfRU",
+    "sourcePort" : "-iMp0yJayLx5sD-fqmm5C$$tYSWPWE2BB37HuvpA_GxS",
+    "target" : "W1YohIEarksA65LmhADDI$$RNPOWYM7AvpvAbHEnUb6l",
+    "targetPort" : "x-pKAcfXwHwvDBXibtccP$$O7hBGnS33pFSFVhgL6GjV"
+  }, {
+    "id" : "Wt_fjV5PL4nM_9y6CaTPs",
+    "source" : "1yHRYSCNwpl6y26Khbq4T$$0cbnV45VsxpxRqW3KBlCj",
+    "sourcePort" : "RjuKMFcvA3mIpzJ9Mn2yp$$EaLg-6OifVQOcgXY7h_Bf",
+    "target" : "nxs17etMy2JrA0qbTxr2d$$_g7MP1Sr6vyR8kz-terDq",
+    "targetPort" : "Lw66VrbixX5DoLwwGkMIH$$cz15Me1cpIPmHsUUy1HEU"
+  }, {
+    "id" : "FiuZc5tq0KA4aiXZTloRC",
+    "source" : "pg1f2RNNICh6ZC1q1HJJI$$tE6MdfV8yIb2h8HjcIGvj",
+    "sourcePort" : "hhaYH8660Fpqa2qqGmHdy$$mil4Y0MBn9JFO33RIgfmR",
+    "target" : "8u1LTU4s5c2HpR7a1Vzjc$$urdCCXKEJKlO8FW2FO0Zj",
+    "targetPort" : "BxO9iceFP-GIRXTQmnXsl$$Gwae2KjT-Pnbzzjz64jSM"
+  }, {
+    "id" : "u4fjZbhH23OQL_spL2-nh",
+    "source" : "tVScpXlriINaOWiQid7uI$$XjZbWakLxwaypKViMZ0jY",
+    "sourcePort" : "XO8lzz3d99Y39tTDTzrbM$$jw9V5f1t9lbFEhDW2zzak",
+    "target" : "8u1LTU4s5c2HpR7a1Vzjc$$urdCCXKEJKlO8FW2FO0Zj",
+    "targetPort" : "vlPDbkPGFjAq6Uh-nESI5$$VCsx7sKFIRxQSsZBgJuyt"
+  }, {
+    "id" : "Z6ENrhN4M5UXjcpe8sYqo",
+    "source" : "8u1LTU4s5c2HpR7a1Vzjc$$urdCCXKEJKlO8FW2FO0Zj",
+    "sourcePort" : "69JY0HvpxAH0-WnfR461q$$JJ2L0MwVPKcm0XBPxitsR",
     "target" : "pVmWfAWXkj9CcVpcNvPEM$$5lxfmUVad0pGZ-qMN5zVl",
     "targetPort" : "6diC2pcnNHBy_XeRNIX8u$$zrpe0v_SlGzQbzJ7Hmp34"
   } ],
@@ -150,8 +150,8 @@
       "metadata" : {
         "label" : "Bureau_Source",
         "slug" : "Bureau_Source",
-        "x" : 0.0006218254070802232,
-        "y" : -546.7999999999996,
+        "x" : 12.00062182540708,
+        "y" : -540.7999999999995,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -176,8 +176,8 @@
       "metadata" : {
         "label" : "ReorderCols",
         "slug" : "ReorderCols",
-        "x" : 582.2003401190394,
-        "y" : -429.7999999999997,
+        "x" : 606.2003401190393,
+        "y" : -417.7999999999997,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -256,8 +256,8 @@
       "metadata" : {
         "label" : "DropCols",
         "slug" : "DropCols",
-        "x" : 373.6009472685712,
-        "y" : -421.5999999999997,
+        "x" : 402.40094726857114,
+        "y" : -420.3999999999997,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -276,7 +276,7 @@
         "isCustomOutputSchema" : false
       },
       "properties" : {
-        "columnsSelector" : [ "3RkFMj3lehNgZZTiNRJFj$$LgjJWM003NP65-HIHe890##loan_id", "3RkFMj3lehNgZZTiNRJFj$$LgjJWM003NP65-HIHe890##processor", "3RkFMj3lehNgZZTiNRJFj$$LgjJWM003NP65-HIHe890##balance", "3RkFMj3lehNgZZTiNRJFj$$LgjJWM003NP65-HIHe890##lender_name", "3RkFMj3lehNgZZTiNRJFj$$LgjJWM003NP65-HIHe890##monthly_loan_amount", "3RkFMj3lehNgZZTiNRJFj$$LgjJWM003NP65-HIHe890##name", "3RkFMj3lehNgZZTiNRJFj$$LgjJWM003NP65-HIHe890##past_due" ],
+        "columnsSelector" : [ "3RkFMj3lehNgZZTiNRJFj$$LgjJWM003NP65-HIHe890##loan_id", "3RkFMj3lehNgZZTiNRJFj$$LgjJWM003NP65-HIHe890##term", "3RkFMj3lehNgZZTiNRJFj$$LgjJWM003NP65-HIHe890##processor", "3RkFMj3lehNgZZTiNRJFj$$LgjJWM003NP65-HIHe890##balance", "3RkFMj3lehNgZZTiNRJFj$$LgjJWM003NP65-HIHe890##lender_name", "3RkFMj3lehNgZZTiNRJFj$$LgjJWM003NP65-HIHe890##monthly_loan_amount", "3RkFMj3lehNgZZTiNRJFj$$LgjJWM003NP65-HIHe890##name", "3RkFMj3lehNgZZTiNRJFj$$LgjJWM003NP65-HIHe890##past_due" ],
         "transformations" : [ {
           "kind" : "DropColumn",
           "DropColumn" : {
@@ -430,8 +430,8 @@
       "metadata" : {
         "label" : "Reported_Income",
         "slug" : "Reported_Income",
-        "x" : 102.00052420767832,
-        "y" : -13.599999999999966,
+        "x" : -10.799475792321573,
+        "y" : 106.40000000000003,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -454,10 +454,10 @@
       "id" : "iKXroN4VfybRKXTP1qBDR$$B83PiGOEwas1dzjtd0EJ8",
       "component" : "Filter",
       "metadata" : {
-        "label" : "Filter_1",
-        "slug" : "Filter_1",
-        "x" : 1301.820874939236,
-        "y" : -173.26666666666654,
+        "label" : "Display",
+        "slug" : "Display",
+        "x" : 830.2208749392361,
+        "y" : 157.93333333333348,
         "phase" : 1,
         "cache" : false,
         "detailedStats" : false,
@@ -550,8 +550,8 @@
       "metadata" : {
         "label" : "FICO_table_history",
         "slug" : "FICO_table_history",
-        "x" : 985.5155956173212,
-        "y" : -171.91666666666663,
+        "x" : 513.9155956173212,
+        "y" : 159.2833333333334,
         "phase" : 1,
         "cache" : false,
         "detailedStats" : false,
@@ -576,8 +576,8 @@
       "metadata" : {
         "label" : "ForSCD2",
         "slug" : "ForSCD2",
-        "x" : 582.0673782522807,
-        "y" : -181.99999999999997,
+        "x" : 732.0673782522808,
+        "y" : 634,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -649,7 +649,7 @@
         } ],
         "importString" : "",
         "activeTab" : "expressions",
-        "columnsSelector" : [ "fcIHy5zA6P0xL7DxuMZwr$$HmnfWWOILH4kkS3rDmJvt##CUSTOMER_NAME", "fcIHy5zA6P0xL7DxuMZwr$$HmnfWWOILH4kkS3rDmJvt##FICORange", "fcIHy5zA6P0xL7DxuMZwr$$HmnfWWOILH4kkS3rDmJvt##date_FICORange_obtained", "fcIHy5zA6P0xL7DxuMZwr$$HmnfWWOILH4kkS3rDmJvt##CUSTOMER_ID" ]
+        "columnsSelector" : [ ]
       }
     },
     "nT3GgufGfztV6JAMErQBY$$iO3DXxaJ0tSoqlY-XnfRU" : {
@@ -658,8 +658,8 @@
       "metadata" : {
         "label" : "ByCustomerID_1_1_1",
         "slug" : "ByCustomerID_1_1_1",
-        "x" : 371.2002289599304,
-        "y" : -628,
+        "x" : 373.6002289599304,
+        "y" : -654.4000000000001,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -716,7 +716,7 @@
         "label" : "ReportMetrics_1",
         "slug" : "ReportMetrics_1",
         "x" : 1257.3170472918925,
-        "y" : -531.5888888888885,
+        "y" : -525.5888888888885,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -741,8 +741,8 @@
       "metadata" : {
         "label" : "ByCustomer",
         "slug" : "ByCustomer",
-        "x" : 366.6339104624508,
-        "y" : -182.00000000000003,
+        "x" : 516.6339104624509,
+        "y" : 633.9999999999999,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -786,7 +786,7 @@
         } ],
         "allIn1" : null,
         "activeTab" : "conditions",
-        "columnsSelector" : [ "iiK-fNmMV0NQibICZ2VdF$$6CVO6WeK6KAAMazX5SsrZ##ID", "sfazQfk8N1M9JnPJD6SAy$$xBo0ts6EFqSTlzRafEuX7##CUSTOMER_ID" ],
+        "columnsSelector" : [ ],
         "allIn0" : null,
         "whereClause" : null,
         "headAlias" : "in0"
@@ -824,8 +824,8 @@
       "metadata" : {
         "label" : "FICO_table_hist",
         "slug" : "FICO_table_hist",
-        "x" : 766.0587147407853,
-        "y" : -180.70000000000002,
+        "x" : 506.8587147407852,
+        "y" : 10.099999999999937,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -850,8 +850,8 @@
       "metadata" : {
         "label" : "SplitByTrade_1_1_1",
         "slug" : "SplitByTrade_1_1_1",
-        "x" : 571.2003512744723,
-        "y" : -628,
+        "x" : 606.0003512744722,
+        "y" : -655.6000000000001,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -990,10 +990,10 @@
       "id" : "tzpni8NNcXYQvhCJtSruu$$GZCyMLIc9ZL-USE0IQnVs",
       "component" : "OrderBy",
       "metadata" : {
-        "label" : "OrderBy_1",
-        "slug" : "OrderBy_1",
-        "x" : 1138.620874939236,
-        "y" : -173.2666666666665,
+        "label" : "ByDate",
+        "slug" : "ByDate",
+        "x" : 667.020874939236,
+        "y" : 157.93333333333348,
         "phase" : 1,
         "cache" : false,
         "detailedStats" : false,
@@ -1034,8 +1034,8 @@
       "metadata" : {
         "label" : "UnionDatasets",
         "slug" : "UnionDatasets",
-        "x" : 771.20023557897,
-        "y" : -528,
+        "x" : 800.00023557897,
+        "y" : -526.8,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -1066,8 +1066,8 @@
       "metadata" : {
         "label" : "FICOScores",
         "slug" : "FICOScores",
-        "x" : -7.199617810322167,
-        "y" : -198.00000000000006,
+        "x" : -11.999617810322206,
+        "y" : -84.00000000000007,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -1092,8 +1092,8 @@
       "metadata" : {
         "label" : "Fico_Mod",
         "slug" : "Fico_Mod",
-        "x" : 162.3155956173209,
-        "y" : -196.54999999999998,
+        "x" : 325.5155956173211,
+        "y" : 620.65,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -1146,6 +1146,270 @@
         "script" : "#from pyspark.sql.functions import max, floor, rand, date_add, split, format_string, element_at\n#import _root.pyspark.sql.utils.AnalysisException\nfrom pyspark.sql.utils import AnalysisException\ntry:\n    old_df = spark.read.format(\"delta\").load(\"dbfs:/FileStore/data/FICO_table_history\")\n    # Get the previous max date by ID\n    # Add some random wiggle to the FICO scores\n    # Select the same columns again to maintain order\n    ws = Window.partitionBy(\"CUSTOMER_ID\").orderBy(col(\"FICO_valid_until_date\").desc())\n    new_src = old_df.withColumn(\"row_num\", row_number().over(ws)) \\\n        .where(\"row_num == 1\") \\\n        .drop(\"row_num\")\n    w = new_src.withColumn(\"date_FICORange_obtained\", date_format(date_add(\"date_FICORange_obtained\", 1), \"dd-MM-yy\")) \\\n        .withColumn(\"variation\", floor((rand() - 0.5) * 50).cast(\"integer\")) \\\n        .withColumn(\"ficosplit\", split(col(\"FICORange\"), \"-\"))\\\n        .withColumn(\"FICORange\", format_string(\"%d-%d\", (element_at(col(\"ficosplit\"), 1) + col(\"variation\")).cast(\"int\"), (element_at(col(\"ficosplit\"), 2) + col(\"variation\")).cast(\"int\"))) \\\n        .drop(\"ficosplit\") \\\n        .drop(\"variation\") \\\n        .select(col(\"CUSTOMER_ID\").alias(\"ID\"), \"FICORange\", \"date_FICORange_obtained\")\n    out0 = w\nexcept AnalysisException as e:\n    out0 = in0",
         "scriptMethodHeader" : "def Script(spark: SparkSession, in0: DataFrame) -> DataFrame:",
         "scriptMethodFooter" : "    return out0"
+      }
+    },
+    "8u1LTU4s5c2HpR7a1Vzjc$$urdCCXKEJKlO8FW2FO0Zj" : {
+      "id" : "8u1LTU4s5c2HpR7a1Vzjc$$urdCCXKEJKlO8FW2FO0Zj",
+      "component" : "Subgraph",
+      "metadata" : {
+        "label" : "AuditPrep",
+        "slug" : "AuditPrep",
+        "x" : 271.06720810204354,
+        "y" : 11.116668701171875,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "BxO9iceFP-GIRXTQmnXsl$$Gwae2KjT-Pnbzzjz64jSM",
+          "slug" : "in0"
+        }, {
+          "id" : "vlPDbkPGFjAq6Uh-nESI5$$VCsx7sKFIRxQSsZBgJuyt",
+          "slug" : "in1"
+        } ],
+        "outputs" : [ {
+          "id" : "69JY0HvpxAH0-WnfR461q$$JJ2L0MwVPKcm0XBPxitsR",
+          "slug" : "out0"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : { },
+      "connections" : [ {
+        "id" : "smPOdE4GboLemfgjY9DgP",
+        "source" : "HOdEprdcStNcXo5qBsVJq$$DcU44SnrCK-QvTl4Tb8Hw",
+        "sourcePort" : "lw3FBwJT-Af1rnH-9qK_Y$$1WZQO_YII5F3F_Gjhp8w1",
+        "target" : "2no60LIW-6Yn3_3EDN6g9$$C_Wl4V1ZOATCcWhjd64-X",
+        "targetPort" : "e225SxW4Snwr2zOTCxtwk$$e54QQlsfKAG1svvIwF_HS"
+      }, {
+        "id" : "85WpaxB02oduziAZC9TtR",
+        "source" : "4j_rbye3VpJCDDdf0N_dx$$3YxEYY9f6HIalIpaN4zaa",
+        "sourcePort" : "wCUnSUAs0zV8ZdE8msVTV$$4xqDEG6qabF-WRhDrK88A",
+        "target" : "HOdEprdcStNcXo5qBsVJq$$DcU44SnrCK-QvTl4Tb8Hw",
+        "targetPort" : "pTy6vXN_1bLkYrPlI_xeZ$$keQNH9F6xUOyI7FbIEkal"
+      }, {
+        "id" : "xvWkqHgK4rouUMiv2VRpK",
+        "source" : "8u1LTU4s5c2HpR7a1Vzjc$$urdCCXKEJKlO8FW2FO0Zj",
+        "sourcePort" : "BxO9iceFP-GIRXTQmnXsl$$Gwae2KjT-Pnbzzjz64jSM",
+        "target" : "4j_rbye3VpJCDDdf0N_dx$$3YxEYY9f6HIalIpaN4zaa",
+        "targetPort" : "vHOhNWrcaoyuGCL2WTUCo$$wSS7k3GFflE9db_5tfFak"
+      }, {
+        "id" : "EdOiIKd2Bmdb3veZWhyq6",
+        "source" : "2no60LIW-6Yn3_3EDN6g9$$C_Wl4V1ZOATCcWhjd64-X",
+        "sourcePort" : "GMa2wJPGqDoDWWhNxtoML$$8HsVq9ELpmPiwhCBum8M_",
+        "target" : "8u1LTU4s5c2HpR7a1Vzjc$$urdCCXKEJKlO8FW2FO0Zj",
+        "targetPort" : "69JY0HvpxAH0-WnfR461q$$JJ2L0MwVPKcm0XBPxitsR"
+      }, {
+        "id" : "08VJeEY4H42xwXaSbVGoF",
+        "source" : "8u1LTU4s5c2HpR7a1Vzjc$$urdCCXKEJKlO8FW2FO0Zj",
+        "sourcePort" : "vlPDbkPGFjAq6Uh-nESI5$$VCsx7sKFIRxQSsZBgJuyt",
+        "target" : "HOdEprdcStNcXo5qBsVJq$$DcU44SnrCK-QvTl4Tb8Hw",
+        "targetPort" : "ONfJCVD5hDApi0WmybIPl$$wc5N9DUNBCvlCVuvNKiK3"
+      } ],
+      "processes" : {
+        "2no60LIW-6Yn3_3EDN6g9$$C_Wl4V1ZOATCcWhjd64-X" : {
+          "id" : "2no60LIW-6Yn3_3EDN6g9$$C_Wl4V1ZOATCcWhjd64-X",
+          "component" : "Reformat",
+          "metadata" : {
+            "label" : "ForSCD2_1",
+            "slug" : "ForSCD2_1",
+            "x" : 566.5517826349597,
+            "y" : 193.34999999999997,
+            "phase" : 0,
+            "cache" : false,
+            "detailedStats" : false,
+            "isImported" : false
+          },
+          "ports" : {
+            "inputs" : [ {
+              "id" : "e225SxW4Snwr2zOTCxtwk$$e54QQlsfKAG1svvIwF_HS",
+              "slug" : "in0"
+            } ],
+            "outputs" : [ {
+              "id" : "GMa2wJPGqDoDWWhNxtoML$$8HsVq9ELpmPiwhCBum8M_",
+              "slug" : "out"
+            } ],
+            "selectedInputFields" : [ ],
+            "isCustomOutputSchema" : false
+          },
+          "properties" : {
+            "importLanguage" : "python",
+            "expressions" : [ {
+              "target" : "CUSTOMER_ID",
+              "expression" : {
+                "format" : "sql",
+                "expression" : "CUSTOMER_ID"
+              },
+              "description" : ""
+            }, {
+              "target" : "CUSTOMER_NAME",
+              "expression" : {
+                "format" : "sql",
+                "expression" : "CUSTOMER_NAME"
+              },
+              "description" : ""
+            }, {
+              "target" : "FICORange",
+              "expression" : {
+                "format" : "sql",
+                "expression" : "FICORange"
+              },
+              "description" : ""
+            }, {
+              "target" : "date_FICORange_obtained",
+              "expression" : {
+                "format" : "sql",
+                "expression" : "date_add(to_date(date_FICORange_obtained, 'dd-MM-yy'), 0)"
+              },
+              "description" : ""
+            }, {
+              "target" : "FICO_valid_until_date",
+              "expression" : {
+                "format" : "sql",
+                "expression" : "date_add(to_date(date_FICORange_obtained, 'dd-MM-yy'), (120))"
+              },
+              "description" : ""
+            }, {
+              "target" : "minFlag",
+              "expression" : {
+                "format" : "sql",
+                "expression" : "lit(true)"
+              },
+              "description" : ""
+            }, {
+              "target" : "maxFlag",
+              "expression" : {
+                "format" : "sql",
+                "expression" : "lit(true)"
+              },
+              "description" : ""
+            } ],
+            "importString" : "",
+            "activeTab" : "expressions",
+            "columnsSelector" : [ "e225SxW4Snwr2zOTCxtwk$$e54QQlsfKAG1svvIwF_HS##CUSTOMER_ID", "e225SxW4Snwr2zOTCxtwk$$e54QQlsfKAG1svvIwF_HS##FICORange", "e225SxW4Snwr2zOTCxtwk$$e54QQlsfKAG1svvIwF_HS##CUSTOMER_NAME", "e225SxW4Snwr2zOTCxtwk$$e54QQlsfKAG1svvIwF_HS##date_FICORange_obtained" ]
+          }
+        },
+        "HOdEprdcStNcXo5qBsVJq$$DcU44SnrCK-QvTl4Tb8Hw" : {
+          "id" : "HOdEprdcStNcXo5qBsVJq$$DcU44SnrCK-QvTl4Tb8Hw",
+          "component" : "Join",
+          "metadata" : {
+            "label" : "ByCustomer_1",
+            "slug" : "ByCustomer_1",
+            "x" : 351.1183148451298,
+            "y" : 193.3499999999999,
+            "phase" : 0,
+            "cache" : false,
+            "detailedStats" : false,
+            "isImported" : false
+          },
+          "ports" : {
+            "inputs" : [ {
+              "id" : "pTy6vXN_1bLkYrPlI_xeZ$$keQNH9F6xUOyI7FbIEkal",
+              "slug" : "in0"
+            }, {
+              "id" : "ONfJCVD5hDApi0WmybIPl$$wc5N9DUNBCvlCVuvNKiK3",
+              "slug" : "in1"
+            } ],
+            "outputs" : [ {
+              "id" : "lw3FBwJT-Af1rnH-9qK_Y$$1WZQO_YII5F3F_Gjhp8w1",
+              "slug" : "out"
+            } ],
+            "selectedInputFields" : [ ],
+            "isCustomOutputSchema" : false
+          },
+          "properties" : {
+            "conditions" : [ {
+              "alias" : "in1",
+              "expression" : {
+                "format" : "sql",
+                "expression" : "in0.ID = in1.CUSTOMER_ID"
+              },
+              "joinType" : "inner"
+            } ],
+            "expressions" : [ ],
+            "hints" : [ {
+              "id" : "iiK-fNmMV0NQibICZ2VdF$$6CVO6WeK6KAAMazX5SsrZ",
+              "alias" : "in0",
+              "hintType" : "none",
+              "propagateColumns" : false
+            }, {
+              "id" : "sfazQfk8N1M9JnPJD6SAy$$xBo0ts6EFqSTlzRafEuX7",
+              "alias" : "in1",
+              "hintType" : "none",
+              "propagateColumns" : false
+            } ],
+            "allIn1" : null,
+            "activeTab" : "conditions",
+            "columnsSelector" : [ "iiK-fNmMV0NQibICZ2VdF$$6CVO6WeK6KAAMazX5SsrZ##ID", "sfazQfk8N1M9JnPJD6SAy$$xBo0ts6EFqSTlzRafEuX7##CUSTOMER_ID" ],
+            "allIn0" : null,
+            "whereClause" : null,
+            "headAlias" : "in0"
+          }
+        },
+        "4j_rbye3VpJCDDdf0N_dx$$3YxEYY9f6HIalIpaN4zaa" : {
+          "id" : "4j_rbye3VpJCDDdf0N_dx$$3YxEYY9f6HIalIpaN4zaa",
+          "component" : "Script",
+          "metadata" : {
+            "label" : "Fico_Mod_1",
+            "slug" : "Fico_Mod_1",
+            "x" : 143.2,
+            "y" : 70.80000000000001,
+            "phase" : 0,
+            "cache" : false,
+            "detailedStats" : false,
+            "isImported" : false
+          },
+          "ports" : {
+            "inputs" : [ {
+              "id" : "vHOhNWrcaoyuGCL2WTUCo$$wSS7k3GFflE9db_5tfFak",
+              "slug" : "in0"
+            } ],
+            "outputs" : [ {
+              "id" : "wCUnSUAs0zV8ZdE8msVTV$$4xqDEG6qabF-WRhDrK88A",
+              "slug" : "out0",
+              "schema" : {
+                "type" : "struct",
+                "fields" : [ {
+                  "name" : "ID",
+                  "type" : "string",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "FICORange",
+                  "type" : "string",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "date_FICORange_obtained",
+                  "type" : "string",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                } ]
+              }
+            } ],
+            "selectedInputFields" : [ ],
+            "isCustomOutputSchema" : true
+          },
+          "properties" : {
+            "script" : "#from pyspark.sql.functions import max, floor, rand, date_add, split, format_string, element_at\n#import _root.pyspark.sql.utils.AnalysisException\nfrom pyspark.sql.utils import AnalysisException\ntry:\n    old_df = spark.read.format(\"delta\").load(\"dbfs:/FileStore/data/FICO_table_history\")\n    # Get the previous max date by ID\n    # Add some random wiggle to the FICO scores\n    # Select the same columns again to maintain order\n    ws = Window.partitionBy(\"CUSTOMER_ID\").orderBy(col(\"FICO_valid_until_date\").desc())\n    new_src = old_df.withColumn(\"row_num\", row_number().over(ws)) \\\n        .where(\"row_num == 1\") \\\n        .drop(\"row_num\")\n    w = new_src.withColumn(\"date_FICORange_obtained\", date_format(date_add(\"date_FICORange_obtained\", 1), \"dd-MM-yy\")) \\\n        .withColumn(\"variation\", floor((rand() - 0.5) * 50).cast(\"integer\")) \\\n        .withColumn(\"ficosplit\", split(col(\"FICORange\"), \"-\"))\\\n        .withColumn(\"FICORange\", format_string(\"%d-%d\", (element_at(col(\"ficosplit\"), 1) + col(\"variation\")).cast(\"int\"), (element_at(col(\"ficosplit\"), 2) + col(\"variation\")).cast(\"int\"))) \\\n        .drop(\"ficosplit\") \\\n        .drop(\"variation\") \\\n        .select(col(\"CUSTOMER_ID\").alias(\"ID\"), \"FICORange\", \"date_FICORange_obtained\")\n    out0 = w\nexcept AnalysisException as e:\n    out0 = in0",
+            "scriptMethodHeader" : "def Script(spark: SparkSession, in0: DataFrame) -> DataFrame:",
+            "scriptMethodFooter" : "    return out0"
+          }
+        }
       }
     }
   },

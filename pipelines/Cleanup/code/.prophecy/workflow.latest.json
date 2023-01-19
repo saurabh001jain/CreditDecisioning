@@ -44,59 +44,27 @@
     "topLevelPackage" : "cleanup"
   },
   "connections" : [ {
-    "id" : "mDwQAaaCzSzMQKX7X7xYn",
-    "source" : "u0CXQrwcwT3uICxgnBhKE$$2wZyHf75nte-4_E_d3xoH",
-    "sourcePort" : "_QHn0QrMTBBAhxhcdFi6q$$JT4Vd_hTrZzur6t0JPKAl",
-    "target" : "falK8X9L0ZpSrHrrmTbDn$$oIJuKbHLyZvVxyXsTaCYO",
-    "targetPort" : "0B79btxTUBzlAd7sg-wK2$$zh_WJDW9Cek7ixdYLgYEx"
-  }, {
-    "id" : "MBgbos3CJuN7FmvG7fQsB",
-    "source" : "6TlNpxxHCVdMxLze1PJ25$$v6NKS8kacqYPEPJF6fBI8",
-    "sourcePort" : "oEPVBh1QoWDFOtaGG_jEm$$5M3pXKceW5zs6XKXCkSVQ",
-    "target" : "qJBLqTFknGM39SluSqLp8$$apnJMReQ11NHg2rA0RIdx",
-    "targetPort" : "FBzIzWM4rguQMcbsJnuyR$$QsD-M2SuEh2__2eru715H"
-  }, {
     "id" : "PV8pIejgVQjekTbPP-MLH",
     "source" : "qJBLqTFknGM39SluSqLp8$$apnJMReQ11NHg2rA0RIdx",
     "sourcePort" : "NXLeRwd_wbOUmOSVAq3qu$$QO-S_HNExTLmNxJ8v0OsW",
     "target" : "wjImUu7Ahk8IwDq5YIF27$$MoqP6VF2XE05Vu3aDrRwh",
     "targetPort" : "yUy_0D0-W0S_JNpOCY4I9$$BSz-2GmimzOVF9UK0Znpv"
+  }, {
+    "id" : "QTq8-jsBdUEBgyI7BYHGc",
+    "source" : "6TlNpxxHCVdMxLze1PJ25$$v6NKS8kacqYPEPJF6fBI8",
+    "sourcePort" : "oEPVBh1QoWDFOtaGG_jEm$$5M3pXKceW5zs6XKXCkSVQ",
+    "target" : "qJBLqTFknGM39SluSqLp8$$apnJMReQ11NHg2rA0RIdx",
+    "targetPort" : "NRJxOmC4iK7CjtxO7bpXj$$TMS9sstH7mcYD5H6IFnlx"
   } ],
   "processes" : {
-    "u0CXQrwcwT3uICxgnBhKE$$2wZyHf75nte-4_E_d3xoH" : {
-      "id" : "u0CXQrwcwT3uICxgnBhKE$$2wZyHf75nte-4_E_d3xoH",
-      "component" : "Source",
+    "qJBLqTFknGM39SluSqLp8$$apnJMReQ11NHg2rA0RIdx" : {
+      "id" : "qJBLqTFknGM39SluSqLp8$$apnJMReQ11NHg2rA0RIdx",
+      "component" : "Script",
       "metadata" : {
-        "label" : "FICO_table_history",
-        "slug" : "FICO_table_history",
-        "x" : -306.4,
-        "y" : -121.99999999999997,
-        "phase" : 0,
-        "cache" : false,
-        "detailedStats" : false,
-        "isImported" : false
-      },
-      "ports" : {
-        "inputs" : [ ],
-        "outputs" : [ {
-          "id" : "_QHn0QrMTBBAhxhcdFi6q$$JT4Vd_hTrZzur6t0JPKAl",
-          "slug" : "out"
-        } ],
-        "selectedInputFields" : [ ],
-        "isCustomOutputSchema" : false
-      },
-      "properties" : {
-        "datasetId" : "datasets/FICO_table_history"
-      }
-    },
-    "falK8X9L0ZpSrHrrmTbDn$$oIJuKbHLyZvVxyXsTaCYO" : {
-      "id" : "falK8X9L0ZpSrHrrmTbDn$$oIJuKbHLyZvVxyXsTaCYO",
-      "component" : "SchemaTransform",
-      "metadata" : {
-        "label" : "SchemaTransform_1",
-        "slug" : "SchemaTransform_1",
-        "x" : -137.19999999999993,
-        "y" : -118.79999999999998,
+        "label" : "Script_1",
+        "slug" : "Script_1",
+        "x" : -860.1999999999998,
+        "y" : -392.2000000000001,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -104,19 +72,24 @@
       },
       "ports" : {
         "inputs" : [ {
-          "id" : "0B79btxTUBzlAd7sg-wK2$$zh_WJDW9Cek7ixdYLgYEx",
+          "id" : "NRJxOmC4iK7CjtxO7bpXj$$TMS9sstH7mcYD5H6IFnlx",
           "slug" : "in0"
         } ],
         "outputs" : [ {
-          "id" : "kPgp3uHpbXWKv99r4_dLg$$WNIeD1gBYLuSUqdrPLtQQ",
-          "slug" : "out"
+          "id" : "NXLeRwd_wbOUmOSVAq3qu$$QO-S_HNExTLmNxJ8v0OsW",
+          "slug" : "out0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ ]
+          }
         } ],
         "selectedInputFields" : [ ],
-        "isCustomOutputSchema" : false
+        "isCustomOutputSchema" : true
       },
       "properties" : {
-        "columnsSelector" : [ ],
-        "transformations" : [ ]
+        "script" : "spark.sql(\"TRUNCATE TABLE delta.`dbfs:/FileStore/data/FICO_table_history`\")\n\nout0 = in0",
+        "scriptMethodHeader" : "def Script(spark: SparkSession, in0: DataFrame) -> DataFrame:",
+        "scriptMethodFooter" : "    return out0"
       }
     },
     "wjImUu7Ahk8IwDq5YIF27$$MoqP6VF2XE05Vu3aDrRwh" : {
@@ -126,7 +99,7 @@
         "label" : "Filter_1",
         "slug" : "Filter_1",
         "x" : -694.6,
-        "y" : -387.8000000000001,
+        "y" : -392.60000000000014,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -176,41 +149,6 @@
       },
       "properties" : {
         "datasetId" : "datasets/FICO_table_history"
-      }
-    },
-    "qJBLqTFknGM39SluSqLp8$$apnJMReQ11NHg2rA0RIdx" : {
-      "id" : "qJBLqTFknGM39SluSqLp8$$apnJMReQ11NHg2rA0RIdx",
-      "component" : "Script",
-      "metadata" : {
-        "label" : "Script_1",
-        "slug" : "Script_1",
-        "x" : -860.1999999999998,
-        "y" : -392.2000000000001,
-        "phase" : 0,
-        "cache" : false,
-        "detailedStats" : false,
-        "isImported" : false
-      },
-      "ports" : {
-        "inputs" : [ {
-          "id" : "FBzIzWM4rguQMcbsJnuyR$$QsD-M2SuEh2__2eru715H",
-          "slug" : "in0"
-        } ],
-        "outputs" : [ {
-          "id" : "NXLeRwd_wbOUmOSVAq3qu$$QO-S_HNExTLmNxJ8v0OsW",
-          "slug" : "out0",
-          "schema" : {
-            "type" : "struct",
-            "fields" : [ ]
-          }
-        } ],
-        "selectedInputFields" : [ ],
-        "isCustomOutputSchema" : true
-      },
-      "properties" : {
-        "script" : "spark.sql(\"truncate in0\")",
-        "scriptMethodHeader" : "def Script(spark: SparkSession, in0: DataFrame) -> DataFrame:",
-        "scriptMethodFooter" : "    return out0"
       }
     }
   },

@@ -5,17 +5,6 @@ author: sparklearner123@gmail.com
 language: python
 buildSystem: wheel
 pipelines:
-  pipelines/ImportDataOption:
-    name: ImportDataOption
-    description: ''
-    author: sparklearner123@gmail.com
-    mode: batch
-    language: python
-    createdAt: '2023-01-10 22:24:26'
-    datasets:
-      inputs: []
-      outputs: []
-    dependencies: {}
   pipelines/Cleanup:
     name: Cleanup
     description: For repeated usage, remove previously written data
@@ -26,6 +15,19 @@ pipelines:
     datasets:
       inputs:
       - datasets/FICO_table_history
+      outputs: []
+    dependencies: {}
+  pipelines/ImportDataOption:
+    name: ImportDataOption
+    description: ''
+    author: sparklearner123@gmail.com
+    mode: batch
+    language: python
+    createdAt: '2023-01-10 22:24:26'
+    datasets:
+      inputs:
+      - datasets/BNPLjson
+      - datasets/CreditReportXML
       outputs: []
     dependencies: {}
   pipelines/CreateMetrics:
@@ -59,6 +61,18 @@ datasets:
         description: ''
         author: sparklearner123@gmail.com
         createdAt: '2022-12-16 19:36:23'
+  datasets/Bureau_XML:
+    name: Bureau_XML
+    description: ''
+    author: sparklearner123@gmail.com
+    createdAt: '2023-01-18 20:54:36'
+    physicalDatasets:
+      dev:
+        fabricId: 990
+        datasetType: File
+        description: ''
+        author: sparklearner123@gmail.com
+        createdAt: '2023-01-18 20:54:36'
   datasets/ReportMetrics:
     name: ReportMetrics
     description: ''
@@ -71,18 +85,6 @@ datasets:
         description: ''
         author: sparklearner123@gmail.com
         createdAt: '2023-01-11 04:05:26'
-  datasets/credit_metrics:
-    name: credit_metrics
-    description: ''
-    author: sparklearner123@gmail.com
-    createdAt: '2022-12-16 20:38:57'
-    physicalDatasets:
-      dev:
-        fabricId: 990
-        datasetType: File
-        description: ''
-        author: sparklearner123@gmail.com
-        createdAt: '2022-12-16 20:38:57'
   datasets/loan_data:
     name: loan_data
     description: ''
@@ -95,66 +97,42 @@ datasets:
         description: ''
         author: sparklearner123@gmail.com
         createdAt: '2022-12-21 21:29:18'
-  datasets/credit_score_table:
-    name: credit_score_table
+  datasets/CreditReportXML:
+    name: CreditReportXML
     description: ''
     author: sparklearner123@gmail.com
-    createdAt: '2022-12-21 21:43:54'
-    physicalDatasets:
-      Photon:
-        fabricId: 1045
-        datasetType: File
-        description: ''
-        author: sparklearner123@gmail.com
-        createdAt: '2022-12-21 21:43:54'
-  datasets/credit_scores:
-    name: credit_scores
-    description: ''
-    author: sparklearner123@gmail.com
-    createdAt: '2023-01-10 22:43:09'
-    physicalDatasets:
-      dev:
-        fabricId: 990
-        datasetType: Database
-        description: ''
-        author: sparklearner123@gmail.com
-        createdAt: '2023-01-10 22:43:09'
-  datasets/FICO_table_hist_1:
-    name: FICO_table_hist_1
-    description: ''
-    author: sparklearner123@gmail.com
-    createdAt: '2023-01-12 21:30:07'
+    createdAt: '2023-01-18 21:12:37'
     physicalDatasets:
       dev:
         fabricId: 990
         datasetType: File
         description: ''
         author: sparklearner123@gmail.com
-        createdAt: '2023-01-12 21:30:07'
-  datasets/FICO_historical_table:
-    name: FICO_historical_table
+        createdAt: '2023-01-18 21:12:37'
+  datasets/BNPLjson:
+    name: BNPLjson
     description: ''
     author: sparklearner123@gmail.com
-    createdAt: '2023-01-10 23:23:18'
-    physicalDatasets:
-      dev:
-        fabricId: 990
-        datasetType: Database
-        description: ''
-        author: sparklearner123@gmail.com
-        createdAt: '2023-01-10 23:23:18'
-  datasets/FICO_delta:
-    name: FICO_delta
-    description: ''
-    author: sparklearner123@gmail.com
-    createdAt: '2023-01-12 19:51:50'
+    createdAt: '2023-01-18 21:14:55'
     physicalDatasets:
       dev:
         fabricId: 990
         datasetType: File
         description: ''
         author: sparklearner123@gmail.com
-        createdAt: '2023-01-12 19:51:50'
+        createdAt: '2023-01-18 21:14:55'
+  datasets/customer_info_v1:
+    name: customer_info_v1
+    description: ''
+    author: sparklearner123@gmail.com
+    createdAt: '2022-12-16 20:24:38'
+    physicalDatasets:
+      dev:
+        fabricId: 990
+        datasetType: File
+        description: ''
+        author: sparklearner123@gmail.com
+        createdAt: '2022-12-16 20:24:38'
   datasets/BNPL_LexisNexis_v1:
     name: BNPL_LexisNexis_v1
     description: ''
@@ -179,66 +157,6 @@ datasets:
         description: ''
         author: sparklearner123@gmail.com
         createdAt: '2023-01-11 16:07:03'
-  datasets/loan_data_with_name:
-    name: loan_data_with_name
-    description: ''
-    author: sparklearner123@gmail.com
-    createdAt: '2023-01-18 16:27:57'
-    physicalDatasets:
-      dev:
-        fabricId: 990
-        datasetType: File
-        description: ''
-        author: sparklearner123@gmail.com
-        createdAt: '2023-01-18 16:27:57'
-  datasets/FICO_table:
-    name: FICO_table
-    description: ''
-    author: sparklearner123@gmail.com
-    createdAt: '2023-01-11 15:38:24'
-    physicalDatasets:
-      dev:
-        fabricId: 990
-        datasetType: File
-        description: ''
-        author: sparklearner123@gmail.com
-        createdAt: '2023-01-11 15:44:57'
-  datasets/FICO_delta_table:
-    name: FICO_delta_table
-    description: ''
-    author: sparklearner123@gmail.com
-    createdAt: '2023-01-11 02:04:46'
-    physicalDatasets:
-      dev:
-        fabricId: 990
-        datasetType: File
-        description: ''
-        author: sparklearner123@gmail.com
-        createdAt: '2023-01-11 02:04:46'
-  datasets/customer_info_v1:
-    name: customer_info_v1
-    description: ''
-    author: sparklearner123@gmail.com
-    createdAt: '2022-12-16 20:24:38'
-    physicalDatasets:
-      dev:
-        fabricId: 990
-        datasetType: File
-        description: ''
-        author: sparklearner123@gmail.com
-        createdAt: '2022-12-16 20:24:38'
-  datasets/credit_metrics_2:
-    name: credit_metrics_2
-    description: ''
-    author: sparklearner123@gmail.com
-    createdAt: '2023-01-11 02:34:39'
-    physicalDatasets:
-      dev:
-        fabricId: 990
-        datasetType: File
-        description: ''
-        author: sparklearner123@gmail.com
-        createdAt: '2023-01-11 02:34:39'
 templates: {}
 jobs:
   jobs/DTIjob:
@@ -285,6 +203,13 @@ subgraphs:
     author: sparklearner123@gmail.com
     language: python
     createdAt: '2023-01-18 01:53:19'
+  subgraphs/PrepDTI:
+    name: PrepDTI
+    description: 'A standard pattern we use for parsing and unioning data from TransUnion,
+      LexisNexis, and self-reported credit. '
+    author: sparklearner123@gmail.com
+    language: python
+    createdAt: '2023-01-19 00:59:26'
 sqlModels: {}
 sqlPipeline: null
 dependencies: []

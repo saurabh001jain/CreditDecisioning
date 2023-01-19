@@ -7,8 +7,17 @@ from prophecy.utils import *
 from importdataoption.graph import *
 
 def pipeline(spark: SparkSession) -> None:
+    wgetCUSTcsv(spark)
+    wgetCREDxml(spark)
+    wgetBNPLjson(spark)
+    df_CustomerCSV = CustomerCSV(spark)
     df_BNPL_API = BNPL_API(spark)
+    df_BNPLjson = BNPLjson(spark)
+    FileOperation_2_1(spark)
     df_Filter_1 = Filter_1(spark, df_BNPL_API)
+    FileOperation_2(spark)
+    FileOperation_1(spark)
+    df_CreditXML = CreditXML(spark)
 
 def main():
     spark = SparkSession.builder\

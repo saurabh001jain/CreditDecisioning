@@ -17,15 +17,16 @@ def pipeline(spark: SparkSession) -> None:
     df_SplitByTrade_1_1_1 = SplitByTrade_1_1_1(spark, df_ByCustomerID_1_1_1)
     df_UnionDatasets = UnionDatasets(spark, df_SplitByTrade_1_1_1, df_ReorderCols)
     df_SumDebts = SumDebts(spark, df_UnionDatasets)
-    df_FICOScores = FICOScores(spark)
-    df_Fico_Mod = Fico_Mod(spark, df_FICOScores)
-    df_ByCustomer = ByCustomer(spark, df_Fico_Mod, df_Reported_Income)
+    df_Fico_Mod = Fico_Mod(spark)
+    df_ByCustomer = ByCustomer(spark, df_Fico_Mod)
     df_ForSCD2 = ForSCD2(spark, df_ByCustomer)
     ReportMetrics_1(spark, df_SumDebts)
-    FICO_table_hist(spark, df_ForSCD2)
+    df_FICOScores = FICOScores(spark)
+    df_AuditPrep = AuditPrep(spark, df_FICOScores, df_Reported_Income)
+    FICO_table_hist(spark, df_AuditPrep)
     df_FICO_table_history = FICO_table_history(spark)
-    df_OrderBy_1 = OrderBy_1(spark, df_FICO_table_history)
-    df_Filter_1 = Filter_1(spark, df_OrderBy_1)
+    df_ByDate = ByDate(spark, df_FICO_table_history)
+    df_Display = Display(spark, df_ByDate)
 
 def main():
     spark = SparkSession.builder\

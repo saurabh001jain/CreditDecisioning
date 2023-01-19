@@ -7,8 +7,6 @@ from prophecy.utils import *
 from cleanup.graph import *
 
 def pipeline(spark: SparkSession) -> None:
-    df_FICO_table_history = FICO_table_history(spark)
-    df_SchemaTransform_1 = SchemaTransform_1(spark, df_FICO_table_history)
     df_FICO_table_history_1 = FICO_table_history_1(spark)
     df_Script_1 = Script_1(spark, df_FICO_table_history_1)
     df_Filter_1 = Filter_1(spark, df_Script_1)
