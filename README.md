@@ -9,3 +9,7 @@ MVP credit decisioning and audit pipeline
 *** Release notes for version: 0.0.4 ***
 
 Adds SCD2 gems
+
+*** Release notes for version: 0.0.5 ***
+
+adds job to calculate DTI
