@@ -47,12 +47,6 @@
     "topLevelPackage" : "createmetrics"
   },
   "connections" : [ {
-    "id" : "x281CKAAZ_Pf8kRhVQo-m",
-    "source" : "ckJ5qZmmZolGdZItr9rZR$$AKDZJMbW0SyvewvwX2oaW",
-    "sourcePort" : "sSYtukI8XzDqOm1Z7Nn1d$$6VictUtr9kdg_3jnsaRY9",
-    "target" : "IncF52PcfgKKsikp__Tae$$VoWRNlz84IakC9R3JgHEd",
-    "targetPort" : "fcIHy5zA6P0xL7DxuMZwr$$HmnfWWOILH4kkS3rDmJvt"
-  }, {
     "id" : "5_m3F452TEODz0tQN0CHF",
     "source" : "W1YohIEarksA65LmhADDI$$RNPOWYM7AvpvAbHEnUb6l",
     "sourcePort" : "zz2XJu8ENg8JEZRkBawcb$$cZNBzclHZegEDSxhuM5K4",
@@ -64,12 +58,6 @@
     "sourcePort" : "u-4RGNJXjJx-XyxvopRgO$$D0B7-pDez40SFVnswih9y",
     "target" : "1yHRYSCNwpl6y26Khbq4T$$0cbnV45VsxpxRqW3KBlCj",
     "targetPort" : "USTT_1CZqACYqAZvPSRFE$$G9e83XNcnv1NyR4iitsUm"
-  }, {
-    "id" : "XMCktBC5bQIQ752cifwzN",
-    "source" : "k0iOSyZU-dBrR3JuSyIB1$$JTUdt2sk-DdOW1xSwwlOU",
-    "sourcePort" : "Pa9kwsI6DVMFmKC1vCSd9$$BS0BAldLK9A_b-273gNpq",
-    "target" : "nT3GgufGfztV6JAMErQBY$$iO3DXxaJ0tSoqlY-XnfRU",
-    "targetPort" : "CiPOVmTQsZ9V02M50V0nv$$mZhM8p7xmWpmMC3t5mq7G"
   }, {
     "id" : "BJM8GRXQ05JgjyBWpu-rv",
     "source" : "p2hFj3B6aI-Q-oGaPGvD3$$Kle5ImVwWVXIjG6X7wohh",
@@ -89,29 +77,11 @@
     "target" : "yiD2ml1pP92quZSC9DmP5$$adjzi7I3hNMbyzwhK0bkV",
     "targetPort" : "2_5NTy0vZxszOKFf8Qj0y$$Y5rFFaSgywAWNNvEkWqP3"
   }, {
-    "id" : "2LeGCfQg4O-bGG76TCQIG",
-    "source" : "rWpv78w82XnJljlG5fetx$$eoRJjnEY-iVHIdGUPNTSk",
-    "sourcePort" : "yKcbdkrJm62bQxSBJHq-0$$Kla148G0tzuTA2-Sd3bAi",
-    "target" : "nT3GgufGfztV6JAMErQBY$$iO3DXxaJ0tSoqlY-XnfRU",
-    "targetPort" : "7i1kJ6wpbfMcl5gvR3Ed_$$QlhC-X2dyF3LyPI1eAtNo"
-  }, {
-    "id" : "L3E3pMR0x0zJGeGFnsygd",
-    "source" : "MLn_R6FfvRwuTqDPDxzQl$$8JmSCg9vfuSSZFNdota6J",
-    "sourcePort" : "pu3bFFzJ7KcCxGs3roDpB$$OFemanG3IUO_xJOycqoVE",
-    "target" : "ckJ5qZmmZolGdZItr9rZR$$AKDZJMbW0SyvewvwX2oaW",
-    "targetPort" : "iiK-fNmMV0NQibICZ2VdF$$6CVO6WeK6KAAMazX5SsrZ"
-  }, {
     "id" : "suw9ZCB-y3QBleqmEi0ei",
     "source" : "_WcsMdKbDH5IxCJUxUNrq$$sr0eFpRiqutL3APNJD8pJ",
     "sourcePort" : "4Kwq2z5WoziMjek63PKfY$$vIfGBlpdQQvqWsZXlqzgw",
     "target" : "X0U8jqSqGgbnC-SnIvotT$$C0YP5ZW6VtC4p2ly4K9YU",
     "targetPort" : "1rH3FR_qDxOHT2HBygw8P$$ygd0aubwPLkeUOeTASRMR"
-  }, {
-    "id" : "I8coB1clZfyzSK5Nku6De",
-    "source" : "AXSJ_uJOjqA8QYp28QuvO$$5rvaqkUposmReGInOwXS4",
-    "sourcePort" : "fwirLzy4K8Nu6E08Utwgk$$5zFRDALN4DVVRA3iGKYcC",
-    "target" : "_WcsMdKbDH5IxCJUxUNrq$$sr0eFpRiqutL3APNJD8pJ",
-    "targetPort" : "3RkFMj3lehNgZZTiNRJFj$$LgjJWM003NP65-HIHe890"
   }, {
     "id" : "-VVBn7F1T11N3eFm0AeSe",
     "source" : "nT3GgufGfztV6JAMErQBY$$iO3DXxaJ0tSoqlY-XnfRU",
@@ -125,33 +95,51 @@
     "target" : "nxs17etMy2JrA0qbTxr2d$$_g7MP1Sr6vyR8kz-terDq",
     "targetPort" : "Lw66VrbixX5DoLwwGkMIH$$cz15Me1cpIPmHsUUy1HEU"
   }, {
-    "id" : "FiuZc5tq0KA4aiXZTloRC",
-    "source" : "pg1f2RNNICh6ZC1q1HJJI$$tE6MdfV8yIb2h8HjcIGvj",
-    "sourcePort" : "hhaYH8660Fpqa2qqGmHdy$$mil4Y0MBn9JFO33RIgfmR",
-    "target" : "8u1LTU4s5c2HpR7a1Vzjc$$urdCCXKEJKlO8FW2FO0Zj",
-    "targetPort" : "BxO9iceFP-GIRXTQmnXsl$$Gwae2KjT-Pnbzzjz64jSM"
+    "id" : "kEZ1LQ7boRVYImnUZhU-x",
+    "source" : "cEvHyW5LiDgwEjADTMs08$$TMbhTY9k5KLTo_3bgWpph",
+    "sourcePort" : "KDBALbTiu7J5DC0zrFX8t$$BCHZSe7cJCz1Tcy6FS0P5",
+    "target" : "nT3GgufGfztV6JAMErQBY$$iO3DXxaJ0tSoqlY-XnfRU",
+    "targetPort" : "CiPOVmTQsZ9V02M50V0nv$$mZhM8p7xmWpmMC3t5mq7G"
   }, {
-    "id" : "u4fjZbhH23OQL_spL2-nh",
-    "source" : "tVScpXlriINaOWiQid7uI$$XjZbWakLxwaypKViMZ0jY",
-    "sourcePort" : "XO8lzz3d99Y39tTDTzrbM$$jw9V5f1t9lbFEhDW2zzak",
-    "target" : "8u1LTU4s5c2HpR7a1Vzjc$$urdCCXKEJKlO8FW2FO0Zj",
-    "targetPort" : "vlPDbkPGFjAq6Uh-nESI5$$VCsx7sKFIRxQSsZBgJuyt"
+    "id" : "-BOPu6Svz7DSUurWNMEGs",
+    "source" : "A3R3GCMyOtfDpkXr71GIz$$mIBkY_6GN0PO6Gcv4b4Os",
+    "sourcePort" : "BGVzqYT83hQiVTCCihKOM$$_bdTY3DcX9Ce3qoVYIrXk",
+    "target" : "nT3GgufGfztV6JAMErQBY$$iO3DXxaJ0tSoqlY-XnfRU",
+    "targetPort" : "7i1kJ6wpbfMcl5gvR3Ed_$$QlhC-X2dyF3LyPI1eAtNo"
   }, {
-    "id" : "Z6ENrhN4M5UXjcpe8sYqo",
-    "source" : "8u1LTU4s5c2HpR7a1Vzjc$$urdCCXKEJKlO8FW2FO0Zj",
-    "sourcePort" : "69JY0HvpxAH0-WnfR461q$$JJ2L0MwVPKcm0XBPxitsR",
-    "target" : "pVmWfAWXkj9CcVpcNvPEM$$5lxfmUVad0pGZ-qMN5zVl",
-    "targetPort" : "6diC2pcnNHBy_XeRNIX8u$$zrpe0v_SlGzQbzJ7Hmp34"
+    "id" : "o7xxpvE4L3TTjxBpIaBAL",
+    "source" : "uWLS97bpRX-ecdGiQ3fOl$$ttwTt4rSKAAxB8fUWnAob",
+    "sourcePort" : "ePiMVSeMRsPX23hVruzys$$JR38qJUkxsTgZHdhnKoAp",
+    "target" : "_WcsMdKbDH5IxCJUxUNrq$$sr0eFpRiqutL3APNJD8pJ",
+    "targetPort" : "3RkFMj3lehNgZZTiNRJFj$$LgjJWM003NP65-HIHe890"
+  }, {
+    "id" : "B-nLMwGtdp9Ih5HrTEr4G",
+    "source" : "O97xQ3Gzg1Tz2LFyftOtj$$1V4kglY7Nb4L_O91jMvws",
+    "sourcePort" : "uSbQ9h2tVYzKTWxY1nGoh$$hbiBcLQ_kfzSzgezAu4oI",
+    "target" : "8u1LTU4s5c2HpR7a1Vzjc$$6KcU3F-3b6npPKvTZV-do",
+    "targetPort" : "BxO9iceFP-GIRXTQmnXsl$$clQeijzRf9ROtZhrNcQAI"
+  }, {
+    "id" : "m1lBsBip_RGCH4GThE1-g",
+    "source" : "G6RSwsB-l_jLuWS0QE-4E$$vxWZVgRQBfJodGgJY6DH2",
+    "sourcePort" : "rQEJwwppCgrGUG4ABjQUg$$yGvw-xaSdJgEHoyVYSXHo",
+    "target" : "8u1LTU4s5c2HpR7a1Vzjc$$6KcU3F-3b6npPKvTZV-do",
+    "targetPort" : "vlPDbkPGFjAq6Uh-nESI5$$me-IAxyJbYaHInotLUGKs"
+  }, {
+    "id" : "EjPB6Rp_6_5uozr_H8Hj4",
+    "source" : "8u1LTU4s5c2HpR7a1Vzjc$$6KcU3F-3b6npPKvTZV-do",
+    "sourcePort" : "69JY0HvpxAH0-WnfR461q$$S58FPy9RGrfayVxmy7JcS",
+    "target" : "5_kPj4DuTYF83DsOjFDGq$$mTK5VncxDCgMZkCBCVFlz",
+    "targetPort" : "YK7LI99V79V54X3cz62X-$$jsXEpU5tkRZ26GiKS4k1P"
   } ],
   "processes" : {
-    "rWpv78w82XnJljlG5fetx$$eoRJjnEY-iVHIdGUPNTSk" : {
-      "id" : "rWpv78w82XnJljlG5fetx$$eoRJjnEY-iVHIdGUPNTSk",
+    "cEvHyW5LiDgwEjADTMs08$$TMbhTY9k5KLTo_3bgWpph" : {
+      "id" : "cEvHyW5LiDgwEjADTMs08$$TMbhTY9k5KLTo_3bgWpph",
       "component" : "Source",
       "metadata" : {
-        "label" : "Bureau_Source",
-        "slug" : "Bureau_Source",
-        "x" : 12.00062182540708,
-        "y" : -540.7999999999995,
+        "label" : "Income",
+        "slug" : "Income",
+        "x" : 166.05871474078526,
+        "y" : -709.9499999999999,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -160,14 +148,14 @@
       "ports" : {
         "inputs" : [ ],
         "outputs" : [ {
-          "id" : "yKcbdkrJm62bQxSBJHq-0$$Kla148G0tzuTA2-Sd3bAi",
+          "id" : "KDBALbTiu7J5DC0zrFX8t$$BCHZSe7cJCz1Tcy6FS0P5",
           "slug" : "out"
         } ],
         "selectedInputFields" : [ ],
         "isCustomOutputSchema" : false
       },
       "properties" : {
-        "datasetId" : "datasets/credit_report_and_tradelines_v2"
+        "datasetId" : "datasets/CustIncomeCSV"
       }
     },
     "X0U8jqSqGgbnC-SnIvotT$$C0YP5ZW6VtC4p2ly4K9YU" : {
@@ -224,14 +212,14 @@
         "columnsSelector" : [ "1rH3FR_qDxOHT2HBygw8P$$ygd0aubwPLkeUOeTASRMR##REPORTED_INCOME", "1rH3FR_qDxOHT2HBygw8P$$ygd0aubwPLkeUOeTASRMR##monthly_loan_amount", "1rH3FR_qDxOHT2HBygw8P$$ygd0aubwPLkeUOeTASRMR##Name" ]
       }
     },
-    "AXSJ_uJOjqA8QYp28QuvO$$5rvaqkUposmReGInOwXS4" : {
-      "id" : "AXSJ_uJOjqA8QYp28QuvO$$5rvaqkUposmReGInOwXS4",
+    "G6RSwsB-l_jLuWS0QE-4E$$vxWZVgRQBfJodGgJY6DH2" : {
+      "id" : "G6RSwsB-l_jLuWS0QE-4E$$vxWZVgRQBfJodGgJY6DH2",
       "component" : "Source",
       "metadata" : {
-        "label" : "BNPL_LexisNexis_v1",
-        "slug" : "BNPL_LexisNexis_v1",
-        "x" : 3.4650499270834985,
-        "y" : -387.55000000000007,
+        "label" : "CustIncome",
+        "slug" : "CustIncome",
+        "x" : 168.88788101633907,
+        "y" : 10.22500000000008,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -240,14 +228,40 @@
       "ports" : {
         "inputs" : [ ],
         "outputs" : [ {
-          "id" : "fwirLzy4K8Nu6E08Utwgk$$5zFRDALN4DVVRA3iGKYcC",
+          "id" : "rQEJwwppCgrGUG4ABjQUg$$yGvw-xaSdJgEHoyVYSXHo",
           "slug" : "out"
         } ],
         "selectedInputFields" : [ ],
         "isCustomOutputSchema" : false
       },
       "properties" : {
-        "datasetId" : "datasets/BNPL_LexisNexis_v1"
+        "datasetId" : "datasets/customer_info_v1"
+      }
+    },
+    "uWLS97bpRX-ecdGiQ3fOl$$ttwTt4rSKAAxB8fUWnAob" : {
+      "id" : "uWLS97bpRX-ecdGiQ3fOl$$ttwTt4rSKAAxB8fUWnAob",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "LexisNexis",
+        "slug" : "LexisNexis",
+        "x" : 156.45871474078524,
+        "y" : -322.3499999999999,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "ePiMVSeMRsPX23hVruzys$$JR38qJUkxsTgZHdhnKoAp",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/BNPLjsonIngest"
       }
     },
     "_WcsMdKbDH5IxCJUxUNrq$$sr0eFpRiqutL3APNJD8pJ" : {
@@ -424,41 +438,15 @@
         } ]
       }
     },
-    "tVScpXlriINaOWiQid7uI$$XjZbWakLxwaypKViMZ0jY" : {
-      "id" : "tVScpXlriINaOWiQid7uI$$XjZbWakLxwaypKViMZ0jY",
-      "component" : "Source",
-      "metadata" : {
-        "label" : "Reported_Income",
-        "slug" : "Reported_Income",
-        "x" : -10.799475792321573,
-        "y" : 106.40000000000003,
-        "phase" : 0,
-        "cache" : false,
-        "detailedStats" : false,
-        "isImported" : false
-      },
-      "ports" : {
-        "inputs" : [ ],
-        "outputs" : [ {
-          "id" : "XO8lzz3d99Y39tTDTzrbM$$jw9V5f1t9lbFEhDW2zzak",
-          "slug" : "out"
-        } ],
-        "selectedInputFields" : [ ],
-        "isCustomOutputSchema" : false
-      },
-      "properties" : {
-        "datasetId" : "datasets/customer_info_v1"
-      }
-    },
     "iKXroN4VfybRKXTP1qBDR$$B83PiGOEwas1dzjtd0EJ8" : {
       "id" : "iKXroN4VfybRKXTP1qBDR$$B83PiGOEwas1dzjtd0EJ8",
       "component" : "Filter",
       "metadata" : {
         "label" : "Display",
         "slug" : "Display",
-        "x" : 830.2208749392361,
-        "y" : 157.93333333333348,
-        "phase" : 1,
+        "x" : 1007.8208749392361,
+        "y" : 47.533333333333644,
+        "phase" : 2,
         "cache" : false,
         "detailedStats" : false,
         "isImported" : false
@@ -487,10 +475,10 @@
       "id" : "nxs17etMy2JrA0qbTxr2d$$_g7MP1Sr6vyR8kz-terDq",
       "component" : "Aggregate",
       "metadata" : {
-        "label" : "SumDebts",
-        "slug" : "SumDebts",
-        "x" : 1008.4003647684474,
-        "y" : -526.7999999999998,
+        "label" : "DebtsMonthly",
+        "slug" : "DebtsMonthly",
+        "x" : 1007.2003647684473,
+        "y" : -524.3999999999997,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -550,9 +538,9 @@
       "metadata" : {
         "label" : "FICO_table_history",
         "slug" : "FICO_table_history",
-        "x" : 513.9155956173212,
-        "y" : 159.2833333333334,
-        "phase" : 1,
+        "x" : 691.5155956173212,
+        "y" : 48.88333333333355,
+        "phase" : 2,
         "cache" : false,
         "detailedStats" : false,
         "isImported" : false
@@ -570,94 +558,12 @@
         "datasetId" : "datasets/FICO_table_history"
       }
     },
-    "IncF52PcfgKKsikp__Tae$$VoWRNlz84IakC9R3JgHEd" : {
-      "id" : "IncF52PcfgKKsikp__Tae$$VoWRNlz84IakC9R3JgHEd",
-      "component" : "Reformat",
-      "metadata" : {
-        "label" : "ForSCD2",
-        "slug" : "ForSCD2",
-        "x" : 732.0673782522808,
-        "y" : 634,
-        "phase" : 0,
-        "cache" : false,
-        "detailedStats" : false,
-        "isImported" : false
-      },
-      "ports" : {
-        "inputs" : [ {
-          "id" : "fcIHy5zA6P0xL7DxuMZwr$$HmnfWWOILH4kkS3rDmJvt",
-          "slug" : "in0"
-        } ],
-        "outputs" : [ {
-          "id" : "KhTlUQZXQh7GLdXud6ZeF$$rLwwPB5UZixbZxt6rZLNH",
-          "slug" : "out"
-        } ],
-        "selectedInputFields" : [ ],
-        "isCustomOutputSchema" : false
-      },
-      "properties" : {
-        "importLanguage" : "python",
-        "expressions" : [ {
-          "target" : "CUSTOMER_ID",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "CUSTOMER_ID"
-          },
-          "description" : ""
-        }, {
-          "target" : "CUSTOMER_NAME",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "CUSTOMER_NAME"
-          },
-          "description" : ""
-        }, {
-          "target" : "FICORange",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "FICORange"
-          },
-          "description" : ""
-        }, {
-          "target" : "date_FICORange_obtained",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "date_add(to_date(date_FICORange_obtained, 'dd-MM-yy'), 0)"
-          },
-          "description" : ""
-        }, {
-          "target" : "FICO_valid_until_date",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "date_add(to_date(date_FICORange_obtained, 'dd-MM-yy'), (120))"
-          },
-          "description" : ""
-        }, {
-          "target" : "minFlag",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "lit(true)"
-          },
-          "description" : ""
-        }, {
-          "target" : "maxFlag",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "lit(true)"
-          },
-          "description" : ""
-        } ],
-        "importString" : "",
-        "activeTab" : "expressions",
-        "columnsSelector" : [ ]
-      }
-    },
     "nT3GgufGfztV6JAMErQBY$$iO3DXxaJ0tSoqlY-XnfRU" : {
       "id" : "nT3GgufGfztV6JAMErQBY$$iO3DXxaJ0tSoqlY-XnfRU",
       "component" : "Join",
       "metadata" : {
-        "label" : "ByCustomerID_1_1_1",
-        "slug" : "ByCustomerID_1_1_1",
+        "label" : "ByCustomerID",
+        "slug" : "ByCustomerID",
         "x" : 373.6002289599304,
         "y" : -654.4000000000001,
         "phase" : 0,
@@ -713,10 +619,10 @@
       "id" : "yiD2ml1pP92quZSC9DmP5$$adjzi7I3hNMbyzwhK0bkV",
       "component" : "Target",
       "metadata" : {
-        "label" : "ReportMetrics_1",
-        "slug" : "ReportMetrics_1",
-        "x" : 1257.3170472918925,
-        "y" : -525.5888888888885,
+        "label" : "ReportDTI",
+        "slug" : "ReportDTI",
+        "x" : 1253.7170472918926,
+        "y" : -523.1888888888884,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -735,71 +641,14 @@
         "datasetId" : "datasets/ReportMetrics"
       }
     },
-    "ckJ5qZmmZolGdZItr9rZR$$AKDZJMbW0SyvewvwX2oaW" : {
-      "id" : "ckJ5qZmmZolGdZItr9rZR$$AKDZJMbW0SyvewvwX2oaW",
-      "component" : "Join",
-      "metadata" : {
-        "label" : "ByCustomer",
-        "slug" : "ByCustomer",
-        "x" : 516.6339104624509,
-        "y" : 633.9999999999999,
-        "phase" : 0,
-        "cache" : false,
-        "detailedStats" : false,
-        "isImported" : false
-      },
-      "ports" : {
-        "inputs" : [ {
-          "id" : "iiK-fNmMV0NQibICZ2VdF$$6CVO6WeK6KAAMazX5SsrZ",
-          "slug" : "in0"
-        }, {
-          "id" : "sfazQfk8N1M9JnPJD6SAy$$xBo0ts6EFqSTlzRafEuX7",
-          "slug" : "in1"
-        } ],
-        "outputs" : [ {
-          "id" : "sSYtukI8XzDqOm1Z7Nn1d$$6VictUtr9kdg_3jnsaRY9",
-          "slug" : "out"
-        } ],
-        "selectedInputFields" : [ ],
-        "isCustomOutputSchema" : false
-      },
-      "properties" : {
-        "conditions" : [ {
-          "alias" : "in1",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "in0.ID = in1.CUSTOMER_ID"
-          },
-          "joinType" : "inner"
-        } ],
-        "expressions" : [ ],
-        "hints" : [ {
-          "id" : "iiK-fNmMV0NQibICZ2VdF$$6CVO6WeK6KAAMazX5SsrZ",
-          "alias" : "in0",
-          "hintType" : "none",
-          "propagateColumns" : false
-        }, {
-          "id" : "sfazQfk8N1M9JnPJD6SAy$$xBo0ts6EFqSTlzRafEuX7",
-          "alias" : "in1",
-          "hintType" : "none",
-          "propagateColumns" : false
-        } ],
-        "allIn1" : null,
-        "activeTab" : "conditions",
-        "columnsSelector" : [ ],
-        "allIn0" : null,
-        "whereClause" : null,
-        "headAlias" : "in0"
-      }
-    },
-    "k0iOSyZU-dBrR3JuSyIB1$$JTUdt2sk-DdOW1xSwwlOU" : {
-      "id" : "k0iOSyZU-dBrR3JuSyIB1$$JTUdt2sk-DdOW1xSwwlOU",
+    "O97xQ3Gzg1Tz2LFyftOtj$$1V4kglY7Nb4L_O91jMvws" : {
+      "id" : "O97xQ3Gzg1Tz2LFyftOtj$$1V4kglY7Nb4L_O91jMvws",
       "component" : "Source",
       "metadata" : {
-        "label" : "ReportedIncome",
-        "slug" : "ReportedIncome",
-        "x" : -0.13495007291663796,
-        "y" : -692.3499999999999,
+        "label" : "FICOScores",
+        "slug" : "FICOScores",
+        "x" : 164.48788101633903,
+        "y" : -158.9749999999999,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -808,48 +657,22 @@
       "ports" : {
         "inputs" : [ ],
         "outputs" : [ {
-          "id" : "Pa9kwsI6DVMFmKC1vCSd9$$BS0BAldLK9A_b-273gNpq",
+          "id" : "uSbQ9h2tVYzKTWxY1nGoh$$hbiBcLQ_kfzSzgezAu4oI",
           "slug" : "out"
         } ],
         "selectedInputFields" : [ ],
         "isCustomOutputSchema" : false
       },
       "properties" : {
-        "datasetId" : "datasets/customer_info_v1"
-      }
-    },
-    "pVmWfAWXkj9CcVpcNvPEM$$5lxfmUVad0pGZ-qMN5zVl" : {
-      "id" : "pVmWfAWXkj9CcVpcNvPEM$$5lxfmUVad0pGZ-qMN5zVl",
-      "component" : "Target",
-      "metadata" : {
-        "label" : "FICO_table_hist",
-        "slug" : "FICO_table_hist",
-        "x" : 506.8587147407852,
-        "y" : 10.099999999999937,
-        "phase" : 0,
-        "cache" : false,
-        "detailedStats" : false,
-        "isImported" : false
-      },
-      "ports" : {
-        "inputs" : [ {
-          "id" : "6diC2pcnNHBy_XeRNIX8u$$zrpe0v_SlGzQbzJ7Hmp34",
-          "slug" : "in0"
-        } ],
-        "outputs" : [ ],
-        "selectedInputFields" : [ ],
-        "isCustomOutputSchema" : false
-      },
-      "properties" : {
-        "datasetId" : "datasets/FICO_table_history"
+        "datasetId" : "datasets/loan_data"
       }
     },
     "W1YohIEarksA65LmhADDI$$RNPOWYM7AvpvAbHEnUb6l" : {
       "id" : "W1YohIEarksA65LmhADDI$$RNPOWYM7AvpvAbHEnUb6l",
       "component" : "SchemaTransform",
       "metadata" : {
-        "label" : "SplitByTrade_1_1_1",
-        "slug" : "SplitByTrade_1_1_1",
+        "label" : "ParseAmount",
+        "slug" : "ParseAmount",
         "x" : 606.0003512744722,
         "y" : -655.6000000000001,
         "phase" : 0,
@@ -870,7 +693,7 @@
         "isCustomOutputSchema" : false
       },
       "properties" : {
-        "columnsSelector" : [ "x-pKAcfXwHwvDBXibtccP$$O7hBGnS33pFSFVhgL6GjV##Trades.Trade", "x-pKAcfXwHwvDBXibtccP$$O7hBGnS33pFSFVhgL6GjV##Address", "x-pKAcfXwHwvDBXibtccP$$O7hBGnS33pFSFVhgL6GjV##CUSTOMER_ID", "x-pKAcfXwHwvDBXibtccP$$O7hBGnS33pFSFVhgL6GjV##DOB", "x-pKAcfXwHwvDBXibtccP$$O7hBGnS33pFSFVhgL6GjV##CUSTOMER_NAME", "x-pKAcfXwHwvDBXibtccP$$O7hBGnS33pFSFVhgL6GjV##SSN", "x-pKAcfXwHwvDBXibtccP$$O7hBGnS33pFSFVhgL6GjV##Trades" ],
+        "columnsSelector" : [ "x-pKAcfXwHwvDBXibtccP$$O7hBGnS33pFSFVhgL6GjV##Trades.Trade", "x-pKAcfXwHwvDBXibtccP$$O7hBGnS33pFSFVhgL6GjV##Address", "x-pKAcfXwHwvDBXibtccP$$O7hBGnS33pFSFVhgL6GjV##CUSTOMER_ID", "x-pKAcfXwHwvDBXibtccP$$O7hBGnS33pFSFVhgL6GjV##DOB", "x-pKAcfXwHwvDBXibtccP$$O7hBGnS33pFSFVhgL6GjV##REPORTED_INCOME", "x-pKAcfXwHwvDBXibtccP$$O7hBGnS33pFSFVhgL6GjV##SSN", "x-pKAcfXwHwvDBXibtccP$$O7hBGnS33pFSFVhgL6GjV##CUSTOMER_NAME", "x-pKAcfXwHwvDBXibtccP$$O7hBGnS33pFSFVhgL6GjV##Trades" ],
         "transformations" : [ {
           "kind" : "AddReplaceColumn",
           "AddReplaceColumn" : {
@@ -983,6 +806,22 @@
               "format" : "python"
             }
           }
+        }, {
+          "kind" : "AddReplaceColumn",
+          "AddReplaceColumn" : {
+            "sourceColumn" : "REPORTED_INCOME",
+            "expression" : {
+              "format" : "sql",
+              "expression" : "cast(REPORTED_INCOME as long)"
+            }
+          },
+          "DropColumn" : {
+            "sourceColumn" : ""
+          },
+          "RenameColumn" : {
+            "sourceColumn" : "",
+            "targetColumn" : ""
+          }
         } ]
       }
     },
@@ -992,9 +831,9 @@
       "metadata" : {
         "label" : "ByDate",
         "slug" : "ByDate",
-        "x" : 667.020874939236,
-        "y" : 157.93333333333348,
-        "phase" : 1,
+        "x" : 844.6208749392358,
+        "y" : 47.533333333333644,
+        "phase" : 2,
         "cache" : false,
         "detailedStats" : false,
         "isImported" : false
@@ -1032,8 +871,8 @@
       "id" : "1yHRYSCNwpl6y26Khbq4T$$0cbnV45VsxpxRqW3KBlCj",
       "component" : "SetOperation",
       "metadata" : {
-        "label" : "UnionDatasets",
-        "slug" : "UnionDatasets",
+        "label" : "UnionData",
+        "slug" : "UnionData",
         "x" : 800.00023557897,
         "y" : -526.8,
         "phase" : 0,
@@ -1060,163 +899,79 @@
         "operationType" : "unionAll"
       }
     },
-    "pg1f2RNNICh6ZC1q1HJJI$$tE6MdfV8yIb2h8HjcIGvj" : {
-      "id" : "pg1f2RNNICh6ZC1q1HJJI$$tE6MdfV8yIb2h8HjcIGvj",
-      "component" : "Source",
-      "metadata" : {
-        "label" : "FICOScores",
-        "slug" : "FICOScores",
-        "x" : -11.999617810322206,
-        "y" : -84.00000000000007,
-        "phase" : 0,
-        "cache" : false,
-        "detailedStats" : false,
-        "isImported" : false
-      },
-      "ports" : {
-        "inputs" : [ ],
-        "outputs" : [ {
-          "id" : "hhaYH8660Fpqa2qqGmHdy$$mil4Y0MBn9JFO33RIgfmR",
-          "slug" : "out"
-        } ],
-        "selectedInputFields" : [ ],
-        "isCustomOutputSchema" : false
-      },
-      "properties" : {
-        "datasetId" : "datasets/loan_data"
-      }
-    },
-    "MLn_R6FfvRwuTqDPDxzQl$$8JmSCg9vfuSSZFNdota6J" : {
-      "id" : "MLn_R6FfvRwuTqDPDxzQl$$8JmSCg9vfuSSZFNdota6J",
-      "component" : "Script",
-      "metadata" : {
-        "label" : "Fico_Mod",
-        "slug" : "Fico_Mod",
-        "x" : 325.5155956173211,
-        "y" : 620.65,
-        "phase" : 0,
-        "cache" : false,
-        "detailedStats" : false,
-        "isImported" : false
-      },
-      "ports" : {
-        "inputs" : [ {
-          "id" : "WNupvmJuVkRQdV7IfM8aM$$4fYShl6PFVKo4OJ3orYFm",
-          "slug" : "in0"
-        } ],
-        "outputs" : [ {
-          "id" : "pu3bFFzJ7KcCxGs3roDpB$$OFemanG3IUO_xJOycqoVE",
-          "slug" : "out0",
-          "schema" : {
-            "type" : "struct",
-            "fields" : [ {
-              "name" : "ID",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "FICORange",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "date_FICORange_obtained",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            } ]
-          }
-        } ],
-        "selectedInputFields" : [ ],
-        "isCustomOutputSchema" : true
-      },
-      "properties" : {
-        "script" : "#from pyspark.sql.functions import max, floor, rand, date_add, split, format_string, element_at\n#import _root.pyspark.sql.utils.AnalysisException\nfrom pyspark.sql.utils import AnalysisException\ntry:\n    old_df = spark.read.format(\"delta\").load(\"dbfs:/FileStore/data/FICO_table_history\")\n    # Get the previous max date by ID\n    # Add some random wiggle to the FICO scores\n    # Select the same columns again to maintain order\n    ws = Window.partitionBy(\"CUSTOMER_ID\").orderBy(col(\"FICO_valid_until_date\").desc())\n    new_src = old_df.withColumn(\"row_num\", row_number().over(ws)) \\\n        .where(\"row_num == 1\") \\\n        .drop(\"row_num\")\n    w = new_src.withColumn(\"date_FICORange_obtained\", date_format(date_add(\"date_FICORange_obtained\", 1), \"dd-MM-yy\")) \\\n        .withColumn(\"variation\", floor((rand() - 0.5) * 50).cast(\"integer\")) \\\n        .withColumn(\"ficosplit\", split(col(\"FICORange\"), \"-\"))\\\n        .withColumn(\"FICORange\", format_string(\"%d-%d\", (element_at(col(\"ficosplit\"), 1) + col(\"variation\")).cast(\"int\"), (element_at(col(\"ficosplit\"), 2) + col(\"variation\")).cast(\"int\"))) \\\n        .drop(\"ficosplit\") \\\n        .drop(\"variation\") \\\n        .select(col(\"CUSTOMER_ID\").alias(\"ID\"), \"FICORange\", \"date_FICORange_obtained\")\n    out0 = w\nexcept AnalysisException as e:\n    out0 = in0",
-        "scriptMethodHeader" : "def Script(spark: SparkSession, in0: DataFrame) -> DataFrame:",
-        "scriptMethodFooter" : "    return out0"
-      }
-    },
-    "8u1LTU4s5c2HpR7a1Vzjc$$urdCCXKEJKlO8FW2FO0Zj" : {
-      "id" : "8u1LTU4s5c2HpR7a1Vzjc$$urdCCXKEJKlO8FW2FO0Zj",
+    "8u1LTU4s5c2HpR7a1Vzjc$$6KcU3F-3b6npPKvTZV-do" : {
+      "id" : "8u1LTU4s5c2HpR7a1Vzjc$$6KcU3F-3b6npPKvTZV-do",
       "component" : "Subgraph",
       "metadata" : {
-        "label" : "AuditPrep",
-        "slug" : "AuditPrep",
-        "x" : 271.06720810204354,
-        "y" : 11.116668701171875,
-        "phase" : 0,
+        "label" : "AuditLogic",
+        "slug" : "AuditLogic",
+        "x" : 452.5665665980885,
+        "y" : -107.7100036621093,
+        "phase" : 1,
         "cache" : false,
         "detailedStats" : false,
         "isImported" : false
       },
       "ports" : {
         "inputs" : [ {
-          "id" : "BxO9iceFP-GIRXTQmnXsl$$Gwae2KjT-Pnbzzjz64jSM",
+          "id" : "BxO9iceFP-GIRXTQmnXsl$$clQeijzRf9ROtZhrNcQAI",
           "slug" : "in0"
         }, {
-          "id" : "vlPDbkPGFjAq6Uh-nESI5$$VCsx7sKFIRxQSsZBgJuyt",
+          "id" : "vlPDbkPGFjAq6Uh-nESI5$$me-IAxyJbYaHInotLUGKs",
           "slug" : "in1"
         } ],
         "outputs" : [ {
-          "id" : "69JY0HvpxAH0-WnfR461q$$JJ2L0MwVPKcm0XBPxitsR",
+          "id" : "69JY0HvpxAH0-WnfR461q$$S58FPy9RGrfayVxmy7JcS",
           "slug" : "out0"
         } ],
         "selectedInputFields" : [ ],
         "isCustomOutputSchema" : false
       },
-      "properties" : { },
+      "properties" : {
+        "packageName" : "com.contoso",
+        "externalId" : "subgraphs/TestAuditPrepGraph",
+        "name" : "TestAuditPrepGraph"
+      },
       "connections" : [ {
-        "id" : "smPOdE4GboLemfgjY9DgP",
-        "source" : "HOdEprdcStNcXo5qBsVJq$$DcU44SnrCK-QvTl4Tb8Hw",
-        "sourcePort" : "lw3FBwJT-Af1rnH-9qK_Y$$1WZQO_YII5F3F_Gjhp8w1",
-        "target" : "2no60LIW-6Yn3_3EDN6g9$$C_Wl4V1ZOATCcWhjd64-X",
-        "targetPort" : "e225SxW4Snwr2zOTCxtwk$$e54QQlsfKAG1svvIwF_HS"
+        "id" : "dlt01YkNLjsLuRDoxj5I7",
+        "source" : "HOdEprdcStNcXo5qBsVJq$$E705sSHi2yXeOqlKKge_K",
+        "sourcePort" : "lw3FBwJT-Af1rnH-9qK_Y$$FNHkfNH70bMEYib8v7Qch",
+        "target" : "2no60LIW-6Yn3_3EDN6g9$$Bkkgk0e9P5CgdQr9oFgve",
+        "targetPort" : "e225SxW4Snwr2zOTCxtwk$$hIdyXAtZyG8Ynnq6g4Qjz"
       }, {
-        "id" : "85WpaxB02oduziAZC9TtR",
-        "source" : "4j_rbye3VpJCDDdf0N_dx$$3YxEYY9f6HIalIpaN4zaa",
-        "sourcePort" : "wCUnSUAs0zV8ZdE8msVTV$$4xqDEG6qabF-WRhDrK88A",
-        "target" : "HOdEprdcStNcXo5qBsVJq$$DcU44SnrCK-QvTl4Tb8Hw",
-        "targetPort" : "pTy6vXN_1bLkYrPlI_xeZ$$keQNH9F6xUOyI7FbIEkal"
+        "id" : "3yykUTJqvxjn7LSMrBsBe",
+        "source" : "4j_rbye3VpJCDDdf0N_dx$$Ofio9JNfijvwqjtVDfEGl",
+        "sourcePort" : "wCUnSUAs0zV8ZdE8msVTV$$Lson_DzymoxtQK60LLDLB",
+        "target" : "HOdEprdcStNcXo5qBsVJq$$E705sSHi2yXeOqlKKge_K",
+        "targetPort" : "pTy6vXN_1bLkYrPlI_xeZ$$L7PcJtAgkpwulukmpgMwC"
       }, {
-        "id" : "xvWkqHgK4rouUMiv2VRpK",
-        "source" : "8u1LTU4s5c2HpR7a1Vzjc$$urdCCXKEJKlO8FW2FO0Zj",
-        "sourcePort" : "BxO9iceFP-GIRXTQmnXsl$$Gwae2KjT-Pnbzzjz64jSM",
-        "target" : "4j_rbye3VpJCDDdf0N_dx$$3YxEYY9f6HIalIpaN4zaa",
-        "targetPort" : "vHOhNWrcaoyuGCL2WTUCo$$wSS7k3GFflE9db_5tfFak"
+        "id" : "sEm1cDqc1D5V8ZswHHGKW",
+        "source" : "8u1LTU4s5c2HpR7a1Vzjc$$6KcU3F-3b6npPKvTZV-do",
+        "sourcePort" : "BxO9iceFP-GIRXTQmnXsl$$clQeijzRf9ROtZhrNcQAI",
+        "target" : "4j_rbye3VpJCDDdf0N_dx$$Ofio9JNfijvwqjtVDfEGl",
+        "targetPort" : "vHOhNWrcaoyuGCL2WTUCo$$1bmGUbKP0laBTI9uCUh_R"
       }, {
-        "id" : "EdOiIKd2Bmdb3veZWhyq6",
-        "source" : "2no60LIW-6Yn3_3EDN6g9$$C_Wl4V1ZOATCcWhjd64-X",
-        "sourcePort" : "GMa2wJPGqDoDWWhNxtoML$$8HsVq9ELpmPiwhCBum8M_",
-        "target" : "8u1LTU4s5c2HpR7a1Vzjc$$urdCCXKEJKlO8FW2FO0Zj",
-        "targetPort" : "69JY0HvpxAH0-WnfR461q$$JJ2L0MwVPKcm0XBPxitsR"
+        "id" : "OBFj4SIuuKK-cBNIiYexN",
+        "source" : "2no60LIW-6Yn3_3EDN6g9$$Bkkgk0e9P5CgdQr9oFgve",
+        "sourcePort" : "GMa2wJPGqDoDWWhNxtoML$$iQNP3hbDBozAx5JiAhd-3",
+        "target" : "8u1LTU4s5c2HpR7a1Vzjc$$6KcU3F-3b6npPKvTZV-do",
+        "targetPort" : "69JY0HvpxAH0-WnfR461q$$S58FPy9RGrfayVxmy7JcS"
       }, {
-        "id" : "08VJeEY4H42xwXaSbVGoF",
-        "source" : "8u1LTU4s5c2HpR7a1Vzjc$$urdCCXKEJKlO8FW2FO0Zj",
-        "sourcePort" : "vlPDbkPGFjAq6Uh-nESI5$$VCsx7sKFIRxQSsZBgJuyt",
-        "target" : "HOdEprdcStNcXo5qBsVJq$$DcU44SnrCK-QvTl4Tb8Hw",
-        "targetPort" : "ONfJCVD5hDApi0WmybIPl$$wc5N9DUNBCvlCVuvNKiK3"
+        "id" : "7SAw9TPtg2XhC5dXpWYIl",
+        "source" : "8u1LTU4s5c2HpR7a1Vzjc$$6KcU3F-3b6npPKvTZV-do",
+        "sourcePort" : "vlPDbkPGFjAq6Uh-nESI5$$me-IAxyJbYaHInotLUGKs",
+        "target" : "HOdEprdcStNcXo5qBsVJq$$E705sSHi2yXeOqlKKge_K",
+        "targetPort" : "ONfJCVD5hDApi0WmybIPl$$NTWq7YoJ3XRiaoLdD1p1A"
       } ],
       "processes" : {
-        "2no60LIW-6Yn3_3EDN6g9$$C_Wl4V1ZOATCcWhjd64-X" : {
-          "id" : "2no60LIW-6Yn3_3EDN6g9$$C_Wl4V1ZOATCcWhjd64-X",
-          "component" : "Reformat",
+        "HOdEprdcStNcXo5qBsVJq$$E705sSHi2yXeOqlKKge_K" : {
+          "id" : "HOdEprdcStNcXo5qBsVJq$$E705sSHi2yXeOqlKKge_K",
+          "component" : "Join",
           "metadata" : {
-            "label" : "ForSCD2_1",
-            "slug" : "ForSCD2_1",
-            "x" : 566.5517826349597,
-            "y" : 193.34999999999997,
+            "label" : "ByCustomer_1",
+            "slug" : "ByCustomer_1",
+            "x" : 411.1183148451298,
+            "y" : 253.3499999999999,
             "phase" : 0,
             "cache" : false,
             "detailedStats" : false,
@@ -1224,11 +979,68 @@
           },
           "ports" : {
             "inputs" : [ {
-              "id" : "e225SxW4Snwr2zOTCxtwk$$e54QQlsfKAG1svvIwF_HS",
+              "id" : "pTy6vXN_1bLkYrPlI_xeZ$$L7PcJtAgkpwulukmpgMwC",
+              "slug" : "in0"
+            }, {
+              "id" : "ONfJCVD5hDApi0WmybIPl$$NTWq7YoJ3XRiaoLdD1p1A",
+              "slug" : "in1"
+            } ],
+            "outputs" : [ {
+              "id" : "lw3FBwJT-Af1rnH-9qK_Y$$FNHkfNH70bMEYib8v7Qch",
+              "slug" : "out"
+            } ],
+            "selectedInputFields" : [ ],
+            "isCustomOutputSchema" : false
+          },
+          "properties" : {
+            "conditions" : [ {
+              "alias" : "in1",
+              "expression" : {
+                "format" : "sql",
+                "expression" : "in0.ID = in1.CUSTOMER_ID"
+              },
+              "joinType" : "inner"
+            } ],
+            "expressions" : [ ],
+            "hints" : [ {
+              "id" : "iiK-fNmMV0NQibICZ2VdF$$6CVO6WeK6KAAMazX5SsrZ",
+              "alias" : "in0",
+              "hintType" : "none",
+              "propagateColumns" : false
+            }, {
+              "id" : "sfazQfk8N1M9JnPJD6SAy$$xBo0ts6EFqSTlzRafEuX7",
+              "alias" : "in1",
+              "hintType" : "none",
+              "propagateColumns" : false
+            } ],
+            "allIn1" : null,
+            "activeTab" : "conditions",
+            "columnsSelector" : [ "iiK-fNmMV0NQibICZ2VdF$$6CVO6WeK6KAAMazX5SsrZ##ID", "sfazQfk8N1M9JnPJD6SAy$$xBo0ts6EFqSTlzRafEuX7##CUSTOMER_ID" ],
+            "allIn0" : null,
+            "whereClause" : null,
+            "headAlias" : "in0"
+          }
+        },
+        "2no60LIW-6Yn3_3EDN6g9$$Bkkgk0e9P5CgdQr9oFgve" : {
+          "id" : "2no60LIW-6Yn3_3EDN6g9$$Bkkgk0e9P5CgdQr9oFgve",
+          "component" : "Reformat",
+          "metadata" : {
+            "label" : "ForSCD2_1",
+            "slug" : "ForSCD2_1",
+            "x" : 626.5517826349597,
+            "y" : 253.34999999999997,
+            "phase" : 0,
+            "cache" : false,
+            "detailedStats" : false,
+            "isImported" : false
+          },
+          "ports" : {
+            "inputs" : [ {
+              "id" : "e225SxW4Snwr2zOTCxtwk$$hIdyXAtZyG8Ynnq6g4Qjz",
               "slug" : "in0"
             } ],
             "outputs" : [ {
-              "id" : "GMa2wJPGqDoDWWhNxtoML$$8HsVq9ELpmPiwhCBum8M_",
+              "id" : "GMa2wJPGqDoDWWhNxtoML$$iQNP3hbDBozAx5JiAhd-3",
               "slug" : "out"
             } ],
             "selectedInputFields" : [ ],
@@ -1291,71 +1103,14 @@
             "columnsSelector" : [ "e225SxW4Snwr2zOTCxtwk$$e54QQlsfKAG1svvIwF_HS##CUSTOMER_ID", "e225SxW4Snwr2zOTCxtwk$$e54QQlsfKAG1svvIwF_HS##FICORange", "e225SxW4Snwr2zOTCxtwk$$e54QQlsfKAG1svvIwF_HS##CUSTOMER_NAME", "e225SxW4Snwr2zOTCxtwk$$e54QQlsfKAG1svvIwF_HS##date_FICORange_obtained" ]
           }
         },
-        "HOdEprdcStNcXo5qBsVJq$$DcU44SnrCK-QvTl4Tb8Hw" : {
-          "id" : "HOdEprdcStNcXo5qBsVJq$$DcU44SnrCK-QvTl4Tb8Hw",
-          "component" : "Join",
-          "metadata" : {
-            "label" : "ByCustomer_1",
-            "slug" : "ByCustomer_1",
-            "x" : 351.1183148451298,
-            "y" : 193.3499999999999,
-            "phase" : 0,
-            "cache" : false,
-            "detailedStats" : false,
-            "isImported" : false
-          },
-          "ports" : {
-            "inputs" : [ {
-              "id" : "pTy6vXN_1bLkYrPlI_xeZ$$keQNH9F6xUOyI7FbIEkal",
-              "slug" : "in0"
-            }, {
-              "id" : "ONfJCVD5hDApi0WmybIPl$$wc5N9DUNBCvlCVuvNKiK3",
-              "slug" : "in1"
-            } ],
-            "outputs" : [ {
-              "id" : "lw3FBwJT-Af1rnH-9qK_Y$$1WZQO_YII5F3F_Gjhp8w1",
-              "slug" : "out"
-            } ],
-            "selectedInputFields" : [ ],
-            "isCustomOutputSchema" : false
-          },
-          "properties" : {
-            "conditions" : [ {
-              "alias" : "in1",
-              "expression" : {
-                "format" : "sql",
-                "expression" : "in0.ID = in1.CUSTOMER_ID"
-              },
-              "joinType" : "inner"
-            } ],
-            "expressions" : [ ],
-            "hints" : [ {
-              "id" : "iiK-fNmMV0NQibICZ2VdF$$6CVO6WeK6KAAMazX5SsrZ",
-              "alias" : "in0",
-              "hintType" : "none",
-              "propagateColumns" : false
-            }, {
-              "id" : "sfazQfk8N1M9JnPJD6SAy$$xBo0ts6EFqSTlzRafEuX7",
-              "alias" : "in1",
-              "hintType" : "none",
-              "propagateColumns" : false
-            } ],
-            "allIn1" : null,
-            "activeTab" : "conditions",
-            "columnsSelector" : [ "iiK-fNmMV0NQibICZ2VdF$$6CVO6WeK6KAAMazX5SsrZ##ID", "sfazQfk8N1M9JnPJD6SAy$$xBo0ts6EFqSTlzRafEuX7##CUSTOMER_ID" ],
-            "allIn0" : null,
-            "whereClause" : null,
-            "headAlias" : "in0"
-          }
-        },
-        "4j_rbye3VpJCDDdf0N_dx$$3YxEYY9f6HIalIpaN4zaa" : {
-          "id" : "4j_rbye3VpJCDDdf0N_dx$$3YxEYY9f6HIalIpaN4zaa",
+        "4j_rbye3VpJCDDdf0N_dx$$Ofio9JNfijvwqjtVDfEGl" : {
+          "id" : "4j_rbye3VpJCDDdf0N_dx$$Ofio9JNfijvwqjtVDfEGl",
           "component" : "Script",
           "metadata" : {
             "label" : "Fico_Mod_1",
             "slug" : "Fico_Mod_1",
-            "x" : 143.2,
-            "y" : 70.80000000000001,
+            "x" : 203.2,
+            "y" : 130.8,
             "phase" : 0,
             "cache" : false,
             "detailedStats" : false,
@@ -1363,11 +1118,11 @@
           },
           "ports" : {
             "inputs" : [ {
-              "id" : "vHOhNWrcaoyuGCL2WTUCo$$wSS7k3GFflE9db_5tfFak",
+              "id" : "vHOhNWrcaoyuGCL2WTUCo$$1bmGUbKP0laBTI9uCUh_R",
               "slug" : "in0"
             } ],
             "outputs" : [ {
-              "id" : "wCUnSUAs0zV8ZdE8msVTV$$4xqDEG6qabF-WRhDrK88A",
+              "id" : "wCUnSUAs0zV8ZdE8msVTV$$Lson_DzymoxtQK60LLDLB",
               "slug" : "out0",
               "schema" : {
                 "type" : "struct",
@@ -1410,6 +1165,58 @@
             "scriptMethodFooter" : "    return out0"
           }
         }
+      }
+    },
+    "5_kPj4DuTYF83DsOjFDGq$$mTK5VncxDCgMZkCBCVFlz" : {
+      "id" : "5_kPj4DuTYF83DsOjFDGq$$mTK5VncxDCgMZkCBCVFlz",
+      "component" : "Target",
+      "metadata" : {
+        "label" : "FICO_table_history_1",
+        "slug" : "FICO_table_history_1",
+        "x" : 689.687881016339,
+        "y" : -104.97499999999991,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "YK7LI99V79V54X3cz62X-$$jsXEpU5tkRZ26GiKS4k1P",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/FICO_table_history"
+      }
+    },
+    "A3R3GCMyOtfDpkXr71GIz$$mIBkY_6GN0PO6Gcv4b4Os" : {
+      "id" : "A3R3GCMyOtfDpkXr71GIz$$mIBkY_6GN0PO6Gcv4b4Os",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "TransUnion",
+        "slug" : "TransUnion",
+        "x" : 172.25871474078522,
+        "y" : -505.54999999999995,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "BGVzqYT83hQiVTCCihKOM$$_bdTY3DcX9Ce3qoVYIrXk",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/creditReportXMLingest"
       }
     }
   },

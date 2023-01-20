@@ -26,8 +26,9 @@ pipelines:
     createdAt: '2023-01-10 22:24:26'
     datasets:
       inputs:
-      - datasets/BNPLjson
-      - datasets/CreditReportXML
+      - datasets/BNPLjsonIngest
+      - datasets/CustIncomeCSV
+      - datasets/creditReportXMLingest
       outputs: []
     dependencies: {}
   pipelines/CreateMetrics:
@@ -39,9 +40,10 @@ pipelines:
     createdAt: '2022-12-16 19:19:58'
     datasets:
       inputs:
-      - datasets/BNPL_LexisNexis_v1
+      - datasets/BNPLjsonIngest
+      - datasets/CustIncomeCSV
       - datasets/FICO_table_history
-      - datasets/credit_report_and_tradelines_v2
+      - datasets/creditReportXMLingest
       - datasets/customer_info_v1
       - datasets/loan_data
       outputs:
@@ -49,18 +51,18 @@ pipelines:
       - datasets/ReportMetrics
     dependencies: {}
 datasets:
-  datasets/credit_report_and_tradelines_v2:
-    name: credit_report_and_tradelines_v2
+  datasets/creditReportXMLingest:
+    name: creditReportXMLingest
     description: ''
     author: sparklearner123@gmail.com
-    createdAt: '2022-12-16 19:36:23'
+    createdAt: '2023-01-20 17:01:42'
     physicalDatasets:
       dev:
         fabricId: 990
         datasetType: File
         description: ''
         author: sparklearner123@gmail.com
-        createdAt: '2022-12-16 19:36:23'
+        createdAt: '2023-01-20 17:01:42'
   datasets/Bureau_XML:
     name: Bureau_XML
     description: ''
@@ -97,6 +99,18 @@ datasets:
         description: ''
         author: sparklearner123@gmail.com
         createdAt: '2022-12-21 21:29:18'
+  datasets/CustIncomeCSV:
+    name: CustIncomeCSV
+    description: ''
+    author: sparklearner123@gmail.com
+    createdAt: '2023-01-19 22:08:24'
+    physicalDatasets:
+      dev:
+        fabricId: 990
+        datasetType: File
+        description: ''
+        author: sparklearner123@gmail.com
+        createdAt: '2023-01-19 22:08:24'
   datasets/CreditReportXML:
     name: CreditReportXML
     description: ''
@@ -121,6 +135,18 @@ datasets:
         description: ''
         author: sparklearner123@gmail.com
         createdAt: '2023-01-18 21:14:55'
+  datasets/CreditXML:
+    name: CreditXML
+    description: ''
+    author: sparklearner123@gmail.com
+    createdAt: '2023-01-19 22:03:37'
+    physicalDatasets:
+      dev:
+        fabricId: 990
+        datasetType: File
+        description: ''
+        author: sparklearner123@gmail.com
+        createdAt: '2023-01-19 22:03:38'
   datasets/customer_info_v1:
     name: customer_info_v1
     description: ''
@@ -133,6 +159,30 @@ datasets:
         description: ''
         author: sparklearner123@gmail.com
         createdAt: '2022-12-16 20:24:38'
+  datasets/LexisNexisJSON:
+    name: LexisNexisJSON
+    description: ''
+    author: sparklearner123@gmail.com
+    createdAt: '2023-01-19 22:05:12'
+    physicalDatasets:
+      dev:
+        fabricId: 990
+        datasetType: File
+        description: ''
+        author: sparklearner123@gmail.com
+        createdAt: '2023-01-19 22:05:12'
+  datasets/credit_report_and_tradelines_v2:
+    name: credit_report_and_tradelines_v2
+    description: ''
+    author: sparklearner123@gmail.com
+    createdAt: '2022-12-16 19:36:23'
+    physicalDatasets:
+      dev:
+        fabricId: 990
+        datasetType: File
+        description: ''
+        author: sparklearner123@gmail.com
+        createdAt: '2022-12-16 19:36:23'
   datasets/BNPL_LexisNexis_v1:
     name: BNPL_LexisNexis_v1
     description: ''
@@ -157,6 +207,30 @@ datasets:
         description: ''
         author: sparklearner123@gmail.com
         createdAt: '2023-01-11 16:07:03'
+  datasets/BNPLjsonIngest:
+    name: BNPLjsonIngest
+    description: ''
+    author: sparklearner123@gmail.com
+    createdAt: '2023-01-20 16:52:01'
+    physicalDatasets:
+      dev:
+        fabricId: 990
+        datasetType: File
+        description: ''
+        author: sparklearner123@gmail.com
+        createdAt: '2023-01-20 16:52:01'
+  datasets/CreditXMLingest:
+    name: CreditXMLingest
+    description: ''
+    author: sparklearner123@gmail.com
+    createdAt: '2023-01-20 16:37:53'
+    physicalDatasets:
+      dev:
+        fabricId: 990
+        datasetType: File
+        description: ''
+        author: sparklearner123@gmail.com
+        createdAt: '2023-01-20 16:37:53'
 templates: {}
 jobs:
   jobs/DTIjob:
@@ -185,24 +259,30 @@ jobs:
     author: sparklearner123@gmail.com
 libraries: []
 subgraphs:
-  subgraphs/CalculateDebtAndIncome:
-    name: CalculateDebtAndIncome
-    description: ''
-    author: sparklearner123@gmail.com
-    language: python
-    createdAt: '2023-01-11 03:28:24'
-  subgraphs/CreateDTIMetrics:
-    name: CreateDTIMetrics
-    description: ''
-    author: sparklearner123@gmail.com
-    language: python
-    createdAt: '2023-01-11 16:35:29'
   subgraphs/BNPL_API:
     name: BNPL_API
     description: ''
     author: sparklearner123@gmail.com
     language: python
     createdAt: '2023-01-18 01:53:19'
+  subgraphs/CreateDTIMetrics:
+    name: CreateDTIMetrics
+    description: ''
+    author: sparklearner123@gmail.com
+    language: python
+    createdAt: '2023-01-11 16:35:29'
+  subgraphs/CalculateDebtAndIncome:
+    name: CalculateDebtAndIncome
+    description: ''
+    author: sparklearner123@gmail.com
+    language: python
+    createdAt: '2023-01-11 03:28:24'
+  subgraphs/TestAuditPrepGraph:
+    name: TestAuditPrepGraph
+    description: ''
+    author: sparklearner123@gmail.com
+    language: python
+    createdAt: '2023-01-19 18:53:13'
   subgraphs/PrepDTI:
     name: PrepDTI
     description: 'A standard pattern we use for parsing and unioning data from TransUnion,

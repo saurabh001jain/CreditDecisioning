@@ -1,1 +1,1 @@
-from .test_SumDebts import *
+from .test_DebtsMonthly import *

@@ -72,7 +72,7 @@
         "predicates" : [ ]
       }
     },
-    "name" : "Unit Test 0",
+    "name" : "ConvertToMonthly",
     "testType" : "outputRow",
     "language" : "python"
   } ],
