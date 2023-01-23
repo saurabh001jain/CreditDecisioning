@@ -17,6 +17,20 @@ pipelines:
       - datasets/FICO_table_history
       outputs: []
     dependencies: {}
+  pipelines/ImportDataOption:
+    name: ImportDataOption
+    description: ''
+    author: sparklearner123@gmail.com
+    mode: batch
+    language: python
+    createdAt: '2023-01-10 22:24:26'
+    datasets:
+      inputs:
+      - datasets/BNPLjsonIngest
+      - datasets/CustIncomeCSV
+      - datasets/creditReportXMLingest
+      outputs: []
+    dependencies: {}
   pipelines/CreateMetrics:
     name: CreateMetrics
     description: ''
@@ -35,20 +49,6 @@ pipelines:
       outputs:
       - datasets/FICO_table_history
       - datasets/ReportMetrics
-    dependencies: {}
-  pipelines/ImportDataOption:
-    name: ImportDataOption
-    description: ''
-    author: sparklearner123@gmail.com
-    mode: batch
-    language: python
-    createdAt: '2023-01-10 22:24:26'
-    datasets:
-      inputs:
-      - datasets/BNPLjsonIngest
-      - datasets/CustIncomeCSV
-      - datasets/creditReportXMLingest
-      outputs: []
     dependencies: {}
 datasets:
   datasets/creditReportXMLingest:

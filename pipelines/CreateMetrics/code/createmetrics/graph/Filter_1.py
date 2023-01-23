@@ -4,5 +4,5 @@ from pyspark.sql.types import *
 from createmetrics.config.ConfigStore import *
 from createmetrics.udfs.UDFs import *
 
-def ReviewMerges(spark: SparkSession) -> DataFrame:
-    return spark.read.format("delta").load("dbfs:/FileStore/data/FICO_table_history")
+def Filter_1(spark: SparkSession, in0: DataFrame) -> DataFrame:
+    return in0.filter((col("maxFlag") == lit(True)))
