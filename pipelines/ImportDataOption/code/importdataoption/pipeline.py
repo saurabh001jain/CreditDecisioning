@@ -11,9 +11,7 @@ def pipeline(spark: SparkSession) -> None:
     IngestXML(spark)
     IngestJSON(spark)
     df_Customer = Customer(spark)
-    df_Source_1 = Source_1(spark)
     df_LexisNexis = LexisNexis(spark)
-    df_BNPL_API_1 = BNPL_API_1(spark)
     df_TransUnion = TransUnion(spark)
 
 def main():

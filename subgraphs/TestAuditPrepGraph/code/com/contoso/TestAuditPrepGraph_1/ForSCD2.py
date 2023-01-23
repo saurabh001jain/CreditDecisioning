@@ -4,7 +4,7 @@ from pyspark.sql.types import *
 from createmetrics.config.ConfigStore import *
 from createmetrics.udfs.UDFs import *
 
-def ForSCD2_1(spark: SparkSession, in0: DataFrame) -> DataFrame:
+def ForSCD2(spark: SparkSession, in0: DataFrame) -> DataFrame:
     return in0.select(
         col("CUSTOMER_ID"), 
         col("CUSTOMER_NAME"), 

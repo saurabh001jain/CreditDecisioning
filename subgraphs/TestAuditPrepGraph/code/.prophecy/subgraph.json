@@ -30,45 +30,45 @@
     "packageName" : "com.contoso"
   },
   "connections" : [ {
-    "id" : "dlt01YkNLjsLuRDoxj5I7",
+    "id" : "2E_aT2wmuGZinUIq5XScb",
     "source" : "HOdEprdcStNcXo5qBsVJq",
     "sourcePort" : "lw3FBwJT-Af1rnH-9qK_Y",
     "target" : "2no60LIW-6Yn3_3EDN6g9",
     "targetPort" : "e225SxW4Snwr2zOTCxtwk"
   }, {
-    "id" : "3yykUTJqvxjn7LSMrBsBe",
-    "source" : "4j_rbye3VpJCDDdf0N_dx",
-    "sourcePort" : "wCUnSUAs0zV8ZdE8msVTV",
-    "target" : "HOdEprdcStNcXo5qBsVJq",
-    "targetPort" : "pTy6vXN_1bLkYrPlI_xeZ"
-  }, {
-    "id" : "sEm1cDqc1D5V8ZswHHGKW",
-    "source" : "8u1LTU4s5c2HpR7a1Vzjc",
-    "sourcePort" : "BxO9iceFP-GIRXTQmnXsl",
-    "target" : "4j_rbye3VpJCDDdf0N_dx",
-    "targetPort" : "vHOhNWrcaoyuGCL2WTUCo"
-  }, {
-    "id" : "OBFj4SIuuKK-cBNIiYexN",
+    "id" : "VJBndFkiZBz-22MegojCl",
     "source" : "2no60LIW-6Yn3_3EDN6g9",
     "sourcePort" : "GMa2wJPGqDoDWWhNxtoML",
     "target" : "8u1LTU4s5c2HpR7a1Vzjc",
     "targetPort" : "69JY0HvpxAH0-WnfR461q"
   }, {
-    "id" : "7SAw9TPtg2XhC5dXpWYIl",
+    "id" : "9KSddXuAbxe3bc9Yew-0f",
     "source" : "8u1LTU4s5c2HpR7a1Vzjc",
     "sourcePort" : "vlPDbkPGFjAq6Uh-nESI5",
     "target" : "HOdEprdcStNcXo5qBsVJq",
     "targetPort" : "ONfJCVD5hDApi0WmybIPl"
+  }, {
+    "id" : "RNqhvsYYnTZP60P9_jCJI",
+    "source" : "8u1LTU4s5c2HpR7a1Vzjc",
+    "sourcePort" : "BxO9iceFP-GIRXTQmnXsl",
+    "target" : "4j_rbye3VpJCDDdf0N_dx",
+    "targetPort" : "vHOhNWrcaoyuGCL2WTUCo"
+  }, {
+    "id" : "okpyjPVT9HakSCIc5kRcG",
+    "source" : "4j_rbye3VpJCDDdf0N_dx",
+    "sourcePort" : "wCUnSUAs0zV8ZdE8msVTV",
+    "target" : "HOdEprdcStNcXo5qBsVJq",
+    "targetPort" : "pTy6vXN_1bLkYrPlI_xeZ"
   } ],
   "processes" : {
     "HOdEprdcStNcXo5qBsVJq" : {
       "id" : "HOdEprdcStNcXo5qBsVJq",
       "component" : "Join",
       "metadata" : {
-        "label" : "ByCustomer_1",
-        "slug" : "ByCustomer_1",
-        "x" : 411.1183148451298,
-        "y" : 253.3499999999999,
+        "label" : "ByCustomer",
+        "slug" : "ByCustomer",
+        "x" : 451.1183148451298,
+        "y" : 293.3499999999999,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -100,19 +100,19 @@
         } ],
         "expressions" : [ ],
         "hints" : [ {
-          "id" : "iiK-fNmMV0NQibICZ2VdF$$6CVO6WeK6KAAMazX5SsrZ",
+          "id" : "pTy6vXN_1bLkYrPlI_xeZ$$L7PcJtAgkpwulukmpgMwC",
           "alias" : "in0",
           "hintType" : "none",
           "propagateColumns" : false
         }, {
-          "id" : "sfazQfk8N1M9JnPJD6SAy$$xBo0ts6EFqSTlzRafEuX7",
+          "id" : "ONfJCVD5hDApi0WmybIPl$$NTWq7YoJ3XRiaoLdD1p1A",
           "alias" : "in1",
           "hintType" : "none",
           "propagateColumns" : false
         } ],
         "allIn1" : null,
         "activeTab" : "conditions",
-        "columnsSelector" : [ "iiK-fNmMV0NQibICZ2VdF$$6CVO6WeK6KAAMazX5SsrZ##ID", "sfazQfk8N1M9JnPJD6SAy$$xBo0ts6EFqSTlzRafEuX7##CUSTOMER_ID" ],
+        "columnsSelector" : [ "ONfJCVD5hDApi0WmybIPl$$NTWq7YoJ3XRiaoLdD1p1A##CUSTOMER_ID", "pTy6vXN_1bLkYrPlI_xeZ$$L7PcJtAgkpwulukmpgMwC##ID" ],
         "allIn0" : null,
         "whereClause" : null,
         "headAlias" : "in0"
@@ -122,10 +122,10 @@
       "id" : "2no60LIW-6Yn3_3EDN6g9",
       "component" : "Reformat",
       "metadata" : {
-        "label" : "ForSCD2_1",
-        "slug" : "ForSCD2_1",
-        "x" : 626.5517826349597,
-        "y" : 253.34999999999997,
+        "label" : "ForSCD2",
+        "slug" : "ForSCD2",
+        "x" : 666.5517826349597,
+        "y" : 293.34999999999997,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -204,17 +204,17 @@
         } ],
         "importString" : "",
         "activeTab" : "expressions",
-        "columnsSelector" : [ "e225SxW4Snwr2zOTCxtwk$$e54QQlsfKAG1svvIwF_HS##CUSTOMER_ID", "e225SxW4Snwr2zOTCxtwk$$e54QQlsfKAG1svvIwF_HS##FICORange", "e225SxW4Snwr2zOTCxtwk$$e54QQlsfKAG1svvIwF_HS##CUSTOMER_NAME", "e225SxW4Snwr2zOTCxtwk$$e54QQlsfKAG1svvIwF_HS##date_FICORange_obtained" ]
+        "columnsSelector" : [ "e225SxW4Snwr2zOTCxtwk$$hIdyXAtZyG8Ynnq6g4Qjz##CUSTOMER_NAME", "e225SxW4Snwr2zOTCxtwk$$hIdyXAtZyG8Ynnq6g4Qjz##date_FICORange_obtained", "e225SxW4Snwr2zOTCxtwk$$hIdyXAtZyG8Ynnq6g4Qjz##CUSTOMER_ID", "e225SxW4Snwr2zOTCxtwk$$hIdyXAtZyG8Ynnq6g4Qjz##FICORange" ]
       }
     },
     "4j_rbye3VpJCDDdf0N_dx" : {
       "id" : "4j_rbye3VpJCDDdf0N_dx",
       "component" : "Script",
       "metadata" : {
-        "label" : "Fico_Mod_1",
-        "slug" : "Fico_Mod_1",
-        "x" : 203.2,
-        "y" : 130.8,
+        "label" : "Fico_Mod",
+        "slug" : "Fico_Mod",
+        "x" : 198.8,
+        "y" : 103.60000000000002,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,

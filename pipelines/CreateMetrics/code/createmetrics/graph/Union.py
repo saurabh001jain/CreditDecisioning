@@ -4,5 +4,5 @@ from pyspark.sql.types import *
 from createmetrics.config.ConfigStore import *
 from createmetrics.udfs.UDFs import *
 
-def UnionData(spark: SparkSession, in0: DataFrame, in1: DataFrame, ) -> DataFrame:
+def Union(spark: SparkSession, in0: DataFrame, in1: DataFrame, ) -> DataFrame:
     return in0.unionAll(in1)

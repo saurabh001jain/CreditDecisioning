@@ -1,4 +1,3 @@
-from .BNPL_API_1 import *
 from .IngestXML import *
 from .IngestJSON import *
 from .IngestCSV import *

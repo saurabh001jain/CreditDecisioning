@@ -4,7 +4,7 @@ from pyspark.sql.types import *
 from createmetrics.config.ConfigStore import *
 from createmetrics.udfs.UDFs import *
 
-def FICO_table_history_1(spark: SparkSession, in0: DataFrame):
+def DeltaTable(spark: SparkSession, in0: DataFrame):
     from delta.tables import DeltaTable, DeltaMergeBuilder
 
     if DeltaTable.isDeltaTable(spark, "dbfs:/FileStore/data/FICO_table_history"):
