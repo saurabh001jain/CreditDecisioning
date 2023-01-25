@@ -17,3 +17,7 @@ adds job to calculate DTI
 *** Release notes for version: 0.0.6 ***
 
 adds Audit Prep subgraph 
+
+*** Release notes for version: 0.0.7 ***
+
+exploring join instead of union
