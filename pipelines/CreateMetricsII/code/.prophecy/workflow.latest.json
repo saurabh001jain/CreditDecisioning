@@ -1,0 +1,523 @@
+{
+  "metainfo" : {
+    "id" : "1",
+    "language" : "python",
+    "fabricId" : "990",
+    "frontEndLanguage" : "sql",
+    "mode" : "batch",
+    "udfs" : {
+      "language" : "python",
+      "udfs" : [ ]
+    },
+    "udafs" : {
+      "language" : "python",
+      "code" : ""
+    },
+    "configuration" : {
+      "common" : {
+        "type" : "record",
+        "fields" : [ ]
+      },
+      "oldCommon" : {
+        "type" : "record",
+        "fields" : [ ]
+      },
+      "fabrics" : { },
+      "instances" : { },
+      "selected" : "default",
+      "nonEditable" : [ ],
+      "isSubscribedPipelineWithPipelineConfigs" : false
+    },
+    "sparkConf" : [ ],
+    "hadoopConf" : [ ],
+    "codeMode" : "sparse",
+    "buildSystem" : "maven",
+    "externalDependencies" : [ ],
+    "isImported" : false,
+    "interimMode" : "Full",
+    "interimModeEnabled" : true,
+    "visualCodeInterimMode" : "Disabled",
+    "recordsLimit" : {
+      "enabled" : false,
+      "value" : 1000
+    },
+    "topLevelPackage" : "createmetricsii"
+  },
+  "connections" : [ {
+    "id" : "1eShLmqdgVMvoksKnrwD0",
+    "source" : "3FKr-VVzEzaZblqF7TpA6$$wWHVG7mIVIrKgzfNVEqDv",
+    "sourcePort" : "StbwZVSI1UL9w6S5iLUJo$$29ZjOBCY2qehkxl5jwBW9",
+    "target" : "Giq_8jarE7w0rkjK07leI$$3rhWAKFyc6nNmJfrWzsCe",
+    "targetPort" : "4FN8GJbvaDiHdTmHNgjcP$$KtsDpj-a77mMvT3I-WL28"
+  }, {
+    "id" : "OyDA9aVXix7PNUKUwqQWz",
+    "source" : "2A6lq66wr9PsFlsyS4kfh$$OGQjRS6KQkYQ1apanTyFV",
+    "sourcePort" : "JG9rUx6vCmcJ9xY6IpAls$$imVVkzWS8Kp-wgu0hbfDB",
+    "target" : "Giq_8jarE7w0rkjK07leI$$3rhWAKFyc6nNmJfrWzsCe",
+    "targetPort" : "xQNcG3i40Rd_e64uS8pee$$cvNbfPPEtABjPeKeFXRV2"
+  }, {
+    "id" : "g79gLbPa-MLo_ztIJW1wF",
+    "source" : "Giq_8jarE7w0rkjK07leI$$3rhWAKFyc6nNmJfrWzsCe",
+    "sourcePort" : "6nHTyfMZQBHp1T-Hi_B6p$$1SdjBztDVkyW32EnPQTsu",
+    "target" : "zkKOeX-Jf_xdGBZ-BT4dp$$B9b4XB2QnynJ-LwXuf22X",
+    "targetPort" : "GZOyiN5i-_QkrCErBaBo7$$TPbzh43Aa9rXXjGxogl5d"
+  }, {
+    "id" : "1rR4n1ODfZIJ0UsW4YxAU",
+    "source" : "oczGH0_NhgeZ2wW1VE53E$$TdyEmwghllJr_mh-Vey_3",
+    "sourcePort" : "v-uSLDTUShfu2dWt6UrmO$$tw3yQzDxhfHbefRYFxwHb",
+    "target" : "jWjRYokUWF2bImTR3JVvT$$o6GxuUytGbMS_sPyJ0rbG",
+    "targetPort" : "jv22R17LIhbPK7iic-5sp$$uq8-fYgbDeFrRphnvk7XM"
+  }, {
+    "id" : "YpYsSn-X7dDJK1l_z_EN9",
+    "source" : "zkKOeX-Jf_xdGBZ-BT4dp$$B9b4XB2QnynJ-LwXuf22X",
+    "sourcePort" : "foH0Joq8kuYbs5w1sZx4M$$1JE_3jzs3sqXojl4fUEJz",
+    "target" : "BTZqWQuYLlXehp-wQgOa2$$UiGAcddnPuNHfVDEoCzkv",
+    "targetPort" : "d0yCD0Zr0eODjwijyqowX$$IWbtDZxs6DNsmZaUHdLoQ"
+  }, {
+    "id" : "KyhFRM84EDjRh-0-h8_Jr",
+    "source" : "jWjRYokUWF2bImTR3JVvT$$o6GxuUytGbMS_sPyJ0rbG",
+    "sourcePort" : "kilyeygRdXpfSPxvuVO24$$QyeeGpVrkdZXYDMVAbgNg",
+    "target" : "BTZqWQuYLlXehp-wQgOa2$$UiGAcddnPuNHfVDEoCzkv",
+    "targetPort" : "lYZrShdKEShO_GmXJpTeT$$EsfPvabH229vNP09pCk-h"
+  }, {
+    "id" : "guToFpFd-9jfNTYc8secE",
+    "source" : "BTZqWQuYLlXehp-wQgOa2$$UiGAcddnPuNHfVDEoCzkv",
+    "sourcePort" : "49tDydd61QiN7IcEqoH-J$$860fKj4wxwPiL_jOcrsHf",
+    "target" : "-KMTH_SawVd6m0kOGpyiM$$sI3PHnufIa28VmBtMrTu3",
+    "targetPort" : "LG_-mG1CWxCtAjavtKWIs$$yGcqeLDEBpYV-hgjKlzv6"
+  }, {
+    "id" : "znn1jKItj9I3Kr1Pu0BVW",
+    "source" : "-KMTH_SawVd6m0kOGpyiM$$sI3PHnufIa28VmBtMrTu3",
+    "sourcePort" : "q3Qa_9oM-_NCkWg6-I3KW$$TMNvAaprAkPaHXEJQ1otB",
+    "target" : "2TdGORQBTG3daVIEyLBl1$$0CBARY4skiGLMUt71Kax4",
+    "targetPort" : "uDfddY3clQmjjClOSh-HI$$KoK8YLVfmX7lbZM4a47ak"
+  } ],
+  "processes" : {
+    "Giq_8jarE7w0rkjK07leI$$3rhWAKFyc6nNmJfrWzsCe" : {
+      "id" : "Giq_8jarE7w0rkjK07leI$$3rhWAKFyc6nNmJfrWzsCe",
+      "component" : "Join",
+      "metadata" : {
+        "label" : "ByCustomerID",
+        "slug" : "ByCustomerID",
+        "x" : 379.3415142191452,
+        "y" : 236.7499999999999,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "4FN8GJbvaDiHdTmHNgjcP$$KtsDpj-a77mMvT3I-WL28",
+          "slug" : "in0"
+        }, {
+          "id" : "xQNcG3i40Rd_e64uS8pee$$cvNbfPPEtABjPeKeFXRV2",
+          "slug" : "in1"
+        } ],
+        "outputs" : [ {
+          "id" : "6nHTyfMZQBHp1T-Hi_B6p$$1SdjBztDVkyW32EnPQTsu",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "conditions" : [ {
+          "alias" : "in1",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.CUSTOMER_NAME = in1.Name"
+          },
+          "joinType" : "inner"
+        } ],
+        "expressions" : [ ],
+        "hints" : [ {
+          "id" : "CiPOVmTQsZ9V02M50V0nv$$mZhM8p7xmWpmMC3t5mq7G",
+          "alias" : "in0",
+          "hintType" : "none",
+          "propagateColumns" : false
+        }, {
+          "id" : "7i1kJ6wpbfMcl5gvR3Ed_$$QlhC-X2dyF3LyPI1eAtNo",
+          "alias" : "in1",
+          "hintType" : "none",
+          "propagateColumns" : false
+        } ],
+        "allIn1" : null,
+        "activeTab" : "conditions",
+        "columnsSelector" : [ "7i1kJ6wpbfMcl5gvR3Ed_$$QlhC-X2dyF3LyPI1eAtNo##Name", "CiPOVmTQsZ9V02M50V0nv$$mZhM8p7xmWpmMC3t5mq7G##CUSTOMER_NAME" ],
+        "allIn0" : null,
+        "whereClause" : null,
+        "headAlias" : "in0"
+      }
+    },
+    "2TdGORQBTG3daVIEyLBl1$$0CBARY4skiGLMUt71Kax4" : {
+      "id" : "2TdGORQBTG3daVIEyLBl1$$0CBARY4skiGLMUt71Kax4",
+      "component" : "Target",
+      "metadata" : {
+        "label" : "DebtIncome",
+        "slug" : "DebtIncome",
+        "x" : 1359.6,
+        "y" : 432.0000000000001,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "uDfddY3clQmjjClOSh-HI$$KoK8YLVfmX7lbZM4a47ak",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/DTIlong"
+      }
+    },
+    "-KMTH_SawVd6m0kOGpyiM$$sI3PHnufIa28VmBtMrTu3" : {
+      "id" : "-KMTH_SawVd6m0kOGpyiM$$sI3PHnufIa28VmBtMrTu3",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "Monthly",
+        "slug" : "Monthly",
+        "x" : 1120.6,
+        "y" : 433.80000000000007,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "LG_-mG1CWxCtAjavtKWIs$$yGcqeLDEBpYV-hgjKlzv6",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "q3Qa_9oM-_NCkWg6-I3KW$$TMNvAaprAkPaHXEJQ1otB",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "importLanguage" : "python",
+        "expressions" : [ {
+          "target" : "Name",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Name"
+          },
+          "description" : ""
+        }, {
+          "target" : "Income",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "cast(ReportedIncome / 12 as long)"
+          },
+          "description" : ""
+        }, {
+          "target" : "LoanTotal",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "cast((TransUnionReportedLoanMonthly + MonthlyBNPLLoanAmount) as long)"
+          },
+          "description" : ""
+        } ],
+        "importString" : "",
+        "activeTab" : "expressions",
+        "columnsSelector" : [ "LG_-mG1CWxCtAjavtKWIs$$yGcqeLDEBpYV-hgjKlzv6##Name", "LG_-mG1CWxCtAjavtKWIs$$yGcqeLDEBpYV-hgjKlzv6##MonthlyBNPLLoanAmount", "LG_-mG1CWxCtAjavtKWIs$$yGcqeLDEBpYV-hgjKlzv6##ReportedIncome", "LG_-mG1CWxCtAjavtKWIs$$yGcqeLDEBpYV-hgjKlzv6##TransUnionReportedLoanMonthly" ]
+      }
+    },
+    "jWjRYokUWF2bImTR3JVvT$$o6GxuUytGbMS_sPyJ0rbG" : {
+      "id" : "jWjRYokUWF2bImTR3JVvT$$o6GxuUytGbMS_sPyJ0rbG",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "Refine",
+        "slug" : "Refine",
+        "x" : 619.4478527728309,
+        "y" : 516.1600036621096,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "jv22R17LIhbPK7iic-5sp$$uq8-fYgbDeFrRphnvk7XM",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "kilyeygRdXpfSPxvuVO24$$QyeeGpVrkdZXYDMVAbgNg",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "importLanguage" : "python",
+        "expressions" : [ {
+          "target" : "Name",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "name"
+          },
+          "description" : ""
+        }, {
+          "target" : "MonthlyBNPLLoanAmount",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "cast(monthly_loan_amount as long)"
+          },
+          "description" : ""
+        }, {
+          "target" : "Balance",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "balance"
+          },
+          "description" : ""
+        } ],
+        "importString" : "",
+        "activeTab" : "expressions",
+        "columnsSelector" : [ "jv22R17LIhbPK7iic-5sp$$uq8-fYgbDeFrRphnvk7XM##name", "jv22R17LIhbPK7iic-5sp$$uq8-fYgbDeFrRphnvk7XM##monthly_loan_amount", "jv22R17LIhbPK7iic-5sp$$uq8-fYgbDeFrRphnvk7XM##balance" ]
+      }
+    },
+    "2A6lq66wr9PsFlsyS4kfh$$OGQjRS6KQkYQ1apanTyFV" : {
+      "id" : "2A6lq66wr9PsFlsyS4kfh$$OGQjRS6KQkYQ1apanTyFV",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "TransUnion",
+        "slug" : "TransUnion",
+        "x" : 160,
+        "y" : 377.19999999999993,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "JG9rUx6vCmcJ9xY6IpAls$$imVVkzWS8Kp-wgu0hbfDB",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/creditReportXMLingest"
+      }
+    },
+    "oczGH0_NhgeZ2wW1VE53E$$TdyEmwghllJr_mh-Vey_3" : {
+      "id" : "oczGH0_NhgeZ2wW1VE53E$$TdyEmwghllJr_mh-Vey_3",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "LexisNexis",
+        "slug" : "LexisNexis",
+        "x" : 397.40000000000003,
+        "y" : 520.8000000000001,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "v-uSLDTUShfu2dWt6UrmO$$tw3yQzDxhfHbefRYFxwHb",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/BNPLjsonIngest"
+      }
+    },
+    "BTZqWQuYLlXehp-wQgOa2$$UiGAcddnPuNHfVDEoCzkv" : {
+      "id" : "BTZqWQuYLlXehp-wQgOa2$$UiGAcddnPuNHfVDEoCzkv",
+      "component" : "Join",
+      "metadata" : {
+        "label" : "ByName",
+        "slug" : "ByName",
+        "x" : 868.093338720978,
+        "y" : 435.9199981689453,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "d0yCD0Zr0eODjwijyqowX$$IWbtDZxs6DNsmZaUHdLoQ",
+          "slug" : "in0"
+        }, {
+          "id" : "lYZrShdKEShO_GmXJpTeT$$EsfPvabH229vNP09pCk-h",
+          "slug" : "in1"
+        } ],
+        "outputs" : [ {
+          "id" : "49tDydd61QiN7IcEqoH-J$$860fKj4wxwPiL_jOcrsHf",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "conditions" : [ {
+          "alias" : "in1",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.Name = in1.Name"
+          },
+          "joinType" : "inner"
+        } ],
+        "expressions" : [ {
+          "target" : "ReportedIncome",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.ReportedIncome"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "TransUnionReportedLoanMonthly",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.TransUnionReportedLoanMonthly"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "Name",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in1.Name"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "MonthlyBNPLLoanAmount",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in1.MonthlyBNPLLoanAmount"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "Balance",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in1.Balance"
+          },
+          "description" : "",
+          "_row_id" : null
+        } ],
+        "hints" : [ {
+          "id" : "d0yCD0Zr0eODjwijyqowX$$IWbtDZxs6DNsmZaUHdLoQ",
+          "alias" : "in0",
+          "hintType" : "none",
+          "propagateColumns" : false
+        }, {
+          "id" : "lYZrShdKEShO_GmXJpTeT$$EsfPvabH229vNP09pCk-h",
+          "alias" : "in1",
+          "hintType" : "none",
+          "propagateColumns" : false
+        } ],
+        "allIn1" : null,
+        "activeTab" : "expressions",
+        "columnsSelector" : [ "d0yCD0Zr0eODjwijyqowX$$IWbtDZxs6DNsmZaUHdLoQ##Name", "lYZrShdKEShO_GmXJpTeT$$EsfPvabH229vNP09pCk-h##Name", "d0yCD0Zr0eODjwijyqowX$$IWbtDZxs6DNsmZaUHdLoQ##TransUnionReportedLoanMonthly", "lYZrShdKEShO_GmXJpTeT$$EsfPvabH229vNP09pCk-h##Name", "lYZrShdKEShO_GmXJpTeT$$EsfPvabH229vNP09pCk-h##Balance", "lYZrShdKEShO_GmXJpTeT$$EsfPvabH229vNP09pCk-h##MonthlyBNPLLoanAmount", "d0yCD0Zr0eODjwijyqowX$$IWbtDZxs6DNsmZaUHdLoQ##ReportedIncome" ],
+        "allIn0" : null,
+        "whereClause" : null,
+        "headAlias" : "in0"
+      }
+    },
+    "3FKr-VVzEzaZblqF7TpA6$$wWHVG7mIVIrKgzfNVEqDv" : {
+      "id" : "3FKr-VVzEzaZblqF7TpA6$$wWHVG7mIVIrKgzfNVEqDv",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "Income",
+        "slug" : "Income",
+        "x" : 163.4,
+        "y" : 180,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "StbwZVSI1UL9w6S5iLUJo$$29ZjOBCY2qehkxl5jwBW9",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/CustIncomeCSV"
+      }
+    },
+    "zkKOeX-Jf_xdGBZ-BT4dp$$B9b4XB2QnynJ-LwXuf22X" : {
+      "id" : "zkKOeX-Jf_xdGBZ-BT4dp$$B9b4XB2QnynJ-LwXuf22X",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "ParseLoanAmount",
+        "slug" : "ParseLoanAmount",
+        "x" : 606.4878674212681,
+        "y" : 235.03999633789067,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "GZOyiN5i-_QkrCErBaBo7$$TPbzh43Aa9rXXjGxogl5d",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "foH0Joq8kuYbs5w1sZx4M$$1JE_3jzs3sqXojl4fUEJz",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "importLanguage" : "python",
+        "expressions" : [ {
+          "target" : "ReportedIncome",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "cast(REPORTED_INCOME as long)"
+          },
+          "description" : ""
+        }, {
+          "target" : "Name",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Name"
+          },
+          "description" : ""
+        }, {
+          "target" : "TransUnionReportedLoanMonthly",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "cast(split(trades.trade[0].terms, 'M')[1] as long)"
+          },
+          "description" : ""
+        } ],
+        "importString" : "",
+        "activeTab" : "expressions",
+        "columnsSelector" : [ "GZOyiN5i-_QkrCErBaBo7$$TPbzh43Aa9rXXjGxogl5d##Trades.Trade", "GZOyiN5i-_QkrCErBaBo7$$TPbzh43Aa9rXXjGxogl5d##Trades", "GZOyiN5i-_QkrCErBaBo7$$TPbzh43Aa9rXXjGxogl5d##REPORTED_INCOME", "GZOyiN5i-_QkrCErBaBo7$$TPbzh43Aa9rXXjGxogl5d##Name" ]
+      }
+    }
+  },
+  "ports" : {
+    "inputs" : [ ],
+    "outputs" : [ ],
+    "selectedInputFields" : [ ],
+    "isCustomOutputSchema" : false
+  }
+}

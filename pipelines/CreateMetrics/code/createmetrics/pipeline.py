@@ -8,14 +8,12 @@ from createmetrics.graph import *
 
 def pipeline(spark: SparkSession) -> None:
     df_Income = Income(spark)
-    df_TransUnion = TransUnion(spark)
-    df_ByCustomerID = ByCustomerID(spark, df_Income, df_TransUnion)
-    df_ParseLoanAmount = ParseLoanAmount(spark, df_ByCustomerID)
     df_LexisNexis = LexisNexis(spark)
     df_Refine = Refine(spark, df_LexisNexis)
     df_Adjust = Adjust(spark, df_Refine)
-    df_Join_1 = Join_1(spark, df_ParseLoanAmount, df_Adjust)
-    df_Filter_3 = Filter_3(spark, df_Join_1)
+    df_TransUnion = TransUnion(spark)
+    df_ByCustomerID = ByCustomerID(spark, df_Income, df_TransUnion)
+    df_ParseLoanAmount = ParseLoanAmount(spark, df_ByCustomerID)
     df_Union = Union(spark, df_ParseLoanAmount, df_Adjust)
     df_DebtsMonthly = DebtsMonthly(spark, df_Union)
     ReportDTI(spark, df_DebtsMonthly)

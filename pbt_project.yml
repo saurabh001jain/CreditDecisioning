@@ -31,6 +31,21 @@ pipelines:
       - datasets/creditReportXMLingest
       outputs: []
     dependencies: {}
+  pipelines/CreateMetricsII:
+    name: CreateMetricsII
+    description: ''
+    author: sparklearner123@gmail.com
+    mode: batch
+    language: python
+    createdAt: '2023-01-25 19:43:31'
+    datasets:
+      inputs:
+      - datasets/BNPLjsonIngest
+      - datasets/CustIncomeCSV
+      - datasets/creditReportXMLingest
+      outputs:
+      - datasets/DTIlong
+    dependencies: {}
   pipelines/CreateMetrics:
     name: CreateMetrics
     description: ''
@@ -51,6 +66,18 @@ pipelines:
       - datasets/ReportMetrics
     dependencies: {}
 datasets:
+  datasets/CreditReportDTI:
+    name: CreditReportDTI
+    description: ''
+    author: sparklearner123@gmail.com
+    createdAt: '2023-01-25 21:52:28'
+    physicalDatasets:
+      dev:
+        fabricId: 990
+        datasetType: File
+        description: ''
+        author: sparklearner123@gmail.com
+        createdAt: '2023-01-25 21:52:28'
   datasets/creditReportXMLingest:
     name: creditReportXMLingest
     description: ''
@@ -75,18 +102,6 @@ datasets:
         description: ''
         author: sparklearner123@gmail.com
         createdAt: '2023-01-18 20:54:36'
-  datasets/ReportMetrics:
-    name: ReportMetrics
-    description: ''
-    author: sparklearner123@gmail.com
-    createdAt: '2023-01-11 04:05:26'
-    physicalDatasets:
-      dev:
-        fabricId: 990
-        datasetType: File
-        description: ''
-        author: sparklearner123@gmail.com
-        createdAt: '2023-01-11 04:05:26'
   datasets/loan_data:
     name: loan_data
     description: ''
@@ -147,18 +162,6 @@ datasets:
         description: ''
         author: sparklearner123@gmail.com
         createdAt: '2023-01-19 22:03:38'
-  datasets/customer_info_v1:
-    name: customer_info_v1
-    description: ''
-    author: sparklearner123@gmail.com
-    createdAt: '2022-12-16 20:24:38'
-    physicalDatasets:
-      dev:
-        fabricId: 990
-        datasetType: File
-        description: ''
-        author: sparklearner123@gmail.com
-        createdAt: '2022-12-16 20:24:38'
   datasets/LexisNexisJSON:
     name: LexisNexisJSON
     description: ''
@@ -183,6 +186,42 @@ datasets:
         description: ''
         author: sparklearner123@gmail.com
         createdAt: '2022-12-16 19:36:23'
+  datasets/reportDTI:
+    name: reportDTI
+    description: ''
+    author: sparklearner123@gmail.com
+    createdAt: '2023-01-23 23:21:08'
+    physicalDatasets:
+      dev:
+        fabricId: 990
+        datasetType: File
+        description: ''
+        author: sparklearner123@gmail.com
+        createdAt: '2023-01-23 23:21:08'
+  datasets/ReportMetrics:
+    name: ReportMetrics
+    description: ''
+    author: sparklearner123@gmail.com
+    createdAt: '2023-01-11 04:05:26'
+    physicalDatasets:
+      dev:
+        fabricId: 990
+        datasetType: File
+        description: ''
+        author: sparklearner123@gmail.com
+        createdAt: '2023-01-11 04:05:26'
+  datasets/DTIlong:
+    name: DTIlong
+    description: ''
+    author: sparklearner123@gmail.com
+    createdAt: '2023-01-25 22:26:24'
+    physicalDatasets:
+      dev:
+        fabricId: 990
+        datasetType: File
+        description: ''
+        author: sparklearner123@gmail.com
+        createdAt: '2023-01-25 22:26:24'
   datasets/BNPL_LexisNexis_v1:
     name: BNPL_LexisNexis_v1
     description: ''
@@ -231,6 +270,30 @@ datasets:
         description: ''
         author: sparklearner123@gmail.com
         createdAt: '2023-01-20 16:37:53'
+  datasets/ReportDebtIncome:
+    name: ReportDebtIncome
+    description: ''
+    author: sparklearner123@gmail.com
+    createdAt: '2023-01-25 22:12:55'
+    physicalDatasets:
+      dev:
+        fabricId: 990
+        datasetType: File
+        description: ''
+        author: sparklearner123@gmail.com
+        createdAt: '2023-01-25 22:12:55'
+  datasets/customer_info_v1:
+    name: customer_info_v1
+    description: ''
+    author: sparklearner123@gmail.com
+    createdAt: '2022-12-16 20:24:38'
+    physicalDatasets:
+      dev:
+        fabricId: 990
+        datasetType: File
+        description: ''
+        author: sparklearner123@gmail.com
+        createdAt: '2022-12-16 20:24:38'
 templates: {}
 jobs:
   jobs/DTIjob:
