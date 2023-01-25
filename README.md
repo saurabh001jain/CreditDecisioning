@@ -21,3 +21,7 @@ adds Audit Prep subgraph
 *** Release notes for version: 0.0.7 ***
 
 exploring join instead of union
+
+*** Release notes for version: 0.0.8 ***
+
+adds createMetricsII pipeline with join instead of union
