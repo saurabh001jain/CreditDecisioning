@@ -31,21 +31,6 @@ pipelines:
       - datasets/creditReportXMLingest
       outputs: []
     dependencies: {}
-  pipelines/CreateMetricsII:
-    name: CreateMetricsII
-    description: ''
-    author: sparklearner123@gmail.com
-    mode: batch
-    language: python
-    createdAt: '2023-01-25 19:43:31'
-    datasets:
-      inputs:
-      - datasets/BNPLjsonIngest
-      - datasets/CustIncomeCSV
-      - datasets/creditReportXMLingest
-      outputs:
-      - datasets/DTIlong
-    dependencies: {}
   pipelines/CreateMetrics:
     name: CreateMetrics
     description: ''
@@ -64,6 +49,21 @@ pipelines:
       outputs:
       - datasets/FICO_table_history
       - datasets/ReportMetrics
+    dependencies: {}
+  pipelines/CreateMetricsII:
+    name: CreateMetricsII
+    description: ''
+    author: sparklearner123@gmail.com
+    mode: batch
+    language: python
+    createdAt: '2023-01-25 19:43:31'
+    datasets:
+      inputs:
+      - datasets/BNPLjsonIngest
+      - datasets/CustIncomeCSV
+      - datasets/creditReportXMLingest
+      outputs:
+      - datasets/DTIlong
     dependencies: {}
 datasets:
   datasets/CreditReportDTI:
