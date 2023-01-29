@@ -17,20 +17,6 @@ pipelines:
       - datasets/FICO_table_history
       outputs: []
     dependencies: {}
-  pipelines/ImportDataOption:
-    name: ImportDataOption
-    description: ''
-    author: sparklearner123@gmail.com
-    mode: batch
-    language: python
-    createdAt: '2023-01-10 22:24:26'
-    datasets:
-      inputs:
-      - datasets/BNPLjsonIngest
-      - datasets/CustIncomeCSV
-      - datasets/creditReportXMLingest
-      outputs: []
-    dependencies: {}
   pipelines/CreateMetrics:
     name: CreateMetrics
     description: ''
@@ -50,6 +36,21 @@ pipelines:
       - datasets/FICO_table_history
       - datasets/ReportMetrics
     dependencies: {}
+  pipelines/ImportDataOption:
+    name: ImportDataOption
+    description: ''
+    author: sparklearner123@gmail.com
+    mode: batch
+    language: python
+    createdAt: '2023-01-10 22:24:26'
+    datasets:
+      inputs:
+      - datasets/BNPLjsonIngest
+      - datasets/CustIncomeCSV
+      - datasets/TransUnionFico_xml
+      - datasets/creditReportXMLingest
+      outputs: []
+    dependencies: {}
   pipelines/CreateMetricsII:
     name: CreateMetricsII
     description: ''
@@ -61,23 +62,15 @@ pipelines:
       inputs:
       - datasets/BNPLjsonIngest
       - datasets/CustIncomeCSV
-      - datasets/creditReportXMLingest
+      - datasets/ReportWithHistory
+      - datasets/TransUnionFICO2019_xml
       outputs:
-      - datasets/DTIlong
+      - datasets/Profile
+      - datasets/Report
+      - datasets/ReportLatest
+      - datasets/ReportWithHistory
     dependencies: {}
 datasets:
-  datasets/CreditReportDTI:
-    name: CreditReportDTI
-    description: ''
-    author: sparklearner123@gmail.com
-    createdAt: '2023-01-25 21:52:28'
-    physicalDatasets:
-      dev:
-        fabricId: 990
-        datasetType: File
-        description: ''
-        author: sparklearner123@gmail.com
-        createdAt: '2023-01-25 21:52:28'
   datasets/creditReportXMLingest:
     name: creditReportXMLingest
     description: ''
@@ -114,18 +107,6 @@ datasets:
         description: ''
         author: sparklearner123@gmail.com
         createdAt: '2022-12-21 21:29:18'
-  datasets/CustIncomeCSV:
-    name: CustIncomeCSV
-    description: ''
-    author: sparklearner123@gmail.com
-    createdAt: '2023-01-19 22:08:24'
-    physicalDatasets:
-      dev:
-        fabricId: 990
-        datasetType: File
-        description: ''
-        author: sparklearner123@gmail.com
-        createdAt: '2023-01-19 22:08:24'
   datasets/CreditReportXML:
     name: CreditReportXML
     description: ''
@@ -138,6 +119,30 @@ datasets:
         description: ''
         author: sparklearner123@gmail.com
         createdAt: '2023-01-18 21:12:37'
+  datasets/Report:
+    name: Report
+    description: ''
+    author: sparklearner123@gmail.com
+    createdAt: '2023-01-27 18:57:47'
+    physicalDatasets:
+      dev:
+        fabricId: 990
+        datasetType: File
+        description: ''
+        author: sparklearner123@gmail.com
+        createdAt: '2023-01-27 18:57:47'
+  datasets/TransUnionFico_xml:
+    name: TransUnionFico.xml
+    description: ''
+    author: sparklearner123@gmail.com
+    createdAt: '2023-01-27 18:05:18'
+    physicalDatasets:
+      dev:
+        fabricId: 990
+        datasetType: File
+        description: ''
+        author: sparklearner123@gmail.com
+        createdAt: '2023-01-27 18:05:18'
   datasets/BNPLjson:
     name: BNPLjson
     description: ''
@@ -162,6 +167,30 @@ datasets:
         description: ''
         author: sparklearner123@gmail.com
         createdAt: '2023-01-19 22:03:38'
+  datasets/CreditReportDTI:
+    name: CreditReportDTI
+    description: ''
+    author: sparklearner123@gmail.com
+    createdAt: '2023-01-25 21:52:28'
+    physicalDatasets:
+      dev:
+        fabricId: 990
+        datasetType: File
+        description: ''
+        author: sparklearner123@gmail.com
+        createdAt: '2023-01-25 21:52:28'
+  datasets/ReportLatest:
+    name: ReportLatest
+    description: ''
+    author: sparklearner123@gmail.com
+    createdAt: '2023-01-29 05:21:37'
+    physicalDatasets:
+      dev:
+        fabricId: 990
+        datasetType: File
+        description: ''
+        author: sparklearner123@gmail.com
+        createdAt: '2023-01-29 05:21:37'
   datasets/LexisNexisJSON:
     name: LexisNexisJSON
     description: ''
@@ -186,6 +215,18 @@ datasets:
         description: ''
         author: sparklearner123@gmail.com
         createdAt: '2022-12-16 19:36:23'
+  datasets/Profile:
+    name: Profile
+    description: ''
+    author: sparklearner123@gmail.com
+    createdAt: '2023-01-29 04:12:42'
+    physicalDatasets:
+      dev:
+        fabricId: 990
+        datasetType: File
+        description: ''
+        author: sparklearner123@gmail.com
+        createdAt: '2023-01-29 04:12:42'
   datasets/reportDTI:
     name: reportDTI
     description: ''
@@ -222,18 +263,30 @@ datasets:
         description: ''
         author: sparklearner123@gmail.com
         createdAt: '2023-01-25 22:26:24'
-  datasets/BNPL_LexisNexis_v1:
-    name: BNPL_LexisNexis_v1
+  datasets/TransUnionFICO2018_xml:
+    name: TransUnionFICO2018.xml
     description: ''
     author: sparklearner123@gmail.com
-    createdAt: '2022-12-16 20:29:33'
+    createdAt: '2023-01-29 03:37:13'
     physicalDatasets:
       dev:
         fabricId: 990
         datasetType: File
         description: ''
         author: sparklearner123@gmail.com
-        createdAt: '2022-12-16 20:29:33'
+        createdAt: '2023-01-29 03:37:13'
+  datasets/CustIncomeCSV:
+    name: CustIncomeCSV
+    description: ''
+    author: sparklearner123@gmail.com
+    createdAt: '2023-01-19 22:08:24'
+    physicalDatasets:
+      dev:
+        fabricId: 990
+        datasetType: File
+        description: ''
+        author: sparklearner123@gmail.com
+        createdAt: '2023-01-19 22:08:24'
   datasets/FICO_table_history:
     name: FICO_table_history
     description: ''
@@ -246,6 +299,30 @@ datasets:
         description: ''
         author: sparklearner123@gmail.com
         createdAt: '2023-01-11 16:07:03'
+  datasets/TransUnionFICO2018:
+    name: TransUnionFICO2018
+    description: ''
+    author: sparklearner123@gmail.com
+    createdAt: '2023-01-29 03:31:17'
+    physicalDatasets:
+      dev:
+        fabricId: 990
+        datasetType: File
+        description: ''
+        author: sparklearner123@gmail.com
+        createdAt: '2023-01-29 03:31:17'
+  datasets/BNPL_LexisNexis_v1:
+    name: BNPL_LexisNexis_v1
+    description: ''
+    author: sparklearner123@gmail.com
+    createdAt: '2022-12-16 20:29:33'
+    physicalDatasets:
+      dev:
+        fabricId: 990
+        datasetType: File
+        description: ''
+        author: sparklearner123@gmail.com
+        createdAt: '2022-12-16 20:29:33'
   datasets/BNPLjsonIngest:
     name: BNPLjsonIngest
     description: ''
@@ -294,6 +371,30 @@ datasets:
         description: ''
         author: sparklearner123@gmail.com
         createdAt: '2022-12-16 20:24:38'
+  datasets/ReportWithHistory:
+    name: ReportWithHistory
+    description: ''
+    author: sparklearner123@gmail.com
+    createdAt: '2023-01-29 03:00:18'
+    physicalDatasets:
+      dev:
+        fabricId: 990
+        datasetType: File
+        description: ''
+        author: sparklearner123@gmail.com
+        createdAt: '2023-01-29 03:00:18'
+  datasets/TransUnionFICO2019_xml:
+    name: TransUnionFICO2019.xml
+    description: ''
+    author: sparklearner123@gmail.com
+    createdAt: '2023-01-29 04:26:01'
+    physicalDatasets:
+      dev:
+        fabricId: 990
+        datasetType: File
+        description: ''
+        author: sparklearner123@gmail.com
+        createdAt: '2023-01-29 04:26:01'
 templates: {}
 jobs:
   jobs/DTIjob:

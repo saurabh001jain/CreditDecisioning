@@ -20,6 +20,7 @@ def pipeline(spark: SparkSession) -> None:
     df_FICOhistory_1 = FICOhistory_1(spark)
     df_Filter_1 = Filter_1(spark, df_FICOhistory_1)
     df_Filter_2 = Filter_2(spark, df_Filter_1)
+    df_Source_1 = Source_1(spark)
     df_FICOScores = FICOScores(spark)
     df_CustIncome = CustIncome(spark)
     df_AuditProcessing = AuditProcessing(spark, df_FICOScores, df_CustIncome)

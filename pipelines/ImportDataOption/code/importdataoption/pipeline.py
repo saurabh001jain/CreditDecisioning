@@ -8,10 +8,16 @@ from importdataoption.graph import *
 
 def pipeline(spark: SparkSession) -> None:
     IngestCSV(spark)
+    IngestFICO(spark)
     IngestXML(spark)
     IngestJSON(spark)
     df_Customer = Customer(spark)
+    df_Script_1 = Script_1(spark)
+    df_RestAPIEnrich_1 = RestAPIEnrich_1(spark, df_Script_1)
     df_LexisNexis = LexisNexis(spark)
+    df_Reformat_1 = Reformat_1(spark, df_RestAPIEnrich_1)
+    Target_1(spark, df_Reformat_1)
+    df_TransUnionFICOxml = TransUnionFICOxml(spark)
     df_TransUnion = TransUnion(spark)
 
 def main():

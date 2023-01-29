@@ -16,7 +16,21 @@
     "configuration" : {
       "common" : {
         "type" : "record",
-        "fields" : [ ]
+        "fields" : [ {
+          "name" : "Year",
+          "kind" : {
+            "type" : "long",
+            "value" : 2018
+          },
+          "optional" : false
+        }, {
+          "name" : "user_email",
+          "kind" : {
+            "type" : "string",
+            "value" : "please_input_your_email_address"
+          },
+          "optional" : false
+        } ]
       },
       "oldCommon" : {
         "type" : "record",
@@ -44,63 +58,139 @@
     "topLevelPackage" : "createmetricsii"
   },
   "connections" : [ {
-    "id" : "1eShLmqdgVMvoksKnrwD0",
-    "source" : "3FKr-VVzEzaZblqF7TpA6$$wWHVG7mIVIrKgzfNVEqDv",
-    "sourcePort" : "StbwZVSI1UL9w6S5iLUJo$$29ZjOBCY2qehkxl5jwBW9",
-    "target" : "Giq_8jarE7w0rkjK07leI$$3rhWAKFyc6nNmJfrWzsCe",
-    "targetPort" : "4FN8GJbvaDiHdTmHNgjcP$$KtsDpj-a77mMvT3I-WL28"
+    "id" : "59CP6T27NNvrEFAsljfOt",
+    "source" : "nLIeU1vq5Y1haW-6Z5SHm$$bTVNtL8ujdRPnsmrmSeF8",
+    "sourcePort" : "-DKYPXr6cpyCf0m3aYm9R$$ekx_RsHVb4LM-Y1iIieoW",
+    "target" : "N8XI4b0r41C98r4zJGXuY$$bwVgU5qdz8UYsK-G0EGLP",
+    "targetPort" : "Z_q192QmqjgUxWDHvvuqy$$BiTJ-euN970OFDPstE4KF"
   }, {
-    "id" : "OyDA9aVXix7PNUKUwqQWz",
-    "source" : "2A6lq66wr9PsFlsyS4kfh$$OGQjRS6KQkYQ1apanTyFV",
-    "sourcePort" : "JG9rUx6vCmcJ9xY6IpAls$$imVVkzWS8Kp-wgu0hbfDB",
-    "target" : "Giq_8jarE7w0rkjK07leI$$3rhWAKFyc6nNmJfrWzsCe",
-    "targetPort" : "xQNcG3i40Rd_e64uS8pee$$cvNbfPPEtABjPeKeFXRV2"
+    "id" : "EsT3Ove9uwkUlJV09g2vW",
+    "source" : "KhKGpWIjs4Cl8SPLZTLfq$$-POKihJ5Q8C6wyL38xNAA",
+    "sourcePort" : "8dhc6TDyIigVGNa5lrrVF$$z2LiDxgpPswa2reGpVW0x",
+    "target" : "N8XI4b0r41C98r4zJGXuY$$bwVgU5qdz8UYsK-G0EGLP",
+    "targetPort" : "51sdRfkjiTW8i3MV-BiCW$$AiYpxhPTrV1dCQMOXy3No"
   }, {
-    "id" : "g79gLbPa-MLo_ztIJW1wF",
-    "source" : "Giq_8jarE7w0rkjK07leI$$3rhWAKFyc6nNmJfrWzsCe",
-    "sourcePort" : "6nHTyfMZQBHp1T-Hi_B6p$$1SdjBztDVkyW32EnPQTsu",
-    "target" : "zkKOeX-Jf_xdGBZ-BT4dp$$B9b4XB2QnynJ-LwXuf22X",
-    "targetPort" : "GZOyiN5i-_QkrCErBaBo7$$TPbzh43Aa9rXXjGxogl5d"
+    "id" : "74H-RcFLL_4y7Uz0v1cCX",
+    "source" : "wfS3tSSomjQ63ydrAyeFN$$3Cvz4wtDJIU-Sm77itsJi",
+    "sourcePort" : "-rz8MhLfHBlkbZ2nJBz31$$TLnXoClALuxirKNvjJIa8",
+    "target" : "lY9BF_UpAoekPkG8V11tN$$6PPoFoXHN8BCUS126QJ2_",
+    "targetPort" : "sgKEun3wI8uK97QKsE5uh$$bNTxoEfSDHu6LyCVB_U-9"
   }, {
-    "id" : "1rR4n1ODfZIJ0UsW4YxAU",
-    "source" : "oczGH0_NhgeZ2wW1VE53E$$TdyEmwghllJr_mh-Vey_3",
-    "sourcePort" : "v-uSLDTUShfu2dWt6UrmO$$tw3yQzDxhfHbefRYFxwHb",
-    "target" : "jWjRYokUWF2bImTR3JVvT$$o6GxuUytGbMS_sPyJ0rbG",
-    "targetPort" : "jv22R17LIhbPK7iic-5sp$$uq8-fYgbDeFrRphnvk7XM"
+    "id" : "bXAZj2K4IJVQNhzJckDX-",
+    "source" : "zOH5C3GtqrsEPwEFJGOLi$$T_JwgqlKsW9ud30cPrY_j",
+    "sourcePort" : "2ZIMo6Fee-eMAmdjSDcvI$$A90_RUsr5enWOEWWLZx-Z",
+    "target" : "ya9_cxbGeuUPref1-HAu2$$4-hNZHhJpOOC8NbX7SpsE",
+    "targetPort" : "3ZwTjTBHMDYA5PWUiCJNR$$UWsTvHdvA_9teojs6yvKT"
   }, {
-    "id" : "YpYsSn-X7dDJK1l_z_EN9",
-    "source" : "zkKOeX-Jf_xdGBZ-BT4dp$$B9b4XB2QnynJ-LwXuf22X",
-    "sourcePort" : "foH0Joq8kuYbs5w1sZx4M$$1JE_3jzs3sqXojl4fUEJz",
-    "target" : "BTZqWQuYLlXehp-wQgOa2$$UiGAcddnPuNHfVDEoCzkv",
-    "targetPort" : "d0yCD0Zr0eODjwijyqowX$$IWbtDZxs6DNsmZaUHdLoQ"
+    "id" : "ZtRkAAqU2CHDKDX7UsVvO",
+    "source" : "lY9BF_UpAoekPkG8V11tN$$6PPoFoXHN8BCUS126QJ2_",
+    "sourcePort" : "2Njm_vQelmN9u8aO-FLr_$$RgFvRuluavDy_PX75aEbw",
+    "target" : "ya9_cxbGeuUPref1-HAu2$$4-hNZHhJpOOC8NbX7SpsE",
+    "targetPort" : "AmXvPkRImmlAGCA2ZAeZV$$FlUq21CdC53CrPWTZEAFk"
   }, {
-    "id" : "KyhFRM84EDjRh-0-h8_Jr",
-    "source" : "jWjRYokUWF2bImTR3JVvT$$o6GxuUytGbMS_sPyJ0rbG",
-    "sourcePort" : "kilyeygRdXpfSPxvuVO24$$QyeeGpVrkdZXYDMVAbgNg",
-    "target" : "BTZqWQuYLlXehp-wQgOa2$$UiGAcddnPuNHfVDEoCzkv",
-    "targetPort" : "lYZrShdKEShO_GmXJpTeT$$EsfPvabH229vNP09pCk-h"
+    "id" : "C2twkFnVH6NO5xTrYKX4t",
+    "source" : "ya9_cxbGeuUPref1-HAu2$$4-hNZHhJpOOC8NbX7SpsE",
+    "sourcePort" : "N_Zqvvvx1coa37Ndr7Pw_$$DJGIPh_qL8pwEgQfl7Ova",
+    "target" : "POkx315yQfajWC4ytMxCb$$jYpANLStKcFXxuBo5vr5S",
+    "targetPort" : "NBJ-lJBdSbAuZSRSU4c3q$$X9XztvKFjjeLwBPFiYpOc"
   }, {
-    "id" : "guToFpFd-9jfNTYc8secE",
-    "source" : "BTZqWQuYLlXehp-wQgOa2$$UiGAcddnPuNHfVDEoCzkv",
-    "sourcePort" : "49tDydd61QiN7IcEqoH-J$$860fKj4wxwPiL_jOcrsHf",
-    "target" : "-KMTH_SawVd6m0kOGpyiM$$sI3PHnufIa28VmBtMrTu3",
-    "targetPort" : "LG_-mG1CWxCtAjavtKWIs$$yGcqeLDEBpYV-hgjKlzv6"
+    "id" : "wpq0x9_r07CIjo7NIXj4F",
+    "source" : "N8XI4b0r41C98r4zJGXuY$$bwVgU5qdz8UYsK-G0EGLP",
+    "sourcePort" : "ihSbdkfKW7G-TxkXIu58S$$DfsjIDeb-y5SlX1kgjbOE",
+    "target" : "zOH5C3GtqrsEPwEFJGOLi$$T_JwgqlKsW9ud30cPrY_j",
+    "targetPort" : "qTWiiHRmcKjyeeFV8p3wd$$XbY68Ig8iJhug3pkxRmvW"
   }, {
-    "id" : "znn1jKItj9I3Kr1Pu0BVW",
-    "source" : "-KMTH_SawVd6m0kOGpyiM$$sI3PHnufIa28VmBtMrTu3",
-    "sourcePort" : "q3Qa_9oM-_NCkWg6-I3KW$$TMNvAaprAkPaHXEJQ1otB",
-    "target" : "2TdGORQBTG3daVIEyLBl1$$0CBARY4skiGLMUt71Kax4",
-    "targetPort" : "uDfddY3clQmjjClOSh-HI$$KoK8YLVfmX7lbZM4a47ak"
+    "id" : "CvJ3SKfjRu0utfj0uSyum",
+    "source" : "POkx315yQfajWC4ytMxCb$$jYpANLStKcFXxuBo5vr5S",
+    "sourcePort" : "lqDcEDYMFtjFo_AY7WlvY$$BkXNk5IYhdQ3RDsc3Byna",
+    "target" : "OYaGutOo1n_DqxjKU-7G_$$R2yardQiDMwyz3efeWlLu",
+    "targetPort" : "8pBqFHg4j9yqVWrPgnCr5$$-gsoGb9UJxu4Wv0_AxPZ4"
+  }, {
+    "id" : "YNb23PsLy15o7P5Nn7VbX",
+    "source" : "POkx315yQfajWC4ytMxCb$$jYpANLStKcFXxuBo5vr5S",
+    "sourcePort" : "lqDcEDYMFtjFo_AY7WlvY$$BkXNk5IYhdQ3RDsc3Byna",
+    "target" : "YRpIP1W9KuR198nbz1_kL$$6RHbqvxXN_BHsWC9nQOXb",
+    "targetPort" : "FqNGAwu-FsXLmp-s6FpwA$$4B-nYdsGZ6z3SQcaaR6wu"
+  }, {
+    "id" : "vO1s2Kh0gdnJwKLfW_YyY",
+    "source" : "Ovegni1Ik2s62v3Y_KxzA$$Z7UtxkHpo8l4seeHGyTJz",
+    "sourcePort" : "EKT04cbxaA1RWraW997RW$$71Y7uAVDnPIg5w_9dKSOv",
+    "target" : "kRAhWpuCBYITGEsDQdNdE$$78JwpmyT2I1zEnGJTXadn",
+    "targetPort" : "8gQjLulONH4vDHmbT860Q$$e8v0t-3J8rTy7gte-qxO_"
+  }, {
+    "id" : "-FzkjsouQza-uALBEfYJI",
+    "source" : "kRAhWpuCBYITGEsDQdNdE$$78JwpmyT2I1zEnGJTXadn",
+    "sourcePort" : "DhL-_cVWIPjBjaoZ4nhiq$$iXROxdHO1VLwVKu4FWDkH",
+    "target" : "PQOLTdXX7yyiKT10fr_eR$$w-fNGp-QQFHCO_0YakWFh",
+    "targetPort" : "-1F18vNkNNftFfB7KCzfB$$PtXx7qDYnxnPbmrSyHzot"
+  }, {
+    "id" : "oQCzc64ICvcCbTvkTePTQ",
+    "source" : "PQOLTdXX7yyiKT10fr_eR$$w-fNGp-QQFHCO_0YakWFh",
+    "sourcePort" : "t0_sQuUJ8VoqSrIgFB6OO$$hRRMGAycfoonb_w2TTLj7",
+    "target" : "UGvWJ-rcmwcFxAdXZbPM-$$U-Ppg_VPlLrEGh7royJKA",
+    "targetPort" : "2sH4WuE25a33TlKYWm9vI$$18YyvpQyJMvva6tdqrtHK"
   } ],
   "processes" : {
-    "Giq_8jarE7w0rkjK07leI$$3rhWAKFyc6nNmJfrWzsCe" : {
-      "id" : "Giq_8jarE7w0rkjK07leI$$3rhWAKFyc6nNmJfrWzsCe",
+    "Ovegni1Ik2s62v3Y_KxzA$$Z7UtxkHpo8l4seeHGyTJz" : {
+      "id" : "Ovegni1Ik2s62v3Y_KxzA$$Z7UtxkHpo8l4seeHGyTJz",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "ReportWithHistory_1",
+        "slug" : "ReportWithHistory_1",
+        "x" : 1323.5333333333338,
+        "y" : 365.7333374023436,
+        "phase" : 1,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "EKT04cbxaA1RWraW997RW$$71Y7uAVDnPIg5w_9dKSOv",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/ReportWithHistory"
+      }
+    },
+    "wfS3tSSomjQ63ydrAyeFN$$3Cvz4wtDJIU-Sm77itsJi" : {
+      "id" : "wfS3tSSomjQ63ydrAyeFN$$3Cvz4wtDJIU-Sm77itsJi",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "LexisNexis",
+        "slug" : "LexisNexis",
+        "x" : 157.00000000000034,
+        "y" : 420.8,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "-rz8MhLfHBlkbZ2nJBz31$$TLnXoClALuxirKNvjJIa8",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/BNPLjsonIngest"
+      }
+    },
+    "N8XI4b0r41C98r4zJGXuY$$bwVgU5qdz8UYsK-G0EGLP" : {
+      "id" : "N8XI4b0r41C98r4zJGXuY$$bwVgU5qdz8UYsK-G0EGLP",
       "component" : "Join",
       "metadata" : {
         "label" : "ByCustomerID",
         "slug" : "ByCustomerID",
-        "x" : 379.3415142191452,
-        "y" : 236.7499999999999,
+        "x" : 345.3415142191453,
+        "y" : 159.55,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -108,14 +198,14 @@
       },
       "ports" : {
         "inputs" : [ {
-          "id" : "4FN8GJbvaDiHdTmHNgjcP$$KtsDpj-a77mMvT3I-WL28",
+          "id" : "Z_q192QmqjgUxWDHvvuqy$$BiTJ-euN970OFDPstE4KF",
           "slug" : "in0"
         }, {
-          "id" : "xQNcG3i40Rd_e64uS8pee$$cvNbfPPEtABjPeKeFXRV2",
+          "id" : "51sdRfkjiTW8i3MV-BiCW$$AiYpxhPTrV1dCQMOXy3No",
           "slug" : "in1"
         } ],
         "outputs" : [ {
-          "id" : "6nHTyfMZQBHp1T-Hi_B6p$$1SdjBztDVkyW32EnPQTsu",
+          "id" : "ihSbdkfKW7G-TxkXIu58S$$DfsjIDeb-y5SlX1kgjbOE",
           "slug" : "out"
         } ],
         "selectedInputFields" : [ ],
@@ -132,112 +222,56 @@
         } ],
         "expressions" : [ ],
         "hints" : [ {
-          "id" : "CiPOVmTQsZ9V02M50V0nv$$mZhM8p7xmWpmMC3t5mq7G",
+          "id" : "Z_q192QmqjgUxWDHvvuqy$$BiTJ-euN970OFDPstE4KF",
           "alias" : "in0",
           "hintType" : "none",
           "propagateColumns" : false
         }, {
-          "id" : "7i1kJ6wpbfMcl5gvR3Ed_$$QlhC-X2dyF3LyPI1eAtNo",
+          "id" : "51sdRfkjiTW8i3MV-BiCW$$AiYpxhPTrV1dCQMOXy3No",
           "alias" : "in1",
           "hintType" : "none",
           "propagateColumns" : false
         } ],
         "allIn1" : null,
         "activeTab" : "conditions",
-        "columnsSelector" : [ "7i1kJ6wpbfMcl5gvR3Ed_$$QlhC-X2dyF3LyPI1eAtNo##Name", "CiPOVmTQsZ9V02M50V0nv$$mZhM8p7xmWpmMC3t5mq7G##CUSTOMER_NAME" ],
+        "columnsSelector" : [ "Z_q192QmqjgUxWDHvvuqy$$BiTJ-euN970OFDPstE4KF##CUSTOMER_NAME", "51sdRfkjiTW8i3MV-BiCW$$AiYpxhPTrV1dCQMOXy3No##Name" ],
         "allIn0" : null,
         "whereClause" : null,
         "headAlias" : "in0"
       }
     },
-    "2TdGORQBTG3daVIEyLBl1$$0CBARY4skiGLMUt71Kax4" : {
-      "id" : "2TdGORQBTG3daVIEyLBl1$$0CBARY4skiGLMUt71Kax4",
-      "component" : "Target",
+    "Y95aS--yho4e2GPdG9yQV$$B5MZ_0IDbhAg9CIEttqiA" : {
+      "id" : "Y95aS--yho4e2GPdG9yQV$$B5MZ_0IDbhAg9CIEttqiA",
+      "component" : "Source",
       "metadata" : {
-        "label" : "DebtIncome",
-        "slug" : "DebtIncome",
-        "x" : 1359.6,
-        "y" : 432.0000000000001,
+        "label" : "Source_1",
+        "slug" : "Source_1",
+        "x" : -94.522222222222,
+        "y" : 248.32221984863276,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
         "isImported" : false
       },
       "ports" : {
-        "inputs" : [ {
-          "id" : "uDfddY3clQmjjClOSh-HI$$KoK8YLVfmX7lbZM4a47ak",
-          "slug" : "in0"
-        } ],
-        "outputs" : [ ],
-        "selectedInputFields" : [ ],
-        "isCustomOutputSchema" : false
-      },
-      "properties" : {
-        "datasetId" : "datasets/DTIlong"
-      }
-    },
-    "-KMTH_SawVd6m0kOGpyiM$$sI3PHnufIa28VmBtMrTu3" : {
-      "id" : "-KMTH_SawVd6m0kOGpyiM$$sI3PHnufIa28VmBtMrTu3",
-      "component" : "Reformat",
-      "metadata" : {
-        "label" : "Monthly",
-        "slug" : "Monthly",
-        "x" : 1120.6,
-        "y" : 433.80000000000007,
-        "phase" : 0,
-        "cache" : false,
-        "detailedStats" : false,
-        "isImported" : false
-      },
-      "ports" : {
-        "inputs" : [ {
-          "id" : "LG_-mG1CWxCtAjavtKWIs$$yGcqeLDEBpYV-hgjKlzv6",
-          "slug" : "in0"
-        } ],
+        "inputs" : [ ],
         "outputs" : [ {
-          "id" : "q3Qa_9oM-_NCkWg6-I3KW$$TMNvAaprAkPaHXEJQ1otB",
+          "id" : "mmgC6fqzEsQPSyPklSP4y$$wjWsu0R484fiSiB_7Ox92",
           "slug" : "out"
         } ],
         "selectedInputFields" : [ ],
         "isCustomOutputSchema" : false
       },
-      "properties" : {
-        "importLanguage" : "python",
-        "expressions" : [ {
-          "target" : "Name",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "Name"
-          },
-          "description" : ""
-        }, {
-          "target" : "Income",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "cast(ReportedIncome / 12 as long)"
-          },
-          "description" : ""
-        }, {
-          "target" : "LoanTotal",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "cast((TransUnionReportedLoanMonthly + MonthlyBNPLLoanAmount) as long)"
-          },
-          "description" : ""
-        } ],
-        "importString" : "",
-        "activeTab" : "expressions",
-        "columnsSelector" : [ "LG_-mG1CWxCtAjavtKWIs$$yGcqeLDEBpYV-hgjKlzv6##Name", "LG_-mG1CWxCtAjavtKWIs$$yGcqeLDEBpYV-hgjKlzv6##MonthlyBNPLLoanAmount", "LG_-mG1CWxCtAjavtKWIs$$yGcqeLDEBpYV-hgjKlzv6##ReportedIncome", "LG_-mG1CWxCtAjavtKWIs$$yGcqeLDEBpYV-hgjKlzv6##TransUnionReportedLoanMonthly" ]
-      }
+      "properties" : { }
     },
-    "jWjRYokUWF2bImTR3JVvT$$o6GxuUytGbMS_sPyJ0rbG" : {
-      "id" : "jWjRYokUWF2bImTR3JVvT$$o6GxuUytGbMS_sPyJ0rbG",
+    "lY9BF_UpAoekPkG8V11tN$$6PPoFoXHN8BCUS126QJ2_" : {
+      "id" : "lY9BF_UpAoekPkG8V11tN$$6PPoFoXHN8BCUS126QJ2_",
       "component" : "Reformat",
       "metadata" : {
         "label" : "Refine",
         "slug" : "Refine",
-        "x" : 619.4478527728309,
-        "y" : 516.1600036621096,
+        "x" : 353.8478527728311,
+        "y" : 417.3600036621095,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -245,11 +279,11 @@
       },
       "ports" : {
         "inputs" : [ {
-          "id" : "jv22R17LIhbPK7iic-5sp$$uq8-fYgbDeFrRphnvk7XM",
+          "id" : "sgKEun3wI8uK97QKsE5uh$$bNTxoEfSDHu6LyCVB_U-9",
           "slug" : "in0"
         } ],
         "outputs" : [ {
-          "id" : "kilyeygRdXpfSPxvuVO24$$QyeeGpVrkdZXYDMVAbgNg",
+          "id" : "2Njm_vQelmN9u8aO-FLr_$$RgFvRuluavDy_PX75aEbw",
           "slug" : "out"
         } ],
         "selectedInputFields" : [ ],
@@ -281,17 +315,17 @@
         } ],
         "importString" : "",
         "activeTab" : "expressions",
-        "columnsSelector" : [ "jv22R17LIhbPK7iic-5sp$$uq8-fYgbDeFrRphnvk7XM##name", "jv22R17LIhbPK7iic-5sp$$uq8-fYgbDeFrRphnvk7XM##monthly_loan_amount", "jv22R17LIhbPK7iic-5sp$$uq8-fYgbDeFrRphnvk7XM##balance" ]
+        "columnsSelector" : [ "sgKEun3wI8uK97QKsE5uh$$bNTxoEfSDHu6LyCVB_U-9##balance", "sgKEun3wI8uK97QKsE5uh$$bNTxoEfSDHu6LyCVB_U-9##name", "sgKEun3wI8uK97QKsE5uh$$bNTxoEfSDHu6LyCVB_U-9##monthly_loan_amount" ]
       }
     },
-    "2A6lq66wr9PsFlsyS4kfh$$OGQjRS6KQkYQ1apanTyFV" : {
-      "id" : "2A6lq66wr9PsFlsyS4kfh$$OGQjRS6KQkYQ1apanTyFV",
-      "component" : "Source",
+    "TxnlK8rL47IP4_Ens3pNn$$cb9yWRab3982UlwpYa_Z2" : {
+      "id" : "TxnlK8rL47IP4_Ens3pNn$$cb9yWRab3982UlwpYa_Z2",
+      "component" : "Script",
       "metadata" : {
-        "label" : "TransUnion",
-        "slug" : "TransUnion",
-        "x" : 160,
-        "y" : 377.19999999999993,
+        "label" : "UseConfig",
+        "slug" : "UseConfig",
+        "x" : 62.687962962963226,
+        "y" : 647.9222198486327,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -299,51 +333,24 @@
       },
       "ports" : {
         "inputs" : [ ],
-        "outputs" : [ {
-          "id" : "JG9rUx6vCmcJ9xY6IpAls$$imVVkzWS8Kp-wgu0hbfDB",
-          "slug" : "out"
-        } ],
+        "outputs" : [ ],
         "selectedInputFields" : [ ],
-        "isCustomOutputSchema" : false
+        "isCustomOutputSchema" : true
       },
       "properties" : {
-        "datasetId" : "datasets/creditReportXMLingest"
+        "script" : "#goal: /dbfs/Prophecy/${user_email}/finserv/prophecy/ingest/FICO/TransUnionFICO${Year}.xml\nimport os\n\nos.system(\"mkdir -p /dbfs/Prophecy/sparklearner123@gmail.com/finserv/prophecy/ingest/FICO\")\nos.system(\n    'wget https://raw.githubusercontent.com/atbida/terraform-databricks-lakehouse-blueprints/main/industry/fsi/data/TransUnionFICO2018 -O /dbfs/Prophecy/${user_email}/testconfig.xml' \n    )",
+        "scriptMethodHeader" : "def Script(spark: SparkSession) -> None:",
+        "scriptMethodFooter" : "    return "
       }
     },
-    "oczGH0_NhgeZ2wW1VE53E$$TdyEmwghllJr_mh-Vey_3" : {
-      "id" : "oczGH0_NhgeZ2wW1VE53E$$TdyEmwghllJr_mh-Vey_3",
-      "component" : "Source",
+    "OYaGutOo1n_DqxjKU-7G_$$R2yardQiDMwyz3efeWlLu" : {
+      "id" : "OYaGutOo1n_DqxjKU-7G_$$R2yardQiDMwyz3efeWlLu",
+      "component" : "Target",
       "metadata" : {
-        "label" : "LexisNexis",
-        "slug" : "LexisNexis",
-        "x" : 397.40000000000003,
-        "y" : 520.8000000000001,
-        "phase" : 0,
-        "cache" : false,
-        "detailedStats" : false,
-        "isImported" : false
-      },
-      "ports" : {
-        "inputs" : [ ],
-        "outputs" : [ {
-          "id" : "v-uSLDTUShfu2dWt6UrmO$$tw3yQzDxhfHbefRYFxwHb",
-          "slug" : "out"
-        } ],
-        "selectedInputFields" : [ ],
-        "isCustomOutputSchema" : false
-      },
-      "properties" : {
-        "datasetId" : "datasets/BNPLjsonIngest"
-      }
-    },
-    "BTZqWQuYLlXehp-wQgOa2$$UiGAcddnPuNHfVDEoCzkv" : {
-      "id" : "BTZqWQuYLlXehp-wQgOa2$$UiGAcddnPuNHfVDEoCzkv",
-      "component" : "Join",
-      "metadata" : {
-        "label" : "ByName",
-        "slug" : "ByName",
-        "x" : 868.093338720978,
-        "y" : 435.9199981689453,
+        "label" : "ReportWithHistory",
+        "slug" : "ReportWithHistory",
+        "x" : 1188.3111170450843,
+        "y" : 369.46667480468733,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -351,14 +358,178 @@
       },
       "ports" : {
         "inputs" : [ {
-          "id" : "d0yCD0Zr0eODjwijyqowX$$IWbtDZxs6DNsmZaUHdLoQ",
+          "id" : "8pBqFHg4j9yqVWrPgnCr5$$-gsoGb9UJxu4Wv0_AxPZ4",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/ReportWithHistory"
+      }
+    },
+    "N1LxcLKxJB_y0lwSpsr5t$$YSY11_gVYaIuTm8FqINMm" : {
+      "id" : "N1LxcLKxJB_y0lwSpsr5t$$YSY11_gVYaIuTm8FqINMm",
+      "component" : "Script",
+      "metadata" : {
+        "label" : "DefineConfig",
+        "slug" : "DefineConfig",
+        "x" : -77.71203703703677,
+        "y" : 646.7222198486327,
+        "phase" : -2,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "g4DtP71fnji-TdthxrBYD$$J1g3dnY-rpbyEHgKdYcsI",
+          "slug" : "out0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ ]
+          }
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : true
+      },
+      "properties" : {
+        "script" : "spark.sql(\"set spark.databricks.userInfoFunctions.enabled = true\").show()\n\nout0 = spark.sql(\"select current_user() as user_email\").collect()\nConfig.user_email = out0[0]['user_email']\n\nout0 = spark.range(0).select(lit(Config.user_email).alias('user_email'))",
+        "scriptMethodHeader" : "def Script(spark: SparkSession) -> DataFrame:",
+        "scriptMethodFooter" : "    return out0"
+      }
+    },
+    "kRAhWpuCBYITGEsDQdNdE$$78JwpmyT2I1zEnGJTXadn" : {
+      "id" : "kRAhWpuCBYITGEsDQdNdE$$78JwpmyT2I1zEnGJTXadn",
+      "component" : "OrderBy",
+      "metadata" : {
+        "label" : "OrderBy",
+        "slug" : "OrderBy",
+        "x" : 1465.1333333333337,
+        "y" : 368.13333740234344,
+        "phase" : 1,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "8gQjLulONH4vDHmbT860Q$$e8v0t-3J8rTy7gte-qxO_",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "DhL-_cVWIPjBjaoZ4nhiq$$iXROxdHO1VLwVKu4FWDkH",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "columnsSelector" : [ "8gQjLulONH4vDHmbT860Q$$e8v0t-3J8rTy7gte-qxO_##FicoValidTo", "8gQjLulONH4vDHmbT860Q$$e8v0t-3J8rTy7gte-qxO_##Name", "8gQjLulONH4vDHmbT860Q$$e8v0t-3J8rTy7gte-qxO_##FicoValidFrom", "8gQjLulONH4vDHmbT860Q$$e8v0t-3J8rTy7gte-qxO_##FicoScore" ],
+        "orders" : [ {
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Name"
+          },
+          "sortType" : "asc"
+        }, {
+          "expression" : {
+            "format" : "sql",
+            "expression" : "FicoScore"
+          },
+          "sortType" : "asc"
+        }, {
+          "expression" : {
+            "format" : "sql",
+            "expression" : "FicoValidFrom"
+          },
+          "sortType" : "asc"
+        }, {
+          "expression" : {
+            "format" : "sql",
+            "expression" : "FicoValidTo"
+          },
+          "sortType" : "asc"
+        } ]
+      }
+    },
+    "nLIeU1vq5Y1haW-6Z5SHm$$bTVNtL8ujdRPnsmrmSeF8" : {
+      "id" : "nLIeU1vq5Y1haW-6Z5SHm$$bTVNtL8ujdRPnsmrmSeF8",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "Income",
+        "slug" : "Income",
+        "x" : 151.0000000000001,
+        "y" : 82.39999999999992,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "-DKYPXr6cpyCf0m3aYm9R$$ekx_RsHVb4LM-Y1iIieoW",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/CustIncomeCSV"
+      }
+    },
+    "YRpIP1W9KuR198nbz1_kL$$6RHbqvxXN_BHsWC9nQOXb" : {
+      "id" : "YRpIP1W9KuR198nbz1_kL$$6RHbqvxXN_BHsWC9nQOXb",
+      "component" : "Target",
+      "metadata" : {
+        "label" : "Profile",
+        "slug" : "Profile",
+        "x" : 1185.5333333333333,
+        "y" : 28.533337402343648,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "FqNGAwu-FsXLmp-s6FpwA$$4B-nYdsGZ6z3SQcaaR6wu",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/Profile"
+      }
+    },
+    "ya9_cxbGeuUPref1-HAu2$$4-hNZHhJpOOC8NbX7SpsE" : {
+      "id" : "ya9_cxbGeuUPref1-HAu2$$4-hNZHhJpOOC8NbX7SpsE",
+      "component" : "Join",
+      "metadata" : {
+        "label" : "ByName",
+        "slug" : "ByName",
+        "x" : 720.0933387209781,
+        "y" : 284.31999816894523,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "3ZwTjTBHMDYA5PWUiCJNR$$UWsTvHdvA_9teojs6yvKT",
           "slug" : "in0"
         }, {
-          "id" : "lYZrShdKEShO_GmXJpTeT$$EsfPvabH229vNP09pCk-h",
+          "id" : "AmXvPkRImmlAGCA2ZAeZV$$FlUq21CdC53CrPWTZEAFk",
           "slug" : "in1"
         } ],
         "outputs" : [ {
-          "id" : "49tDydd61QiN7IcEqoH-J$$860fKj4wxwPiL_jOcrsHf",
+          "id" : "N_Zqvvvx1coa37Ndr7Pw_$$DJGIPh_qL8pwEgQfl7Ova",
           "slug" : "out"
         } ],
         "selectedInputFields" : [ ],
@@ -374,22 +545,6 @@
           "joinType" : "inner"
         } ],
         "expressions" : [ {
-          "target" : "ReportedIncome",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "in0.ReportedIncome"
-          },
-          "description" : "",
-          "_row_id" : null
-        }, {
-          "target" : "TransUnionReportedLoanMonthly",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "in0.TransUnionReportedLoanMonthly"
-          },
-          "description" : "",
-          "_row_id" : null
-        }, {
           "target" : "Name",
           "expression" : {
             "format" : "sql",
@@ -398,7 +553,23 @@
           "description" : "",
           "_row_id" : null
         }, {
-          "target" : "MonthlyBNPLLoanAmount",
+          "target" : "ReportedIncome",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.ReportedIncome"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "TradLoanAmount",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.TULoanAmount"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "BNPLLoanAmount",
           "expression" : {
             "format" : "sql",
             "expression" : "in1.MonthlyBNPLLoanAmount"
@@ -413,60 +584,117 @@
           },
           "description" : "",
           "_row_id" : null
+        }, {
+          "target" : "FicoScore",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.Score"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "FicoValidFrom",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.ValidFrom"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "FicoValidTo",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.ValidTo"
+          },
+          "description" : "",
+          "_row_id" : null
         } ],
         "hints" : [ {
-          "id" : "d0yCD0Zr0eODjwijyqowX$$IWbtDZxs6DNsmZaUHdLoQ",
+          "id" : "3ZwTjTBHMDYA5PWUiCJNR$$UWsTvHdvA_9teojs6yvKT",
           "alias" : "in0",
           "hintType" : "none",
           "propagateColumns" : false
         }, {
-          "id" : "lYZrShdKEShO_GmXJpTeT$$EsfPvabH229vNP09pCk-h",
+          "id" : "AmXvPkRImmlAGCA2ZAeZV$$FlUq21CdC53CrPWTZEAFk",
           "alias" : "in1",
           "hintType" : "none",
           "propagateColumns" : false
         } ],
         "allIn1" : null,
         "activeTab" : "expressions",
-        "columnsSelector" : [ "d0yCD0Zr0eODjwijyqowX$$IWbtDZxs6DNsmZaUHdLoQ##Name", "lYZrShdKEShO_GmXJpTeT$$EsfPvabH229vNP09pCk-h##Name", "d0yCD0Zr0eODjwijyqowX$$IWbtDZxs6DNsmZaUHdLoQ##TransUnionReportedLoanMonthly", "lYZrShdKEShO_GmXJpTeT$$EsfPvabH229vNP09pCk-h##Name", "lYZrShdKEShO_GmXJpTeT$$EsfPvabH229vNP09pCk-h##Balance", "lYZrShdKEShO_GmXJpTeT$$EsfPvabH229vNP09pCk-h##MonthlyBNPLLoanAmount", "d0yCD0Zr0eODjwijyqowX$$IWbtDZxs6DNsmZaUHdLoQ##ReportedIncome" ],
+        "columnsSelector" : [ "AmXvPkRImmlAGCA2ZAeZV$$FlUq21CdC53CrPWTZEAFk##Name", "3ZwTjTBHMDYA5PWUiCJNR$$UWsTvHdvA_9teojs6yvKT##Name", "AmXvPkRImmlAGCA2ZAeZV$$FlUq21CdC53CrPWTZEAFk##Balance", "3ZwTjTBHMDYA5PWUiCJNR$$UWsTvHdvA_9teojs6yvKT##ValidTo", "3ZwTjTBHMDYA5PWUiCJNR$$UWsTvHdvA_9teojs6yvKT##TULoanAmount", "3ZwTjTBHMDYA5PWUiCJNR$$UWsTvHdvA_9teojs6yvKT##ValidFrom", "3ZwTjTBHMDYA5PWUiCJNR$$UWsTvHdvA_9teojs6yvKT##Score", "3ZwTjTBHMDYA5PWUiCJNR$$UWsTvHdvA_9teojs6yvKT##ReportedIncome", "AmXvPkRImmlAGCA2ZAeZV$$FlUq21CdC53CrPWTZEAFk##Name", "AmXvPkRImmlAGCA2ZAeZV$$FlUq21CdC53CrPWTZEAFk##MonthlyBNPLLoanAmount" ],
         "allIn0" : null,
         "whereClause" : null,
         "headAlias" : "in0"
       }
     },
-    "3FKr-VVzEzaZblqF7TpA6$$wWHVG7mIVIrKgzfNVEqDv" : {
-      "id" : "3FKr-VVzEzaZblqF7TpA6$$wWHVG7mIVIrKgzfNVEqDv",
-      "component" : "Source",
+    "PQOLTdXX7yyiKT10fr_eR$$w-fNGp-QQFHCO_0YakWFh" : {
+      "id" : "PQOLTdXX7yyiKT10fr_eR$$w-fNGp-QQFHCO_0YakWFh",
+      "component" : "Filter",
       "metadata" : {
-        "label" : "Income",
-        "slug" : "Income",
-        "x" : 163.4,
-        "y" : 180,
-        "phase" : 0,
+        "label" : "Filter_1",
+        "slug" : "Filter_1",
+        "x" : 1614.287962962963,
+        "y" : 364.7222198486327,
+        "phase" : 1,
         "cache" : false,
         "detailedStats" : false,
         "isImported" : false
       },
       "ports" : {
-        "inputs" : [ ],
+        "inputs" : [ {
+          "id" : "-1F18vNkNNftFfB7KCzfB$$PtXx7qDYnxnPbmrSyHzot",
+          "slug" : "in0"
+        } ],
         "outputs" : [ {
-          "id" : "StbwZVSI1UL9w6S5iLUJo$$29ZjOBCY2qehkxl5jwBW9",
+          "id" : "t0_sQuUJ8VoqSrIgFB6OO$$hRRMGAycfoonb_w2TTLj7",
           "slug" : "out"
         } ],
         "selectedInputFields" : [ ],
         "isCustomOutputSchema" : false
       },
       "properties" : {
-        "datasetId" : "datasets/CustIncomeCSV"
+        "columnsSelector" : [ "-1F18vNkNNftFfB7KCzfB$$PtXx7qDYnxnPbmrSyHzot##maxFlag" ],
+        "condition" : {
+          "format" : "sql",
+          "expression" : "maxFlag is true"
+        }
       }
     },
-    "zkKOeX-Jf_xdGBZ-BT4dp$$B9b4XB2QnynJ-LwXuf22X" : {
-      "id" : "zkKOeX-Jf_xdGBZ-BT4dp$$B9b4XB2QnynJ-LwXuf22X",
+    "UGvWJ-rcmwcFxAdXZbPM-$$U-Ppg_VPlLrEGh7royJKA" : {
+      "id" : "UGvWJ-rcmwcFxAdXZbPM-$$U-Ppg_VPlLrEGh7royJKA",
+      "component" : "Target",
+      "metadata" : {
+        "label" : "ReportLatest",
+        "slug" : "ReportLatest",
+        "x" : 1766.6879629629627,
+        "y" : 361.12221984863277,
+        "phase" : 1,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "2sH4WuE25a33TlKYWm9vI$$18YyvpQyJMvva6tdqrtHK",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/ReportLatest"
+      }
+    },
+    "zOH5C3GtqrsEPwEFJGOLi$$T_JwgqlKsW9ud30cPrY_j" : {
+      "id" : "zOH5C3GtqrsEPwEFJGOLi$$T_JwgqlKsW9ud30cPrY_j",
       "component" : "Reformat",
       "metadata" : {
         "label" : "ParseLoanAmount",
         "slug" : "ParseLoanAmount",
-        "x" : 606.4878674212681,
-        "y" : 235.03999633789067,
+        "x" : 522.0878674212682,
+        "y" : 154.23999633789077,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -474,11 +702,11 @@
       },
       "ports" : {
         "inputs" : [ {
-          "id" : "GZOyiN5i-_QkrCErBaBo7$$TPbzh43Aa9rXXjGxogl5d",
+          "id" : "qTWiiHRmcKjyeeFV8p3wd$$XbY68Ig8iJhug3pkxRmvW",
           "slug" : "in0"
         } ],
         "outputs" : [ {
-          "id" : "foH0Joq8kuYbs5w1sZx4M$$1JE_3jzs3sqXojl4fUEJz",
+          "id" : "2ZIMo6Fee-eMAmdjSDcvI$$A90_RUsr5enWOEWWLZx-Z",
           "slug" : "out"
         } ],
         "selectedInputFields" : [ ],
@@ -501,16 +729,203 @@
           },
           "description" : ""
         }, {
-          "target" : "TransUnionReportedLoanMonthly",
+          "target" : "TULoanAmount",
           "expression" : {
             "format" : "sql",
             "expression" : "cast(split(trades.trade[0].terms, 'M')[1] as long)"
           },
           "description" : ""
+        }, {
+          "target" : "Score",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "FICO.Score"
+          },
+          "description" : ""
+        }, {
+          "target" : "ValidFrom",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "FICO.ValidFrom"
+          },
+          "description" : ""
+        }, {
+          "target" : "ValidTo",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "FICO.ValidTo"
+          },
+          "description" : ""
         } ],
         "importString" : "",
         "activeTab" : "expressions",
-        "columnsSelector" : [ "GZOyiN5i-_QkrCErBaBo7$$TPbzh43Aa9rXXjGxogl5d##Trades.Trade", "GZOyiN5i-_QkrCErBaBo7$$TPbzh43Aa9rXXjGxogl5d##Trades", "GZOyiN5i-_QkrCErBaBo7$$TPbzh43Aa9rXXjGxogl5d##REPORTED_INCOME", "GZOyiN5i-_QkrCErBaBo7$$TPbzh43Aa9rXXjGxogl5d##Name" ]
+        "columnsSelector" : [ "qTWiiHRmcKjyeeFV8p3wd$$XbY68Ig8iJhug3pkxRmvW##Trades.Trade", "qTWiiHRmcKjyeeFV8p3wd$$XbY68Ig8iJhug3pkxRmvW##FICO.ValidFrom", "qTWiiHRmcKjyeeFV8p3wd$$XbY68Ig8iJhug3pkxRmvW##Name", "qTWiiHRmcKjyeeFV8p3wd$$XbY68Ig8iJhug3pkxRmvW##Trades", "qTWiiHRmcKjyeeFV8p3wd$$XbY68Ig8iJhug3pkxRmvW##FICO.Score", "qTWiiHRmcKjyeeFV8p3wd$$XbY68Ig8iJhug3pkxRmvW##FICO.ValidTo", "qTWiiHRmcKjyeeFV8p3wd$$XbY68Ig8iJhug3pkxRmvW##FICO", "qTWiiHRmcKjyeeFV8p3wd$$XbY68Ig8iJhug3pkxRmvW##REPORTED_INCOME" ]
+      }
+    },
+    "POkx315yQfajWC4ytMxCb$$jYpANLStKcFXxuBo5vr5S" : {
+      "id" : "POkx315yQfajWC4ytMxCb$$jYpANLStKcFXxuBo5vr5S",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "Monthly",
+        "slug" : "Monthly",
+        "x" : 948.6,
+        "y" : 281.00000000000006,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "NBJ-lJBdSbAuZSRSU4c3q$$X9XztvKFjjeLwBPFiYpOc",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "lqDcEDYMFtjFo_AY7WlvY$$BkXNk5IYhdQ3RDsc3Byna",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "importLanguage" : "python",
+        "expressions" : [ {
+          "target" : "Name",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Name"
+          },
+          "description" : ""
+        }, {
+          "target" : "Income",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "cast(ReportedIncome / 12 as long)"
+          },
+          "description" : ""
+        }, {
+          "target" : "LoanTotal",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "cast((TradLoanAmount + BNPLLoanAmount) as long)"
+          },
+          "description" : ""
+        }, {
+          "target" : "FicoScore",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "FicoScore"
+          },
+          "description" : ""
+        }, {
+          "target" : "FicoValidFrom",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "FicoValidFrom"
+          },
+          "description" : ""
+        }, {
+          "target" : "FicoValidTo",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "FicoValidTo"
+          },
+          "description" : ""
+        }, {
+          "target" : "minFlag",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "lit(true)"
+          },
+          "description" : ""
+        }, {
+          "target" : "maxFlag",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "lit(true)"
+          },
+          "description" : ""
+        } ],
+        "importString" : "",
+        "activeTab" : "expressions",
+        "columnsSelector" : [ "NBJ-lJBdSbAuZSRSU4c3q$$X9XztvKFjjeLwBPFiYpOc##FicoValidFrom", "NBJ-lJBdSbAuZSRSU4c3q$$X9XztvKFjjeLwBPFiYpOc##Name", "NBJ-lJBdSbAuZSRSU4c3q$$X9XztvKFjjeLwBPFiYpOc##ReportedIncome", "NBJ-lJBdSbAuZSRSU4c3q$$X9XztvKFjjeLwBPFiYpOc##FicoValidTo", "NBJ-lJBdSbAuZSRSU4c3q$$X9XztvKFjjeLwBPFiYpOc##TradLoanAmount", "NBJ-lJBdSbAuZSRSU4c3q$$X9XztvKFjjeLwBPFiYpOc##FicoScore", "NBJ-lJBdSbAuZSRSU4c3q$$X9XztvKFjjeLwBPFiYpOc##BNPLLoanAmount" ]
+      }
+    },
+    "_6DzXFo9fbSwfKJgzOg_a$$1W2enoFjMr5QGy-EG2A4n" : {
+      "id" : "_6DzXFo9fbSwfKJgzOg_a$$1W2enoFjMr5QGy-EG2A4n",
+      "component" : "Target",
+      "metadata" : {
+        "label" : "Report",
+        "slug" : "Report",
+        "x" : 1188.7999999999997,
+        "y" : 197.6000000000002,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "jtKyE5He5twM4uFXH7Rhh$$htFDD5D6aWcxYvpMewsbx",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/Report"
+      }
+    },
+    "l7SQRH_R1q0GSjJVQBVUC$$7ImWPKlPUtMdxKnxHb1R7" : {
+      "id" : "l7SQRH_R1q0GSjJVQBVUC$$7ImWPKlPUtMdxKnxHb1R7",
+      "component" : "Script",
+      "metadata" : {
+        "label" : "Ingest",
+        "slug" : "Ingest",
+        "x" : 32.3333333333335,
+        "y" : 248.5007706046104,
+        "phase" : -1,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : true
+      },
+      "properties" : {
+        "script" : "import os\n\nos.system(\"mkdir -p /dbfs/Prophecy/sparklearner123@gmail.com/finserv/prophecy/ingest/FICO\")\nos.system(\n    'wget https://raw.githubusercontent.com/atbida/terraform-databricks-lakehouse-blueprints/main/industry/fsi/data/TransUnionFICO${Year} -O /dbfs/Prophecy/sparklearner123@gmail.com/finserv/prophecy/ingest/FICO/TransUnionFICO${Year}.xml' \n    )",
+        "scriptMethodHeader" : "def Script(spark: SparkSession) -> None:",
+        "scriptMethodFooter" : "    return "
+      }
+    },
+    "KhKGpWIjs4Cl8SPLZTLfq$$-POKihJ5Q8C6wyL38xNAA" : {
+      "id" : "KhKGpWIjs4Cl8SPLZTLfq$$-POKihJ5Q8C6wyL38xNAA",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "TransUnionFico.xml",
+        "slug" : "TransUnionFico_xml",
+        "x" : 155.60000000000002,
+        "y" : 246.53333333333347,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "8dhc6TDyIigVGNa5lrrVF$$z2LiDxgpPswa2reGpVW0x",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/TransUnionFICO2019_xml"
       }
     }
   },

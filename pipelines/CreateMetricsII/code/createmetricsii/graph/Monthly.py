@@ -8,5 +8,10 @@ def Monthly(spark: SparkSession, in0: DataFrame) -> DataFrame:
     return in0.select(
         col("Name"), 
         (col("ReportedIncome") / lit(12)).cast(LongType()).alias("Income"), 
-        (col("TransUnionReportedLoanMonthly") + col("MonthlyBNPLLoanAmount")).cast(LongType()).alias("LoanTotal")
+        (col("TradLoanAmount") + col("BNPLLoanAmount")).cast(LongType()).alias("LoanTotal"), 
+        col("FicoScore"), 
+        col("FicoValidFrom"), 
+        col("FicoValidTo"), 
+        lit(True).alias("minFlag"), 
+        lit(True).alias("maxFlag")
     )

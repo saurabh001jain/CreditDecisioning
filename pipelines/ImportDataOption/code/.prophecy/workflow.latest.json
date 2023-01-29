@@ -43,7 +43,25 @@
     },
     "topLevelPackage" : "importdataoption"
   },
-  "connections" : [ ],
+  "connections" : [ {
+    "id" : "rXn8qZVOOqYH0LQFxBYTT",
+    "source" : "-oZoknPsaI15XUODz4QqR$$kun-j9_Nf01Bn-TBrZEg1",
+    "sourcePort" : "SokZJQJKId_JT62jxdI1k$$PQY0Wql3OZ9u_IPcJ3scp",
+    "target" : "0HKAwlnV4THyi60z2FO83$$VNekBINrHyxxPUNvSlSKE",
+    "targetPort" : "lmvtHpw1slJT2nrjj2MQ_$$xZ0vayIvyJcijvOXegd4g"
+  }, {
+    "id" : "mza8TenczSX_MRpR0_5FD",
+    "source" : "0HKAwlnV4THyi60z2FO83$$VNekBINrHyxxPUNvSlSKE",
+    "sourcePort" : "yfav4yLChIIFCBxYL3aHz$$VMatqkw_55NnBfWNRJHBl",
+    "target" : "r5OC4OfveZzbz7soXpPzF$$l_qfrXtw14AIoM8lh59oo",
+    "targetPort" : "UuQ7rqrtk3r1cjCey93A4$$Pi0tS2UBfLULui5KWhaut"
+  }, {
+    "id" : "WXC_fEpLXrl2S9PDtdN5x",
+    "source" : "r5OC4OfveZzbz7soXpPzF$$l_qfrXtw14AIoM8lh59oo",
+    "sourcePort" : "P5i6JM5kNXp_YRu_Hxpmk$$O4fvrckzC_Gee6I32lQaN",
+    "target" : "qUw-5eqhU51nHeStwqCAf$$6z-OVDmJDMuDn5dN_3f2V",
+    "targetPort" : "iGlShAPm_Y3Ohkar543jK$$bg7mnIb2LEsadGcBnZBVb"
+  } ],
   "processes" : {
     "BmIIufSDFIbgrpmT51DhV$$rZ2-VNP0QE7JFHYc3cl7t" : {
       "id" : "BmIIufSDFIbgrpmT51DhV$$rZ2-VNP0QE7JFHYc3cl7t",
@@ -71,6 +89,38 @@
         "datasetId" : "datasets/CustIncomeCSV"
       }
     },
+    "-oZoknPsaI15XUODz4QqR$$kun-j9_Nf01Bn-TBrZEg1" : {
+      "id" : "-oZoknPsaI15XUODz4QqR$$kun-j9_Nf01Bn-TBrZEg1",
+      "component" : "Script",
+      "metadata" : {
+        "label" : "Script_1",
+        "slug" : "Script_1",
+        "x" : 48.26817129629637,
+        "y" : 922.3944464789497,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "SokZJQJKId_JT62jxdI1k$$PQY0Wql3OZ9u_IPcJ3scp",
+          "slug" : "out0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ ]
+          }
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : true
+      },
+      "properties" : {
+        "script" : "out0 = spark.range(1)",
+        "scriptMethodHeader" : "def Script(spark: SparkSession) -> DataFrame:",
+        "scriptMethodFooter" : "    return out0"
+      }
+    },
     "UYs4hI5e6kExXkOyZDDZV$$D3mGBbXpGie2p9fFX3RGM" : {
       "id" : "UYs4hI5e6kExXkOyZDDZV$$D3mGBbXpGie2p9fFX3RGM",
       "component" : "Script",
@@ -94,6 +144,68 @@
         "script" : "import os\n\nos.system(\"mkdir -p /dbfs/Prophecy/sparklearner123@gmail.com/finserv/prophecy/ingest/customer\")\nos.system(\n    'wget https://raw.githubusercontent.com/databricks/terraform-databricks-lakehouse-blueprints/prophecy_quickstart/industry/fsi/data/customer.csv -O /dbfs/Prophecy/sparklearner123@gmail.com/finserv/prophecy/ingest/customer/customer.csv' \n    )",
         "scriptMethodHeader" : "def Script(spark: SparkSession) -> None:",
         "scriptMethodFooter" : "    return "
+      }
+    },
+    "0HKAwlnV4THyi60z2FO83$$VNekBINrHyxxPUNvSlSKE" : {
+      "id" : "0HKAwlnV4THyi60z2FO83$$VNekBINrHyxxPUNvSlSKE",
+      "component" : "RestAPIEnrich",
+      "metadata" : {
+        "label" : "RestAPIEnrich_1",
+        "slug" : "RestAPIEnrich_1",
+        "x" : 220.9618055555557,
+        "y" : 922.6333333333334,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "lmvtHpw1slJT2nrjj2MQ_$$xZ0vayIvyJcijvOXegd4g",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "yfav4yLChIIFCBxYL3aHz$$VMatqkw_55NnBfWNRJHBl",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "awaitTime" : null,
+        "method" : "GET",
+        "proxies" : null,
+        "verify" : null,
+        "streamFrom" : null,
+        "headersFrom" : "staticValue",
+        "auth" : null,
+        "url" : "https://raw.githubusercontent.com/atbida/terraform-databricks-lakehouse-blueprints/main/industry/fsi/data/TransUnionFICO",
+        "json" : null,
+        "cert" : null,
+        "data" : null,
+        "params" : null,
+        "allow_redirectsFrom" : null,
+        "authFrom" : null,
+        "proxiesFrom" : null,
+        "files" : null,
+        "awaitTimeFrom" : null,
+        "cookies" : null,
+        "jsonFrom" : null,
+        "urlFrom" : "staticValue",
+        "parseContent" : null,
+        "activeTab" : "basicTab",
+        "allow_redirects" : null,
+        "certFrom" : null,
+        "stream" : null,
+        "filesFrom" : null,
+        "paramsFrom" : "staticValue",
+        "dataFrom" : null,
+        "timeoutFrom" : null,
+        "verifyFrom" : null,
+        "headers" : "{\"version\":\"1.0\", \"encoding\":\"UTF-8\"}",
+        "methodFrom" : "staticValue",
+        "timeout" : null,
+        "cookiesFrom" : null
       }
     },
     "XhdjmOHFE_EoSvJIu0NVL$$dv-GeP6tef3vyhN1tZE_y" : {
@@ -120,6 +232,31 @@
       },
       "properties" : {
         "datasetId" : "datasets/BNPLjsonIngest"
+      }
+    },
+    "5deVybltlScb1g1A4jhvN$$iuHMk-uZknuzBfTC18c1y" : {
+      "id" : "5deVybltlScb1g1A4jhvN$$iuHMk-uZknuzBfTC18c1y",
+      "component" : "Script",
+      "metadata" : {
+        "label" : "IngestFICO",
+        "slug" : "IngestFICO",
+        "x" : 244.20000000000005,
+        "y" : 520.7333333333333,
+        "phase" : -1,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : true
+      },
+      "properties" : {
+        "script" : "import os\n\nos.system(\"mkdir -p /dbfs/Prophecy/sparklearner123@gmail.com/finserv/prophecy/ingest/FICO\")\nos.system(\n    'wget https://raw.githubusercontent.com/atbida/terraform-databricks-lakehouse-blueprints/main/industry/fsi/data/TransUnionFICO -O /dbfs/Prophecy/sparklearner123@gmail.com/finserv/prophecy/ingest/FICO/TransUnionFICO.xml' \n    )",
+        "scriptMethodHeader" : "def Script(spark: SparkSession) -> None:",
+        "scriptMethodFooter" : "    return "
       }
     },
     "ft5FvWgShosVUMW-Rozs4$$axQK23JxHaMs5BywFTWOI" : {
@@ -170,6 +307,96 @@
         "script" : " import os\n\nos.system(\"mkdir -p /dbfs/Prophecy/sparklearner123@gmail.com/finserv/prophecy/ingest/data\")\nos.system(\n    'wget https://raw.githubusercontent.com/databricks/terraform-databricks-lakehouse-blueprints/prophecy_quickstart/industry/fsi/data/bnpl.json -O /dbfs/Prophecy/sparklearner123@gmail.com/finserv/prophecy/ingest/data/bnpl.json' \n    )",
         "scriptMethodHeader" : "def Script(spark: SparkSession) -> None:",
         "scriptMethodFooter" : "    return "
+      }
+    },
+    "qUw-5eqhU51nHeStwqCAf$$6z-OVDmJDMuDn5dN_3f2V" : {
+      "id" : "qUw-5eqhU51nHeStwqCAf$$6z-OVDmJDMuDn5dN_3f2V",
+      "component" : "Target",
+      "metadata" : {
+        "label" : "Target_1",
+        "slug" : "Target_1",
+        "x" : 543.8681712962964,
+        "y" : 919.9944464789497,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "iGlShAPm_Y3Ohkar543jK$$bg7mnIb2LEsadGcBnZBVb",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : { }
+    },
+    "r5OC4OfveZzbz7soXpPzF$$l_qfrXtw14AIoM8lh59oo" : {
+      "id" : "r5OC4OfveZzbz7soXpPzF$$l_qfrXtw14AIoM8lh59oo",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "Reformat_1",
+        "slug" : "Reformat_1",
+        "x" : 408.66817129629635,
+        "y" : 924.7944464789497,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "UuQ7rqrtk3r1cjCey93A4$$Pi0tS2UBfLULui5KWhaut",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "P5i6JM5kNXp_YRu_Hxpmk$$O4fvrckzC_Gee6I32lQaN",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "importLanguage" : "python",
+        "expressions" : [ {
+          "target" : "content",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "api_output.content"
+          },
+          "description" : ""
+        } ],
+        "importString" : "",
+        "activeTab" : "expressions",
+        "columnsSelector" : [ "UuQ7rqrtk3r1cjCey93A4$$Pi0tS2UBfLULui5KWhaut##api_output", "UuQ7rqrtk3r1cjCey93A4$$Pi0tS2UBfLULui5KWhaut##api_output.content" ]
+      }
+    },
+    "_4_c5C03brrHpo04x25iu$$NjOnq8s3RKiutg4Ss6Msr" : {
+      "id" : "_4_c5C03brrHpo04x25iu$$NjOnq8s3RKiutg4Ss6Msr",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "TransUnionFICOxml",
+        "slug" : "TransUnionFICOxml",
+        "x" : 413.0681712962963,
+        "y" : 512.8133403636791,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "q3qber7Sx0r-0CB-T9XaT$$66WtZ2udtKAFcZOt6zBEE",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/TransUnionFico_xml"
       }
     },
     "1aG7yq2DbGbIkAa5oBiiA$$zykixQvhUFnx9fTLFDaoe" : {

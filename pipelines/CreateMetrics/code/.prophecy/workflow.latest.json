@@ -1047,6 +1047,30 @@
         "columnsSelector" : [ "wM4p68AqHrBUmMCaLKht5$$0S6_PrCPcefGIdKaZJtam##monthly_loan_amount", "wM4p68AqHrBUmMCaLKht5$$0S6_PrCPcefGIdKaZJtam##name" ]
       }
     },
+    "SScvXSVEfiV8jzvK_Mvn0$$-T_tHJFXJfbvKftoqi9Aq" : {
+      "id" : "SScvXSVEfiV8jzvK_Mvn0$$-T_tHJFXJfbvKftoqi9Aq",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "Source_1",
+        "slug" : "Source_1",
+        "x" : -25.897535845883965,
+        "y" : -290.51000366210934,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "rXAS8JQsiws2Q2mT_Crep$$gmsCZC9M0rBF3GgvI6hIG",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : { }
+    },
     "A3R3GCMyOtfDpkXr71GIz$$mIBkY_6GN0PO6Gcv4b4Os" : {
       "id" : "A3R3GCMyOtfDpkXr71GIz$$mIBkY_6GN0PO6Gcv4b4Os",
       "component" : "Source",
