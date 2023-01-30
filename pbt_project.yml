@@ -5,18 +5,6 @@ author: sparklearner123@gmail.com
 language: python
 buildSystem: wheel
 pipelines:
-  pipelines/Cleanup:
-    name: Cleanup
-    description: For repeated usage, remove previously written data
-    author: sparklearner123@gmail.com
-    mode: batch
-    language: python
-    createdAt: '2023-01-18 04:04:53'
-    datasets:
-      inputs:
-      - datasets/FICO_table_history
-      outputs: []
-    dependencies: {}
   pipelines/CreateMetrics:
     name: CreateMetrics
     description: ''
@@ -51,6 +39,18 @@ pipelines:
       - datasets/creditReportXMLingest
       outputs: []
     dependencies: {}
+  pipelines/Cleanup:
+    name: Cleanup
+    description: For repeated usage, remove previously written data
+    author: sparklearner123@gmail.com
+    mode: batch
+    language: python
+    createdAt: '2023-01-18 04:04:53'
+    datasets:
+      inputs:
+      - datasets/ReportWithHistory
+      outputs: []
+    dependencies: {}
   pipelines/CreateMetricsII:
     name: CreateMetricsII
     description: ''
@@ -62,12 +62,15 @@ pipelines:
       inputs:
       - datasets/BNPLjsonIngest
       - datasets/CustIncomeCSV
+      - datasets/ReportSCD3
       - datasets/ReportWithHistory
       - datasets/TransUnionFICO2019_xml
+      - datasets/testConfig
       outputs:
       - datasets/Profile
       - datasets/Report
       - datasets/ReportLatest
+      - datasets/ReportSCD3
       - datasets/ReportWithHistory
     dependencies: {}
 datasets:
@@ -83,6 +86,18 @@ datasets:
         description: ''
         author: sparklearner123@gmail.com
         createdAt: '2023-01-20 17:01:42'
+  datasets/ReportSCD3:
+    name: ReportSCD3
+    description: ''
+    author: sparklearner123@gmail.com
+    createdAt: '2023-01-30 00:53:44'
+    physicalDatasets:
+      dev:
+        fabricId: 990
+        datasetType: File
+        description: ''
+        author: sparklearner123@gmail.com
+        createdAt: '2023-01-30 00:53:44'
   datasets/Bureau_XML:
     name: Bureau_XML
     description: ''
@@ -191,6 +206,18 @@ datasets:
         description: ''
         author: sparklearner123@gmail.com
         createdAt: '2023-01-29 05:21:37'
+  datasets/testConfig:
+    name: testConfig
+    description: ''
+    author: sparklearner123@gmail.com
+    createdAt: '2023-01-29 23:31:43'
+    physicalDatasets:
+      dev:
+        fabricId: 990
+        datasetType: File
+        description: ''
+        author: sparklearner123@gmail.com
+        createdAt: '2023-01-29 23:31:43'
   datasets/LexisNexisJSON:
     name: LexisNexisJSON
     description: ''

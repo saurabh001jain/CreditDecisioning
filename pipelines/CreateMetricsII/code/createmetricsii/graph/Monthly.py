@@ -13,5 +13,6 @@ def Monthly(spark: SparkSession, in0: DataFrame) -> DataFrame:
         col("FicoValidFrom"), 
         col("FicoValidTo"), 
         lit(True).alias("minFlag"), 
-        lit(True).alias("maxFlag")
+        lit(True).alias("maxFlag"), 
+        lit("None").alias("previousFicoScore")
     )

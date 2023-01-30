@@ -7,7 +7,7 @@ class Config(ConfigBase):
         self.spark = None
         self.update(Year, user_email)
 
-    def update(self, Year: int=2018, user_email: str="please_input_your_email_address"):
+    def update(self, Year: int=2018, user_email: str="<please_input_your_email_address>"):
         self.Year = self.get_int_value(Year)
         self.user_email = user_email
         pass

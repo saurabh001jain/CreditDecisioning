@@ -87,7 +87,7 @@
         "isCustomOutputSchema" : true
       },
       "properties" : {
-        "script" : "spark.sql(\"TRUNCATE TABLE delta.`dbfs:/FileStore/data/FICO_table_history`\")\n\nout0 = in0",
+        "script" : "spark.sql(\"TRUNCATE TABLE delta.`dbfs:/Prophecy/sparklearner123@gmail.com/finserv/prophecy/ReportWithHistory`\")\n\nspark.sql(\"TRUNCATE TABLE delta.`dbfs:/Prophecy/sparklearner123@gmail.com/finserv/prophecy/ingest/FICO/TransUnionFICO2018.xml`\")\nspark.sql(\"TRUNCATE TABLE delta.`dbfs:/Prophecy/sparklearner123@gmail.com/finserv/prophecy/ingest/FICO/TransUnionFICO2019.xml`\")\nspark.sql(\"TRUNCATE TABLE delta.`dbfs:/Prophecy/sparklearner123@gmail.com/finserv/prophecy/ingest/FICO/TransUnionFICO2020.xml`\")\nspark.sql(\"TRUNCATE TABLE delta.`dbfs:/Prophecy/sparklearner123@gmail.com/finserv/prophecy/ReportWithHistory`\")\nspark.sql(\"TRUNCATE TABLE delta.`dbfs:/Prophecy/sparklearner123@gmail.com/finserv/prophecy/ReportSCD3`\")\n\n\n\nout0 = in0",
         "scriptMethodHeader" : "def Script(spark: SparkSession, in0: DataFrame) -> DataFrame:",
         "scriptMethodFooter" : "    return out0"
       }
@@ -129,8 +129,8 @@
       "id" : "6TlNpxxHCVdMxLze1PJ25$$v6NKS8kacqYPEPJF6fBI8",
       "component" : "Source",
       "metadata" : {
-        "label" : "FICO_table_history_1",
-        "slug" : "FICO_table_history_1",
+        "label" : "ReportWithHistory",
+        "slug" : "ReportWithHistory",
         "x" : -1036.6,
         "y" : -390.79999999999995,
         "phase" : 0,
@@ -148,7 +148,7 @@
         "isCustomOutputSchema" : false
       },
       "properties" : {
-        "datasetId" : "datasets/FICO_table_history"
+        "datasetId" : "datasets/ReportWithHistory"
       }
     }
   },

@@ -58,3 +58,10 @@ schema:
       description: ''
       mappings: []
       tags: []
+  - name: previousFicoScore
+    type: string
+    nullable: false
+    metadata:
+      description: ''
+      mappings: []
+      tags: []

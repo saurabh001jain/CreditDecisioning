@@ -27,7 +27,7 @@
           "name" : "user_email",
           "kind" : {
             "type" : "string",
-            "value" : "please_input_your_email_address"
+            "value" : "<please_input_your_email_address>"
           },
           "optional" : false
         } ]
@@ -38,7 +38,7 @@
       },
       "fabrics" : { },
       "instances" : { },
-      "selected" : "default",
+      "selected" : "2020",
       "nonEditable" : [ ],
       "isSubscribedPipelineWithPipelineConfigs" : false
     },
@@ -112,23 +112,53 @@
     "target" : "YRpIP1W9KuR198nbz1_kL$$6RHbqvxXN_BHsWC9nQOXb",
     "targetPort" : "FqNGAwu-FsXLmp-s6FpwA$$4B-nYdsGZ6z3SQcaaR6wu"
   }, {
-    "id" : "vO1s2Kh0gdnJwKLfW_YyY",
-    "source" : "Ovegni1Ik2s62v3Y_KxzA$$Z7UtxkHpo8l4seeHGyTJz",
-    "sourcePort" : "EKT04cbxaA1RWraW997RW$$71Y7uAVDnPIg5w_9dKSOv",
-    "target" : "kRAhWpuCBYITGEsDQdNdE$$78JwpmyT2I1zEnGJTXadn",
-    "targetPort" : "8gQjLulONH4vDHmbT860Q$$e8v0t-3J8rTy7gte-qxO_"
-  }, {
-    "id" : "-FzkjsouQza-uALBEfYJI",
-    "source" : "kRAhWpuCBYITGEsDQdNdE$$78JwpmyT2I1zEnGJTXadn",
-    "sourcePort" : "DhL-_cVWIPjBjaoZ4nhiq$$iXROxdHO1VLwVKu4FWDkH",
-    "target" : "PQOLTdXX7yyiKT10fr_eR$$w-fNGp-QQFHCO_0YakWFh",
-    "targetPort" : "-1F18vNkNNftFfB7KCzfB$$PtXx7qDYnxnPbmrSyHzot"
-  }, {
     "id" : "oQCzc64ICvcCbTvkTePTQ",
     "source" : "PQOLTdXX7yyiKT10fr_eR$$w-fNGp-QQFHCO_0YakWFh",
     "sourcePort" : "t0_sQuUJ8VoqSrIgFB6OO$$hRRMGAycfoonb_w2TTLj7",
     "target" : "UGvWJ-rcmwcFxAdXZbPM-$$U-Ppg_VPlLrEGh7royJKA",
     "targetPort" : "2sH4WuE25a33TlKYWm9vI$$18YyvpQyJMvva6tdqrtHK"
+  }, {
+    "id" : "Pxg0-_7UMB5IAn2FnyQPr",
+    "source" : "N1LxcLKxJB_y0lwSpsr5t$$YSY11_gVYaIuTm8FqINMm",
+    "sourcePort" : "g4DtP71fnji-TdthxrBYD$$J1g3dnY-rpbyEHgKdYcsI",
+    "target" : "1uMsYAIQEEHpcFFtGmEI2$$usFztDbDfrEoaVRBdGvyY",
+    "targetPort" : "E_UNuNVcE3klR3-4DZPr-$$XvQ0ceDCL-jRTr0CrNrGQ"
+  }, {
+    "id" : "NXWfuAiCzHZ75BhO1QmsK",
+    "source" : "wfS3tSSomjQ63ydrAyeFN$$3Cvz4wtDJIU-Sm77itsJi",
+    "sourcePort" : "-rz8MhLfHBlkbZ2nJBz31$$TLnXoClALuxirKNvjJIa8",
+    "target" : "-J1WlKcScOk4hGRUZSg_k$$2scIUC7awp3Mbw1l-uSBK",
+    "targetPort" : "BB-TfrhcwGAtxgGQ4nRdm$$Oq0ivU_Nl2Yopy8nuA1DZ"
+  }, {
+    "id" : "FuQI5LAV4fWRo7z3_TJm4",
+    "source" : "-J1WlKcScOk4hGRUZSg_k$$2scIUC7awp3Mbw1l-uSBK",
+    "sourcePort" : "9Qy8cCPJOnfbv4s950Ry2$$73-ackds7j_gUCb2ItbCE",
+    "target" : "kKjKZI5RWXJHIAGwxvryo$$KWcvY4cKCioHHyGG5UX9L",
+    "targetPort" : "mZ7nOM_RvduQkQxPKI8z8$$R-f-kwurHaCa4bZIHGzIL"
+  }, {
+    "id" : "o10XZX6gYy1khIjcEH3bD",
+    "source" : "Ovegni1Ik2s62v3Y_KxzA$$Z7UtxkHpo8l4seeHGyTJz",
+    "sourcePort" : "EKT04cbxaA1RWraW997RW$$71Y7uAVDnPIg5w_9dKSOv",
+    "target" : "kRAhWpuCBYITGEsDQdNdE$$78JwpmyT2I1zEnGJTXadn",
+    "targetPort" : "8gQjLulONH4vDHmbT860Q$$e8v0t-3J8rTy7gte-qxO_"
+  }, {
+    "id" : "V892RPU_n58Q2wPF1o4PM",
+    "source" : "kRAhWpuCBYITGEsDQdNdE$$78JwpmyT2I1zEnGJTXadn",
+    "sourcePort" : "DhL-_cVWIPjBjaoZ4nhiq$$iXROxdHO1VLwVKu4FWDkH",
+    "target" : "PQOLTdXX7yyiKT10fr_eR$$w-fNGp-QQFHCO_0YakWFh",
+    "targetPort" : "-1F18vNkNNftFfB7KCzfB$$PtXx7qDYnxnPbmrSyHzot"
+  }, {
+    "id" : "-kprRNPgV2lvgabe0SU48",
+    "source" : "POkx315yQfajWC4ytMxCb$$jYpANLStKcFXxuBo5vr5S",
+    "sourcePort" : "lqDcEDYMFtjFo_AY7WlvY$$BkXNk5IYhdQ3RDsc3Byna",
+    "target" : "rskdWEHw6vGPgyCisUKEa$$ysFMB8Lf1Vy7UUuou7FQx",
+    "targetPort" : "2Qg4JuTlWgTXweoLhHJJ8$$QZdXosXMdXikDuMivCwKy"
+  }, {
+    "id" : "Y1g-yYhlExd3ZSMWbg_EV",
+    "source" : "LEeXohVprXwfqpOzB3X0j$$9_LjfLjJJoWKqEHb4jms4",
+    "sourcePort" : "0WkhAxSAn9TmJKRZCAYdQ$$6qxL-3PQ31fm-T_bxeFyU",
+    "target" : "UEgQvQvWJqIv_Xb1rvnXW$$hXnErAzHWaHe0sQfeGCQ-",
+    "targetPort" : "4TBwDPNSDJP4URrYhtSrd$$I9OHWoOz907XJNLRgQ-h7"
   } ],
   "processes" : {
     "Ovegni1Ik2s62v3Y_KxzA$$Z7UtxkHpo8l4seeHGyTJz" : {
@@ -244,8 +274,8 @@
       "id" : "Y95aS--yho4e2GPdG9yQV$$B5MZ_0IDbhAg9CIEttqiA",
       "component" : "Source",
       "metadata" : {
-        "label" : "Source_1",
-        "slug" : "Source_1",
+        "label" : "testConfig",
+        "slug" : "testConfig",
         "x" : -94.522222222222,
         "y" : 248.32221984863276,
         "phase" : 0,
@@ -262,7 +292,42 @@
         "selectedInputFields" : [ ],
         "isCustomOutputSchema" : false
       },
-      "properties" : { }
+      "properties" : {
+        "datasetId" : "datasets/testConfig"
+      }
+    },
+    "1uMsYAIQEEHpcFFtGmEI2$$usFztDbDfrEoaVRBdGvyY" : {
+      "id" : "1uMsYAIQEEHpcFFtGmEI2$$usFztDbDfrEoaVRBdGvyY",
+      "component" : "Filter",
+      "metadata" : {
+        "label" : "Filter_2",
+        "slug" : "Filter_2",
+        "x" : 147.28287037037032,
+        "y" : 813.6277786254881,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "E_UNuNVcE3klR3-4DZPr-$$XvQ0ceDCL-jRTr0CrNrGQ",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "ilYERFwvMCu_f0g5rGQvz$$YHOpgI-BDnuxP60zprE89",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "columnsSelector" : [ ],
+        "condition" : {
+          "format" : "sql",
+          "expression" : "true"
+        }
+      }
     },
     "lY9BF_UpAoekPkG8V11tN$$6PPoFoXHN8BCUS126QJ2_" : {
       "id" : "lY9BF_UpAoekPkG8V11tN$$6PPoFoXHN8BCUS126QJ2_",
@@ -326,7 +391,7 @@
         "slug" : "UseConfig",
         "x" : 62.687962962963226,
         "y" : 647.9222198486327,
-        "phase" : 0,
+        "phase" : -1,
         "cache" : false,
         "detailedStats" : false,
         "isImported" : false
@@ -338,7 +403,7 @@
         "isCustomOutputSchema" : true
       },
       "properties" : {
-        "script" : "#goal: /dbfs/Prophecy/${user_email}/finserv/prophecy/ingest/FICO/TransUnionFICO${Year}.xml\nimport os\n\nos.system(\"mkdir -p /dbfs/Prophecy/sparklearner123@gmail.com/finserv/prophecy/ingest/FICO\")\nos.system(\n    'wget https://raw.githubusercontent.com/atbida/terraform-databricks-lakehouse-blueprints/main/industry/fsi/data/TransUnionFICO2018 -O /dbfs/Prophecy/${user_email}/testconfig.xml' \n    )",
+        "script" : "#goal: /dbfs/Prophecy/${user_email}/finserv/prophecy/ingest/FICO/TransUnionFICO${Year}.xml\nimport os\n\nos.system(\"mkdir -p /dbfs/Prophecy/${user_email}/finserv/prophecy/ingest/FICO\")\nos.system(\n    'wget https://raw.githubusercontent.com/atbida/terraform-databricks-lakehouse-blueprints/main/industry/fsi/data/TransUnionFICO2018 -O /dbfs/Prophecy/${user_email}/finserv/prophecy/ingest/test.xml' \n    )",
         "scriptMethodHeader" : "def Script(spark: SparkSession) -> None:",
         "scriptMethodFooter" : "    return "
       }
@@ -375,8 +440,8 @@
       "metadata" : {
         "label" : "DefineConfig",
         "slug" : "DefineConfig",
-        "x" : -77.71203703703677,
-        "y" : 646.7222198486327,
+        "x" : -94.51203703703675,
+        "y" : 806.3222198486326,
         "phase" : -2,
         "cache" : false,
         "detailedStats" : false,
@@ -396,9 +461,49 @@
         "isCustomOutputSchema" : true
       },
       "properties" : {
-        "script" : "spark.sql(\"set spark.databricks.userInfoFunctions.enabled = true\").show()\n\nout0 = spark.sql(\"select current_user() as user_email\").collect()\nConfig.user_email = out0[0]['user_email']\n\nout0 = spark.range(0).select(lit(Config.user_email).alias('user_email'))",
+        "script" : "spark.sql(\"set spark.databricks.userInfoFunctions.enabled = true\").show()\n\nout0 = spark.sql(\"select current_user() as user_email\").collect()\nConfig.user_email = out0[0]['user_email']\n\nout0 = spark.range(0).select(lit(Config.user_email).alias('user_email'))\n\n\n",
         "scriptMethodHeader" : "def Script(spark: SparkSession) -> DataFrame:",
         "scriptMethodFooter" : "    return out0"
+      }
+    },
+    "-J1WlKcScOk4hGRUZSg_k$$2scIUC7awp3Mbw1l-uSBK" : {
+      "id" : "-J1WlKcScOk4hGRUZSg_k$$2scIUC7awp3Mbw1l-uSBK",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "Reformat_1",
+        "slug" : "Reformat_1",
+        "x" : 483.6828703703703,
+        "y" : 582.827778625488,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "BB-TfrhcwGAtxgGQ4nRdm$$Oq0ivU_Nl2Yopy8nuA1DZ",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "9Qy8cCPJOnfbv4s950Ry2$$73-ackds7j_gUCb2ItbCE",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "importLanguage" : "python",
+        "expressions" : [ {
+          "target" : "test2",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "'$Year'"
+          },
+          "description" : ""
+        } ],
+        "importString" : "",
+        "activeTab" : "expressions",
+        "columnsSelector" : [ ]
       }
     },
     "kRAhWpuCBYITGEsDQdNdE$$78JwpmyT2I1zEnGJTXadn" : {
@@ -407,8 +512,8 @@
       "metadata" : {
         "label" : "OrderBy",
         "slug" : "OrderBy",
-        "x" : 1465.1333333333337,
-        "y" : 368.13333740234344,
+        "x" : 1540.7333333333338,
+        "y" : 370.5333374023434,
         "phase" : 1,
         "cache" : false,
         "detailedStats" : false,
@@ -634,8 +739,8 @@
       "metadata" : {
         "label" : "Filter_1",
         "slug" : "Filter_1",
-        "x" : 1614.287962962963,
-        "y" : 364.7222198486327,
+        "x" : 1746.2879629629633,
+        "y" : 369.52221984863263,
         "phase" : 1,
         "cache" : false,
         "detailedStats" : false,
@@ -667,8 +772,8 @@
       "metadata" : {
         "label" : "ReportLatest",
         "slug" : "ReportLatest",
-        "x" : 1766.6879629629627,
-        "y" : 361.12221984863277,
+        "x" : 1959.8879629629628,
+        "y" : 374.32221984863276,
         "phase" : 1,
         "cache" : false,
         "detailedStats" : false,
@@ -845,10 +950,112 @@
             "expression" : "lit(true)"
           },
           "description" : ""
+        }, {
+          "target" : "previousFicoScore",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "lit(\"None\")"
+          },
+          "description" : ""
         } ],
         "importString" : "",
         "activeTab" : "expressions",
         "columnsSelector" : [ "NBJ-lJBdSbAuZSRSU4c3q$$X9XztvKFjjeLwBPFiYpOc##FicoValidFrom", "NBJ-lJBdSbAuZSRSU4c3q$$X9XztvKFjjeLwBPFiYpOc##Name", "NBJ-lJBdSbAuZSRSU4c3q$$X9XztvKFjjeLwBPFiYpOc##ReportedIncome", "NBJ-lJBdSbAuZSRSU4c3q$$X9XztvKFjjeLwBPFiYpOc##FicoValidTo", "NBJ-lJBdSbAuZSRSU4c3q$$X9XztvKFjjeLwBPFiYpOc##TradLoanAmount", "NBJ-lJBdSbAuZSRSU4c3q$$X9XztvKFjjeLwBPFiYpOc##FicoScore", "NBJ-lJBdSbAuZSRSU4c3q$$X9XztvKFjjeLwBPFiYpOc##BNPLLoanAmount" ]
+      }
+    },
+    "UEgQvQvWJqIv_Xb1rvnXW$$hXnErAzHWaHe0sQfeGCQ-" : {
+      "id" : "UEgQvQvWJqIv_Xb1rvnXW$$hXnErAzHWaHe0sQfeGCQ-",
+      "component" : "OrderBy",
+      "metadata" : {
+        "label" : "OrderBy_1",
+        "slug" : "OrderBy_1",
+        "x" : 1527.077777777778,
+        "y" : 543.6337983449299,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "4TBwDPNSDJP4URrYhtSrd$$I9OHWoOz907XJNLRgQ-h7",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "K4ffhDWpbytl4RLQxmYfD$$BokuWbDQZIXvr23x9-tPo",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "columnsSelector" : [ "4TBwDPNSDJP4URrYhtSrd$$I9OHWoOz907XJNLRgQ-h7##Name" ],
+        "orders" : [ {
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Name"
+          },
+          "sortType" : "asc"
+        } ]
+      }
+    },
+    "kKjKZI5RWXJHIAGwxvryo$$KWcvY4cKCioHHyGG5UX9L" : {
+      "id" : "kKjKZI5RWXJHIAGwxvryo$$KWcvY4cKCioHHyGG5UX9L",
+      "component" : "Filter",
+      "metadata" : {
+        "label" : "Filter_3",
+        "slug" : "Filter_3",
+        "x" : 650.4828703703703,
+        "y" : 572.027778625488,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "mZ7nOM_RvduQkQxPKI8z8$$R-f-kwurHaCa4bZIHGzIL",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "0PLlGYFG0kck3HbKpaaQU$$nqbH-E6so2QLQGFkFWb49",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "columnsSelector" : [ ],
+        "condition" : {
+          "format" : "sql",
+          "expression" : "true"
+        }
+      }
+    },
+    "rskdWEHw6vGPgyCisUKEa$$ysFMB8Lf1Vy7UUuou7FQx" : {
+      "id" : "rskdWEHw6vGPgyCisUKEa$$ysFMB8Lf1Vy7UUuou7FQx",
+      "component" : "Target",
+      "metadata" : {
+        "label" : "ReportSCD3",
+        "slug" : "ReportSCD3",
+        "x" : 1188.277777777778,
+        "y" : 541.03379834493,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "2Qg4JuTlWgTXweoLhHJJ8$$QZdXosXMdXikDuMivCwKy",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/ReportSCD3"
       }
     },
     "_6DzXFo9fbSwfKJgzOg_a$$1W2enoFjMr5QGy-EG2A4n" : {
@@ -883,8 +1090,8 @@
       "metadata" : {
         "label" : "Ingest",
         "slug" : "Ingest",
-        "x" : 32.3333333333335,
-        "y" : 248.5007706046104,
+        "x" : 32.33333333333346,
+        "y" : 244.9007706046104,
         "phase" : -1,
         "cache" : false,
         "detailedStats" : false,
@@ -897,7 +1104,7 @@
         "isCustomOutputSchema" : true
       },
       "properties" : {
-        "script" : "import os\n\nos.system(\"mkdir -p /dbfs/Prophecy/sparklearner123@gmail.com/finserv/prophecy/ingest/FICO\")\nos.system(\n    'wget https://raw.githubusercontent.com/atbida/terraform-databricks-lakehouse-blueprints/main/industry/fsi/data/TransUnionFICO${Year} -O /dbfs/Prophecy/sparklearner123@gmail.com/finserv/prophecy/ingest/FICO/TransUnionFICO${Year}.xml' \n    )",
+        "script" : "import os\n\nos.system(\"mkdir -p /dbfs/Prophecy/sparklearner123@gmail.com/finserv/prophecy/ingest/FICO\")\nos.system(\n    'wget https://raw.githubusercontent.com/atbida/terraform-databricks-lakehouse-blueprints/main/industry/fsi/data/TransUnionFICO2018 -O /dbfs/Prophecy/sparklearner123@gmail.com/finserv/prophecy/ingest/FICO/TransUnionFICO2018.xml' \n    'wget https://raw.githubusercontent.com/atbida/terraform-databricks-lakehouse-blueprints/main/industry/fsi/data/TransUnionFICO2019 -O /dbfs/Prophecy/sparklearner123@gmail.com/finserv/prophecy/ingest/FICO/TransUnionFICO2019.xml' \n    'wget https://raw.githubusercontent.com/atbida/terraform-databricks-lakehouse-blueprints/main/industry/fsi/data/TransUnionFICO2020 -O /dbfs/Prophecy/sparklearner123@gmail.com/finserv/prophecy/ingest/FICO/TransUnionFICO2020.xml' \n    )",
         "scriptMethodHeader" : "def Script(spark: SparkSession) -> None:",
         "scriptMethodFooter" : "    return "
       }
@@ -926,6 +1133,32 @@
       },
       "properties" : {
         "datasetId" : "datasets/TransUnionFICO2019_xml"
+      }
+    },
+    "LEeXohVprXwfqpOzB3X0j$$9_LjfLjJJoWKqEHb4jms4" : {
+      "id" : "LEeXohVprXwfqpOzB3X0j$$9_LjfLjJJoWKqEHb4jms4",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "ReportSCD3_1",
+        "slug" : "ReportSCD3_1",
+        "x" : 1330.6777777777781,
+        "y" : 545.2337983449299,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "0WkhAxSAn9TmJKRZCAYdQ$$6qxL-3PQ31fm-T_bxeFyU",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/ReportSCD3"
       }
     }
   },
