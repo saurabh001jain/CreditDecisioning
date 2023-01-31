@@ -4,13 +4,13 @@ from pyspark.sql.types import *
 from createmetricsii.config.ConfigStore import *
 from createmetricsii.udfs.UDFs import *
 
-def ReportWithHistory(spark: SparkSession, in0: DataFrame):
+def ReportSCD2(spark: SparkSession, in0: DataFrame):
     from delta.tables import DeltaTable, DeltaMergeBuilder
 
-    if DeltaTable.isDeltaTable(spark, "dbfs:/Prophecy/sparklearner123@gmail.com/finserv/prophecy/ReportWithHistory"):
+    if DeltaTable.isDeltaTable(spark, "dbfs:/Prophecy/sparklearner123@gmail.com/finserv/prophecy/ReportSCD2"):
         existingTable = DeltaTable.forPath(
             spark,
-            "dbfs:/Prophecy/sparklearner123@gmail.com/finserv/prophecy/ReportWithHistory"
+            "dbfs:/Prophecy/sparklearner123@gmail.com/finserv/prophecy/ReportSCD2"
         )
         updatesDF = in0.withColumn("minFlag", lit("true")).withColumn("maxFlag", lit("true"))
         existingDF = existingTable.toDF()
@@ -44,4 +44,4 @@ def ReportWithHistory(spark: SparkSession, in0: DataFrame):
         in0.write\
             .format("delta")\
             .mode("overwrite")\
-            .save("dbfs:/Prophecy/sparklearner123@gmail.com/finserv/prophecy/ReportWithHistory")
+            .save("dbfs:/Prophecy/sparklearner123@gmail.com/finserv/prophecy/ReportSCD2")

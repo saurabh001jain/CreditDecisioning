@@ -14,14 +14,17 @@
   "ports" : {
     "inputs" : [ {
       "id" : "BxO9iceFP-GIRXTQmnXsl",
-      "slug" : "in0"
+      "slug" : "in0",
+      "isStreaming" : false
     }, {
       "id" : "vlPDbkPGFjAq6Uh-nESI5",
-      "slug" : "in1"
+      "slug" : "in1",
+      "isStreaming" : false
     } ],
     "outputs" : [ {
       "id" : "69JY0HvpxAH0-WnfR461q",
-      "slug" : "out0"
+      "slug" : "out0",
+      "isStreaming" : false
     } ],
     "selectedInputFields" : [ ],
     "isCustomOutputSchema" : false
@@ -67,8 +70,8 @@
       "metadata" : {
         "label" : "ByCustomer",
         "slug" : "ByCustomer",
-        "x" : 451.1183148451298,
-        "y" : 293.3499999999999,
+        "x" : 460,
+        "y" : 300,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -100,22 +103,85 @@
         } ],
         "expressions" : [ ],
         "hints" : [ {
-          "id" : "pTy6vXN_1bLkYrPlI_xeZ$$L7PcJtAgkpwulukmpgMwC",
+          "id" : "pTy6vXN_1bLkYrPlI_xeZ$$5P6j8AqvQBw8IbOxVVBUV",
           "alias" : "in0",
           "hintType" : "none",
           "propagateColumns" : false
         }, {
-          "id" : "ONfJCVD5hDApi0WmybIPl$$NTWq7YoJ3XRiaoLdD1p1A",
+          "id" : "ONfJCVD5hDApi0WmybIPl$$wk6Is-hJiCFgh0LW6eyIV",
           "alias" : "in1",
           "hintType" : "none",
           "propagateColumns" : false
         } ],
         "allIn1" : null,
         "activeTab" : "conditions",
-        "columnsSelector" : [ "ONfJCVD5hDApi0WmybIPl$$NTWq7YoJ3XRiaoLdD1p1A##CUSTOMER_ID", "pTy6vXN_1bLkYrPlI_xeZ$$L7PcJtAgkpwulukmpgMwC##ID" ],
+        "columnsSelector" : [ "ONfJCVD5hDApi0WmybIPl$$wk6Is-hJiCFgh0LW6eyIV##CUSTOMER_ID", "pTy6vXN_1bLkYrPlI_xeZ$$5P6j8AqvQBw8IbOxVVBUV##ID" ],
         "allIn0" : null,
         "whereClause" : null,
         "headAlias" : "in0"
+      }
+    },
+    "4j_rbye3VpJCDDdf0N_dx" : {
+      "id" : "4j_rbye3VpJCDDdf0N_dx",
+      "component" : "Script",
+      "metadata" : {
+        "label" : "Fico_Mod",
+        "slug" : "Fico_Mod",
+        "x" : 198.8,
+        "y" : 103.60000000000002,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "vHOhNWrcaoyuGCL2WTUCo",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "wCUnSUAs0zV8ZdE8msVTV",
+          "slug" : "out0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "ID",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "FICORange",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "date_FICORange_obtained",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : true
+      },
+      "properties" : {
+        "script" : "#from pyspark.sql.functions import max, floor, rand, date_add, split, format_string, element_at\n#import _root.pyspark.sql.utils.AnalysisException\nfrom pyspark.sql.utils import AnalysisException\ntry:\n    old_df = spark.read.format(\"delta\").load(\"dbfs:/FileStore/data/FICO_table_history\")\n    # Get the previous max date by ID\n    # Add some random wiggle to the FICO scores\n    # Select the same columns again to maintain order\n    ws = Window.partitionBy(\"CUSTOMER_ID\").orderBy(col(\"FICO_valid_until_date\").desc())\n    new_src = old_df.withColumn(\"row_num\", row_number().over(ws)) \\\n        .where(\"row_num == 1\") \\\n        .drop(\"row_num\")\n    w = new_src.withColumn(\"date_FICORange_obtained\", date_format(date_add(\"date_FICORange_obtained\", 1), \"dd-MM-yy\")) \\\n        .withColumn(\"variation\", floor((rand() - 0.5) * 50).cast(\"integer\")) \\\n        .withColumn(\"ficosplit\", split(col(\"FICORange\"), \"-\"))\\\n        .withColumn(\"FICORange\", format_string(\"%d-%d\", (element_at(col(\"ficosplit\"), 1) + col(\"variation\")).cast(\"int\"), (element_at(col(\"ficosplit\"), 2) + col(\"variation\")).cast(\"int\"))) \\\n        .drop(\"ficosplit\") \\\n        .drop(\"variation\") \\\n        .select(col(\"CUSTOMER_ID\").alias(\"ID\"), \"FICORange\", \"date_FICORange_obtained\")\n    out0 = w\nexcept AnalysisException as e:\n    out0 = in0",
+        "scriptMethodHeader" : "def Script(spark: SparkSession, in0: DataFrame) -> DataFrame:",
+        "scriptMethodFooter" : "    return out0"
       }
     },
     "2no60LIW-6Yn3_3EDN6g9" : {
@@ -124,8 +190,8 @@
       "metadata" : {
         "label" : "ForSCD2",
         "slug" : "ForSCD2",
-        "x" : 666.5517826349597,
-        "y" : 293.34999999999997,
+        "x" : 660,
+        "y" : 300,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -204,69 +270,7 @@
         } ],
         "importString" : "",
         "activeTab" : "expressions",
-        "columnsSelector" : [ "e225SxW4Snwr2zOTCxtwk$$hIdyXAtZyG8Ynnq6g4Qjz##CUSTOMER_NAME", "e225SxW4Snwr2zOTCxtwk$$hIdyXAtZyG8Ynnq6g4Qjz##date_FICORange_obtained", "e225SxW4Snwr2zOTCxtwk$$hIdyXAtZyG8Ynnq6g4Qjz##CUSTOMER_ID", "e225SxW4Snwr2zOTCxtwk$$hIdyXAtZyG8Ynnq6g4Qjz##FICORange" ]
-      }
-    },
-    "4j_rbye3VpJCDDdf0N_dx" : {
-      "id" : "4j_rbye3VpJCDDdf0N_dx",
-      "component" : "Script",
-      "metadata" : {
-        "label" : "Fico_Mod",
-        "slug" : "Fico_Mod",
-        "x" : 198.8,
-        "y" : 103.60000000000002,
-        "phase" : 0,
-        "cache" : false,
-        "detailedStats" : false,
-        "isImported" : false
-      },
-      "ports" : {
-        "inputs" : [ {
-          "id" : "vHOhNWrcaoyuGCL2WTUCo",
-          "slug" : "in0"
-        } ],
-        "outputs" : [ {
-          "id" : "wCUnSUAs0zV8ZdE8msVTV",
-          "slug" : "out0",
-          "schema" : {
-            "type" : "struct",
-            "fields" : [ {
-              "name" : "ID",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "FICORange",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "date_FICORange_obtained",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            } ]
-          }
-        } ],
-        "selectedInputFields" : [ ],
-        "isCustomOutputSchema" : true
-      },
-      "properties" : {
-        "script" : "#from pyspark.sql.functions import max, floor, rand, date_add, split, format_string, element_at\n#import _root.pyspark.sql.utils.AnalysisException\nfrom pyspark.sql.utils import AnalysisException\ntry:\n    old_df = spark.read.format(\"delta\").load(\"dbfs:/FileStore/data/FICO_table_history\")\n    # Get the previous max date by ID\n    # Add some random wiggle to the FICO scores\n    # Select the same columns again to maintain order\n    ws = Window.partitionBy(\"CUSTOMER_ID\").orderBy(col(\"FICO_valid_until_date\").desc())\n    new_src = old_df.withColumn(\"row_num\", row_number().over(ws)) \\\n        .where(\"row_num == 1\") \\\n        .drop(\"row_num\")\n    w = new_src.withColumn(\"date_FICORange_obtained\", date_format(date_add(\"date_FICORange_obtained\", 1), \"dd-MM-yy\")) \\\n        .withColumn(\"variation\", floor((rand() - 0.5) * 50).cast(\"integer\")) \\\n        .withColumn(\"ficosplit\", split(col(\"FICORange\"), \"-\"))\\\n        .withColumn(\"FICORange\", format_string(\"%d-%d\", (element_at(col(\"ficosplit\"), 1) + col(\"variation\")).cast(\"int\"), (element_at(col(\"ficosplit\"), 2) + col(\"variation\")).cast(\"int\"))) \\\n        .drop(\"ficosplit\") \\\n        .drop(\"variation\") \\\n        .select(col(\"CUSTOMER_ID\").alias(\"ID\"), \"FICORange\", \"date_FICORange_obtained\")\n    out0 = w\nexcept AnalysisException as e:\n    out0 = in0",
-        "scriptMethodHeader" : "def Script(spark: SparkSession, in0: DataFrame) -> DataFrame:",
-        "scriptMethodFooter" : "    return out0"
+        "columnsSelector" : [ "e225SxW4Snwr2zOTCxtwk$$tLFFZ24ebXrRUKVUYOv43##CUSTOMER_ID", "e225SxW4Snwr2zOTCxtwk$$tLFFZ24ebXrRUKVUYOv43##FICORange", "e225SxW4Snwr2zOTCxtwk$$tLFFZ24ebXrRUKVUYOv43##date_FICORange_obtained", "e225SxW4Snwr2zOTCxtwk$$tLFFZ24ebXrRUKVUYOv43##CUSTOMER_NAME" ]
       }
     }
   }

@@ -24,6 +24,27 @@ pipelines:
       - datasets/FICO_table_history
       - datasets/ReportMetrics
     dependencies: {}
+  pipelines/CreateMetricsII:
+    name: CreateMetricsII
+    description: ''
+    author: sparklearner123@gmail.com
+    mode: batch
+    language: python
+    createdAt: '2023-01-25 19:43:31'
+    datasets:
+      inputs:
+      - datasets/BNPLjsonIngest
+      - datasets/CustIncomeCSV
+      - datasets/Profile
+      - datasets/ReportSCD2
+      - datasets/ReportSCD3
+      - datasets/TransUnionFICOyear_xml
+      outputs:
+      - datasets/Profile
+      - datasets/ReportLatest
+      - datasets/ReportSCD2
+      - datasets/ReportSCD3
+    dependencies: {}
   pipelines/ImportDataOption:
     name: ImportDataOption
     description: ''
@@ -47,31 +68,8 @@ pipelines:
     language: python
     createdAt: '2023-01-18 04:04:53'
     datasets:
-      inputs:
-      - datasets/ReportWithHistory
+      inputs: []
       outputs: []
-    dependencies: {}
-  pipelines/CreateMetricsII:
-    name: CreateMetricsII
-    description: ''
-    author: sparklearner123@gmail.com
-    mode: batch
-    language: python
-    createdAt: '2023-01-25 19:43:31'
-    datasets:
-      inputs:
-      - datasets/BNPLjsonIngest
-      - datasets/CustIncomeCSV
-      - datasets/ReportSCD3
-      - datasets/ReportWithHistory
-      - datasets/TransUnionFICO2019_xml
-      - datasets/testConfig
-      outputs:
-      - datasets/Profile
-      - datasets/Report
-      - datasets/ReportLatest
-      - datasets/ReportSCD3
-      - datasets/ReportWithHistory
     dependencies: {}
 datasets:
   datasets/creditReportXMLingest:
@@ -79,6 +77,7 @@ datasets:
     description: ''
     author: sparklearner123@gmail.com
     createdAt: '2023-01-20 17:01:42'
+    mode: batch
     physicalDatasets:
       dev:
         fabricId: 990
@@ -91,6 +90,7 @@ datasets:
     description: ''
     author: sparklearner123@gmail.com
     createdAt: '2023-01-30 00:53:44'
+    mode: batch
     physicalDatasets:
       dev:
         fabricId: 990
@@ -103,6 +103,7 @@ datasets:
     description: ''
     author: sparklearner123@gmail.com
     createdAt: '2023-01-18 20:54:36'
+    mode: batch
     physicalDatasets:
       dev:
         fabricId: 990
@@ -115,6 +116,7 @@ datasets:
     description: ''
     author: sparklearner123@gmail.com
     createdAt: '2022-12-21 21:29:18'
+    mode: batch
     physicalDatasets:
       Photon:
         fabricId: 1045
@@ -122,23 +124,12 @@ datasets:
         description: ''
         author: sparklearner123@gmail.com
         createdAt: '2022-12-21 21:29:18'
-  datasets/CreditReportXML:
-    name: CreditReportXML
-    description: ''
-    author: sparklearner123@gmail.com
-    createdAt: '2023-01-18 21:12:37'
-    physicalDatasets:
-      dev:
-        fabricId: 990
-        datasetType: File
-        description: ''
-        author: sparklearner123@gmail.com
-        createdAt: '2023-01-18 21:12:37'
   datasets/Report:
     name: Report
     description: ''
     author: sparklearner123@gmail.com
     createdAt: '2023-01-27 18:57:47'
+    mode: batch
     physicalDatasets:
       dev:
         fabricId: 990
@@ -151,6 +142,7 @@ datasets:
     description: ''
     author: sparklearner123@gmail.com
     createdAt: '2023-01-27 18:05:18'
+    mode: batch
     physicalDatasets:
       dev:
         fabricId: 990
@@ -158,23 +150,12 @@ datasets:
         description: ''
         author: sparklearner123@gmail.com
         createdAt: '2023-01-27 18:05:18'
-  datasets/BNPLjson:
-    name: BNPLjson
-    description: ''
-    author: sparklearner123@gmail.com
-    createdAt: '2023-01-18 21:14:55'
-    physicalDatasets:
-      dev:
-        fabricId: 990
-        datasetType: File
-        description: ''
-        author: sparklearner123@gmail.com
-        createdAt: '2023-01-18 21:14:55'
   datasets/CreditXML:
     name: CreditXML
     description: ''
     author: sparklearner123@gmail.com
     createdAt: '2023-01-19 22:03:37'
+    mode: batch
     physicalDatasets:
       dev:
         fabricId: 990
@@ -182,11 +163,25 @@ datasets:
         description: ''
         author: sparklearner123@gmail.com
         createdAt: '2023-01-19 22:03:38'
+  datasets/2020:
+    name: '2020'
+    description: ''
+    author: sparklearner123@gmail.com
+    createdAt: '2023-01-30 04:46:11'
+    mode: batch
+    physicalDatasets:
+      dev:
+        fabricId: 990
+        datasetType: File
+        description: ''
+        author: sparklearner123@gmail.com
+        createdAt: '2023-01-30 04:46:11'
   datasets/CreditReportDTI:
     name: CreditReportDTI
     description: ''
     author: sparklearner123@gmail.com
     createdAt: '2023-01-25 21:52:28'
+    mode: batch
     physicalDatasets:
       dev:
         fabricId: 990
@@ -199,6 +194,7 @@ datasets:
     description: ''
     author: sparklearner123@gmail.com
     createdAt: '2023-01-29 05:21:37'
+    mode: batch
     physicalDatasets:
       dev:
         fabricId: 990
@@ -211,6 +207,7 @@ datasets:
     description: ''
     author: sparklearner123@gmail.com
     createdAt: '2023-01-29 23:31:43'
+    mode: batch
     physicalDatasets:
       dev:
         fabricId: 990
@@ -223,6 +220,7 @@ datasets:
     description: ''
     author: sparklearner123@gmail.com
     createdAt: '2023-01-19 22:05:12'
+    mode: batch
     physicalDatasets:
       dev:
         fabricId: 990
@@ -235,6 +233,7 @@ datasets:
     description: ''
     author: sparklearner123@gmail.com
     createdAt: '2022-12-16 19:36:23'
+    mode: batch
     physicalDatasets:
       dev:
         fabricId: 990
@@ -247,6 +246,7 @@ datasets:
     description: ''
     author: sparklearner123@gmail.com
     createdAt: '2023-01-29 04:12:42'
+    mode: batch
     physicalDatasets:
       dev:
         fabricId: 990
@@ -259,6 +259,7 @@ datasets:
     description: ''
     author: sparklearner123@gmail.com
     createdAt: '2023-01-23 23:21:08'
+    mode: batch
     physicalDatasets:
       dev:
         fabricId: 990
@@ -271,6 +272,7 @@ datasets:
     description: ''
     author: sparklearner123@gmail.com
     createdAt: '2023-01-11 04:05:26'
+    mode: batch
     physicalDatasets:
       dev:
         fabricId: 990
@@ -283,6 +285,7 @@ datasets:
     description: ''
     author: sparklearner123@gmail.com
     createdAt: '2023-01-25 22:26:24'
+    mode: batch
     physicalDatasets:
       dev:
         fabricId: 990
@@ -295,6 +298,7 @@ datasets:
     description: ''
     author: sparklearner123@gmail.com
     createdAt: '2023-01-29 03:37:13'
+    mode: batch
     physicalDatasets:
       dev:
         fabricId: 990
@@ -307,6 +311,7 @@ datasets:
     description: ''
     author: sparklearner123@gmail.com
     createdAt: '2023-01-19 22:08:24'
+    mode: batch
     physicalDatasets:
       dev:
         fabricId: 990
@@ -314,11 +319,38 @@ datasets:
         description: ''
         author: sparklearner123@gmail.com
         createdAt: '2023-01-19 22:08:24'
+  datasets/2019:
+    name: '2019'
+    description: ''
+    author: sparklearner123@gmail.com
+    createdAt: '2023-01-30 04:45:34'
+    mode: batch
+    physicalDatasets:
+      dev:
+        fabricId: 990
+        datasetType: File
+        description: ''
+        author: sparklearner123@gmail.com
+        createdAt: '2023-01-30 04:45:34'
+  datasets/CreditReportXML:
+    name: CreditReportXML
+    description: ''
+    author: sparklearner123@gmail.com
+    createdAt: '2023-01-18 21:12:37'
+    mode: batch
+    physicalDatasets:
+      dev:
+        fabricId: 990
+        datasetType: File
+        description: ''
+        author: sparklearner123@gmail.com
+        createdAt: '2023-01-18 21:12:37'
   datasets/FICO_table_history:
     name: FICO_table_history
     description: ''
     author: sparklearner123@gmail.com
     createdAt: '2023-01-11 16:07:03'
+    mode: batch
     physicalDatasets:
       dev:
         fabricId: 990
@@ -331,6 +363,7 @@ datasets:
     description: ''
     author: sparklearner123@gmail.com
     createdAt: '2023-01-29 03:31:17'
+    mode: batch
     physicalDatasets:
       dev:
         fabricId: 990
@@ -343,6 +376,7 @@ datasets:
     description: ''
     author: sparklearner123@gmail.com
     createdAt: '2022-12-16 20:29:33'
+    mode: batch
     physicalDatasets:
       dev:
         fabricId: 990
@@ -350,11 +384,38 @@ datasets:
         description: ''
         author: sparklearner123@gmail.com
         createdAt: '2022-12-16 20:29:33'
+  datasets/BNPLjson:
+    name: BNPLjson
+    description: ''
+    author: sparklearner123@gmail.com
+    createdAt: '2023-01-18 21:14:55'
+    mode: batch
+    physicalDatasets:
+      dev:
+        fabricId: 990
+        datasetType: File
+        description: ''
+        author: sparklearner123@gmail.com
+        createdAt: '2023-01-18 21:14:55'
+  datasets/2018:
+    name: '2018'
+    description: ''
+    author: sparklearner123@gmail.com
+    createdAt: '2023-01-30 04:44:16'
+    mode: batch
+    physicalDatasets:
+      dev:
+        fabricId: 990
+        datasetType: File
+        description: ''
+        author: sparklearner123@gmail.com
+        createdAt: '2023-01-30 04:44:16'
   datasets/BNPLjsonIngest:
     name: BNPLjsonIngest
     description: ''
     author: sparklearner123@gmail.com
     createdAt: '2023-01-20 16:52:01'
+    mode: batch
     physicalDatasets:
       dev:
         fabricId: 990
@@ -367,6 +428,7 @@ datasets:
     description: ''
     author: sparklearner123@gmail.com
     createdAt: '2023-01-20 16:37:53'
+    mode: batch
     physicalDatasets:
       dev:
         fabricId: 990
@@ -379,6 +441,7 @@ datasets:
     description: ''
     author: sparklearner123@gmail.com
     createdAt: '2023-01-25 22:12:55'
+    mode: batch
     physicalDatasets:
       dev:
         fabricId: 990
@@ -391,6 +454,7 @@ datasets:
     description: ''
     author: sparklearner123@gmail.com
     createdAt: '2022-12-16 20:24:38'
+    mode: batch
     physicalDatasets:
       dev:
         fabricId: 990
@@ -403,6 +467,7 @@ datasets:
     description: ''
     author: sparklearner123@gmail.com
     createdAt: '2023-01-29 03:00:18'
+    mode: batch
     physicalDatasets:
       dev:
         fabricId: 990
@@ -415,6 +480,7 @@ datasets:
     description: ''
     author: sparklearner123@gmail.com
     createdAt: '2023-01-29 04:26:01'
+    mode: batch
     physicalDatasets:
       dev:
         fabricId: 990
@@ -422,6 +488,32 @@ datasets:
         description: ''
         author: sparklearner123@gmail.com
         createdAt: '2023-01-29 04:26:01'
+  datasets/TransUnionFICOyear_xml:
+    name: TransUnionFICOyear.xml
+    description: ''
+    author: sparklearner123@gmail.com
+    createdAt: '2023-01-31 18:42:54'
+    mode: batch
+    physicalDatasets:
+      dev:
+        fabricId: 990
+        datasetType: File
+        description: ''
+        author: sparklearner123@gmail.com
+        createdAt: '2023-01-31 18:42:54'
+  datasets/ReportSCD2:
+    name: ReportSCD2
+    description: ''
+    author: sparklearner123@gmail.com
+    createdAt: '2023-01-31 18:54:54'
+    mode: batch
+    physicalDatasets:
+      dev:
+        fabricId: 990
+        datasetType: File
+        description: ''
+        author: sparklearner123@gmail.com
+        createdAt: '2023-01-31 18:54:54'
 templates: {}
 jobs:
   jobs/DTIjob:
@@ -455,24 +547,28 @@ subgraphs:
     description: ''
     author: sparklearner123@gmail.com
     language: python
+    mode: batch
     createdAt: '2023-01-18 01:53:19'
   subgraphs/CreateDTIMetrics:
     name: CreateDTIMetrics
     description: ''
     author: sparklearner123@gmail.com
     language: python
+    mode: batch
     createdAt: '2023-01-11 16:35:29'
   subgraphs/CalculateDebtAndIncome:
     name: CalculateDebtAndIncome
     description: ''
     author: sparklearner123@gmail.com
     language: python
+    mode: batch
     createdAt: '2023-01-11 03:28:24'
   subgraphs/TestAuditPrepGraph:
     name: TestAuditPrepGraph
     description: ''
     author: sparklearner123@gmail.com
     language: python
+    mode: batch
     createdAt: '2023-01-19 18:53:13'
   subgraphs/PrepDTI:
     name: PrepDTI
@@ -480,6 +576,7 @@ subgraphs:
       LexisNexis, and self-reported credit. '
     author: sparklearner123@gmail.com
     language: python
+    mode: batch
     createdAt: '2023-01-19 00:59:26'
 sqlModels: {}
 sqlPipeline: null

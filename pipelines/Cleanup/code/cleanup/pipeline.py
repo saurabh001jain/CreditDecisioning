@@ -7,9 +7,8 @@ from prophecy.utils import *
 from cleanup.graph import *
 
 def pipeline(spark: SparkSession) -> None:
-    df_ReportWithHistory = ReportWithHistory(spark)
-    df_Script_1 = Script_1(spark, df_ReportWithHistory)
-    df_Filter_1 = Filter_1(spark, df_Script_1)
+    Script_1(spark)
+    df_Source_1 = Source_1(spark)
 
 def main():
     spark = SparkSession.builder\

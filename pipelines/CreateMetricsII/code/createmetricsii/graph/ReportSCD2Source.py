@@ -4,5 +4,5 @@ from pyspark.sql.types import *
 from createmetricsii.config.ConfigStore import *
 from createmetricsii.udfs.UDFs import *
 
-def Filter_3(spark: SparkSession, in0: DataFrame) -> DataFrame:
-    return in0.filter(lit(True))
+def ReportSCD2Source(spark: SparkSession) -> DataFrame:
+    return spark.read.format("delta").load("dbfs:/Prophecy/sparklearner123@gmail.com/finserv/prophecy/ReportSCD2")

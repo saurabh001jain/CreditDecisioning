@@ -43,19 +43,7 @@
     },
     "topLevelPackage" : "cleanup"
   },
-  "connections" : [ {
-    "id" : "PV8pIejgVQjekTbPP-MLH",
-    "source" : "qJBLqTFknGM39SluSqLp8$$apnJMReQ11NHg2rA0RIdx",
-    "sourcePort" : "NXLeRwd_wbOUmOSVAq3qu$$QO-S_HNExTLmNxJ8v0OsW",
-    "target" : "wjImUu7Ahk8IwDq5YIF27$$MoqP6VF2XE05Vu3aDrRwh",
-    "targetPort" : "yUy_0D0-W0S_JNpOCY4I9$$BSz-2GmimzOVF9UK0Znpv"
-  }, {
-    "id" : "QTq8-jsBdUEBgyI7BYHGc",
-    "source" : "6TlNpxxHCVdMxLze1PJ25$$v6NKS8kacqYPEPJF6fBI8",
-    "sourcePort" : "oEPVBh1QoWDFOtaGG_jEm$$5M3pXKceW5zs6XKXCkSVQ",
-    "target" : "qJBLqTFknGM39SluSqLp8$$apnJMReQ11NHg2rA0RIdx",
-    "targetPort" : "NRJxOmC4iK7CjtxO7bpXj$$TMS9sstH7mcYD5H6IFnlx"
-  } ],
+  "connections" : [ ],
   "processes" : {
     "qJBLqTFknGM39SluSqLp8$$apnJMReQ11NHg2rA0RIdx" : {
       "id" : "qJBLqTFknGM39SluSqLp8$$apnJMReQ11NHg2rA0RIdx",
@@ -63,76 +51,33 @@
       "metadata" : {
         "label" : "Script_1",
         "slug" : "Script_1",
-        "x" : -860.1999999999998,
-        "y" : -392.2000000000001,
+        "x" : -860,
+        "y" : -400,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
         "isImported" : false
       },
       "ports" : {
-        "inputs" : [ {
-          "id" : "NRJxOmC4iK7CjtxO7bpXj$$TMS9sstH7mcYD5H6IFnlx",
-          "slug" : "in0"
-        } ],
-        "outputs" : [ {
-          "id" : "NXLeRwd_wbOUmOSVAq3qu$$QO-S_HNExTLmNxJ8v0OsW",
-          "slug" : "out0",
-          "schema" : {
-            "type" : "struct",
-            "fields" : [ ]
-          }
-        } ],
+        "inputs" : [ ],
+        "outputs" : [ ],
         "selectedInputFields" : [ ],
         "isCustomOutputSchema" : true
       },
       "properties" : {
-        "script" : "spark.sql(\"TRUNCATE TABLE delta.`dbfs:/Prophecy/sparklearner123@gmail.com/finserv/prophecy/ReportWithHistory`\")\n\nspark.sql(\"TRUNCATE TABLE delta.`dbfs:/Prophecy/sparklearner123@gmail.com/finserv/prophecy/ingest/FICO/TransUnionFICO2018.xml`\")\nspark.sql(\"TRUNCATE TABLE delta.`dbfs:/Prophecy/sparklearner123@gmail.com/finserv/prophecy/ingest/FICO/TransUnionFICO2019.xml`\")\nspark.sql(\"TRUNCATE TABLE delta.`dbfs:/Prophecy/sparklearner123@gmail.com/finserv/prophecy/ingest/FICO/TransUnionFICO2020.xml`\")\nspark.sql(\"TRUNCATE TABLE delta.`dbfs:/Prophecy/sparklearner123@gmail.com/finserv/prophecy/ReportWithHistory`\")\nspark.sql(\"TRUNCATE TABLE delta.`dbfs:/Prophecy/sparklearner123@gmail.com/finserv/prophecy/ReportSCD3`\")\n\n\n\nout0 = in0",
-        "scriptMethodHeader" : "def Script(spark: SparkSession, in0: DataFrame) -> DataFrame:",
-        "scriptMethodFooter" : "    return out0"
+        "script" : "dbutils.fs.rm('/Prophecy/sparklearner123@gmail.com/finserv/prophecy/ingest/FICO/TransUnionFICO2018.xml', recurse=True)\ndbutils.fs.rm('/Prophecy/sparklearner123@gmail.com/finserv/prophecy/ingest/FICO/TransUnionFICO2019.xml', recurse=True)\ndbutils.fs.rm('/Prophecy/sparklearner123@gmail.com/finserv/prophecy/ingest/FICO/TransUnionFICO2020.xml', recurse=True)\ndbutils.fs.rm('/Prophecy/sparklearner123@gmail.com/finserv/prophecy/ingest/FICO/TransUnionFICO2021.xml', recurse=True)\ndbutils.fs.rm('/Prophecy/sparklearner123@gmail.com/finserv/prophecy/ReportSCD1', recurse=True)\ndbutils.fs.rm('/Prophecy/sparklearner123@gmail.com/finserv/prophecy/ReportSCD2', recurse=True)\ndbutils.fs.rm('/Prophecy/sparklearner123@gmail.com/finserv/prophecy/ReportSCD3', recurse=True)\n",
+        "scriptMethodHeader" : "def Script(spark: SparkSession) -> None:",
+        "scriptMethodFooter" : "    return "
       }
     },
-    "wjImUu7Ahk8IwDq5YIF27$$MoqP6VF2XE05Vu3aDrRwh" : {
-      "id" : "wjImUu7Ahk8IwDq5YIF27$$MoqP6VF2XE05Vu3aDrRwh",
-      "component" : "Filter",
-      "metadata" : {
-        "label" : "Filter_1",
-        "slug" : "Filter_1",
-        "x" : -694.6,
-        "y" : -392.60000000000014,
-        "phase" : 0,
-        "cache" : false,
-        "detailedStats" : false,
-        "isImported" : false
-      },
-      "ports" : {
-        "inputs" : [ {
-          "id" : "yUy_0D0-W0S_JNpOCY4I9$$BSz-2GmimzOVF9UK0Znpv",
-          "slug" : "in0"
-        } ],
-        "outputs" : [ {
-          "id" : "f-NNvfU-HIFsrsh4MzoKX$$FQ7b4v6AntowHCUDnDKdy",
-          "slug" : "out"
-        } ],
-        "selectedInputFields" : [ ],
-        "isCustomOutputSchema" : false
-      },
-      "properties" : {
-        "columnsSelector" : [ ],
-        "condition" : {
-          "format" : "sql",
-          "expression" : "true"
-        }
-      }
-    },
-    "6TlNpxxHCVdMxLze1PJ25$$v6NKS8kacqYPEPJF6fBI8" : {
-      "id" : "6TlNpxxHCVdMxLze1PJ25$$v6NKS8kacqYPEPJF6fBI8",
+    "qyg1eLaKVueFj1cizA7ML$$aKIOKqTiBj-4926xV5o0x" : {
+      "id" : "qyg1eLaKVueFj1cizA7ML$$aKIOKqTiBj-4926xV5o0x",
       "component" : "Source",
       "metadata" : {
-        "label" : "ReportWithHistory",
-        "slug" : "ReportWithHistory",
-        "x" : -1036.6,
-        "y" : -390.79999999999995,
+        "label" : "Source_1",
+        "slug" : "Source_1",
+        "x" : -1040,
+        "y" : -180,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -141,15 +86,13 @@
       "ports" : {
         "inputs" : [ ],
         "outputs" : [ {
-          "id" : "oEPVBh1QoWDFOtaGG_jEm$$5M3pXKceW5zs6XKXCkSVQ",
+          "id" : "l5NIZhHuI8TahgrwBCUSu$$PcyBFOKwPya0f9r69opB2",
           "slug" : "out"
         } ],
         "selectedInputFields" : [ ],
         "isCustomOutputSchema" : false
       },
-      "properties" : {
-        "datasetId" : "datasets/ReportWithHistory"
-      }
+      "properties" : { }
     }
   },
   "ports" : {

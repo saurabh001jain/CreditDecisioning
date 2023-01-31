@@ -3,11 +3,10 @@ from prophecy.config import ConfigBase
 
 class Config(ConfigBase):
 
-    def __init__(self, Year: int=None, user_email: str=None):
+    def __init__(self, Year: int=None):
         self.spark = None
-        self.update(Year, user_email)
+        self.update(Year)
 
-    def update(self, Year: int=2018, user_email: str="<please_input_your_email_address>"):
+    def update(self, Year: int=2018):
         self.Year = self.get_int_value(Year)
-        self.user_email = user_email
         pass
