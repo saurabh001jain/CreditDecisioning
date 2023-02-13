@@ -25,7 +25,7 @@ pipelines:
       - datasets/ReportMetrics
     dependencies: {}
   pipelines/CreateMetricsII:
-    name: CreateMetricsII
+    name: DecisionPipeline
     description: ''
     author: sparklearner123@gmail.com
     mode: batch
@@ -35,15 +35,11 @@ pipelines:
       inputs:
       - datasets/BNPLjsonIngest
       - datasets/CustIncomeCSV
-      - datasets/Profile
-      - datasets/ReportSCD2
-      - datasets/ReportSCD3
       - datasets/TransUnionFICOyear_xml
       outputs:
       - datasets/Profile
-      - datasets/ReportLatest
       - datasets/ReportSCD2
-      - datasets/ReportSCD3
+      - datasets/SCD3Report
     dependencies: {}
   pipelines/ImportDataOption:
     name: ImportDataOption
@@ -514,6 +510,45 @@ datasets:
         description: ''
         author: sparklearner123@gmail.com
         createdAt: '2023-01-31 18:54:54'
+  datasets/ProfilehardcodeEmail:
+    name: ProfilehardcodeEmail
+    description: ''
+    author: sparklearner123@gmail.com
+    createdAt: '2023-02-03 21:07:04'
+    mode: batch
+    physicalDatasets:
+      dev:
+        fabricId: 990
+        datasetType: File
+        description: ''
+        author: sparklearner123@gmail.com
+        createdAt: '2023-02-03 21:07:04'
+  datasets/ReportPrevScoreSCD3:
+    name: ReportPrevScoreSCD3
+    description: ''
+    author: sparklearner123@gmail.com
+    createdAt: '2023-02-09 23:00:04'
+    mode: batch
+    physicalDatasets:
+      myFabric:
+        fabricId: 1557
+        datasetType: File
+        description: ''
+        author: sparklearner123@gmail.com
+        createdAt: '2023-02-09 23:00:04'
+  datasets/SCD3Report:
+    name: SCD3Report
+    description: ''
+    author: sparklearner123@gmail.com
+    createdAt: '2023-02-10 00:07:23'
+    mode: batch
+    physicalDatasets:
+      myFabric:
+        fabricId: 1557
+        datasetType: File
+        description: ''
+        author: sparklearner123@gmail.com
+        createdAt: '2023-02-10 00:07:23'
 templates: {}
 jobs:
   jobs/DTIjob:
@@ -578,6 +613,13 @@ subgraphs:
     language: python
     mode: batch
     createdAt: '2023-01-19 00:59:26'
+  subgraphs/CreditDecisionLogic:
+    name: CreditDecisionLogic
+    description: ''
+    author: sparklearner123@gmail.com
+    language: python
+    mode: batch
+    createdAt: '2023-01-31 22:46:53'
 sqlModels: {}
 sqlPipeline: null
 dependencies: []

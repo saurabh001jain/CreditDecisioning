@@ -11,6 +11,7 @@ def pipeline(spark: SparkSession) -> None:
     IngestFICO(spark)
     IngestXML(spark)
     IngestJSON(spark)
+    PullData(spark)
     df_Customer = Customer(spark)
     df_Script_1 = Script_1(spark)
     df_RestAPIEnrich_1 = RestAPIEnrich_1(spark, df_Script_1)

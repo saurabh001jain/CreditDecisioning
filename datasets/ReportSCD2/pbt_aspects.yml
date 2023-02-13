@@ -59,8 +59,15 @@ schema:
       mappings: []
       tags: []
   - name: previousFicoScore
-    type: string
-    nullable: false
+    type: long
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: DTIpercentage
+    type: decimal(17,4)
+    nullable: true
     metadata:
       description: ''
       mappings: []

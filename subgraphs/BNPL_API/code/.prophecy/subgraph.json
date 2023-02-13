@@ -15,7 +15,8 @@
     "inputs" : [ ],
     "outputs" : [ {
       "id" : "LTgG4dW6oXRsXXXASxsad",
-      "slug" : "out0"
+      "slug" : "out0",
+      "isStreaming" : false
     } ],
     "selectedInputFields" : [ ],
     "isCustomOutputSchema" : false
@@ -24,37 +25,37 @@
     "packageName" : "callAPIjson"
   },
   "connections" : [ {
-    "id" : "pEzQeetnhJWyAdFnY7I0J",
+    "id" : "lokiGNxJtgiiHA70Zlqq_",
     "source" : "mG20M7nmhXNAYpDIkC0R1",
     "sourcePort" : "M3U1cbm9iSr5SxR4H9KyU",
     "target" : "sLibTvRCxSz9kt5Wd5eVm",
     "targetPort" : "1J1RZG4E1dmrJZndGgvlt"
   }, {
-    "id" : "_oHKq_GGaB9KyWwfM4nXP",
+    "id" : "yT7OYScpZL6iHCY1lthFO",
     "source" : "sLibTvRCxSz9kt5Wd5eVm",
     "sourcePort" : "PFVjcMS1mJZ2wEbbYN_tV",
     "target" : "BH-jWbUAdcDb-1x0u5lhz",
     "targetPort" : "o88Cp-uwL3rBoI982Dhpv"
   }, {
-    "id" : "3FGSCEngMHm-uYr_wr7I4",
+    "id" : "gQfLRGxb1d07L88sa3TGc",
     "source" : "BH-jWbUAdcDb-1x0u5lhz",
     "sourcePort" : "Q5ygDL41gP5MmFqfOgfQp",
     "target" : "xmzXEFeDoYOVQHjRYYHzf",
     "targetPort" : "4h9tLR40kA6KkdcD5RSum"
   }, {
-    "id" : "o6oNtzTYmuaE1wgOYNJdD",
+    "id" : "add1tpm0zgXAHdmorXvhX",
     "source" : "xmzXEFeDoYOVQHjRYYHzf",
     "sourcePort" : "BBNj-5E6OtJN503zbTo7L",
     "target" : "7c0yWal6q3luOfuMyYNeH",
     "targetPort" : "PFFlnWKUVoY709Hu4fcMi"
   }, {
-    "id" : "yVwbmAIqwBnr99iAVEHYC",
+    "id" : "dYvCpYHrY_IRBVIEKD3uq",
     "source" : "7c0yWal6q3luOfuMyYNeH",
     "sourcePort" : "Ln410pBfqsJIzUnGMY68B",
     "target" : "-01TDsgklmgNqDEFXlTUT",
     "targetPort" : "kvXZHexNdM42jd0H81X1z"
   }, {
-    "id" : "l8LEWN3OZEdXtrx0k599h",
+    "id" : "-Nfndab9JuvA-fTvuKJ9e",
     "source" : "-01TDsgklmgNqDEFXlTUT",
     "sourcePort" : "rV9QzZ-6YP_ziO4Eg3CMK",
     "target" : "fz7_3SHQ9YM_uEF6qRJDP",
@@ -67,8 +68,8 @@
       "metadata" : {
         "label" : "JSON_BNPL_2_1",
         "slug" : "JSON_BNPL_2_1",
-        "x" : 380.0008425657863,
-        "y" : 180,
+        "x" : 400.0008425657863,
+        "y" : 200,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -142,7 +143,8 @@
                 "tags" : [ ]
               }
             } ]
-          }
+          },
+          "isStreaming" : false
         } ],
         "selectedInputFields" : [ ],
         "isCustomOutputSchema" : true
@@ -190,8 +192,8 @@
       "metadata" : {
         "label" : "Explode",
         "slug" : "Explode",
-        "x" : 580.0007497586245,
-        "y" : 180,
+        "x" : 600.0007497586245,
+        "y" : 200,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -231,8 +233,8 @@
       "metadata" : {
         "label" : "Display",
         "slug" : "Display",
-        "x" : 1180.0002646818364,
-        "y" : 180,
+        "x" : 1200.0002646818364,
+        "y" : 200,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -264,8 +266,8 @@
       "metadata" : {
         "label" : "ColumnDefinition",
         "slug" : "ColumnDefinition",
-        "x" : 980.0003528779424,
-        "y" : 180,
+        "x" : 1000.0003528779424,
+        "y" : 200,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -353,8 +355,8 @@
       "metadata" : {
         "label" : "GenericInput_1",
         "slug" : "GenericInput_1",
-        "x" : 180.00045673980839,
-        "y" : 180,
+        "x" : 200.00045673980839,
+        "y" : 200,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -368,7 +370,8 @@
           "schema" : {
             "type" : "struct",
             "fields" : [ ]
-          }
+          },
+          "isStreaming" : false
         } ],
         "selectedInputFields" : [ ],
         "isCustomOutputSchema" : true
@@ -385,8 +388,8 @@
       "metadata" : {
         "label" : "ParseJson",
         "slug" : "ParseJson",
-        "x" : 780.0005848666484,
-        "y" : 180,
+        "x" : 800.0005848666484,
+        "y" : 200,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -496,7 +499,8 @@
                 "tags" : [ ]
               }
             } ]
-          }
+          },
+          "isStreaming" : false
         } ],
         "selectedInputFields" : [ ],
         "isCustomOutputSchema" : true

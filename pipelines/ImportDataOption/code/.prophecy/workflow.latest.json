@@ -80,7 +80,8 @@
         "inputs" : [ ],
         "outputs" : [ {
           "id" : "bxsfsmLOGeqdnrqQOyeG6$$MsA9ojFJxU7Grs_WIjrEt",
-          "slug" : "out"
+          "slug" : "out",
+          "isStreaming" : false
         } ],
         "selectedInputFields" : [ ],
         "isCustomOutputSchema" : false
@@ -110,7 +111,8 @@
           "schema" : {
             "type" : "struct",
             "fields" : [ ]
-          }
+          },
+          "isStreaming" : false
         } ],
         "selectedInputFields" : [ ],
         "isCustomOutputSchema" : true
@@ -162,11 +164,13 @@
       "ports" : {
         "inputs" : [ {
           "id" : "lmvtHpw1slJT2nrjj2MQ_$$xZ0vayIvyJcijvOXegd4g",
-          "slug" : "in0"
+          "slug" : "in0",
+          "isStreaming" : false
         } ],
         "outputs" : [ {
           "id" : "yfav4yLChIIFCBxYL3aHz$$VMatqkw_55NnBfWNRJHBl",
-          "slug" : "out"
+          "slug" : "out",
+          "isStreaming" : false
         } ],
         "selectedInputFields" : [ ],
         "isCustomOutputSchema" : false
@@ -225,7 +229,8 @@
         "inputs" : [ ],
         "outputs" : [ {
           "id" : "Y6WUMlOMKgHeVgErzV8cd$$4McoUYsW3eS88PHsYfBKd",
-          "slug" : "out"
+          "slug" : "out",
+          "isStreaming" : false
         } ],
         "selectedInputFields" : [ ],
         "isCustomOutputSchema" : false
@@ -325,7 +330,8 @@
       "ports" : {
         "inputs" : [ {
           "id" : "iGlShAPm_Y3Ohkar543jK$$bg7mnIb2LEsadGcBnZBVb",
-          "slug" : "in0"
+          "slug" : "in0",
+          "isStreaming" : false
         } ],
         "outputs" : [ ],
         "selectedInputFields" : [ ],
@@ -349,11 +355,13 @@
       "ports" : {
         "inputs" : [ {
           "id" : "UuQ7rqrtk3r1cjCey93A4$$Pi0tS2UBfLULui5KWhaut",
-          "slug" : "in0"
+          "slug" : "in0",
+          "isStreaming" : false
         } ],
         "outputs" : [ {
           "id" : "P5i6JM5kNXp_YRu_Hxpmk$$O4fvrckzC_Gee6I32lQaN",
-          "slug" : "out"
+          "slug" : "out",
+          "isStreaming" : false
         } ],
         "selectedInputFields" : [ ],
         "isCustomOutputSchema" : false
@@ -390,7 +398,8 @@
         "inputs" : [ ],
         "outputs" : [ {
           "id" : "q3qber7Sx0r-0CB-T9XaT$$66WtZ2udtKAFcZOt6zBEE",
-          "slug" : "out"
+          "slug" : "out",
+          "isStreaming" : false
         } ],
         "selectedInputFields" : [ ],
         "isCustomOutputSchema" : false
@@ -416,13 +425,39 @@
         "inputs" : [ ],
         "outputs" : [ {
           "id" : "hlhH0Ih_0xUa8plKxLoRz$$Jh_-rS1qmIIkzd6nyPLNh",
-          "slug" : "out"
+          "slug" : "out",
+          "isStreaming" : false
         } ],
         "selectedInputFields" : [ ],
         "isCustomOutputSchema" : false
       },
       "properties" : {
         "datasetId" : "datasets/creditReportXMLingest"
+      }
+    },
+    "zzl08hs1BPL_pSYQqPdjD$$8sbTAdgnCqN5-TNrN3GTr" : {
+      "id" : "zzl08hs1BPL_pSYQqPdjD$$8sbTAdgnCqN5-TNrN3GTr",
+      "component" : "Script",
+      "metadata" : {
+        "label" : "PullData",
+        "slug" : "PullData",
+        "x" : -120,
+        "y" : 200,
+        "phase" : -1,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : true
+      },
+      "properties" : {
+        "script" : "dbutils.fs.rm('/Prophecy/sparklearner123@gmail.com/finserv/prophecy/ingest/FICO/TransUnionFICO${Year}.xml', recurse=True)\ndbutils.fs.rm('/Prophecy/sparklearner123@gmail.com/finserv/prophecy/ReportSCD1', recurse=True)\ndbutils.fs.rm('/Prophecy/sparklearner123@gmail.com/finserv/prophecy/ReportSCD2', recurse=True)\ndbutils.fs.rm('/Prophecy/sparklearner123@gmail.com/finserv/prophecy/ReportSCD3', recurse=True)\ndbutils.fs.rm('/Prophecy/sparklearner123@gmail.com/finserv/prophecy/ReportPrevScoreSCD3', recurse=True)\n\ndbutils.fs.mkdirs('/Prophecy/finserv/ingest/FICO')\ndbutils.fs.mkdirs('/Prophecy/finserv/ingest/customer')\ndbutils.fs.mkdirs('/Prophecy/finserv/ingest/BNPL')\n\n\nimport os\nos.system('wget https://raw.githubusercontent.com/atbida/terraform-databricks-lakehouse-blueprints/main/industry/fsi/data/TransUnionFICO2018 -O /dbfs/Prophecy/finserv/ingest/FICO/TransUnionFICO2018.xml')\nos.system('wget https://raw.githubusercontent.com/atbida/terraform-databricks-lakehouse-blueprints/main/industry/fsi/data/TransUnionFICO2019 -O /dbfs/Prophecy/finserv/ingest/FICO/TransUnionFICO2019.xml')\nos.system('wget https://raw.githubusercontent.com/atbida/terraform-databricks-lakehouse-blueprints/main/industry/fsi/data/TransUnionFICO2020 -O /dbfs/Prophecy/finserv/ingest/FICO/TransUnionFICO2020.xml')\nos.system('wget https://raw.githubusercontent.com/atbida/terraform-databricks-lakehouse-blueprints/main/industry/fsi/data/customer.csv -O /dbfs/Prophecy/finserv/ingest/customer/customer.csv')\nos.system('wget https://raw.githubusercontent.com/databricks/terraform-databricks-lakehouse-blueprints/main/industry/fsi/data/bnpl.json -O /dbfs/Prophecy/finserv/ingest/BNPL/bnpl.json')",
+        "scriptMethodHeader" : "def Script(spark: SparkSession) -> None:",
+        "scriptMethodFooter" : "    return "
       }
     }
   },

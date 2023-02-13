@@ -59,8 +59,8 @@ schema:
       mappings: []
       tags: []
   - name: previousFicoScore
-    type: string
-    nullable: false
+    type: long
+    nullable: true
     metadata:
       description: ''
       mappings: []

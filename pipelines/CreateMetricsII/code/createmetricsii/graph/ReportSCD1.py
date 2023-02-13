@@ -8,5 +8,6 @@ def ReportSCD1(spark: SparkSession, in0: DataFrame):
     from delta.tables import DeltaTable, DeltaMergeBuilder
     in0.write\
         .format("delta")\
+        .option("overwriteSchema", True)\
         .mode("overwrite")\
-        .save("dbfs:/Prophecy/sparklearner123@gmail.com/finserv/prophecy/ReportSCD1")
+        .save(f"dbfs:/Prophecy/{Config.user_email}/finserv/prophecy/ReportSCD1")

@@ -4,7 +4,7 @@ from pyspark.sql.types import *
 from createmetricsii.config.ConfigStore import *
 from createmetricsii.udfs.UDFs import *
 
-def TransUnionFico_xml(spark: SparkSession) -> DataFrame:
+def TransUnionFico(spark: SparkSession) -> DataFrame:
     return spark.read\
         .format("xml")\
         .option("rowTag", "Subject")\
@@ -23,4 +23,4 @@ def TransUnionFico_xml(spark: SparkSession) -> DataFrame:
             ]), True)
         ])
         )\
-        .load(f"dbfs:/Prophecy/sparklearner123@gmail.com/finserv/prophecy/ingest/FICO/TransUnionFICO{Config.Year}.xml")
+        .load(f"dbfs:/Prophecy/finserv/ingest/FICO/TransUnionFICO{Config.Year}.xml")

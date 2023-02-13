@@ -13,4 +13,4 @@ def Customer(spark: SparkSession) -> DataFrame:
         )\
         .option("header", True)\
         .option("sep", "|")\
-        .csv("dbfs:/Prophecy/sparklearner123@gmail.com/finserv/prophecy/ingest/customer/customer.csv")
+        .csv("dbfs:/Prophecy/finserv/prophecy/ingest/customer/customer.csv")

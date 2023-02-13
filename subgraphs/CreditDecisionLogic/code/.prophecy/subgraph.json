@@ -1,0 +1,437 @@
+{
+  "id" : "PlYmzSq2rfznOy8pvYth9",
+  "component" : "Subgraph",
+  "metadata" : {
+    "label" : "",
+    "slug" : "",
+    "x" : 0,
+    "y" : 0,
+    "phase" : 0,
+    "cache" : false,
+    "detailedStats" : false,
+    "isImported" : false
+  },
+  "ports" : {
+    "inputs" : [ {
+      "id" : "nodJBjzPIGH-8RhZPBrgC",
+      "slug" : "in0",
+      "isStreaming" : false
+    }, {
+      "id" : "pK5qdRsGpGfu9NWXL6eLi",
+      "slug" : "in1",
+      "isStreaming" : false
+    } ],
+    "outputs" : [ {
+      "id" : "_QBNHwy6NZWk3J3OfBAS7",
+      "slug" : "out0"
+    } ],
+    "selectedInputFields" : [ ],
+    "isCustomOutputSchema" : false
+  },
+  "properties" : {
+    "packageName" : "com.alpha"
+  },
+  "connections" : [ {
+    "id" : "gaqE6wOuPcOqNe7QjB5EX",
+    "source" : "WzffvpEJh0bzQJto-w-Zv",
+    "sourcePort" : "1fKGULbKTl3kJsrXLBZsJ",
+    "target" : "d_UdgKVcmvftkj_c8WCKC",
+    "targetPort" : "NKJsbCkieblMkfBMLjr0g"
+  }, {
+    "id" : "dxluaPIMQfyUfLcJufNqC",
+    "source" : "ivXybwDiWlem1rGfsuG8f",
+    "sourcePort" : "WmxY0wMR6O93NIU6dzIvh",
+    "target" : "d_UdgKVcmvftkj_c8WCKC",
+    "targetPort" : "iY_4i61bR0Ro3W1GzvsnV"
+  }, {
+    "id" : "VxefJpj4n4DHdUtBH9tLP",
+    "source" : "d_UdgKVcmvftkj_c8WCKC",
+    "sourcePort" : "T6TxvfMpYrkroBWHqIwMc",
+    "target" : "x7TTSxVs3lcuwcFYhu3Xh",
+    "targetPort" : "flW2tEw1vObHTMISPM6HW"
+  }, {
+    "id" : "XXOCBbdkK3JioXzJKDeBh",
+    "source" : "PlYmzSq2rfznOy8pvYth9",
+    "sourcePort" : "nodJBjzPIGH-8RhZPBrgC",
+    "target" : "WzffvpEJh0bzQJto-w-Zv",
+    "targetPort" : "yrybA-WjSXWrCmuzqRtSo"
+  }, {
+    "id" : "huswkOcun4Z6KSNeI0VwQ",
+    "source" : "PlYmzSq2rfznOy8pvYth9",
+    "sourcePort" : "pK5qdRsGpGfu9NWXL6eLi",
+    "target" : "ivXybwDiWlem1rGfsuG8f",
+    "targetPort" : "okJnb0u1YcJiOaXsRSciI"
+  }, {
+    "id" : "6FIkKGla003zTcHUxRJBe",
+    "source" : "x7TTSxVs3lcuwcFYhu3Xh",
+    "sourcePort" : "Xj80kBOgKZ8Es4g6MuaLt",
+    "target" : "PlYmzSq2rfznOy8pvYth9",
+    "targetPort" : "_QBNHwy6NZWk3J3OfBAS7"
+  } ],
+  "processes" : {
+    "ivXybwDiWlem1rGfsuG8f" : {
+      "id" : "ivXybwDiWlem1rGfsuG8f",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "Refine_1",
+        "slug" : "Refine_1",
+        "x" : 380,
+        "y" : 440,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "okJnb0u1YcJiOaXsRSciI",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "WmxY0wMR6O93NIU6dzIvh",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "importLanguage" : "python",
+        "expressions" : [ {
+          "target" : "Name",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "name"
+          },
+          "description" : "",
+          "_row_id" : "388826102"
+        }, {
+          "target" : "MonthlyBNPLLoanAmount",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "cast(monthly_loan_amount as long)"
+          },
+          "description" : "",
+          "_row_id" : "1196025146"
+        }, {
+          "target" : "Balance",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "balance"
+          },
+          "description" : "",
+          "_row_id" : "1686906308"
+        } ],
+        "importString" : "",
+        "activeTab" : "expressions",
+        "columnsSelector" : [ "sgKEun3wI8uK97QKsE5uh$$bNTxoEfSDHu6LyCVB_U-9##balance", "sgKEun3wI8uK97QKsE5uh$$bNTxoEfSDHu6LyCVB_U-9##monthly_loan_amount", "sgKEun3wI8uK97QKsE5uh$$bNTxoEfSDHu6LyCVB_U-9##name" ]
+      }
+    },
+    "d_UdgKVcmvftkj_c8WCKC" : {
+      "id" : "d_UdgKVcmvftkj_c8WCKC",
+      "component" : "Join",
+      "metadata" : {
+        "label" : "ByName_1",
+        "slug" : "ByName_1",
+        "x" : 740,
+        "y" : 300,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "NKJsbCkieblMkfBMLjr0g",
+          "slug" : "in0"
+        }, {
+          "id" : "iY_4i61bR0Ro3W1GzvsnV",
+          "slug" : "in1"
+        } ],
+        "outputs" : [ {
+          "id" : "T6TxvfMpYrkroBWHqIwMc",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "conditions" : [ {
+          "alias" : "in1",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.Name = in1.Name"
+          },
+          "joinType" : "inner"
+        } ],
+        "expressions" : [ {
+          "target" : "Name",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in1.Name"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "ReportedIncome",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.ReportedIncome"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "TradLoanAmount",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.TULoanAmount"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "BNPLLoanAmount",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in1.MonthlyBNPLLoanAmount"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "Balance",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in1.Balance"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "FicoScore",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.Score"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "FicoValidFrom",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.ValidFrom"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "FicoValidTo",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.ValidTo"
+          },
+          "description" : "",
+          "_row_id" : null
+        } ],
+        "hints" : [ {
+          "id" : "3ZwTjTBHMDYA5PWUiCJNR$$UWsTvHdvA_9teojs6yvKT",
+          "alias" : "in0",
+          "hintType" : "none",
+          "propagateColumns" : false
+        }, {
+          "id" : "AmXvPkRImmlAGCA2ZAeZV$$FlUq21CdC53CrPWTZEAFk",
+          "alias" : "in1",
+          "hintType" : "none",
+          "propagateColumns" : false
+        } ],
+        "allIn1" : null,
+        "activeTab" : "expressions",
+        "columnsSelector" : [ "AmXvPkRImmlAGCA2ZAeZV$$FlUq21CdC53CrPWTZEAFk##Name", "3ZwTjTBHMDYA5PWUiCJNR$$UWsTvHdvA_9teojs6yvKT##Name", "AmXvPkRImmlAGCA2ZAeZV$$FlUq21CdC53CrPWTZEAFk##Name", "3ZwTjTBHMDYA5PWUiCJNR$$UWsTvHdvA_9teojs6yvKT##ValidTo", "3ZwTjTBHMDYA5PWUiCJNR$$UWsTvHdvA_9teojs6yvKT##ValidFrom", "AmXvPkRImmlAGCA2ZAeZV$$FlUq21CdC53CrPWTZEAFk##Balance", "3ZwTjTBHMDYA5PWUiCJNR$$UWsTvHdvA_9teojs6yvKT##Score", "AmXvPkRImmlAGCA2ZAeZV$$FlUq21CdC53CrPWTZEAFk##MonthlyBNPLLoanAmount", "3ZwTjTBHMDYA5PWUiCJNR$$UWsTvHdvA_9teojs6yvKT##ReportedIncome", "3ZwTjTBHMDYA5PWUiCJNR$$UWsTvHdvA_9teojs6yvKT##TULoanAmount" ],
+        "allIn0" : null,
+        "whereClause" : null,
+        "headAlias" : "in0"
+      }
+    },
+    "WzffvpEJh0bzQJto-w-Zv" : {
+      "id" : "WzffvpEJh0bzQJto-w-Zv",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "ParseLoanAmount_1",
+        "slug" : "ParseLoanAmount_1",
+        "x" : 540,
+        "y" : 180,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "yrybA-WjSXWrCmuzqRtSo",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "1fKGULbKTl3kJsrXLBZsJ",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "importLanguage" : "python",
+        "expressions" : [ {
+          "target" : "ReportedIncome",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "cast(REPORTED_INCOME as long)"
+          },
+          "description" : "",
+          "_row_id" : "593347690"
+        }, {
+          "target" : "Name",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Name"
+          },
+          "description" : "",
+          "_row_id" : "297673224"
+        }, {
+          "target" : "TULoanAmount",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "cast(split(trades.trade[0].terms, 'M')[1] as long)"
+          },
+          "description" : "",
+          "_row_id" : "204781395"
+        }, {
+          "target" : "Score",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "FICO.Score"
+          },
+          "description" : "",
+          "_row_id" : "1722712234"
+        }, {
+          "target" : "ValidFrom",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "FICO.ValidFrom"
+          },
+          "description" : "",
+          "_row_id" : "678283401"
+        }, {
+          "target" : "ValidTo",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "FICO.ValidTo"
+          },
+          "description" : "",
+          "_row_id" : "1182854698"
+        } ],
+        "importString" : "",
+        "activeTab" : "expressions",
+        "columnsSelector" : [ "qTWiiHRmcKjyeeFV8p3wd$$XbY68Ig8iJhug3pkxRmvW##REPORTED_INCOME", "qTWiiHRmcKjyeeFV8p3wd$$XbY68Ig8iJhug3pkxRmvW##Trades", "qTWiiHRmcKjyeeFV8p3wd$$XbY68Ig8iJhug3pkxRmvW##FICO.ValidTo", "qTWiiHRmcKjyeeFV8p3wd$$XbY68Ig8iJhug3pkxRmvW##FICO.Score", "qTWiiHRmcKjyeeFV8p3wd$$XbY68Ig8iJhug3pkxRmvW##Trades.Trade", "qTWiiHRmcKjyeeFV8p3wd$$XbY68Ig8iJhug3pkxRmvW##Name", "qTWiiHRmcKjyeeFV8p3wd$$XbY68Ig8iJhug3pkxRmvW##FICO", "qTWiiHRmcKjyeeFV8p3wd$$XbY68Ig8iJhug3pkxRmvW##FICO.ValidFrom" ]
+      }
+    },
+    "x7TTSxVs3lcuwcFYhu3Xh" : {
+      "id" : "x7TTSxVs3lcuwcFYhu3Xh",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "AddCols_1",
+        "slug" : "AddCols_1",
+        "x" : 960,
+        "y" : 300,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "flW2tEw1vObHTMISPM6HW",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "Xj80kBOgKZ8Es4g6MuaLt",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "importLanguage" : "python",
+        "expressions" : [ {
+          "target" : "Name",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Name"
+          },
+          "description" : "",
+          "_row_id" : "290919137"
+        }, {
+          "target" : "Income",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "cast(ReportedIncome / 12 as long)"
+          },
+          "description" : "",
+          "_row_id" : "1753971809"
+        }, {
+          "target" : "LoanTotal",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "cast((TradLoanAmount + BNPLLoanAmount) as long)"
+          },
+          "description" : "",
+          "_row_id" : "1481811238"
+        }, {
+          "target" : "FicoScore",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "FicoScore"
+          },
+          "description" : "",
+          "_row_id" : "80686144"
+        }, {
+          "target" : "FicoValidFrom",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "FicoValidFrom"
+          },
+          "description" : "",
+          "_row_id" : "2112640130"
+        }, {
+          "target" : "FicoValidTo",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "FicoValidTo"
+          },
+          "description" : "",
+          "_row_id" : "64870038"
+        }, {
+          "target" : "minFlag",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "lit(true)"
+          },
+          "description" : "",
+          "_row_id" : "612576033"
+        }, {
+          "target" : "maxFlag",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "lit(true)"
+          },
+          "description" : "",
+          "_row_id" : "1081182651"
+        }, {
+          "target" : "previousFicoScore",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "lit(\"None\")"
+          },
+          "description" : "",
+          "_row_id" : "702493457"
+        } ],
+        "importString" : "",
+        "activeTab" : "expressions",
+        "columnsSelector" : [ "NBJ-lJBdSbAuZSRSU4c3q$$X9XztvKFjjeLwBPFiYpOc##FicoValidTo", "NBJ-lJBdSbAuZSRSU4c3q$$X9XztvKFjjeLwBPFiYpOc##FicoValidFrom", "NBJ-lJBdSbAuZSRSU4c3q$$X9XztvKFjjeLwBPFiYpOc##FicoScore", "NBJ-lJBdSbAuZSRSU4c3q$$X9XztvKFjjeLwBPFiYpOc##BNPLLoanAmount", "NBJ-lJBdSbAuZSRSU4c3q$$X9XztvKFjjeLwBPFiYpOc##Name", "NBJ-lJBdSbAuZSRSU4c3q$$X9XztvKFjjeLwBPFiYpOc##TradLoanAmount", "NBJ-lJBdSbAuZSRSU4c3q$$X9XztvKFjjeLwBPFiYpOc##ReportedIncome" ]
+      }
+    }
+  }
+}

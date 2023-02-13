@@ -1,8 +1,8 @@
 from pyspark.sql import *
 from pyspark.sql.functions import *
 from pyspark.sql.types import *
-from importdataoption.config.ConfigStore import *
-from importdataoption.udfs.UDFs import *
+from createmetricsii.config.ConfigStore import *
+from createmetricsii.udfs.UDFs import *
 
 def JSON_BNPL_2_1(spark: SparkSession, in0: DataFrame) -> DataFrame:
     from prophecy.udfs import get_rest_api

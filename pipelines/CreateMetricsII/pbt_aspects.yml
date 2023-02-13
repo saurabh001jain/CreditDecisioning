@@ -1,7 +1,8 @@
 version: 1
 dependencies: []
 configurations:
-- default
+- '2020'
 - '2018'
 - '2019'
-- '2020'
+- '2021'
+- default
