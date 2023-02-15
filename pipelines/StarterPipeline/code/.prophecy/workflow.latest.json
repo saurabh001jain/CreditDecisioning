@@ -1,0 +1,223 @@
+{
+  "metainfo" : {
+    "id" : "1",
+    "language" : "python",
+    "fabricId" : "990",
+    "frontEndLanguage" : "sql",
+    "mode" : "batch",
+    "udfs" : {
+      "language" : "python",
+      "udfs" : [ ]
+    },
+    "udafs" : {
+      "language" : "python",
+      "code" : ""
+    },
+    "configuration" : {
+      "common" : {
+        "type" : "record",
+        "fields" : [ ]
+      },
+      "oldCommon" : {
+        "type" : "record",
+        "fields" : [ ]
+      },
+      "fabrics" : { },
+      "instances" : { },
+      "selected" : "default",
+      "nonEditable" : [ ],
+      "isSubscribedPipelineWithPipelineConfigs" : false
+    },
+    "sparkConf" : [ ],
+    "hadoopConf" : [ ],
+    "codeMode" : "sparse",
+    "buildSystem" : "maven",
+    "externalDependencies" : [ ],
+    "isImported" : false,
+    "interimMode" : "Full",
+    "interimModeEnabled" : true,
+    "visualCodeInterimMode" : "Disabled",
+    "recordsLimit" : {
+      "enabled" : false,
+      "value" : 1000
+    },
+    "topLevelPackage" : "starterpipeline"
+  },
+  "connections" : [ ],
+  "processes" : {
+    "CVlN7MkhV_kFBFZI65_Hc$$w_TSIpjwUTT3GSRPn4o1T" : {
+      "id" : "CVlN7MkhV_kFBFZI65_Hc$$w_TSIpjwUTT3GSRPn4o1T",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "Source_0",
+        "slug" : "Source_0",
+        "x" : -300,
+        "y" : -60,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "QEr90M7kSHTVO2xz3F293$$rk-1cnqIeCT7VbAG0GGfF",
+          "slug" : "out",
+          "isStreaming" : false
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : { }
+    },
+    "h3muK4GqtPGeU3XdhTuua$$T9tahY-tX8fa4b83oaBpW" : {
+      "id" : "h3muK4GqtPGeU3XdhTuua$$T9tahY-tX8fa4b83oaBpW",
+      "component" : "RestAPIEnrich",
+      "metadata" : {
+        "label" : "RestAPIEnrich_1",
+        "slug" : "RestAPIEnrich_1",
+        "x" : -300,
+        "y" : 320,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "rIF4s7KScG5A6oe9YJaG6$$9awhAFUpYsG00vqSbVHoV",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "DfE0B6Y8NTdYra8B-faFK$$BPvJ7_PlJKsVBX2ruQUOJ",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "awaitTime" : null,
+        "method" : "GET",
+        "proxies" : null,
+        "verify" : null,
+        "streamFrom" : null,
+        "headersFrom" : null,
+        "auth" : null,
+        "url" : "https://www.boredapi.com/api/activity",
+        "json" : null,
+        "cert" : null,
+        "data" : null,
+        "params" : null,
+        "allow_redirectsFrom" : null,
+        "authFrom" : null,
+        "proxiesFrom" : null,
+        "files" : null,
+        "awaitTimeFrom" : null,
+        "cookies" : null,
+        "jsonFrom" : null,
+        "urlFrom" : "staticValue",
+        "parseContent" : null,
+        "activeTab" : "basicTab",
+        "allow_redirects" : null,
+        "certFrom" : null,
+        "stream" : null,
+        "filesFrom" : null,
+        "paramsFrom" : null,
+        "dataFrom" : null,
+        "timeoutFrom" : null,
+        "verifyFrom" : null,
+        "headers" : null,
+        "methodFrom" : "staticValue",
+        "timeout" : null,
+        "cookiesFrom" : null
+      }
+    },
+    "bH0u9--GCstW8fQeMoI5y$$G7OYeyRRVe1_JTp4lSDEf" : {
+      "id" : "bH0u9--GCstW8fQeMoI5y$$G7OYeyRRVe1_JTp4lSDEf",
+      "component" : "Target",
+      "metadata" : {
+        "label" : "Target_1",
+        "slug" : "Target_1",
+        "x" : 40,
+        "y" : 20,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "zH0dTRW0kOKQPsyWNLsqI$$vjsPT9JPphNK7rrTia2ck",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : { }
+    },
+    "YpewCWO4ZISMKVvYaRwDU$$deFSL7qgnEXj6RDMRrIKX" : {
+      "id" : "YpewCWO4ZISMKVvYaRwDU$$deFSL7qgnEXj6RDMRrIKX",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "Source_1",
+        "slug" : "Source_1",
+        "x" : -300,
+        "y" : 120,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "QDHrHU33ZkZlAXzohemsQ$$7d2G8DOwwHYy6LMlZI0aW",
+          "slug" : "out",
+          "isStreaming" : false
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : { }
+    },
+    "yl4IyzGGl7eV9v-JHjDKS$$ni-_sUd9c4bCsi4-t0YA8" : {
+      "id" : "yl4IyzGGl7eV9v-JHjDKS$$ni-_sUd9c4bCsi4-t0YA8",
+      "component" : "SetOperation",
+      "metadata" : {
+        "label" : "SetOperation_1",
+        "slug" : "SetOperation_1",
+        "x" : -140,
+        "y" : 20,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "AMpL_Lkz8zI42KpGpW6Ed$$EqJMI-MMoX_vBYFs9_5HA",
+          "slug" : "in0"
+        }, {
+          "id" : "MGc54kzt-sBBHBu0iWzB2$$tXqegl81abFdOkK6f7djF",
+          "slug" : "in1"
+        } ],
+        "outputs" : [ {
+          "id" : "tq2NfmAyctWd7JaB4kM0i$$KlVAqkfVjgDBI4BT0j6k4",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "operationType" : "unionAll"
+      }
+    }
+  },
+  "ports" : {
+    "inputs" : [ ],
+    "outputs" : [ ],
+    "selectedInputFields" : [ ],
+    "isCustomOutputSchema" : false
+  }
+}

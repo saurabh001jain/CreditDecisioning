@@ -67,6 +67,17 @@ pipelines:
       inputs: []
       outputs: []
     dependencies: {}
+  pipelines/StarterPipeline:
+    name: StarterPipeline
+    description: ''
+    author: sparklearner123@gmail.com
+    mode: batch
+    language: python
+    createdAt: '2023-02-15 00:08:23'
+    datasets:
+      inputs: []
+      outputs: []
+    dependencies: {}
 datasets:
   datasets/creditReportXMLingest:
     name: creditReportXMLingest
