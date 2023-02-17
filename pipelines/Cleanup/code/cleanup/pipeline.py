@@ -7,9 +7,7 @@ from prophecy.utils import *
 from cleanup.graph import *
 
 def pipeline(spark: SparkSession) -> None:
-    ObtainUserEmail(spark)
     PullData(spark)
-    df_Source_1 = Source_1(spark)
 
 def main():
     spark = SparkSession.builder\

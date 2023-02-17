@@ -15,6 +15,7 @@ def pipeline(spark: SparkSession) -> None:
     df_Refine = Refine(spark, df_LexisNexis)
     df_ByName = ByName(spark, df_ParseLoanAmount, df_Refine)
     df_SetTypes = SetTypes(spark, df_ByName)
+    IngestData(spark)
     ReportSCD2(spark, df_SetTypes)
     ReportSCD1(spark, df_SetTypes)
     SCD3Report(spark, df_SetTypes)

@@ -2,7 +2,7 @@
   "metainfo" : {
     "id" : "1",
     "language" : "python",
-    "fabricId" : "1557",
+    "fabricId" : "1609",
     "frontEndLanguage" : "sql",
     "mode" : "batch",
     "udfs" : {
@@ -249,6 +249,31 @@
       },
       "properties" : {
         "datasetId" : "datasets/BNPLjsonIngest"
+      }
+    },
+    "cltVq2nHwyFpyOskRAAtK$$PP1Tlnivebg50_ETWsobI" : {
+      "id" : "cltVq2nHwyFpyOskRAAtK$$PP1Tlnivebg50_ETWsobI",
+      "component" : "Script",
+      "metadata" : {
+        "label" : "IngestData",
+        "slug" : "IngestData",
+        "x" : -40,
+        "y" : 120,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : true
+      },
+      "properties" : {
+        "script" : "# Config vars can easily be passed to out-of-the-box gems\n# Config vars passing to script gems seems more complicated\n# So i am hard coding the values for this script gem\n\ndbutils.fs.rm('/Prophecy/sparklearner123@gmail.com/finserv/prophecy/ingest/FICO/TransUnionFICO2018.xml', recurse=True)\ndbutils.fs.rm('/Prophecy/sparklearner123@gmail.com/finserv/prophecy/ingest/FICO/TransUnionFICO2019.xml', recurse=True)\ndbutils.fs.rm('/Prophecy/sparklearner123@gmail.com/finserv/prophecy/ingest/FICO/TransUnionFICO2020.xml', recurse=True)\ndbutils.fs.rm('/Prophecy/sparklearner123@gmail.com/finserv/prophecy/ingest/FICO/TransUnionFICO2021.xml', recurse=True)\n\n\ndbutils.fs.rm('/Prophecy/sparklearner123@gmail.com/finserv/prophecy/ReportSCD1', recurse=True)\ndbutils.fs.rm('/Prophecy/sparklearner123@gmail.com/finserv/prophecy/ReportSCD2', recurse=True)\ndbutils.fs.rm('/Prophecy/sparklearner123@gmail.com/finserv/prophecy/ReportSCD3', recurse=True)\n\n\nimport os\nos.system(\"mkdir -p /dbfs/Prophecy/\")\nos.system(\"mkdir -p /dbfs/Prophecy/finserv\")\nos.system(\"mkdir -p /dbfs/Prophecy/finserv/ingest\")\nos.system(\"mkdir -p /dbfs/Prophecy/finserv/ingest/FICO\")\nos.system(\"mkdir -p /dbfs/Prophecy/finserv/ingest/BNPL\")\nos.system(\"mkdir -p /dbfs/Prophecy/finserv/ingest/customer\")\n\nos.system('wget https://raw.githubusercontent.com/atbida/terraform-databricks-lakehouse-blueprints/main/industry/fsi/data/TransUnionFICO2018 -O /dbfs/Prophecy/finserv/ingest/FICO/TransUnionFICO2018.xml')\nos.system('wget https://raw.githubusercontent.com/atbida/terraform-databricks-lakehouse-blueprints/main/industry/fsi/data/TransUnionFICO2018 -O /dbfs/Prophecy/finserv/ingest/FICO/TransUnionFICO2019.xml')\nos.system('wget https://raw.githubusercontent.com/atbida/terraform-databricks-lakehouse-blueprints/main/industry/fsi/data/TransUnionFICO2018 -O /dbfs/Prophecy/finserv/ingest/FICO/TransUnionFICO2020.xml')\nos.system('wget https://raw.githubusercontent.com/atbida/terraform-databricks-lakehouse-blueprints/main/industry/fsi/data/TransUnionFICO2018 -O /dbfs/Prophecy/finserv/ingest/FICO/TransUnionFICO2021.xml')\n\n\nos.system('wget https://raw.githubusercontent.com/atbida/terraform-databricks-lakehouse-blueprints/main/industry/fsi/data/customer.csv -O /dbfs/Prophecy/finserv/ingest/customer/customer.csv')\nos.system('wget https://raw.githubusercontent.com/atbida/terraform-databricks-lakehouse-blueprints/main/industry/fsi/data/bnpl.json -O /dbfs/Prophecy/finserv/ingest/BNPL/bnpl.json')",
+        "scriptMethodHeader" : "def Script(spark: SparkSession) -> None:",
+        "scriptMethodFooter" : "    return "
       }
     },
     "OYaGutOo1n_DqxjKU-7G_$$R2yardQiDMwyz3efeWlLu" : {

@@ -41,21 +41,6 @@ pipelines:
       - datasets/ReportSCD2
       - datasets/SCD3Report
     dependencies: {}
-  pipelines/ImportDataOption:
-    name: ImportDataOption
-    description: ''
-    author: sparklearner123@gmail.com
-    mode: batch
-    language: python
-    createdAt: '2023-01-10 22:24:26'
-    datasets:
-      inputs:
-      - datasets/BNPLjsonIngest
-      - datasets/CustIncomeCSV
-      - datasets/TransUnionFico_xml
-      - datasets/creditReportXMLingest
-      outputs: []
-    dependencies: {}
   pipelines/Cleanup:
     name: Cleanup
     description: For repeated usage, remove previously written data
@@ -63,17 +48,6 @@ pipelines:
     mode: batch
     language: python
     createdAt: '2023-01-18 04:04:53'
-    datasets:
-      inputs: []
-      outputs: []
-    dependencies: {}
-  pipelines/StarterPipeline:
-    name: StarterPipeline
-    description: ''
-    author: sparklearner123@gmail.com
-    mode: batch
-    language: python
-    createdAt: '2023-02-15 00:08:23'
     datasets:
       inputs: []
       outputs: []
