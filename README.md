@@ -34,3 +34,8 @@ adds createMetricsII pipeline with join instead of union
 *** Release notes for version: 1.0.0 ***
 
 Pipeline is ready to share for feedback
+
+
+*** Release notes for version: 1.0.2 ***
+
+Updates to ensure pipeline works with Unity Catalog single clusters
