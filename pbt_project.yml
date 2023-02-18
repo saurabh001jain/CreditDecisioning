@@ -22,6 +22,7 @@ pipelines:
       outputs:
       - datasets/Profile
       - datasets/ReportSCD2
+      - datasets/ReportSCD3_UC
       - datasets/SCD3Report
     dependencies: {}
   pipelines/Cleanup:
@@ -530,6 +531,19 @@ datasets:
         description: ''
         author: sparklearner123@gmail.com
         createdAt: '2023-02-17 21:39:15'
+  datasets/ReportSCD3_UC:
+    name: ReportSCD3_UC
+    description: ''
+    author: sparklearner123@gmail.com
+    createdAt: '2023-02-18 00:56:32'
+    mode: batch
+    physicalDatasets:
+      UnityCatalogClusters:
+        fabricId: 1609
+        datasetType: File
+        description: ''
+        author: sparklearner123@gmail.com
+        createdAt: '2023-02-18 00:56:32'
 templates: {}
 jobs:
   jobs/DTIjob:

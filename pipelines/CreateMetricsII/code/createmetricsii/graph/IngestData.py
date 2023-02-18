@@ -24,9 +24,9 @@ def IngestData(spark: SparkSession):
         '/Prophecy/sparklearner123@gmail.com/finserv/prophecy/ingest/FICO/TransUnionFICO2021.xml',
         recurse = True
     )
-    dbutils.fs.rm('/Prophecy/sparklearner123@gmail.com/finserv/prophecy/ReportSCD1', recurse = True)
-    dbutils.fs.rm('/Prophecy/sparklearner123@gmail.com/finserv/prophecy/ReportSCD2', recurse = True)
-    dbutils.fs.rm('/Prophecy/sparklearner123@gmail.com/finserv/prophecy/ReportSCD3', recurse = True)
+    dbutils.fs.rm('/Prophecy/sparklearner123@gmail.com/finserv/prophecy/gold_credit_dti_SCD1', recurse = True)
+    dbutils.fs.rm('/Prophecy/sparklearner123@gmail.com/finserv/prophecy/gold_credit_dti_SCD2', recurse = True)
+    dbutils.fs.rm('/Prophecy/sparklearner123@gmail.com/finserv/prophecy/gold_credit_dti_SCD3_UC', recurse = True)
     import os
     os.system("mkdir -p /dbfs/Prophecy/")
     os.system("mkdir -p /dbfs/Prophecy/finserv")

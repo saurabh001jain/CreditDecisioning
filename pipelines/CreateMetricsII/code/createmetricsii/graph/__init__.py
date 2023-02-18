@@ -1,5 +1,6 @@
 from .IngestData import *
 from .FlattenSchema_1 import *
+from .ReportSCD3_UC import *
 from .SetTypes import *
 from .ReportSCD1 import *
 from .ParseLoanAmount import *

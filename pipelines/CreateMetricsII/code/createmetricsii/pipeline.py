@@ -19,6 +19,7 @@ def pipeline(spark: SparkSession) -> None:
     IngestData(spark)
     ReportSCD2(spark, df_SetTypes)
     ReportSCD1(spark, df_SetTypes)
+    ReportSCD3_UC(spark, df_SetTypes)
     SCD3Report(spark, df_SetTypes)
 
 def main():

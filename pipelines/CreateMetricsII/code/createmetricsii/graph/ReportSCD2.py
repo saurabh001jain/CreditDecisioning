@@ -7,8 +7,11 @@ from createmetricsii.udfs.UDFs import *
 def ReportSCD2(spark: SparkSession, in0: DataFrame):
     from delta.tables import DeltaTable, DeltaMergeBuilder
 
-    if DeltaTable.isDeltaTable(spark, f"dbfs:/Prophecy/{Config.user_email}/finserv/prophecy/ReportSCD2"):
-        existingTable = DeltaTable.forPath(spark, f"dbfs:/Prophecy/{Config.user_email}/finserv/prophecy/ReportSCD2")
+    if DeltaTable.isDeltaTable(spark, f"dbfs:/Prophecy/{Config.user_email}/finserv/prophecy/gold_credit_dti_SCD2"):
+        existingTable = DeltaTable.forPath(
+            spark,
+            f"dbfs:/Prophecy/{Config.user_email}/finserv/prophecy/gold_credit_dti_SCD2"
+        )
         updatesDF = in0.withColumn("minFlag", lit("true")).withColumn("maxFlag", lit("true"))
         existingDF = existingTable.toDF()
         updateColumns = updatesDF.columns
@@ -42,4 +45,4 @@ def ReportSCD2(spark: SparkSession, in0: DataFrame):
             .format("delta")\
             .option("overwriteSchema", True)\
             .mode("overwrite")\
-            .save(f"dbfs:/Prophecy/{Config.user_email}/finserv/prophecy/ReportSCD2")
+            .save(f"dbfs:/Prophecy/{Config.user_email}/finserv/prophecy/gold_credit_dti_SCD2")

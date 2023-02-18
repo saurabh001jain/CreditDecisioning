@@ -106,12 +106,6 @@
     "target" : "OYaGutOo1n_DqxjKU-7G_$$R2yardQiDMwyz3efeWlLu",
     "targetPort" : "8pBqFHg4j9yqVWrPgnCr5$$-gsoGb9UJxu4Wv0_AxPZ4"
   }, {
-    "id" : "01va6vMRAYVLPbr-M63QQ",
-    "source" : "aPeYATByh614Gjj3qZQrE$$3SwhqmSqJelTVAgOHywkS",
-    "sourcePort" : "BYU9amYi9VNtOxrcdK6f0$$nKMBuuV6KkxAEoB2n8Eei",
-    "target" : "GcVNfK86W-NajyeoTzf7g$$K9leEu6xUC9lsdh7MAyTe",
-    "targetPort" : "VygHUWN8kM1Oj-7jX5Mvs$$GPu66sDWpEb4emOdb6zkc"
-  }, {
     "id" : "5V5qcwGP3jaGaRgb5jTqG",
     "source" : "ddQl4x6Rmj1lcsAk2ls15$$fwiFLOezcguZi7VqQVKa0",
     "sourcePort" : "_IfC9NlQcHqSiPVlZGP-t$$zjQUJ2UI4tAG5WBR_ePuH",
@@ -123,6 +117,18 @@
     "sourcePort" : "C2oXMOuQnraxEqpwk9U96$$ehNwGcSVz4bp4gA6jygaE",
     "target" : "x30qk1Z08MFSYPUeEzatn$$gi4B0qVoxN74AV01cep70",
     "targetPort" : "mmQYQPGgQXAcL827IM6JY$$cwtoYHdjEbHTC-jRJqyGs"
+  }, {
+    "id" : "Qf4vXLvSf2HKJzlDAvJlK",
+    "source" : "aPeYATByh614Gjj3qZQrE$$3SwhqmSqJelTVAgOHywkS",
+    "sourcePort" : "BYU9amYi9VNtOxrcdK6f0$$nKMBuuV6KkxAEoB2n8Eei",
+    "target" : "p1cWZD53sMUkbV0cfut65$$ryH8pEIIK2joMUviCxR9Z",
+    "targetPort" : "HItu5R7EfZydtt-DuhFuS$$oZT1Dk6eN7ADKybQ-6crp"
+  }, {
+    "id" : "RwPG7UY1pPmy2-8xi62Kp",
+    "source" : "aPeYATByh614Gjj3qZQrE$$3SwhqmSqJelTVAgOHywkS",
+    "sourcePort" : "BYU9amYi9VNtOxrcdK6f0$$nKMBuuV6KkxAEoB2n8Eei",
+    "target" : "GcVNfK86W-NajyeoTzf7g$$K9leEu6xUC9lsdh7MAyTe",
+    "targetPort" : "VygHUWN8kM1Oj-7jX5Mvs$$GPu66sDWpEb4emOdb6zkc"
   } ],
   "processes" : {
     "aPeYATByh614Gjj3qZQrE$$3SwhqmSqJelTVAgOHywkS" : {
@@ -250,7 +256,7 @@
         "isCustomOutputSchema" : true
       },
       "properties" : {
-        "script" : "# Config vars can easily be passed to out-of-the-box gems\n# Config vars passing to script gems seems more complicated\n# So i am hard coding the values for this script gem\n\ndbutils.fs.rm('/Prophecy/sparklearner123@gmail.com/finserv/prophecy/ingest/FICO/TransUnionFICO2018.xml', recurse=True)\ndbutils.fs.rm('/Prophecy/sparklearner123@gmail.com/finserv/prophecy/ingest/FICO/TransUnionFICO2019.xml', recurse=True)\ndbutils.fs.rm('/Prophecy/sparklearner123@gmail.com/finserv/prophecy/ingest/FICO/TransUnionFICO2020.xml', recurse=True)\ndbutils.fs.rm('/Prophecy/sparklearner123@gmail.com/finserv/prophecy/ingest/FICO/TransUnionFICO2021.xml', recurse=True)\n\n\ndbutils.fs.rm('/Prophecy/sparklearner123@gmail.com/finserv/prophecy/ReportSCD1', recurse=True)\ndbutils.fs.rm('/Prophecy/sparklearner123@gmail.com/finserv/prophecy/ReportSCD2', recurse=True)\ndbutils.fs.rm('/Prophecy/sparklearner123@gmail.com/finserv/prophecy/ReportSCD3', recurse=True)\n\n\nimport os\nos.system(\"mkdir -p /dbfs/Prophecy/\")\nos.system(\"mkdir -p /dbfs/Prophecy/finserv\")\nos.system(\"mkdir -p /dbfs/Prophecy/finserv/ingest\")\nos.system(\"mkdir -p /dbfs/Prophecy/finserv/ingest/FICO\")\nos.system(\"mkdir -p /dbfs/Prophecy/finserv/ingest/BNPL\")\nos.system(\"mkdir -p /dbfs/Prophecy/finserv/ingest/customer\")\n\nos.system('wget https://raw.githubusercontent.com/atbida/terraform-databricks-lakehouse-blueprints/main/industry/fsi/data/TransUnionFICO2018 -O /dbfs/Prophecy/finserv/ingest/FICO/TransUnionFICO2018.xml')\nos.system('wget https://raw.githubusercontent.com/atbida/terraform-databricks-lakehouse-blueprints/main/industry/fsi/data/TransUnionFICO2018 -O /dbfs/Prophecy/finserv/ingest/FICO/TransUnionFICO2019.xml')\nos.system('wget https://raw.githubusercontent.com/atbida/terraform-databricks-lakehouse-blueprints/main/industry/fsi/data/TransUnionFICO2018 -O /dbfs/Prophecy/finserv/ingest/FICO/TransUnionFICO2020.xml')\nos.system('wget https://raw.githubusercontent.com/atbida/terraform-databricks-lakehouse-blueprints/main/industry/fsi/data/TransUnionFICO2018 -O /dbfs/Prophecy/finserv/ingest/FICO/TransUnionFICO2021.xml')\n\n\nos.system('wget https://raw.githubusercontent.com/atbida/terraform-databricks-lakehouse-blueprints/main/industry/fsi/data/customer.csv -O /dbfs/Prophecy/finserv/ingest/customer/customer.csv')\nos.system('wget https://raw.githubusercontent.com/atbida/terraform-databricks-lakehouse-blueprints/main/industry/fsi/data/bnpl.json -O /dbfs/Prophecy/finserv/ingest/BNPL/bnpl.json')\n\n\nos.system('wget https://raw.githubusercontent.com/atbida/terraform-databricks-lakehouse-blueprints/main/industry/fsi/data/bnpl_uc.json -O /dbfs/Prophecy/finserv/ingest/BNPL/bnpl_uc.json')",
+        "script" : "# Config vars can easily be passed to out-of-the-box gems\n# Config vars passing to script gems seems more complicated\n# So i am hard coding the values for this script gem\n\ndbutils.fs.rm('/Prophecy/sparklearner123@gmail.com/finserv/prophecy/ingest/FICO/TransUnionFICO2018.xml', recurse=True)\ndbutils.fs.rm('/Prophecy/sparklearner123@gmail.com/finserv/prophecy/ingest/FICO/TransUnionFICO2019.xml', recurse=True)\ndbutils.fs.rm('/Prophecy/sparklearner123@gmail.com/finserv/prophecy/ingest/FICO/TransUnionFICO2020.xml', recurse=True)\ndbutils.fs.rm('/Prophecy/sparklearner123@gmail.com/finserv/prophecy/ingest/FICO/TransUnionFICO2021.xml', recurse=True)\n\n\ndbutils.fs.rm('/Prophecy/sparklearner123@gmail.com/finserv/prophecy/gold_credit_dti_SCD1', recurse=True)\ndbutils.fs.rm('/Prophecy/sparklearner123@gmail.com/finserv/prophecy/gold_credit_dti_SCD2', recurse=True)\ndbutils.fs.rm('/Prophecy/sparklearner123@gmail.com/finserv/prophecy/gold_credit_dti_SCD3_UC', recurse=True)\n\n\nimport os\nos.system(\"mkdir -p /dbfs/Prophecy/\")\nos.system(\"mkdir -p /dbfs/Prophecy/finserv\")\nos.system(\"mkdir -p /dbfs/Prophecy/finserv/ingest\")\nos.system(\"mkdir -p /dbfs/Prophecy/finserv/ingest/FICO\")\nos.system(\"mkdir -p /dbfs/Prophecy/finserv/ingest/BNPL\")\nos.system(\"mkdir -p /dbfs/Prophecy/finserv/ingest/customer\")\n\nos.system('wget https://raw.githubusercontent.com/atbida/terraform-databricks-lakehouse-blueprints/main/industry/fsi/data/TransUnionFICO2018 -O /dbfs/Prophecy/finserv/ingest/FICO/TransUnionFICO2018.xml')\nos.system('wget https://raw.githubusercontent.com/atbida/terraform-databricks-lakehouse-blueprints/main/industry/fsi/data/TransUnionFICO2018 -O /dbfs/Prophecy/finserv/ingest/FICO/TransUnionFICO2019.xml')\nos.system('wget https://raw.githubusercontent.com/atbida/terraform-databricks-lakehouse-blueprints/main/industry/fsi/data/TransUnionFICO2018 -O /dbfs/Prophecy/finserv/ingest/FICO/TransUnionFICO2020.xml')\nos.system('wget https://raw.githubusercontent.com/atbida/terraform-databricks-lakehouse-blueprints/main/industry/fsi/data/TransUnionFICO2018 -O /dbfs/Prophecy/finserv/ingest/FICO/TransUnionFICO2021.xml')\n\n\nos.system('wget https://raw.githubusercontent.com/atbida/terraform-databricks-lakehouse-blueprints/main/industry/fsi/data/customer.csv -O /dbfs/Prophecy/finserv/ingest/customer/customer.csv')\nos.system('wget https://raw.githubusercontent.com/atbida/terraform-databricks-lakehouse-blueprints/main/industry/fsi/data/bnpl.json -O /dbfs/Prophecy/finserv/ingest/BNPL/bnpl.json')\n\n\nos.system('wget https://raw.githubusercontent.com/atbida/terraform-databricks-lakehouse-blueprints/main/industry/fsi/data/bnpl_uc.json -O /dbfs/Prophecy/finserv/ingest/BNPL/bnpl_uc.json')",
         "scriptMethodHeader" : "def Script(spark: SparkSession) -> None:",
         "scriptMethodFooter" : "    return "
       }
@@ -735,6 +741,33 @@
         "columnsSelector" : [ ]
       }
     },
+    "p1cWZD53sMUkbV0cfut65$$ryH8pEIIK2joMUviCxR9Z" : {
+      "id" : "p1cWZD53sMUkbV0cfut65$$ryH8pEIIK2joMUviCxR9Z",
+      "component" : "Target",
+      "metadata" : {
+        "label" : "ReportSCD3_UC",
+        "slug" : "ReportSCD3_UC",
+        "x" : 1120,
+        "y" : 840,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "HItu5R7EfZydtt-DuhFuS$$oZT1Dk6eN7ADKybQ-6crp",
+          "slug" : "in0",
+          "isStreaming" : false
+        } ],
+        "outputs" : [ ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/ReportSCD3_UC"
+      }
+    },
     "x30qk1Z08MFSYPUeEzatn$$gi4B0qVoxN74AV01cep70" : {
       "id" : "x30qk1Z08MFSYPUeEzatn$$gi4B0qVoxN74AV01cep70",
       "component" : "Reformat",
@@ -824,8 +857,8 @@
       "metadata" : {
         "label" : "SCD3Report",
         "slug" : "SCD3Report",
-        "x" : 1120,
-        "y" : 720,
+        "x" : 1180,
+        "y" : 680,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
