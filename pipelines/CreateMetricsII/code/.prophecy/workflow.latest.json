@@ -123,12 +123,6 @@
     "sourcePort" : "BYU9amYi9VNtOxrcdK6f0$$nKMBuuV6KkxAEoB2n8Eei",
     "target" : "p1cWZD53sMUkbV0cfut65$$ryH8pEIIK2joMUviCxR9Z",
     "targetPort" : "HItu5R7EfZydtt-DuhFuS$$oZT1Dk6eN7ADKybQ-6crp"
-  }, {
-    "id" : "RwPG7UY1pPmy2-8xi62Kp",
-    "source" : "aPeYATByh614Gjj3qZQrE$$3SwhqmSqJelTVAgOHywkS",
-    "sourcePort" : "BYU9amYi9VNtOxrcdK6f0$$nKMBuuV6KkxAEoB2n8Eei",
-    "target" : "GcVNfK86W-NajyeoTzf7g$$K9leEu6xUC9lsdh7MAyTe",
-    "targetPort" : "VygHUWN8kM1Oj-7jX5Mvs$$GPu66sDWpEb4emOdb6zkc"
   } ],
   "processes" : {
     "aPeYATByh614Gjj3qZQrE$$3SwhqmSqJelTVAgOHywkS" : {
@@ -244,7 +238,7 @@
         "slug" : "IngestData",
         "x" : 120,
         "y" : 120,
-        "phase" : 0,
+        "phase" : -1,
         "cache" : false,
         "detailedStats" : false,
         "isImported" : false
@@ -748,7 +742,7 @@
         "label" : "ReportSCD3_UC",
         "slug" : "ReportSCD3_UC",
         "x" : 1120,
-        "y" : 840,
+        "y" : 720,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -849,33 +843,6 @@
       },
       "properties" : {
         "datasetId" : "datasets/TransUnionFICOyear_xml"
-      }
-    },
-    "GcVNfK86W-NajyeoTzf7g$$K9leEu6xUC9lsdh7MAyTe" : {
-      "id" : "GcVNfK86W-NajyeoTzf7g$$K9leEu6xUC9lsdh7MAyTe",
-      "component" : "Target",
-      "metadata" : {
-        "label" : "SCD3Report",
-        "slug" : "SCD3Report",
-        "x" : 1180,
-        "y" : 680,
-        "phase" : 0,
-        "cache" : false,
-        "detailedStats" : false,
-        "isImported" : false
-      },
-      "ports" : {
-        "inputs" : [ {
-          "id" : "VygHUWN8kM1Oj-7jX5Mvs$$GPu66sDWpEb4emOdb6zkc",
-          "slug" : "in0",
-          "isStreaming" : false
-        } ],
-        "outputs" : [ ],
-        "selectedInputFields" : [ ],
-        "isCustomOutputSchema" : false
-      },
-      "properties" : {
-        "datasetId" : "datasets/SCD3Report"
       }
     }
   },

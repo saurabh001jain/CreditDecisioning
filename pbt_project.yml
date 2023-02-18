@@ -23,18 +23,6 @@ pipelines:
       - datasets/Profile
       - datasets/ReportSCD2
       - datasets/ReportSCD3_UC
-      - datasets/SCD3Report
-    dependencies: {}
-  pipelines/Cleanup:
-    name: DeleteData
-    description: To have a clean slate for a demo.
-    author: sparklearner123@gmail.com
-    mode: batch
-    language: python
-    createdAt: '2023-01-18 04:04:53'
-    datasets:
-      inputs: []
-      outputs: []
     dependencies: {}
 datasets:
   datasets/creditReportXMLingest:

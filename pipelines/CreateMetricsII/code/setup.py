@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 setup(
-    name = 'DecisionPipeline',
+    name = 'DecisionAndAudit',
     version = '1.0',
     packages = find_packages(include = ('createmetricsii*', )) + ["prophecy_config_instances"],
     package_dir = {'prophecy_config_instances' : 'configs/resources/config'},

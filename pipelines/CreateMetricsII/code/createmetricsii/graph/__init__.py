@@ -10,5 +10,4 @@ from .Income import *
 from .ReportSCD2 import *
 from .Refine import *
 from .LexisNexis_json import *
-from .SCD3Report import *
 from .ByName import *

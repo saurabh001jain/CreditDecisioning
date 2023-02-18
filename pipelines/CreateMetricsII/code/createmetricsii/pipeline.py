@@ -7,6 +7,7 @@ from prophecy.utils import *
 from createmetricsii.graph import *
 
 def pipeline(spark: SparkSession) -> None:
+    IngestData(spark)
     df_TransUnionFico = TransUnionFico(spark)
     df_Income = Income(spark)
     df_ByCustomerID = ByCustomerID(spark, df_Income, df_TransUnionFico)
@@ -16,11 +17,9 @@ def pipeline(spark: SparkSession) -> None:
     df_Refine = Refine(spark, df_FlattenSchema_1)
     df_ByName = ByName(spark, df_ParseLoanAmount, df_Refine)
     df_SetTypes = SetTypes(spark, df_ByName)
-    IngestData(spark)
     ReportSCD2(spark, df_SetTypes)
     ReportSCD1(spark, df_SetTypes)
     ReportSCD3_UC(spark, df_SetTypes)
-    SCD3Report(spark, df_SetTypes)
 
 def main():
     spark = SparkSession.builder\

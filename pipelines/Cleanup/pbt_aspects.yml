@@ -1,8 +1,0 @@
-version: 1
-configurations:
-- '2020'
-- '2018'
-- '1979'
-- '2019'
-- default
-dependencies: []
