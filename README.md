@@ -1,6 +1,11 @@
 # CreditDecisioning
 Credit Decisioning ETL
 
+<img width="816" alt="image" src="https://user-images.githubusercontent.com/20563764/219818925-01842d17-df60-4f23-a97b-50df7aaedbdc.png">
+
+
+
+
 
 *** Release notes for version: 0.0.1 ***
 
