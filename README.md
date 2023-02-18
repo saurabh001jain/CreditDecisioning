@@ -1,6 +1,11 @@
 # CreditDecisioning
 Credit Decisioning ETL
 
+<img width="822" alt="image" src="https://user-images.githubusercontent.com/20563764/219819080-7cb3b71f-5093-4b76-8c06-f1627d4f87c8.png">
+
+
+
+
 
 *** Release notes for version: 0.0.1 ***
 
@@ -25,3 +30,7 @@ exploring join instead of union
 *** Release notes for version: 0.0.8 ***
 
 adds createMetricsII pipeline with join instead of union
+
+*** Release notes for version: 1.0.0 ***
+
+Pipeline is ready to share for feedback
