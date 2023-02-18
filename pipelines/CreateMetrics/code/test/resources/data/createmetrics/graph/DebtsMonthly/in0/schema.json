@@ -1,1 +1,0 @@
-{"type":"struct","fields":[{"name":"REPORTED_INCOME","type":"long","nullable":true,"metadata":{"description":"","mappings":[],"tags":[]}},{"name":"Name","type":"string","nullable":true,"metadata":{"description":"","mappings":[],"tags":[]}},{"name":"monthly_loan_amount","type":"long","nullable":true,"metadata":{"description":"","mappings":[],"tags":[]}}]}

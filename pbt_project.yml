@@ -1,40 +1,23 @@
 name: CreditDecisioningV1
-description: ''
+description: 'Integrate buy now pay later data, tradelines, and reported income to
+  understand a potential banking customer''s financial profile. '
 version: 0.0.8
 author: sparklearner123@gmail.com
 language: python
 buildSystem: wheel
 pipelines:
-  pipelines/CreateMetrics:
-    name: CreateMetrics
-    description: ''
-    author: sparklearner123@gmail.com
-    mode: batch
-    language: python
-    createdAt: '2022-12-16 19:19:58'
-    datasets:
-      inputs:
-      - datasets/BNPLjsonIngest
-      - datasets/CustIncomeCSV
-      - datasets/FICO_table_history
-      - datasets/creditReportXMLingest
-      - datasets/customer_info_v1
-      - datasets/loan_data
-      outputs:
-      - datasets/FICO_table_history
-      - datasets/ReportMetrics
-    dependencies: {}
   pipelines/CreateMetricsII:
-    name: DecisionPipeline
-    description: ''
+    name: DecisionAndAudit
+    description: Generate a financial profile with historical data written per SCD
+      types 1, 2, and 3.
     author: sparklearner123@gmail.com
     mode: batch
     language: python
     createdAt: '2023-01-25 19:43:31'
     datasets:
       inputs:
-      - datasets/BNPLjsonIngest
       - datasets/CustIncomeCSV
+      - datasets/LexisNexis_json
       - datasets/TransUnionFICOyear_xml
       outputs:
       - datasets/Profile
@@ -42,8 +25,8 @@ pipelines:
       - datasets/SCD3Report
     dependencies: {}
   pipelines/Cleanup:
-    name: Cleanup
-    description: For repeated usage, remove previously written data
+    name: DeleteData
+    description: To have a clean slate for a demo.
     author: sparklearner123@gmail.com
     mode: batch
     language: python
@@ -534,6 +517,19 @@ datasets:
         description: ''
         author: sparklearner123@gmail.com
         createdAt: '2023-02-10 00:07:23'
+  datasets/LexisNexis_json:
+    name: LexisNexis.json
+    description: ''
+    author: sparklearner123@gmail.com
+    createdAt: '2023-02-17 21:39:15'
+    mode: batch
+    physicalDatasets:
+      UnityCatalogClusters:
+        fabricId: 1609
+        datasetType: File
+        description: ''
+        author: sparklearner123@gmail.com
+        createdAt: '2023-02-17 21:39:15'
 templates: {}
 jobs:
   jobs/DTIjob:

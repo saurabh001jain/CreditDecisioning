@@ -1,5 +1,5 @@
-from .LexisNexis import *
 from .IngestData import *
+from .FlattenSchema_1 import *
 from .SetTypes import *
 from .ReportSCD1 import *
 from .ParseLoanAmount import *
@@ -8,5 +8,6 @@ from .ByCustomerID import *
 from .Income import *
 from .ReportSCD2 import *
 from .Refine import *
+from .LexisNexis_json import *
 from .SCD3Report import *
 from .ByName import *
