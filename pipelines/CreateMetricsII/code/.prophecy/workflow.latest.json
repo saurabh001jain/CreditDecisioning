@@ -2,7 +2,7 @@
   "metainfo" : {
     "id" : "1",
     "language" : "python",
-    "fabricId" : "1557",
+    "fabricId" : "1609",
     "frontEndLanguage" : "sql",
     "mode" : "batch",
     "udfs" : {
@@ -38,7 +38,7 @@
       },
       "fabrics" : { },
       "instances" : { },
-      "selected" : "2020",
+      "selected" : "2018",
       "nonEditable" : [ ],
       "isSubscribedPipelineWithPipelineConfigs" : false
     },
@@ -82,12 +82,6 @@
     "target" : "NWqyStrDFI5lb66TsP2tE$$cdm7KJDxEKk-ysJpuTik8",
     "targetPort" : "ar0M8oXLTJcIYCHdcYXvi$$wmRwvwSk4baGD7kWEqsO6"
   }, {
-    "id" : "bXsfqSJ08gU9w8wEdKF-k",
-    "source" : "wfS3tSSomjQ63ydrAyeFN$$3Cvz4wtDJIU-Sm77itsJi",
-    "sourcePort" : "-rz8MhLfHBlkbZ2nJBz31$$TLnXoClALuxirKNvjJIa8",
-    "target" : "x30qk1Z08MFSYPUeEzatn$$gi4B0qVoxN74AV01cep70",
-    "targetPort" : "mmQYQPGgQXAcL827IM6JY$$cwtoYHdjEbHTC-jRJqyGs"
-  }, {
     "id" : "o0vjgCFUT3eBdtM_n94WZ",
     "source" : "KhKGpWIjs4Cl8SPLZTLfq$$-POKihJ5Q8C6wyL38xNAA",
     "sourcePort" : "8dhc6TDyIigVGNa5lrrVF$$z2LiDxgpPswa2reGpVW0x",
@@ -112,11 +106,23 @@
     "target" : "OYaGutOo1n_DqxjKU-7G_$$R2yardQiDMwyz3efeWlLu",
     "targetPort" : "8pBqFHg4j9yqVWrPgnCr5$$-gsoGb9UJxu4Wv0_AxPZ4"
   }, {
-    "id" : "01va6vMRAYVLPbr-M63QQ",
+    "id" : "5V5qcwGP3jaGaRgb5jTqG",
+    "source" : "ddQl4x6Rmj1lcsAk2ls15$$fwiFLOezcguZi7VqQVKa0",
+    "sourcePort" : "_IfC9NlQcHqSiPVlZGP-t$$zjQUJ2UI4tAG5WBR_ePuH",
+    "target" : "3m3q8W43Fyih57opvmspx$$cwBzNvNzNZBzcWB_sRxPV",
+    "targetPort" : "nVUfXaIPsaDP9gYywCmLp$$x-aJOXq75CBxp99BgWbMr"
+  }, {
+    "id" : "n6NP4_FQylpQj8sLu5oiq",
+    "source" : "3m3q8W43Fyih57opvmspx$$cwBzNvNzNZBzcWB_sRxPV",
+    "sourcePort" : "C2oXMOuQnraxEqpwk9U96$$ehNwGcSVz4bp4gA6jygaE",
+    "target" : "x30qk1Z08MFSYPUeEzatn$$gi4B0qVoxN74AV01cep70",
+    "targetPort" : "mmQYQPGgQXAcL827IM6JY$$cwtoYHdjEbHTC-jRJqyGs"
+  }, {
+    "id" : "Qf4vXLvSf2HKJzlDAvJlK",
     "source" : "aPeYATByh614Gjj3qZQrE$$3SwhqmSqJelTVAgOHywkS",
     "sourcePort" : "BYU9amYi9VNtOxrcdK6f0$$nKMBuuV6KkxAEoB2n8Eei",
-    "target" : "GcVNfK86W-NajyeoTzf7g$$K9leEu6xUC9lsdh7MAyTe",
-    "targetPort" : "VygHUWN8kM1Oj-7jX5Mvs$$GPu66sDWpEb4emOdb6zkc"
+    "target" : "p1cWZD53sMUkbV0cfut65$$ryH8pEIIK2joMUviCxR9Z",
+    "targetPort" : "HItu5R7EfZydtt-DuhFuS$$oZT1Dk6eN7ADKybQ-6crp"
   } ],
   "processes" : {
     "aPeYATByh614Gjj3qZQrE$$3SwhqmSqJelTVAgOHywkS" : {
@@ -126,7 +132,7 @@
         "label" : "SetTypes",
         "slug" : "SetTypes",
         "x" : 920,
-        "y" : 320,
+        "y" : 420,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -224,14 +230,39 @@
         "columnsSelector" : [ "uhGeqHBWBEEtSTRjgOzlq$$RT_EsuKSzLn2SpR3B2q_E##TradLoanAmount", "uhGeqHBWBEEtSTRjgOzlq$$RT_EsuKSzLn2SpR3B2q_E##BNPLLoanAmount", "uhGeqHBWBEEtSTRjgOzlq$$RT_EsuKSzLn2SpR3B2q_E##FicoScore", "uhGeqHBWBEEtSTRjgOzlq$$RT_EsuKSzLn2SpR3B2q_E##Name", "uhGeqHBWBEEtSTRjgOzlq$$RT_EsuKSzLn2SpR3B2q_E##ReportedIncome", "uhGeqHBWBEEtSTRjgOzlq$$RT_EsuKSzLn2SpR3B2q_E##FicoValidFrom", "uhGeqHBWBEEtSTRjgOzlq$$RT_EsuKSzLn2SpR3B2q_E##FicoValidTo" ]
       }
     },
-    "wfS3tSSomjQ63ydrAyeFN$$3Cvz4wtDJIU-Sm77itsJi" : {
-      "id" : "wfS3tSSomjQ63ydrAyeFN$$3Cvz4wtDJIU-Sm77itsJi",
+    "cltVq2nHwyFpyOskRAAtK$$PP1Tlnivebg50_ETWsobI" : {
+      "id" : "cltVq2nHwyFpyOskRAAtK$$PP1Tlnivebg50_ETWsobI",
+      "component" : "Script",
+      "metadata" : {
+        "label" : "IngestData",
+        "slug" : "IngestData",
+        "x" : 120,
+        "y" : 120,
+        "phase" : -1,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : true
+      },
+      "properties" : {
+        "script" : "# Config vars can easily be passed to out-of-the-box gems\n# Config vars passing to script gems seems more complicated\n# So i am hard coding the values for this script gem\n\ndbutils.fs.rm('/Prophecy/sparklearner123@gmail.com/finserv/prophecy/ingest/FICO/TransUnionFICO2018.xml', recurse=True)\ndbutils.fs.rm('/Prophecy/sparklearner123@gmail.com/finserv/prophecy/ingest/FICO/TransUnionFICO2019.xml', recurse=True)\ndbutils.fs.rm('/Prophecy/sparklearner123@gmail.com/finserv/prophecy/ingest/FICO/TransUnionFICO2020.xml', recurse=True)\ndbutils.fs.rm('/Prophecy/sparklearner123@gmail.com/finserv/prophecy/ingest/FICO/TransUnionFICO2021.xml', recurse=True)\n\n\ndbutils.fs.rm('/Prophecy/sparklearner123@gmail.com/finserv/prophecy/gold_credit_dti_SCD1', recurse=True)\ndbutils.fs.rm('/Prophecy/sparklearner123@gmail.com/finserv/prophecy/gold_credit_dti_SCD2', recurse=True)\ndbutils.fs.rm('/Prophecy/sparklearner123@gmail.com/finserv/prophecy/gold_credit_dti_SCD3_UC', recurse=True)\n\n\nimport os\nos.system(\"mkdir -p /dbfs/Prophecy/\")\nos.system(\"mkdir -p /dbfs/Prophecy/finserv\")\nos.system(\"mkdir -p /dbfs/Prophecy/finserv/ingest\")\nos.system(\"mkdir -p /dbfs/Prophecy/finserv/ingest/FICO\")\nos.system(\"mkdir -p /dbfs/Prophecy/finserv/ingest/BNPL\")\nos.system(\"mkdir -p /dbfs/Prophecy/finserv/ingest/customer\")\n\nos.system('wget https://raw.githubusercontent.com/atbida/terraform-databricks-lakehouse-blueprints/main/industry/fsi/data/TransUnionFICO2018 -O /dbfs/Prophecy/finserv/ingest/FICO/TransUnionFICO2018.xml')\nos.system('wget https://raw.githubusercontent.com/atbida/terraform-databricks-lakehouse-blueprints/main/industry/fsi/data/TransUnionFICO2018 -O /dbfs/Prophecy/finserv/ingest/FICO/TransUnionFICO2019.xml')\nos.system('wget https://raw.githubusercontent.com/atbida/terraform-databricks-lakehouse-blueprints/main/industry/fsi/data/TransUnionFICO2018 -O /dbfs/Prophecy/finserv/ingest/FICO/TransUnionFICO2020.xml')\nos.system('wget https://raw.githubusercontent.com/atbida/terraform-databricks-lakehouse-blueprints/main/industry/fsi/data/TransUnionFICO2018 -O /dbfs/Prophecy/finserv/ingest/FICO/TransUnionFICO2021.xml')\n\n\nos.system('wget https://raw.githubusercontent.com/atbida/terraform-databricks-lakehouse-blueprints/main/industry/fsi/data/customer.csv -O /dbfs/Prophecy/finserv/ingest/customer/customer.csv')\nos.system('wget https://raw.githubusercontent.com/atbida/terraform-databricks-lakehouse-blueprints/main/industry/fsi/data/bnpl.json -O /dbfs/Prophecy/finserv/ingest/BNPL/bnpl.json')\n\n\nos.system('wget https://raw.githubusercontent.com/atbida/terraform-databricks-lakehouse-blueprints/main/industry/fsi/data/bnpl_uc.json -O /dbfs/Prophecy/finserv/ingest/BNPL/bnpl_uc.json')",
+        "scriptMethodHeader" : "def Script(spark: SparkSession) -> None:",
+        "scriptMethodFooter" : "    return "
+      }
+    },
+    "ddQl4x6Rmj1lcsAk2ls15$$fwiFLOezcguZi7VqQVKa0" : {
+      "id" : "ddQl4x6Rmj1lcsAk2ls15$$fwiFLOezcguZi7VqQVKa0",
       "component" : "Source",
       "metadata" : {
-        "label" : "LexisNexis",
-        "slug" : "LexisNexis",
-        "x" : 320,
-        "y" : 420,
+        "label" : "LexisNexis.json",
+        "slug" : "LexisNexis_json",
+        "x" : 120,
+        "y" : 720,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -240,7 +271,7 @@
       "ports" : {
         "inputs" : [ ],
         "outputs" : [ {
-          "id" : "-rz8MhLfHBlkbZ2nJBz31$$TLnXoClALuxirKNvjJIa8",
+          "id" : "_IfC9NlQcHqSiPVlZGP-t$$zjQUJ2UI4tAG5WBR_ePuH",
           "slug" : "out",
           "isStreaming" : false
         } ],
@@ -248,7 +279,7 @@
         "isCustomOutputSchema" : false
       },
       "properties" : {
-        "datasetId" : "datasets/BNPLjsonIngest"
+        "datasetId" : "datasets/LexisNexis_json"
       }
     },
     "OYaGutOo1n_DqxjKU-7G_$$R2yardQiDMwyz3efeWlLu" : {
@@ -258,7 +289,7 @@
         "label" : "ReportSCD2",
         "slug" : "ReportSCD2",
         "x" : 1120,
-        "y" : 320,
+        "y" : 520,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -285,7 +316,7 @@
         "label" : "ByCustomerID",
         "slug" : "ByCustomerID",
         "x" : 320,
-        "y" : 220,
+        "y" : 320,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -345,7 +376,7 @@
         "label" : "Income",
         "slug" : "Income",
         "x" : 120,
-        "y" : 120,
+        "y" : 320,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -372,7 +403,7 @@
         "label" : "ByName",
         "slug" : "ByName",
         "x" : 720,
-        "y" : 320,
+        "y" : 420,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -496,7 +527,7 @@
         "label" : "ReportSCD1",
         "slug" : "ReportSCD1",
         "x" : 1120,
-        "y" : 120,
+        "y" : 320,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -516,6 +547,117 @@
         "datasetId" : "datasets/Profile"
       }
     },
+    "3m3q8W43Fyih57opvmspx$$cwBzNvNzNZBzcWB_sRxPV" : {
+      "id" : "3m3q8W43Fyih57opvmspx$$cwBzNvNzNZBzcWB_sRxPV",
+      "component" : "FlattenSchema",
+      "metadata" : {
+        "label" : "FlattenSchema_1",
+        "slug" : "FlattenSchema_1",
+        "x" : 320,
+        "y" : 720,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "nVUfXaIPsaDP9gYywCmLp$$x-aJOXq75CBxp99BgWbMr",
+          "slug" : "in0",
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "C2oXMOuQnraxEqpwk9U96$$ehNwGcSVz4bp4gA6jygaE",
+          "slug" : "out",
+          "isStreaming" : false
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "explodedColsNewName" : [ {
+          "originalColToExplode" : "BNPL_data",
+          "updatedColToExplode" : "BNPL_data",
+          "colNameAfterExplode" : "BNPL_data"
+        } ],
+        "fsExpressions" : [ {
+          "exploded" : "✓",
+          "flattenedExpression" : "BNPL_data.balance",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "BNPL_data.balance"
+          },
+          "targetTokens" : [ "BNPL_data", "balance" ],
+          "target" : "balance"
+        }, {
+          "exploded" : "✓",
+          "flattenedExpression" : "BNPL_data.lender_name",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "BNPL_data.lender_name"
+          },
+          "targetTokens" : [ "BNPL_data", "lender_name" ],
+          "target" : "lender_name"
+        }, {
+          "exploded" : "✓",
+          "flattenedExpression" : "BNPL_data.loan_id",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "BNPL_data.loan_id"
+          },
+          "targetTokens" : [ "BNPL_data", "loan_id" ],
+          "target" : "loan_id"
+        }, {
+          "exploded" : "✓",
+          "flattenedExpression" : "BNPL_data.monthly_loan_amount",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "BNPL_data.monthly_loan_amount"
+          },
+          "targetTokens" : [ "BNPL_data", "monthly_loan_amount" ],
+          "target" : "monthly_loan_amount"
+        }, {
+          "exploded" : "✓",
+          "flattenedExpression" : "BNPL_data.name",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "BNPL_data.name"
+          },
+          "targetTokens" : [ "BNPL_data", "name" ],
+          "target" : "name"
+        }, {
+          "exploded" : "✓",
+          "flattenedExpression" : "BNPL_data.past_due",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "BNPL_data.past_due"
+          },
+          "targetTokens" : [ "BNPL_data", "past_due" ],
+          "target" : "past_due"
+        }, {
+          "exploded" : "✓",
+          "flattenedExpression" : "BNPL_data.processor",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "BNPL_data.processor"
+          },
+          "targetTokens" : [ "BNPL_data", "processor" ],
+          "target" : "data-processor"
+        }, {
+          "exploded" : "✓",
+          "flattenedExpression" : "BNPL_data.term",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "BNPL_data.term"
+          },
+          "targetTokens" : [ "BNPL_data", "term" ],
+          "target" : "data-term"
+        } ],
+        "columnsSelector" : [ "nVUfXaIPsaDP9gYywCmLp$$x-aJOXq75CBxp99BgWbMr##BNPL_data", "nVUfXaIPsaDP9gYywCmLp$$x-aJOXq75CBxp99BgWbMr##BNPL_data.lender_name", "nVUfXaIPsaDP9gYywCmLp$$x-aJOXq75CBxp99BgWbMr##BNPL_data.name", "nVUfXaIPsaDP9gYywCmLp$$x-aJOXq75CBxp99BgWbMr##BNPL_data.processor", "nVUfXaIPsaDP9gYywCmLp$$x-aJOXq75CBxp99BgWbMr##BNPL_data.term", "nVUfXaIPsaDP9gYywCmLp$$x-aJOXq75CBxp99BgWbMr##BNPL_data.monthly_loan_amount", "nVUfXaIPsaDP9gYywCmLp$$x-aJOXq75CBxp99BgWbMr##BNPL_data.past_due", "nVUfXaIPsaDP9gYywCmLp$$x-aJOXq75CBxp99BgWbMr##BNPL_data.loan_id", "nVUfXaIPsaDP9gYywCmLp$$x-aJOXq75CBxp99BgWbMr##BNPL_data.balance" ],
+        "explodeColumns" : [ ],
+        "delimiter" : "-"
+      }
+    },
     "NWqyStrDFI5lb66TsP2tE$$cdm7KJDxEKk-ysJpuTik8" : {
       "id" : "NWqyStrDFI5lb66TsP2tE$$cdm7KJDxEKk-ysJpuTik8",
       "component" : "Reformat",
@@ -523,7 +665,7 @@
         "label" : "ParseLoanAmount",
         "slug" : "ParseLoanAmount",
         "x" : 520,
-        "y" : 220,
+        "y" : 320,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -593,6 +735,33 @@
         "columnsSelector" : [ ]
       }
     },
+    "p1cWZD53sMUkbV0cfut65$$ryH8pEIIK2joMUviCxR9Z" : {
+      "id" : "p1cWZD53sMUkbV0cfut65$$ryH8pEIIK2joMUviCxR9Z",
+      "component" : "Target",
+      "metadata" : {
+        "label" : "ReportSCD3_UC",
+        "slug" : "ReportSCD3_UC",
+        "x" : 1120,
+        "y" : 720,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "HItu5R7EfZydtt-DuhFuS$$oZT1Dk6eN7ADKybQ-6crp",
+          "slug" : "in0",
+          "isStreaming" : false
+        } ],
+        "outputs" : [ ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/ReportSCD3_UC"
+      }
+    },
     "x30qk1Z08MFSYPUeEzatn$$gi4B0qVoxN74AV01cep70" : {
       "id" : "x30qk1Z08MFSYPUeEzatn$$gi4B0qVoxN74AV01cep70",
       "component" : "Reformat",
@@ -600,7 +769,7 @@
         "label" : "Refine",
         "slug" : "Refine",
         "x" : 520,
-        "y" : 420,
+        "y" : 720,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -656,7 +825,7 @@
         "label" : "TransUnionFico",
         "slug" : "TransUnionFico",
         "x" : 120,
-        "y" : 320,
+        "y" : 520,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -674,33 +843,6 @@
       },
       "properties" : {
         "datasetId" : "datasets/TransUnionFICOyear_xml"
-      }
-    },
-    "GcVNfK86W-NajyeoTzf7g$$K9leEu6xUC9lsdh7MAyTe" : {
-      "id" : "GcVNfK86W-NajyeoTzf7g$$K9leEu6xUC9lsdh7MAyTe",
-      "component" : "Target",
-      "metadata" : {
-        "label" : "SCD3Report",
-        "slug" : "SCD3Report",
-        "x" : 1120,
-        "y" : 520,
-        "phase" : 0,
-        "cache" : false,
-        "detailedStats" : false,
-        "isImported" : false
-      },
-      "ports" : {
-        "inputs" : [ {
-          "id" : "VygHUWN8kM1Oj-7jX5Mvs$$GPu66sDWpEb4emOdb6zkc",
-          "slug" : "in0",
-          "isStreaming" : false
-        } ],
-        "outputs" : [ ],
-        "selectedInputFields" : [ ],
-        "isCustomOutputSchema" : false
-      },
-      "properties" : {
-        "datasetId" : "datasets/SCD3Report"
       }
     }
   },

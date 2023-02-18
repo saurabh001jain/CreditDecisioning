@@ -8,7 +8,7 @@
     "jobClusterMode" : {
       "clusterMode" : "Single"
     },
-    "enabled" : true,
+    "enabled" : false,
     "defaultClusterSize" : "small",
     "alerting" : {
       "emails" : "",
@@ -28,6 +28,19 @@
       }
     },
     "availableFabrics" : [ {
+      "id" : "1609",
+      "name" : "UnityCatalogClusters",
+      "clusterSizes" : {
+        "default" : "small",
+        "availableClusterSizes" : [ "small" ]
+      },
+      "pylibsResolutionMode" : {
+        "PublicCentral" : { }
+      },
+      "scalalibsResolutionMode" : {
+        "PublicCentral" : { }
+      }
+    }, {
       "id" : "990",
       "name" : "dev",
       "clusterSizes" : {
@@ -46,6 +59,19 @@
       "clusterSizes" : {
         "default" : "small",
         "availableClusterSizes" : [ "small" ]
+      },
+      "pylibsResolutionMode" : {
+        "PublicCentral" : { }
+      },
+      "scalalibsResolutionMode" : {
+        "PublicCentral" : { }
+      }
+    }, {
+      "id" : "1557",
+      "name" : "myFabric",
+      "clusterSizes" : {
+        "default" : "Small",
+        "availableClusterSizes" : [ "Small" ]
       },
       "pylibsResolutionMode" : {
         "PublicCentral" : { }
@@ -83,11 +109,25 @@
         }
       },
       "properties" : {
-        "pipelineId" : "pipelines/CreateMetrics",
+        "pipelineId" : "pipelines/CreateMetricsII",
         "configurations" : {
-          "schema" : [ ],
+          "schema" : [ {
+            "name" : "Year",
+            "kind" : {
+              "type" : "long",
+              "value" : 2018
+            },
+            "optional" : false
+          }, {
+            "name" : "user_email",
+            "kind" : {
+              "type" : "string",
+              "value" : "sparklearner123@gmail.com"
+            },
+            "optional" : false
+          } ],
           "instances" : {
-            "CreditDecisioningAndAudit" : [ "default" ]
+            "CreditDecisioningAndAudit" : [ "2020", "2018", "2019", "2021", "default" ]
           },
           "overrides" : { },
           "selectedInstance" : "default"

@@ -1,71 +1,28 @@
 name: CreditDecisioningV1
-description: ''
-version: 1.0.0
+description: 'Integrate buy now pay later data, tradelines, and reported income to
+  understand a potential banking customer''s financial profile. '
+version: 1.0.1
 author: sparklearner123@gmail.com
 language: python
 buildSystem: wheel
 pipelines:
-  pipelines/CreateMetrics:
-    name: CreateMetrics
-    description: ''
-    author: sparklearner123@gmail.com
-    mode: batch
-    language: python
-    createdAt: '2022-12-16 19:19:58'
-    datasets:
-      inputs:
-      - datasets/BNPLjsonIngest
-      - datasets/CustIncomeCSV
-      - datasets/FICO_table_history
-      - datasets/creditReportXMLingest
-      - datasets/customer_info_v1
-      - datasets/loan_data
-      outputs:
-      - datasets/FICO_table_history
-      - datasets/ReportMetrics
-    dependencies: {}
   pipelines/CreateMetricsII:
-    name: DecisionPipeline
-    description: ''
+    name: DecisionAndAudit
+    description: Generate a financial profile with historical data written per SCD
+      types 1, 2, and 3.
     author: sparklearner123@gmail.com
     mode: batch
     language: python
     createdAt: '2023-01-25 19:43:31'
     datasets:
       inputs:
-      - datasets/BNPLjsonIngest
       - datasets/CustIncomeCSV
+      - datasets/LexisNexis_json
       - datasets/TransUnionFICOyear_xml
       outputs:
       - datasets/Profile
       - datasets/ReportSCD2
-      - datasets/SCD3Report
-    dependencies: {}
-  pipelines/ImportDataOption:
-    name: ImportDataOption
-    description: ''
-    author: sparklearner123@gmail.com
-    mode: batch
-    language: python
-    createdAt: '2023-01-10 22:24:26'
-    datasets:
-      inputs:
-      - datasets/BNPLjsonIngest
-      - datasets/CustIncomeCSV
-      - datasets/TransUnionFico_xml
-      - datasets/creditReportXMLingest
-      outputs: []
-    dependencies: {}
-  pipelines/Cleanup:
-    name: Cleanup
-    description: For repeated usage, remove previously written data
-    author: sparklearner123@gmail.com
-    mode: batch
-    language: python
-    createdAt: '2023-01-18 04:04:53'
-    datasets:
-      inputs: []
-      outputs: []
+      - datasets/ReportSCD3_UC
     dependencies: {}
 datasets:
   datasets/creditReportXMLingest:
@@ -549,6 +506,32 @@ datasets:
         description: ''
         author: sparklearner123@gmail.com
         createdAt: '2023-02-10 00:07:23'
+  datasets/LexisNexis_json:
+    name: LexisNexis.json
+    description: ''
+    author: sparklearner123@gmail.com
+    createdAt: '2023-02-17 21:39:15'
+    mode: batch
+    physicalDatasets:
+      UnityCatalogClusters:
+        fabricId: 1609
+        datasetType: File
+        description: ''
+        author: sparklearner123@gmail.com
+        createdAt: '2023-02-17 21:39:15'
+  datasets/ReportSCD3_UC:
+    name: ReportSCD3_UC
+    description: ''
+    author: sparklearner123@gmail.com
+    createdAt: '2023-02-18 00:56:32'
+    mode: batch
+    physicalDatasets:
+      UnityCatalogClusters:
+        fabricId: 1609
+        datasetType: File
+        description: ''
+        author: sparklearner123@gmail.com
+        createdAt: '2023-02-18 00:56:32'
 templates: {}
 jobs:
   jobs/DTIjob:
@@ -567,12 +550,12 @@ jobs:
       onSuccess: false
       onFailure: false
     pipelines:
-    - pipelines/CreateMetrics
+    - pipelines/CreateMetricsII
     jobClusterMode:
       clusterMode:
         Single: {}
       clusterId: null
-    enabled: true
+    enabled: false
     createdAt: '2023-01-18 02:30:06'
     author: sparklearner123@gmail.com
 libraries: []

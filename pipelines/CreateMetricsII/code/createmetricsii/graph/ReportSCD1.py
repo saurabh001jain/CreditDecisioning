@@ -10,4 +10,4 @@ def ReportSCD1(spark: SparkSession, in0: DataFrame):
         .format("delta")\
         .option("overwriteSchema", True)\
         .mode("overwrite")\
-        .save(f"dbfs:/Prophecy/{Config.user_email}/finserv/prophecy/ReportSCD1")
+        .save(f"dbfs:/Prophecy/{Config.user_email}/finserv/prophecy/gold_credit_dti_SCD1")
