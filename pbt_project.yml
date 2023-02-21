@@ -532,6 +532,32 @@ datasets:
         description: ''
         author: sparklearner123@gmail.com
         createdAt: '2023-02-18 00:56:32'
+  datasets/gold_credit_dti_SCD3_UC_test:
+    name: gold_credit_dti_SCD3_UC_test
+    description: ''
+    author: sparklearner123@gmail.com
+    createdAt: '2023-02-18 05:26:38'
+    mode: batch
+    physicalDatasets:
+      UnityCatalogClusters:
+        fabricId: 1609
+        datasetType: File
+        description: ''
+        author: sparklearner123@gmail.com
+        createdAt: '2023-02-18 05:26:38'
+  datasets/gold_credit_dti_SCD3_UC_test2:
+    name: gold_credit_dti_SCD3_UC_test2
+    description: ''
+    author: sparklearner123@gmail.com
+    createdAt: '2023-02-18 05:37:18'
+    mode: batch
+    physicalDatasets:
+      UnityCatalogClusters:
+        fabricId: 1609
+        datasetType: File
+        description: ''
+        author: sparklearner123@gmail.com
+        createdAt: '2023-02-18 05:37:18'
 templates: {}
 jobs:
   jobs/DTIjob:

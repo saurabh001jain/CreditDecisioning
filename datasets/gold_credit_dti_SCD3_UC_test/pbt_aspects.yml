@@ -1,0 +1,74 @@
+version: 1
+schema:
+  type: struct
+  fields:
+  - name: Name
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: Income
+    type: long
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: LoanTotal
+    type: long
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: FicoScore
+    type: long
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: FicoValidFrom
+    type: date
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: FicoValidTo
+    type: date
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: minFlag
+    type: boolean
+    nullable: false
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: maxFlag
+    type: boolean
+    nullable: false
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: previousFicoScore
+    type: long
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: DTIpercentage
+    type: decimal(17,4)
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []

@@ -30,6 +30,13 @@
             "value" : "sparklearner123@gmail.com"
           },
           "optional" : false
+        }, {
+          "name" : "database_name",
+          "kind" : {
+            "type" : "string",
+            "value" : "sparklearnerdev"
+          },
+          "optional" : false
         } ]
       },
       "oldCommon" : {
@@ -38,7 +45,7 @@
       },
       "fabrics" : { },
       "instances" : { },
-      "selected" : "2018",
+      "selected" : "2019",
       "nonEditable" : [ ],
       "isSubscribedPipelineWithPipelineConfigs" : false
     },
@@ -250,7 +257,7 @@
         "isCustomOutputSchema" : true
       },
       "properties" : {
-        "script" : "# Config vars can easily be passed to out-of-the-box gems\n# Config vars passing to script gems seems more complicated\n# So i am hard coding the values for this script gem\n\ndbutils.fs.rm('/Prophecy/sparklearner123@gmail.com/finserv/prophecy/ingest/FICO/TransUnionFICO2018.xml', recurse=True)\ndbutils.fs.rm('/Prophecy/sparklearner123@gmail.com/finserv/prophecy/ingest/FICO/TransUnionFICO2019.xml', recurse=True)\ndbutils.fs.rm('/Prophecy/sparklearner123@gmail.com/finserv/prophecy/ingest/FICO/TransUnionFICO2020.xml', recurse=True)\ndbutils.fs.rm('/Prophecy/sparklearner123@gmail.com/finserv/prophecy/ingest/FICO/TransUnionFICO2021.xml', recurse=True)\n\n\ndbutils.fs.rm('/Prophecy/sparklearner123@gmail.com/finserv/prophecy/gold_credit_dti_SCD1', recurse=True)\ndbutils.fs.rm('/Prophecy/sparklearner123@gmail.com/finserv/prophecy/gold_credit_dti_SCD2', recurse=True)\ndbutils.fs.rm('/Prophecy/sparklearner123@gmail.com/finserv/prophecy/gold_credit_dti_SCD3_UC', recurse=True)\n\n\nimport os\nos.system(\"mkdir -p /dbfs/Prophecy/\")\nos.system(\"mkdir -p /dbfs/Prophecy/finserv\")\nos.system(\"mkdir -p /dbfs/Prophecy/finserv/ingest\")\nos.system(\"mkdir -p /dbfs/Prophecy/finserv/ingest/FICO\")\nos.system(\"mkdir -p /dbfs/Prophecy/finserv/ingest/BNPL\")\nos.system(\"mkdir -p /dbfs/Prophecy/finserv/ingest/customer\")\n\nos.system('wget https://raw.githubusercontent.com/atbida/terraform-databricks-lakehouse-blueprints/main/industry/fsi/data/TransUnionFICO2018 -O /dbfs/Prophecy/finserv/ingest/FICO/TransUnionFICO2018.xml')\nos.system('wget https://raw.githubusercontent.com/atbida/terraform-databricks-lakehouse-blueprints/main/industry/fsi/data/TransUnionFICO2018 -O /dbfs/Prophecy/finserv/ingest/FICO/TransUnionFICO2019.xml')\nos.system('wget https://raw.githubusercontent.com/atbida/terraform-databricks-lakehouse-blueprints/main/industry/fsi/data/TransUnionFICO2018 -O /dbfs/Prophecy/finserv/ingest/FICO/TransUnionFICO2020.xml')\nos.system('wget https://raw.githubusercontent.com/atbida/terraform-databricks-lakehouse-blueprints/main/industry/fsi/data/TransUnionFICO2018 -O /dbfs/Prophecy/finserv/ingest/FICO/TransUnionFICO2021.xml')\n\n\nos.system('wget https://raw.githubusercontent.com/atbida/terraform-databricks-lakehouse-blueprints/main/industry/fsi/data/customer.csv -O /dbfs/Prophecy/finserv/ingest/customer/customer.csv')\nos.system('wget https://raw.githubusercontent.com/atbida/terraform-databricks-lakehouse-blueprints/main/industry/fsi/data/bnpl.json -O /dbfs/Prophecy/finserv/ingest/BNPL/bnpl.json')\n\n\nos.system('wget https://raw.githubusercontent.com/atbida/terraform-databricks-lakehouse-blueprints/main/industry/fsi/data/bnpl_uc.json -O /dbfs/Prophecy/finserv/ingest/BNPL/bnpl_uc.json')",
+        "script" : "dbutils.fs.rm(f\"/Prophecy/{Config.user_email}/finserv/prophecy/ingest/FICO/TransUnionFICO2018.xml\", recurse=True)\ndbutils.fs.rm(f\"/Prophecy/{Config.user_email}/finserv/prophecy/ingest/FICO/TransUnionFICO2019.xml\", recurse=True)\ndbutils.fs.rm(f\"/Prophecy/{Config.user_email}/finserv/prophecy/ingest/FICO/TransUnionFICO2020.xml\", recurse=True)\ndbutils.fs.rm(f\"/Prophecy/{Config.user_email}/finserv/prophecy/ingest/FICO/TransUnionFICO2021.xml\", recurse=True)\n\n\n\ndbutils.fs.rm('/Prophecy/sparklearner123@gmail.com/finserv/prophecy/gold_credit_dti_SCD3_UC_test', recurse=True)\ndbutils.fs.rm('/Prophecy/sparklearner123@gmail.com/finserv/prophecy/gold_credit_dti_SCD3_UC_test2', recurse=True)\n\ndbutils.fs.rm(f\"/Prophecy/{Config.user_email}/finserv/prophecy/gold_credit_dti_SCD1\", recurse=True)\ndbutils.fs.rm(f\"/Prophecy/{Config.user_email}/finserv/prophecy/gold_credit_dti_SCD2\", recurse=True)\ndbutils.fs.rm(f\"/Prophecy/{Config.user_email}/finserv/prophecy/gold_credit_dti_SCD3_UC\", recurse=True)\n\n\nimport os\nos.system(\"mkdir -p /dbfs/Prophecy/\")\nos.system(\"mkdir -p /dbfs/Prophecy/finserv\")\nos.system(\"mkdir -p /dbfs/Prophecy/finserv/ingest\")\nos.system(\"mkdir -p /dbfs/Prophecy/finserv/ingest/FICO\")\nos.system(\"mkdir -p /dbfs/Prophecy/finserv/ingest/BNPL\")\nos.system(\"mkdir -p /dbfs/Prophecy/finserv/ingest/customer\")\n\nos.system('wget https://raw.githubusercontent.com/atbida/terraform-databricks-lakehouse-blueprints/main/industry/fsi/data/TransUnionFICO2018 -O /dbfs/Prophecy/finserv/ingest/FICO/TransUnionFICO2018.xml')\nos.system('wget https://raw.githubusercontent.com/atbida/terraform-databricks-lakehouse-blueprints/main/industry/fsi/data/TransUnionFICO2019 -O /dbfs/Prophecy/finserv/ingest/FICO/TransUnionFICO2019.xml')\nos.system('wget https://raw.githubusercontent.com/atbida/terraform-databricks-lakehouse-blueprints/main/industry/fsi/data/TransUnionFICO2020 -O /dbfs/Prophecy/finserv/ingest/FICO/TransUnionFICO2020.xml')\nos.system('wget https://raw.githubusercontent.com/atbida/terraform-databricks-lakehouse-blueprints/main/industry/fsi/data/TransUnionFICO2021 -O /dbfs/Prophecy/finserv/ingest/FICO/TransUnionFICO2021.xml')\n\n\nos.system('wget https://raw.githubusercontent.com/atbida/terraform-databricks-lakehouse-blueprints/main/industry/fsi/data/customer.csv -O /dbfs/Prophecy/finserv/ingest/customer/customer.csv')\nos.system('wget https://raw.githubusercontent.com/atbida/terraform-databricks-lakehouse-blueprints/main/industry/fsi/data/bnpl_uc.json -O /dbfs/Prophecy/finserv/ingest/BNPL/bnpl_uc.json')",
         "scriptMethodHeader" : "def Script(spark: SparkSession) -> None:",
         "scriptMethodFooter" : "    return "
       }
@@ -363,7 +370,7 @@
         } ],
         "allIn1" : null,
         "activeTab" : "conditions",
-        "columnsSelector" : [ ],
+        "columnsSelector" : [ "AN04Ol2gVwqedqd3ng8TO$$9sn2ssT3wpjmhngk6Vm-_##CUSTOMER_NAME", "QooEdAmF-J1U_Ywc5q8pt$$UW6kIgIV19gtTeTtyY7Zx##Name" ],
         "allIn0" : null,
         "whereClause" : null,
         "headAlias" : "in0"
