@@ -101,18 +101,6 @@
     "target" : "TNYwAW2yHI9S_Hgz76Rcx$$05lj5g4WgLvV_PIj_Q5Vd",
     "targetPort" : "AN04Ol2gVwqedqd3ng8TO$$9sn2ssT3wpjmhngk6Vm-_"
   }, {
-    "id" : "sEfIXYz6OsQTzW7Rfn-YH",
-    "source" : "aPeYATByh614Gjj3qZQrE$$3SwhqmSqJelTVAgOHywkS",
-    "sourcePort" : "BYU9amYi9VNtOxrcdK6f0$$nKMBuuV6KkxAEoB2n8Eei",
-    "target" : "YRpIP1W9KuR198nbz1_kL$$6RHbqvxXN_BHsWC9nQOXb",
-    "targetPort" : "FqNGAwu-FsXLmp-s6FpwA$$4B-nYdsGZ6z3SQcaaR6wu"
-  }, {
-    "id" : "4fmqIRxXEd1TkOGH5Ij7r",
-    "source" : "aPeYATByh614Gjj3qZQrE$$3SwhqmSqJelTVAgOHywkS",
-    "sourcePort" : "BYU9amYi9VNtOxrcdK6f0$$nKMBuuV6KkxAEoB2n8Eei",
-    "target" : "OYaGutOo1n_DqxjKU-7G_$$R2yardQiDMwyz3efeWlLu",
-    "targetPort" : "8pBqFHg4j9yqVWrPgnCr5$$-gsoGb9UJxu4Wv0_AxPZ4"
-  }, {
     "id" : "5V5qcwGP3jaGaRgb5jTqG",
     "source" : "ddQl4x6Rmj1lcsAk2ls15$$fwiFLOezcguZi7VqQVKa0",
     "sourcePort" : "_IfC9NlQcHqSiPVlZGP-t$$zjQUJ2UI4tAG5WBR_ePuH",
@@ -125,11 +113,23 @@
     "target" : "x30qk1Z08MFSYPUeEzatn$$gi4B0qVoxN74AV01cep70",
     "targetPort" : "mmQYQPGgQXAcL827IM6JY$$cwtoYHdjEbHTC-jRJqyGs"
   }, {
-    "id" : "Qf4vXLvSf2HKJzlDAvJlK",
+    "id" : "jXNQWKzSJDhNhxyFnPLYo",
     "source" : "aPeYATByh614Gjj3qZQrE$$3SwhqmSqJelTVAgOHywkS",
     "sourcePort" : "BYU9amYi9VNtOxrcdK6f0$$nKMBuuV6KkxAEoB2n8Eei",
-    "target" : "p1cWZD53sMUkbV0cfut65$$ryH8pEIIK2joMUviCxR9Z",
-    "targetPort" : "HItu5R7EfZydtt-DuhFuS$$oZT1Dk6eN7ADKybQ-6crp"
+    "target" : "YrSKxHsmlSh_dqYaITZ9o$$QzMhUL3qaTck61GywsvIS",
+    "targetPort" : "FlZSlmbEAYzHDSLbEqYq4$$Px27znQJ8L5vw8KgBxUh6"
+  }, {
+    "id" : "x3Y07VZFvKt9cmXn4qH-G",
+    "source" : "aPeYATByh614Gjj3qZQrE$$3SwhqmSqJelTVAgOHywkS",
+    "sourcePort" : "BYU9amYi9VNtOxrcdK6f0$$nKMBuuV6KkxAEoB2n8Eei",
+    "target" : "FxovwBfBGjkzoBMIRCXtt$$5q4K5mHoTK4v2kivfJz4K",
+    "targetPort" : "y_i2Cwda-7x7pcLLgBirv$$chxdfFxiC4_RPyby3TFsw"
+  }, {
+    "id" : "Fd5gvZxyOWlSvF64JJawb",
+    "source" : "aPeYATByh614Gjj3qZQrE$$3SwhqmSqJelTVAgOHywkS",
+    "sourcePort" : "BYU9amYi9VNtOxrcdK6f0$$nKMBuuV6KkxAEoB2n8Eei",
+    "target" : "wnKgtu9TEyf_w-LfaEfGh$$TDBEilguGoMG0kwvUQ4gC",
+    "targetPort" : "TcXBtrVeQOzu5i8_ru4dX$$6q9DIrRYpCd9gSpOnStW7"
   } ],
   "processes" : {
     "aPeYATByh614Gjj3qZQrE$$3SwhqmSqJelTVAgOHywkS" : {
@@ -257,9 +257,36 @@
         "isCustomOutputSchema" : true
       },
       "properties" : {
-        "script" : "dbutils.fs.rm(f\"/Prophecy/{Config.user_email}/finserv/prophecy/ingest/FICO/TransUnionFICO2018.xml\", recurse=True)\ndbutils.fs.rm(f\"/Prophecy/{Config.user_email}/finserv/prophecy/ingest/FICO/TransUnionFICO2019.xml\", recurse=True)\ndbutils.fs.rm(f\"/Prophecy/{Config.user_email}/finserv/prophecy/ingest/FICO/TransUnionFICO2020.xml\", recurse=True)\ndbutils.fs.rm(f\"/Prophecy/{Config.user_email}/finserv/prophecy/ingest/FICO/TransUnionFICO2021.xml\", recurse=True)\n\n\n\ndbutils.fs.rm('/Prophecy/sparklearner123@gmail.com/finserv/prophecy/gold_credit_dti_SCD3_UC_test', recurse=True)\ndbutils.fs.rm('/Prophecy/sparklearner123@gmail.com/finserv/prophecy/gold_credit_dti_SCD3_UC_test2', recurse=True)\n\ndbutils.fs.rm(f\"/Prophecy/{Config.user_email}/finserv/prophecy/gold_credit_dti_SCD1\", recurse=True)\ndbutils.fs.rm(f\"/Prophecy/{Config.user_email}/finserv/prophecy/gold_credit_dti_SCD2\", recurse=True)\ndbutils.fs.rm(f\"/Prophecy/{Config.user_email}/finserv/prophecy/gold_credit_dti_SCD3_UC\", recurse=True)\n\n\nimport os\nos.system(\"mkdir -p /dbfs/Prophecy/\")\nos.system(\"mkdir -p /dbfs/Prophecy/finserv\")\nos.system(\"mkdir -p /dbfs/Prophecy/finserv/ingest\")\nos.system(\"mkdir -p /dbfs/Prophecy/finserv/ingest/FICO\")\nos.system(\"mkdir -p /dbfs/Prophecy/finserv/ingest/BNPL\")\nos.system(\"mkdir -p /dbfs/Prophecy/finserv/ingest/customer\")\n\nos.system('wget https://raw.githubusercontent.com/atbida/terraform-databricks-lakehouse-blueprints/main/industry/fsi/data/TransUnionFICO2018 -O /dbfs/Prophecy/finserv/ingest/FICO/TransUnionFICO2018.xml')\nos.system('wget https://raw.githubusercontent.com/atbida/terraform-databricks-lakehouse-blueprints/main/industry/fsi/data/TransUnionFICO2019 -O /dbfs/Prophecy/finserv/ingest/FICO/TransUnionFICO2019.xml')\nos.system('wget https://raw.githubusercontent.com/atbida/terraform-databricks-lakehouse-blueprints/main/industry/fsi/data/TransUnionFICO2020 -O /dbfs/Prophecy/finserv/ingest/FICO/TransUnionFICO2020.xml')\nos.system('wget https://raw.githubusercontent.com/atbida/terraform-databricks-lakehouse-blueprints/main/industry/fsi/data/TransUnionFICO2021 -O /dbfs/Prophecy/finserv/ingest/FICO/TransUnionFICO2021.xml')\n\n\nos.system('wget https://raw.githubusercontent.com/atbida/terraform-databricks-lakehouse-blueprints/main/industry/fsi/data/customer.csv -O /dbfs/Prophecy/finserv/ingest/customer/customer.csv')\nos.system('wget https://raw.githubusercontent.com/atbida/terraform-databricks-lakehouse-blueprints/main/industry/fsi/data/bnpl_uc.json -O /dbfs/Prophecy/finserv/ingest/BNPL/bnpl_uc.json')",
+        "script" : "dbutils.fs.rm(f\"/Prophecy/{Config.user_email}/finserv/prophecy/ingest/FICO/TransUnionFICO2018.xml\", recurse=True)\ndbutils.fs.rm(f\"/Prophecy/{Config.user_email}/finserv/prophecy/ingest/FICO/TransUnionFICO2019.xml\", recurse=True)\ndbutils.fs.rm(f\"/Prophecy/{Config.user_email}/finserv/prophecy/ingest/FICO/TransUnionFICO2020.xml\", recurse=True)\ndbutils.fs.rm(f\"/Prophecy/{Config.user_email}/finserv/prophecy/ingest/FICO/TransUnionFICO2021.xml\", recurse=True)\n\nspark.sql(f\"DROP TABLE IF EXISTS {Config.database_name}.gold_credit_dti_SCD1\")\nspark.sql(f\"DROP TABLE IF EXISTS {Config.database_name}.gold_credit_dti_SCD2\")\nspark.sql(f\"DROP TABLE IF EXISTS {Config.database_name}.gold_credit_dti_SCD3_UC\")\n\nimport os\nos.system(\"mkdir -p /dbfs/Prophecy/\")\nos.system(\"mkdir -p /dbfs/Prophecy/finserv\")\nos.system(\"mkdir -p /dbfs/Prophecy/finserv/ingest\")\nos.system(\"mkdir -p /dbfs/Prophecy/finserv/ingest/FICO\")\nos.system(\"mkdir -p /dbfs/Prophecy/finserv/ingest/BNPL\")\nos.system(\"mkdir -p /dbfs/Prophecy/finserv/ingest/customer\")\n\nos.system('wget https://raw.githubusercontent.com/atbida/terraform-databricks-lakehouse-blueprints/main/industry/fsi/data/TransUnionFICO2018 -O /dbfs/Prophecy/finserv/ingest/FICO/TransUnionFICO2018.xml')\nos.system('wget https://raw.githubusercontent.com/atbida/terraform-databricks-lakehouse-blueprints/main/industry/fsi/data/TransUnionFICO2019 -O /dbfs/Prophecy/finserv/ingest/FICO/TransUnionFICO2019.xml')\nos.system('wget https://raw.githubusercontent.com/atbida/terraform-databricks-lakehouse-blueprints/main/industry/fsi/data/TransUnionFICO2020 -O /dbfs/Prophecy/finserv/ingest/FICO/TransUnionFICO2020.xml')\nos.system('wget https://raw.githubusercontent.com/atbida/terraform-databricks-lakehouse-blueprints/main/industry/fsi/data/TransUnionFICO2021 -O /dbfs/Prophecy/finserv/ingest/FICO/TransUnionFICO2021.xml')\n\n\nos.system('wget https://raw.githubusercontent.com/atbida/terraform-databricks-lakehouse-blueprints/main/industry/fsi/data/customer.csv -O /dbfs/Prophecy/finserv/ingest/customer/customer.csv')\nos.system('wget https://raw.githubusercontent.com/atbida/terraform-databricks-lakehouse-blueprints/main/industry/fsi/data/bnpl_uc.json -O /dbfs/Prophecy/finserv/ingest/BNPL/bnpl_uc.json')",
         "scriptMethodHeader" : "def Script(spark: SparkSession) -> None:",
         "scriptMethodFooter" : "    return "
+      }
+    },
+    "YrSKxHsmlSh_dqYaITZ9o$$QzMhUL3qaTck61GywsvIS" : {
+      "id" : "YrSKxHsmlSh_dqYaITZ9o$$QzMhUL3qaTck61GywsvIS",
+      "component" : "Target",
+      "metadata" : {
+        "label" : "Gold_Credit_DTI_SCD1_CatalogTable",
+        "slug" : "Gold_Credit_DTI_SCD1_CatalogTable",
+        "x" : 1140,
+        "y" : 240,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "FlZSlmbEAYzHDSLbEqYq4$$Px27znQJ8L5vw8KgBxUh6",
+          "slug" : "in0",
+          "isStreaming" : false
+        } ],
+        "outputs" : [ ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/Gold_Credit_DTI_SCD1_CatalogTable"
       }
     },
     "ddQl4x6Rmj1lcsAk2ls15$$fwiFLOezcguZi7VqQVKa0" : {
@@ -287,33 +314,6 @@
       },
       "properties" : {
         "datasetId" : "datasets/LexisNexis_json"
-      }
-    },
-    "OYaGutOo1n_DqxjKU-7G_$$R2yardQiDMwyz3efeWlLu" : {
-      "id" : "OYaGutOo1n_DqxjKU-7G_$$R2yardQiDMwyz3efeWlLu",
-      "component" : "Target",
-      "metadata" : {
-        "label" : "ReportSCD2",
-        "slug" : "ReportSCD2",
-        "x" : 1120,
-        "y" : 520,
-        "phase" : 0,
-        "cache" : false,
-        "detailedStats" : false,
-        "isImported" : false
-      },
-      "ports" : {
-        "inputs" : [ {
-          "id" : "8pBqFHg4j9yqVWrPgnCr5$$-gsoGb9UJxu4Wv0_AxPZ4",
-          "slug" : "in0",
-          "isStreaming" : false
-        } ],
-        "outputs" : [ ],
-        "selectedInputFields" : [ ],
-        "isCustomOutputSchema" : false
-      },
-      "properties" : {
-        "datasetId" : "datasets/ReportSCD2"
       }
     },
     "TNYwAW2yHI9S_Hgz76Rcx$$05lj5g4WgLvV_PIj_Q5Vd" : {
@@ -374,6 +374,33 @@
         "allIn0" : null,
         "whereClause" : null,
         "headAlias" : "in0"
+      }
+    },
+    "FxovwBfBGjkzoBMIRCXtt$$5q4K5mHoTK4v2kivfJz4K" : {
+      "id" : "FxovwBfBGjkzoBMIRCXtt$$5q4K5mHoTK4v2kivfJz4K",
+      "component" : "Target",
+      "metadata" : {
+        "label" : "Gold_Credit_DTI_SCD2_CatalogTable",
+        "slug" : "Gold_Credit_DTI_SCD2_CatalogTable",
+        "x" : 1140,
+        "y" : 420,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "y_i2Cwda-7x7pcLLgBirv$$chxdfFxiC4_RPyby3TFsw",
+          "slug" : "in0",
+          "isStreaming" : false
+        } ],
+        "outputs" : [ ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/Gold_Credit_DTI_SCD2_CatalogTable"
       }
     },
     "nLIeU1vq5Y1haW-6Z5SHm$$bTVNtL8ujdRPnsmrmSeF8" : {
@@ -525,33 +552,6 @@
         "allIn0" : null,
         "whereClause" : null,
         "headAlias" : "in0"
-      }
-    },
-    "YRpIP1W9KuR198nbz1_kL$$6RHbqvxXN_BHsWC9nQOXb" : {
-      "id" : "YRpIP1W9KuR198nbz1_kL$$6RHbqvxXN_BHsWC9nQOXb",
-      "component" : "Target",
-      "metadata" : {
-        "label" : "ReportSCD1",
-        "slug" : "ReportSCD1",
-        "x" : 1120,
-        "y" : 320,
-        "phase" : 0,
-        "cache" : false,
-        "detailedStats" : false,
-        "isImported" : false
-      },
-      "ports" : {
-        "inputs" : [ {
-          "id" : "FqNGAwu-FsXLmp-s6FpwA$$4B-nYdsGZ6z3SQcaaR6wu",
-          "slug" : "in0",
-          "isStreaming" : false
-        } ],
-        "outputs" : [ ],
-        "selectedInputFields" : [ ],
-        "isCustomOutputSchema" : false
-      },
-      "properties" : {
-        "datasetId" : "datasets/Profile"
       }
     },
     "3m3q8W43Fyih57opvmspx$$cwBzNvNzNZBzcWB_sRxPV" : {
@@ -742,33 +742,6 @@
         "columnsSelector" : [ ]
       }
     },
-    "p1cWZD53sMUkbV0cfut65$$ryH8pEIIK2joMUviCxR9Z" : {
-      "id" : "p1cWZD53sMUkbV0cfut65$$ryH8pEIIK2joMUviCxR9Z",
-      "component" : "Target",
-      "metadata" : {
-        "label" : "ReportSCD3_UC",
-        "slug" : "ReportSCD3_UC",
-        "x" : 1120,
-        "y" : 720,
-        "phase" : 0,
-        "cache" : false,
-        "detailedStats" : false,
-        "isImported" : false
-      },
-      "ports" : {
-        "inputs" : [ {
-          "id" : "HItu5R7EfZydtt-DuhFuS$$oZT1Dk6eN7ADKybQ-6crp",
-          "slug" : "in0",
-          "isStreaming" : false
-        } ],
-        "outputs" : [ ],
-        "selectedInputFields" : [ ],
-        "isCustomOutputSchema" : false
-      },
-      "properties" : {
-        "datasetId" : "datasets/ReportSCD3_UC"
-      }
-    },
     "x30qk1Z08MFSYPUeEzatn$$gi4B0qVoxN74AV01cep70" : {
       "id" : "x30qk1Z08MFSYPUeEzatn$$gi4B0qVoxN74AV01cep70",
       "component" : "Reformat",
@@ -850,6 +823,33 @@
       },
       "properties" : {
         "datasetId" : "datasets/TransUnionFICOyear_xml"
+      }
+    },
+    "wnKgtu9TEyf_w-LfaEfGh$$TDBEilguGoMG0kwvUQ4gC" : {
+      "id" : "wnKgtu9TEyf_w-LfaEfGh$$TDBEilguGoMG0kwvUQ4gC",
+      "component" : "Target",
+      "metadata" : {
+        "label" : "Gold_Credit_DTI_SCD3_CatalogTable",
+        "slug" : "Gold_Credit_DTI_SCD3_CatalogTable",
+        "x" : 1140,
+        "y" : 640,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "TcXBtrVeQOzu5i8_ru4dX$$6q9DIrRYpCd9gSpOnStW7",
+          "slug" : "in0",
+          "isStreaming" : false
+        } ],
+        "outputs" : [ ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/Gold_Credit_DTI_SCD3_CatalogTable"
       }
     }
   },

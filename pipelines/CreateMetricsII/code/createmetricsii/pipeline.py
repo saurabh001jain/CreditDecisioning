@@ -17,9 +17,9 @@ def pipeline(spark: SparkSession) -> None:
     df_Refine = Refine(spark, df_FlattenSchema_1)
     df_ByName = ByName(spark, df_ParseLoanAmount, df_Refine)
     df_SetTypes = SetTypes(spark, df_ByName)
-    ReportSCD2(spark, df_SetTypes)
-    ReportSCD1(spark, df_SetTypes)
-    ReportSCD3_UC(spark, df_SetTypes)
+    Gold_Credit_DTI_SCD1_CatalogTable(spark, df_SetTypes)
+    Gold_Credit_DTI_SCD2_CatalogTable(spark, df_SetTypes)
+    Gold_Credit_DTI_SCD3_CatalogTable(spark, df_SetTypes)
 
 def main():
     spark = SparkSession.builder\

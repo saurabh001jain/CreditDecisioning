@@ -5,14 +5,10 @@ from prophecy.libs import typed_lit
 from createmetricsii.config.ConfigStore import *
 from createmetricsii.udfs.UDFs import *
 
-def ReportSCD2(spark: SparkSession, in0: DataFrame):
-    from delta.tables import DeltaTable, DeltaMergeBuilder
-
-    if DeltaTable.isDeltaTable(spark, f"dbfs:/Prophecy/{Config.user_email}/finserv/prophecy/gold_credit_dti_SCD2"):
-        existingTable = DeltaTable.forPath(
-            spark,
-            f"dbfs:/Prophecy/{Config.user_email}/finserv/prophecy/gold_credit_dti_SCD2"
-        )
+def Gold_Credit_DTI_SCD2_CatalogTable(spark: SparkSession, in0: DataFrame):
+    if spark.catalog._jcatalog.tableExists(f"{Config.database_name}.gold_credit_dti_SCD2"):
+        from delta.tables import DeltaTable, DeltaMergeBuilder
+        existingTable = DeltaTable.forName(spark, f"{Config.database_name}.gold_credit_dti_SCD2")
         updatesDF = in0.withColumn("minFlag", lit("true")).withColumn("maxFlag", lit("true"))
         existingDF = existingTable.toDF()
         updateColumns = updatesDF.columns
@@ -46,4 +42,4 @@ def ReportSCD2(spark: SparkSession, in0: DataFrame):
             .format("delta")\
             .option("overwriteSchema", True)\
             .mode("overwrite")\
-            .save(f"dbfs:/Prophecy/{Config.user_email}/finserv/prophecy/gold_credit_dti_SCD2")
+            .saveAsTable(f"{Config.database_name}.gold_credit_dti_SCD2")

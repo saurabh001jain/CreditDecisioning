@@ -20,9 +20,9 @@ pipelines:
       - datasets/LexisNexis_json
       - datasets/TransUnionFICOyear_xml
       outputs:
-      - datasets/Profile
-      - datasets/ReportSCD2
-      - datasets/ReportSCD3_UC
+      - datasets/Gold_Credit_DTI_SCD1_CatalogTable
+      - datasets/Gold_Credit_DTI_SCD2_CatalogTable
+      - datasets/Gold_Credit_DTI_SCD3_CatalogTable
     dependencies: {}
 datasets:
   datasets/creditReportXMLingest:
@@ -558,6 +558,45 @@ datasets:
         description: ''
         author: sparklearner123@gmail.com
         createdAt: '2023-02-18 05:37:18'
+  datasets/Gold_Credit_DTI_SCD1_CatalogTable:
+    name: Gold_Credit_DTI_SCD1_CatalogTable
+    description: ''
+    author: sparklearner123@gmail.com
+    createdAt: '2023-02-21 22:39:33'
+    mode: batch
+    physicalDatasets:
+      UnityCatalogClusters:
+        fabricId: 1609
+        datasetType: Database
+        description: ''
+        author: sparklearner123@gmail.com
+        createdAt: '2023-02-21 22:39:33'
+  datasets/Gold_Credit_DTI_SCD2_CatalogTable:
+    name: Gold_Credit_DTI_SCD2_CatalogTable
+    description: ''
+    author: sparklearner123@gmail.com
+    createdAt: '2023-02-21 22:43:09'
+    mode: batch
+    physicalDatasets:
+      UnityCatalogClusters:
+        fabricId: 1609
+        datasetType: Database
+        description: ''
+        author: sparklearner123@gmail.com
+        createdAt: '2023-02-21 22:43:09'
+  datasets/Gold_Credit_DTI_SCD3_CatalogTable:
+    name: Gold_Credit_DTI_SCD3_CatalogTable
+    description: ''
+    author: sparklearner123@gmail.com
+    createdAt: '2023-02-21 22:46:09'
+    mode: batch
+    physicalDatasets:
+      UnityCatalogClusters:
+        fabricId: 1609
+        datasetType: Database
+        description: ''
+        author: sparklearner123@gmail.com
+        createdAt: '2023-02-21 22:46:09'
 templates: {}
 jobs:
   jobs/DTIjob:
