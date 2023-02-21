@@ -39,3 +39,8 @@ Pipeline is ready to share for feedback
 *** Release notes for version: 1.0.2 ***
 
 Updates to ensure pipeline works with Unity Catalog single clusters
+
+*** Release notes for version: 1.0.3 ***
+
+Fix typo on ingestion to read files from different years
+Use python config vars on filepaths
