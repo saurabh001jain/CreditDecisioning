@@ -44,3 +44,7 @@ Updates to ensure pipeline works with Unity Catalog single clusters
 
 Fix typo on ingestion to read files from different years
 Use python config vars on filepaths
+
+*** Release notes for version: 1.0.4 ***
+
+Use target CatalogTables
