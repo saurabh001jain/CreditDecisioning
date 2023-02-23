@@ -89,12 +89,6 @@
     "target" : "NWqyStrDFI5lb66TsP2tE$$cdm7KJDxEKk-ysJpuTik8",
     "targetPort" : "ar0M8oXLTJcIYCHdcYXvi$$wmRwvwSk4baGD7kWEqsO6"
   }, {
-    "id" : "o0vjgCFUT3eBdtM_n94WZ",
-    "source" : "KhKGpWIjs4Cl8SPLZTLfq$$-POKihJ5Q8C6wyL38xNAA",
-    "sourcePort" : "8dhc6TDyIigVGNa5lrrVF$$z2LiDxgpPswa2reGpVW0x",
-    "target" : "TNYwAW2yHI9S_Hgz76Rcx$$05lj5g4WgLvV_PIj_Q5Vd",
-    "targetPort" : "QooEdAmF-J1U_Ywc5q8pt$$UW6kIgIV19gtTeTtyY7Zx"
-  }, {
     "id" : "Pd11Nm0zMiZG8A4EAJmuu",
     "source" : "nLIeU1vq5Y1haW-6Z5SHm$$bTVNtL8ujdRPnsmrmSeF8",
     "sourcePort" : "-DKYPXr6cpyCf0m3aYm9R$$ekx_RsHVb4LM-Y1iIieoW",
@@ -130,6 +124,18 @@
     "sourcePort" : "BYU9amYi9VNtOxrcdK6f0$$nKMBuuV6KkxAEoB2n8Eei",
     "target" : "wnKgtu9TEyf_w-LfaEfGh$$TDBEilguGoMG0kwvUQ4gC",
     "targetPort" : "TcXBtrVeQOzu5i8_ru4dX$$6q9DIrRYpCd9gSpOnStW7"
+  }, {
+    "id" : "pnM3GsD_ZecSkWGzvfNNt",
+    "source" : "KhKGpWIjs4Cl8SPLZTLfq$$-POKihJ5Q8C6wyL38xNAA",
+    "sourcePort" : "8dhc6TDyIigVGNa5lrrVF$$z2LiDxgpPswa2reGpVW0x",
+    "target" : "AAgn-5OHZb03YRNiLBKlY$$FtiRYhdJB5Tlr_mVxkchu",
+    "targetPort" : "wn7HPHcwCEO1fw4giBtpl$$tbec6GEQOqXQHYbytVXyO"
+  }, {
+    "id" : "wrcir0h2e2QnJpppJ_1th",
+    "source" : "AAgn-5OHZb03YRNiLBKlY$$FtiRYhdJB5Tlr_mVxkchu",
+    "sourcePort" : "bxMpssXtB3F05oFQMyC0c$$5TwbaYZN7nqudxtrQsRYd",
+    "target" : "TNYwAW2yHI9S_Hgz76Rcx$$05lj5g4WgLvV_PIj_Q5Vd",
+    "targetPort" : "QooEdAmF-J1U_Ywc5q8pt$$UW6kIgIV19gtTeTtyY7Zx"
   } ],
   "processes" : {
     "aPeYATByh614Gjj3qZQrE$$3SwhqmSqJelTVAgOHywkS" : {
@@ -138,8 +144,8 @@
       "metadata" : {
         "label" : "SetTypes",
         "slug" : "SetTypes",
-        "x" : 920,
-        "y" : 420,
+        "x" : 1120,
+        "y" : 320,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -268,8 +274,8 @@
       "metadata" : {
         "label" : "Gold_Credit_DTI_SCD1_CatalogTable",
         "slug" : "Gold_Credit_DTI_SCD1_CatalogTable",
-        "x" : 1140,
-        "y" : 240,
+        "x" : 1320,
+        "y" : 120,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -295,8 +301,8 @@
       "metadata" : {
         "label" : "LexisNexis.json",
         "slug" : "LexisNexis_json",
-        "x" : 120,
-        "y" : 720,
+        "x" : 320,
+        "y" : 520,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -322,8 +328,8 @@
       "metadata" : {
         "label" : "ByCustomerID",
         "slug" : "ByCustomerID",
-        "x" : 320,
-        "y" : 320,
+        "x" : 520,
+        "y" : 220,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -382,8 +388,8 @@
       "metadata" : {
         "label" : "Gold_Credit_DTI_SCD2_CatalogTable",
         "slug" : "Gold_Credit_DTI_SCD2_CatalogTable",
-        "x" : 1140,
-        "y" : 420,
+        "x" : 1320,
+        "y" : 320,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -409,8 +415,8 @@
       "metadata" : {
         "label" : "Income",
         "slug" : "Income",
-        "x" : 120,
-        "y" : 320,
+        "x" : 320,
+        "y" : 120,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -436,8 +442,8 @@
       "metadata" : {
         "label" : "ByName",
         "slug" : "ByName",
-        "x" : 720,
-        "y" : 420,
+        "x" : 920,
+        "y" : 320,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -560,8 +566,8 @@
       "metadata" : {
         "label" : "FlattenSchema_1",
         "slug" : "FlattenSchema_1",
-        "x" : 320,
-        "y" : 720,
+        "x" : 520,
+        "y" : 520,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -671,8 +677,8 @@
       "metadata" : {
         "label" : "ParseLoanAmount",
         "slug" : "ParseLoanAmount",
-        "x" : 520,
-        "y" : 320,
+        "x" : 720,
+        "y" : 220,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -748,8 +754,8 @@
       "metadata" : {
         "label" : "Refine",
         "slug" : "Refine",
-        "x" : 520,
-        "y" : 720,
+        "x" : 720,
+        "y" : 520,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -798,6 +804,139 @@
         "columnsSelector" : [ "mmQYQPGgQXAcL827IM6JY$$cwtoYHdjEbHTC-jRJqyGs##name", "mmQYQPGgQXAcL827IM6JY$$cwtoYHdjEbHTC-jRJqyGs##balance", "mmQYQPGgQXAcL827IM6JY$$cwtoYHdjEbHTC-jRJqyGs##monthly_loan_amount" ]
       }
     },
+    "AAgn-5OHZb03YRNiLBKlY$$FtiRYhdJB5Tlr_mVxkchu" : {
+      "id" : "AAgn-5OHZb03YRNiLBKlY$$FtiRYhdJB5Tlr_mVxkchu",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "EncryptPII",
+        "slug" : "EncryptPII",
+        "x" : 320,
+        "y" : 320,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "wn7HPHcwCEO1fw4giBtpl$$tbec6GEQOqXQHYbytVXyO",
+          "slug" : "in0",
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "bxMpssXtB3F05oFQMyC0c$$5TwbaYZN7nqudxtrQsRYd",
+          "slug" : "out",
+          "isStreaming" : false
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "importLanguage" : "python",
+        "expressions" : [ {
+          "target" : "SSN",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "call_func('aes_encrypt', SSN, '1234567890123456')"
+          },
+          "description" : ""
+        }, {
+          "target" : "Address",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Address"
+          },
+          "description" : ""
+        }, {
+          "target" : "FICO",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "FICO"
+          },
+          "description" : ""
+        }, {
+          "target" : "Score",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "FICO.Score"
+          },
+          "description" : ""
+        }, {
+          "target" : "ValidFrom",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "FICO.ValidFrom"
+          },
+          "description" : ""
+        }, {
+          "target" : "ValidTo",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "FICO.ValidTo"
+          },
+          "description" : ""
+        }, {
+          "target" : "Name",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Name"
+          },
+          "description" : ""
+        }, {
+          "target" : "Trades",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Trades"
+          },
+          "description" : ""
+        }, {
+          "target" : "Trade",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Trades.Trade"
+          },
+          "description" : ""
+        }, {
+          "target" : "AccountNumber",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Trades.Trade.AccountNumber"
+          },
+          "description" : ""
+        }, {
+          "target" : "Balance",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Trades.Trade.Balance"
+          },
+          "description" : ""
+        }, {
+          "target" : "DateOpened",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Trades.Trade.DateOpened"
+          },
+          "description" : ""
+        }, {
+          "target" : "PastDue",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Trades.Trade.PastDue"
+          },
+          "description" : ""
+        }, {
+          "target" : "Terms",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Trades.Trade.Terms"
+          },
+          "description" : ""
+        } ],
+        "importString" : "",
+        "activeTab" : "expressions",
+        "columnsSelector" : [ "wn7HPHcwCEO1fw4giBtpl$$tbec6GEQOqXQHYbytVXyO##Trades.Trade.Balance", "wn7HPHcwCEO1fw4giBtpl$$tbec6GEQOqXQHYbytVXyO##FICO", "wn7HPHcwCEO1fw4giBtpl$$tbec6GEQOqXQHYbytVXyO##FICO.ValidTo", "wn7HPHcwCEO1fw4giBtpl$$tbec6GEQOqXQHYbytVXyO##Trades.Trade", "wn7HPHcwCEO1fw4giBtpl$$tbec6GEQOqXQHYbytVXyO##Name", "wn7HPHcwCEO1fw4giBtpl$$tbec6GEQOqXQHYbytVXyO##Address", "wn7HPHcwCEO1fw4giBtpl$$tbec6GEQOqXQHYbytVXyO##Trades.Trade.DateOpened", "wn7HPHcwCEO1fw4giBtpl$$tbec6GEQOqXQHYbytVXyO##Trades.Trade.AccountNumber", "wn7HPHcwCEO1fw4giBtpl$$tbec6GEQOqXQHYbytVXyO##Trades", "wn7HPHcwCEO1fw4giBtpl$$tbec6GEQOqXQHYbytVXyO##Trades.Trade.PastDue", "wn7HPHcwCEO1fw4giBtpl$$tbec6GEQOqXQHYbytVXyO##SSN", "wn7HPHcwCEO1fw4giBtpl$$tbec6GEQOqXQHYbytVXyO##Trades.Trade.Terms", "wn7HPHcwCEO1fw4giBtpl$$tbec6GEQOqXQHYbytVXyO##FICO.Score", "wn7HPHcwCEO1fw4giBtpl$$tbec6GEQOqXQHYbytVXyO##FICO.ValidFrom" ]
+      }
+    },
     "KhKGpWIjs4Cl8SPLZTLfq$$-POKihJ5Q8C6wyL38xNAA" : {
       "id" : "KhKGpWIjs4Cl8SPLZTLfq$$-POKihJ5Q8C6wyL38xNAA",
       "component" : "Source",
@@ -805,7 +944,7 @@
         "label" : "TransUnionFico",
         "slug" : "TransUnionFico",
         "x" : 120,
-        "y" : 520,
+        "y" : 320,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -831,8 +970,8 @@
       "metadata" : {
         "label" : "Gold_Credit_DTI_SCD3_CatalogTable",
         "slug" : "Gold_Credit_DTI_SCD3_CatalogTable",
-        "x" : 1140,
-        "y" : 640,
+        "x" : 1320,
+        "y" : 520,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,

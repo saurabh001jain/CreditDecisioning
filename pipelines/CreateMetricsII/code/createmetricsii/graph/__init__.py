@@ -6,6 +6,7 @@ from .ParseLoanAmount import *
 from .TransUnionFico import *
 from .ByCustomerID import *
 from .Income import *
+from .EncryptPII import *
 from .Gold_Credit_DTI_SCD1_CatalogTable import *
 from .Refine import *
 from .LexisNexis_json import *
