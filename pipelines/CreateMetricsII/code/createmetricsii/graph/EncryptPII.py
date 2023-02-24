@@ -7,13 +7,13 @@ from createmetricsii.udfs.UDFs import *
 
 def EncryptPII(spark: SparkSession, in0: DataFrame) -> DataFrame:
     return in0.select(
-        expr("aes_encrypt(SSN, '1234567890123456')").alias("SSN"), 
         col("Address"), 
         col("FICO"), 
         col("FICO.Score").alias("Score"), 
         col("FICO.ValidFrom").alias("ValidFrom"), 
         col("FICO.ValidTo").alias("ValidTo"), 
         col("Name"), 
+        expr("aes_encrypt(SSN, secret('anyascopeUC', 'AESkey'))").alias("SSN"), 
         col("Trades"), 
         col("Trades.Trade").alias("Trade"), 
         col("Trades.Trade.AccountNumber").alias("AccountNumber"), 

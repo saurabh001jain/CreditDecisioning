@@ -416,7 +416,7 @@
         "label" : "Income",
         "slug" : "Income",
         "x" : 320,
-        "y" : 120,
+        "y" : 140,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -826,21 +826,310 @@
         "outputs" : [ {
           "id" : "bxMpssXtB3F05oFQMyC0c$$5TwbaYZN7nqudxtrQsRYd",
           "slug" : "out",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "Address",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "FICO",
+              "type" : {
+                "type" : "struct",
+                "fields" : [ {
+                  "name" : "Score",
+                  "type" : "long",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "ValidFrom",
+                  "type" : "date",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "ValidTo",
+                  "type" : "date",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                } ]
+              },
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Score",
+              "type" : "long",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ValidFrom",
+              "type" : "date",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ValidTo",
+              "type" : "date",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Name",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "SSN",
+              "type" : "binary",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Trades",
+              "type" : {
+                "type" : "struct",
+                "fields" : [ {
+                  "name" : "Trade",
+                  "type" : {
+                    "type" : "array",
+                    "elementType" : {
+                      "type" : "struct",
+                      "fields" : [ {
+                        "name" : "AccountNumber",
+                        "type" : "string",
+                        "nullable" : true,
+                        "metadata" : {
+                          "description" : "",
+                          "mappings" : [ ],
+                          "tags" : [ ]
+                        }
+                      }, {
+                        "name" : "Balance",
+                        "type" : "long",
+                        "nullable" : true,
+                        "metadata" : {
+                          "description" : "",
+                          "mappings" : [ ],
+                          "tags" : [ ]
+                        }
+                      }, {
+                        "name" : "DateOpened",
+                        "type" : "date",
+                        "nullable" : true,
+                        "metadata" : {
+                          "description" : "",
+                          "mappings" : [ ],
+                          "tags" : [ ]
+                        }
+                      }, {
+                        "name" : "PastDue",
+                        "type" : "long",
+                        "nullable" : true,
+                        "metadata" : {
+                          "description" : "",
+                          "mappings" : [ ],
+                          "tags" : [ ]
+                        }
+                      }, {
+                        "name" : "Terms",
+                        "type" : "string",
+                        "nullable" : true,
+                        "metadata" : {
+                          "description" : "",
+                          "mappings" : [ ],
+                          "tags" : [ ]
+                        }
+                      } ]
+                    },
+                    "containsNull" : true
+                  },
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                } ]
+              },
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Trade",
+              "type" : {
+                "type" : "array",
+                "elementType" : {
+                  "type" : "struct",
+                  "fields" : [ {
+                    "name" : "AccountNumber",
+                    "type" : "string",
+                    "nullable" : true,
+                    "metadata" : {
+                      "description" : "",
+                      "mappings" : [ ],
+                      "tags" : [ ]
+                    }
+                  }, {
+                    "name" : "Balance",
+                    "type" : "long",
+                    "nullable" : true,
+                    "metadata" : {
+                      "description" : "",
+                      "mappings" : [ ],
+                      "tags" : [ ]
+                    }
+                  }, {
+                    "name" : "DateOpened",
+                    "type" : "date",
+                    "nullable" : true,
+                    "metadata" : {
+                      "description" : "",
+                      "mappings" : [ ],
+                      "tags" : [ ]
+                    }
+                  }, {
+                    "name" : "PastDue",
+                    "type" : "long",
+                    "nullable" : true,
+                    "metadata" : {
+                      "description" : "",
+                      "mappings" : [ ],
+                      "tags" : [ ]
+                    }
+                  }, {
+                    "name" : "Terms",
+                    "type" : "string",
+                    "nullable" : true,
+                    "metadata" : {
+                      "description" : "",
+                      "mappings" : [ ],
+                      "tags" : [ ]
+                    }
+                  } ]
+                },
+                "containsNull" : true
+              },
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "AccountNumber",
+              "type" : {
+                "type" : "array",
+                "elementType" : "string",
+                "containsNull" : true
+              },
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Balance",
+              "type" : {
+                "type" : "array",
+                "elementType" : "long",
+                "containsNull" : true
+              },
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "DateOpened",
+              "type" : {
+                "type" : "array",
+                "elementType" : "date",
+                "containsNull" : true
+              },
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "PastDue",
+              "type" : {
+                "type" : "array",
+                "elementType" : "long",
+                "containsNull" : true
+              },
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Terms",
+              "type" : {
+                "type" : "array",
+                "elementType" : "string",
+                "containsNull" : true
+              },
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
           "isStreaming" : false
         } ],
         "selectedInputFields" : [ ],
-        "isCustomOutputSchema" : false
+        "isCustomOutputSchema" : true
       },
       "properties" : {
         "importLanguage" : "python",
         "expressions" : [ {
-          "target" : "SSN",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "call_func('aes_encrypt', SSN, '1234567890123456')"
-          },
-          "description" : ""
-        }, {
           "target" : "Address",
           "expression" : {
             "format" : "sql",
@@ -880,6 +1169,13 @@
           "expression" : {
             "format" : "sql",
             "expression" : "Name"
+          },
+          "description" : ""
+        }, {
+          "target" : "SSN",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "call_func('aes_encrypt', SSN, secret('anyascopeUC', 'AESkey'))"
           },
           "description" : ""
         }, {
@@ -934,7 +1230,7 @@
         } ],
         "importString" : "",
         "activeTab" : "expressions",
-        "columnsSelector" : [ "wn7HPHcwCEO1fw4giBtpl$$tbec6GEQOqXQHYbytVXyO##Trades.Trade.Balance", "wn7HPHcwCEO1fw4giBtpl$$tbec6GEQOqXQHYbytVXyO##FICO", "wn7HPHcwCEO1fw4giBtpl$$tbec6GEQOqXQHYbytVXyO##FICO.ValidTo", "wn7HPHcwCEO1fw4giBtpl$$tbec6GEQOqXQHYbytVXyO##Trades.Trade", "wn7HPHcwCEO1fw4giBtpl$$tbec6GEQOqXQHYbytVXyO##Name", "wn7HPHcwCEO1fw4giBtpl$$tbec6GEQOqXQHYbytVXyO##Address", "wn7HPHcwCEO1fw4giBtpl$$tbec6GEQOqXQHYbytVXyO##Trades.Trade.DateOpened", "wn7HPHcwCEO1fw4giBtpl$$tbec6GEQOqXQHYbytVXyO##Trades.Trade.AccountNumber", "wn7HPHcwCEO1fw4giBtpl$$tbec6GEQOqXQHYbytVXyO##Trades", "wn7HPHcwCEO1fw4giBtpl$$tbec6GEQOqXQHYbytVXyO##Trades.Trade.PastDue", "wn7HPHcwCEO1fw4giBtpl$$tbec6GEQOqXQHYbytVXyO##SSN", "wn7HPHcwCEO1fw4giBtpl$$tbec6GEQOqXQHYbytVXyO##Trades.Trade.Terms", "wn7HPHcwCEO1fw4giBtpl$$tbec6GEQOqXQHYbytVXyO##FICO.Score", "wn7HPHcwCEO1fw4giBtpl$$tbec6GEQOqXQHYbytVXyO##FICO.ValidFrom" ]
+        "columnsSelector" : [ "wn7HPHcwCEO1fw4giBtpl$$tbec6GEQOqXQHYbytVXyO##Trades", "wn7HPHcwCEO1fw4giBtpl$$tbec6GEQOqXQHYbytVXyO##Trades.Trade.Balance", "wn7HPHcwCEO1fw4giBtpl$$tbec6GEQOqXQHYbytVXyO##Trades.Trade.PastDue", "wn7HPHcwCEO1fw4giBtpl$$tbec6GEQOqXQHYbytVXyO##Name", "wn7HPHcwCEO1fw4giBtpl$$tbec6GEQOqXQHYbytVXyO##FICO.Score", "wn7HPHcwCEO1fw4giBtpl$$tbec6GEQOqXQHYbytVXyO##FICO", "wn7HPHcwCEO1fw4giBtpl$$tbec6GEQOqXQHYbytVXyO##FICO.ValidTo", "wn7HPHcwCEO1fw4giBtpl$$tbec6GEQOqXQHYbytVXyO##Trades.Trade.Terms", "wn7HPHcwCEO1fw4giBtpl$$tbec6GEQOqXQHYbytVXyO##Trades.Trade.AccountNumber", "wn7HPHcwCEO1fw4giBtpl$$tbec6GEQOqXQHYbytVXyO##Address", "wn7HPHcwCEO1fw4giBtpl$$tbec6GEQOqXQHYbytVXyO##SSN", "wn7HPHcwCEO1fw4giBtpl$$tbec6GEQOqXQHYbytVXyO##Trades.Trade", "wn7HPHcwCEO1fw4giBtpl$$tbec6GEQOqXQHYbytVXyO##FICO.ValidFrom", "wn7HPHcwCEO1fw4giBtpl$$tbec6GEQOqXQHYbytVXyO##Trades.Trade.DateOpened" ]
       }
     },
     "KhKGpWIjs4Cl8SPLZTLfq$$-POKihJ5Q8C6wyL38xNAA" : {

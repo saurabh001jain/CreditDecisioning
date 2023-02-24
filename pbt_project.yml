@@ -24,6 +24,17 @@ pipelines:
       - datasets/Gold_Credit_DTI_SCD2_CatalogTable
       - datasets/Gold_Credit_DTI_SCD3_CatalogTable
     dependencies: {}
+  pipelines/getSecretsFromDBXstore:
+    name: getSecretsFromDBXstore
+    description: ''
+    author: sparklearner123@gmail.com
+    mode: batch
+    language: python
+    createdAt: '2023-02-23 16:15:53'
+    datasets:
+      inputs: []
+      outputs: []
+    dependencies: {}
 datasets:
   datasets/creditReportXMLingest:
     name: creditReportXMLingest
