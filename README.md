@@ -48,3 +48,7 @@ Use python config vars on filepaths
 *** Release notes for version: 1.0.4 ***
 
 Use target CatalogTables
+
+*** Release notes for version: 1.0.5 ***
+
+Adds encryption for the PII column
