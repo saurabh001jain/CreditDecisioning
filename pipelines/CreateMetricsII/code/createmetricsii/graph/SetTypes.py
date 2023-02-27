@@ -31,5 +31,6 @@ def SetTypes(spark: SparkSession, in0: DataFrame) -> DataFrame:
         )\
           .alias(
           "DTIpercentage"
-        )
+        ), 
+        col("SSN")
     )

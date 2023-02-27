@@ -6,9 +6,9 @@ from createmetricsii.config.ConfigStore import *
 from createmetricsii.udfs.UDFs import *
 
 def Gold_Credit_DTI_SCD2_CatalogTable(spark: SparkSession, in0: DataFrame):
-    if spark.catalog._jcatalog.tableExists(f"{Config.database_name}.gold_credit_dti_SCD2"):
+    if spark.catalog._jcatalog.tableExists(f"lineage_data.default.sparklearnertest"):
         from delta.tables import DeltaTable, DeltaMergeBuilder
-        existingTable = DeltaTable.forName(spark, f"{Config.database_name}.gold_credit_dti_SCD2")
+        existingTable = DeltaTable.forName(spark, f"lineage_data.default.sparklearnertest")
         updatesDF = in0.withColumn("minFlag", lit("true")).withColumn("maxFlag", lit("true"))
         existingDF = existingTable.toDF()
         updateColumns = updatesDF.columns
@@ -42,4 +42,4 @@ def Gold_Credit_DTI_SCD2_CatalogTable(spark: SparkSession, in0: DataFrame):
             .format("delta")\
             .option("overwriteSchema", True)\
             .mode("overwrite")\
-            .saveAsTable(f"{Config.database_name}.gold_credit_dti_SCD2")
+            .saveAsTable(f"lineage_data.default.sparklearnertest")

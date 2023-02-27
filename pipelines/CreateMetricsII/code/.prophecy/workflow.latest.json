@@ -45,7 +45,7 @@
       },
       "fabrics" : { },
       "instances" : { },
-      "selected" : "2019",
+      "selected" : "2018",
       "nonEditable" : [ ],
       "isSubscribedPipelineWithPipelineConfigs" : false
     },
@@ -136,6 +136,12 @@
     "sourcePort" : "bxMpssXtB3F05oFQMyC0c$$5TwbaYZN7nqudxtrQsRYd",
     "target" : "TNYwAW2yHI9S_Hgz76Rcx$$05lj5g4WgLvV_PIj_Q5Vd",
     "targetPort" : "QooEdAmF-J1U_Ywc5q8pt$$UW6kIgIV19gtTeTtyY7Zx"
+  }, {
+    "id" : "rAH5sz-XpVLJxtidvSHe9",
+    "source" : "AAgn-5OHZb03YRNiLBKlY$$FtiRYhdJB5Tlr_mVxkchu",
+    "sourcePort" : "bxMpssXtB3F05oFQMyC0c$$5TwbaYZN7nqudxtrQsRYd",
+    "target" : "CIXEXco_WLYuFmMpIGscl$$z0ORKQ9IMINxwmLhwv5KH",
+    "targetPort" : "V6d7oRr7wXVlf3Lhznhw2$$4EYpX0pxBzT_MBPXeLm6W"
   } ],
   "processes" : {
     "aPeYATByh614Gjj3qZQrE$$3SwhqmSqJelTVAgOHywkS" : {
@@ -237,10 +243,17 @@
             "expression" : "100 * cast(((TradLoanAmount + BNPLLoanAmount) / cast(ReportedIncome / 12 as long)) as decimal(13,4))"
           },
           "description" : ""
+        }, {
+          "target" : "SSN",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "SSN"
+          },
+          "description" : ""
         } ],
         "importString" : "",
         "activeTab" : "expressions",
-        "columnsSelector" : [ "uhGeqHBWBEEtSTRjgOzlq$$RT_EsuKSzLn2SpR3B2q_E##TradLoanAmount", "uhGeqHBWBEEtSTRjgOzlq$$RT_EsuKSzLn2SpR3B2q_E##BNPLLoanAmount", "uhGeqHBWBEEtSTRjgOzlq$$RT_EsuKSzLn2SpR3B2q_E##FicoScore", "uhGeqHBWBEEtSTRjgOzlq$$RT_EsuKSzLn2SpR3B2q_E##Name", "uhGeqHBWBEEtSTRjgOzlq$$RT_EsuKSzLn2SpR3B2q_E##ReportedIncome", "uhGeqHBWBEEtSTRjgOzlq$$RT_EsuKSzLn2SpR3B2q_E##FicoValidFrom", "uhGeqHBWBEEtSTRjgOzlq$$RT_EsuKSzLn2SpR3B2q_E##FicoValidTo" ]
+        "columnsSelector" : [ "uhGeqHBWBEEtSTRjgOzlq$$RT_EsuKSzLn2SpR3B2q_E##BNPLLoanAmount", "uhGeqHBWBEEtSTRjgOzlq$$RT_EsuKSzLn2SpR3B2q_E##ReportedIncome", "uhGeqHBWBEEtSTRjgOzlq$$RT_EsuKSzLn2SpR3B2q_E##FicoScore", "uhGeqHBWBEEtSTRjgOzlq$$RT_EsuKSzLn2SpR3B2q_E##Name", "uhGeqHBWBEEtSTRjgOzlq$$RT_EsuKSzLn2SpR3B2q_E##SSN", "uhGeqHBWBEEtSTRjgOzlq$$RT_EsuKSzLn2SpR3B2q_E##FicoValidTo", "uhGeqHBWBEEtSTRjgOzlq$$RT_EsuKSzLn2SpR3B2q_E##TradLoanAmount", "uhGeqHBWBEEtSTRjgOzlq$$RT_EsuKSzLn2SpR3B2q_E##FicoValidFrom" ]
       }
     },
     "cltVq2nHwyFpyOskRAAtK$$PP1Tlnivebg50_ETWsobI" : {
@@ -320,6 +333,41 @@
       },
       "properties" : {
         "datasetId" : "datasets/LexisNexis_json"
+      }
+    },
+    "CIXEXco_WLYuFmMpIGscl$$z0ORKQ9IMINxwmLhwv5KH" : {
+      "id" : "CIXEXco_WLYuFmMpIGscl$$z0ORKQ9IMINxwmLhwv5KH",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "Reformat_1",
+        "slug" : "Reformat_1",
+        "x" : 500,
+        "y" : 380,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "V6d7oRr7wXVlf3Lhznhw2$$4EYpX0pxBzT_MBPXeLm6W",
+          "slug" : "in0",
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "v4l4dv7YXg7xoPYeskAvW$$_uOEXxTRSspyMgxEh9SmT",
+          "slug" : "out",
+          "isStreaming" : false
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "importLanguage" : "python",
+        "expressions" : [ ],
+        "importString" : "",
+        "activeTab" : "expressions",
+        "columnsSelector" : [ ]
       }
     },
     "TNYwAW2yHI9S_Hgz76Rcx$$05lj5g4WgLvV_PIj_Q5Vd" : {
@@ -445,7 +493,7 @@
         "x" : 920,
         "y" : 320,
         "phase" : 0,
-        "cache" : false,
+        "cache" : true,
         "detailedStats" : false,
         "isImported" : false
       },
@@ -540,6 +588,14 @@
           },
           "description" : "",
           "_row_id" : null
+        }, {
+          "target" : "SSN",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.SSN"
+          },
+          "description" : "",
+          "_row_id" : null
         } ],
         "hints" : [ {
           "id" : "8MYQXyv6v72fk-BDwOo5-$$G8BVT3la2atdOYZNjcao4",
@@ -554,7 +610,7 @@
         } ],
         "allIn1" : null,
         "activeTab" : "expressions",
-        "columnsSelector" : [ ],
+        "columnsSelector" : [ "8Ww5kmRCza2Fw8yld2a6V$$rB8cVtePiGiV5a0ITEwFC##Name", "8MYQXyv6v72fk-BDwOo5-$$G8BVT3la2atdOYZNjcao4##Name", "8MYQXyv6v72fk-BDwOo5-$$G8BVT3la2atdOYZNjcao4##ReportedIncome", "8Ww5kmRCza2Fw8yld2a6V$$rB8cVtePiGiV5a0ITEwFC##Balance", "8Ww5kmRCza2Fw8yld2a6V$$rB8cVtePiGiV5a0ITEwFC##MonthlyBNPLLoanAmount", "8Ww5kmRCza2Fw8yld2a6V$$rB8cVtePiGiV5a0ITEwFC##Name", "8MYQXyv6v72fk-BDwOo5-$$G8BVT3la2atdOYZNjcao4##SSN", "8MYQXyv6v72fk-BDwOo5-$$G8BVT3la2atdOYZNjcao4##ValidFrom", "8MYQXyv6v72fk-BDwOo5-$$G8BVT3la2atdOYZNjcao4##ValidTo", "8MYQXyv6v72fk-BDwOo5-$$G8BVT3la2atdOYZNjcao4##TULoanAmount", "8MYQXyv6v72fk-BDwOo5-$$G8BVT3la2atdOYZNjcao4##Score" ],
         "allIn0" : null,
         "whereClause" : null,
         "headAlias" : "in0"
@@ -680,7 +736,7 @@
         "x" : 720,
         "y" : 220,
         "phase" : 0,
-        "cache" : false,
+        "cache" : true,
         "detailedStats" : false,
         "isImported" : false
       },
@@ -742,10 +798,17 @@
             "expression" : "FICO.ValidTo"
           },
           "description" : ""
+        }, {
+          "target" : "SSN",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "SSN"
+          },
+          "description" : ""
         } ],
         "importString" : "",
         "activeTab" : "expressions",
-        "columnsSelector" : [ ]
+        "columnsSelector" : [ "ar0M8oXLTJcIYCHdcYXvi$$wmRwvwSk4baGD7kWEqsO6##Name", "ar0M8oXLTJcIYCHdcYXvi$$wmRwvwSk4baGD7kWEqsO6##FICO", "ar0M8oXLTJcIYCHdcYXvi$$wmRwvwSk4baGD7kWEqsO6##FICO.ValidFrom", "ar0M8oXLTJcIYCHdcYXvi$$wmRwvwSk4baGD7kWEqsO6##Trades", "ar0M8oXLTJcIYCHdcYXvi$$wmRwvwSk4baGD7kWEqsO6##Trades.Trade", "ar0M8oXLTJcIYCHdcYXvi$$wmRwvwSk4baGD7kWEqsO6##REPORTED_INCOME", "ar0M8oXLTJcIYCHdcYXvi$$wmRwvwSk4baGD7kWEqsO6##FICO.ValidTo", "ar0M8oXLTJcIYCHdcYXvi$$wmRwvwSk4baGD7kWEqsO6##SSN", "ar0M8oXLTJcIYCHdcYXvi$$wmRwvwSk4baGD7kWEqsO6##FICO.Score" ]
       }
     },
     "x30qk1Z08MFSYPUeEzatn$$gi4B0qVoxN74AV01cep70" : {

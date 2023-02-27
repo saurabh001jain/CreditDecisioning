@@ -72,3 +72,10 @@ schema:
       description: ''
       mappings: []
       tags: []
+  - name: SSN
+    type: binary
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
