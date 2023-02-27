@@ -1,7 +1,7 @@
 name: CreditDecisioningV1
 description: 'Integrate buy now pay later data, tradelines, and reported income to
   understand a potential banking customer''s financial profile. '
-version: 1.0.5
+version: 1.0.6
 author: sparklearner123@gmail.com
 language: python
 buildSystem: wheel
