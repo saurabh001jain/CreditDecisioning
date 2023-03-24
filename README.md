@@ -52,3 +52,7 @@ Use target CatalogTables
 *** Release notes for version: 1.0.5 ***
 
 Adds encryption for the PII column
+
+*** Release notes for version: 1.0.6 ***
+
+writes to a specific catalog so lineage can be demonstrated in unity catalog
