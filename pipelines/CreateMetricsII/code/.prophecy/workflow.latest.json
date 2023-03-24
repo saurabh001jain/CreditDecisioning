@@ -50,7 +50,7 @@
       },
       "fabrics" : { },
       "instances" : { },
-      "selected" : "2021",
+      "selected" : "2018",
       "nonEditable" : [ ],
       "isSubscribedPipelineWithPipelineConfigs" : false
     },
@@ -96,12 +96,6 @@
     "target" : "NWqyStrDFI5lb66TsP2tE$$cdm7KJDxEKk-ysJpuTik8",
     "targetPort" : "ar0M8oXLTJcIYCHdcYXvi$$wmRwvwSk4baGD7kWEqsO6"
   }, {
-    "id" : "5V5qcwGP3jaGaRgb5jTqG",
-    "source" : "ddQl4x6Rmj1lcsAk2ls15$$fwiFLOezcguZi7VqQVKa0",
-    "sourcePort" : "_IfC9NlQcHqSiPVlZGP-t$$zjQUJ2UI4tAG5WBR_ePuH",
-    "target" : "3m3q8W43Fyih57opvmspx$$cwBzNvNzNZBzcWB_sRxPV",
-    "targetPort" : "nVUfXaIPsaDP9gYywCmLp$$x-aJOXq75CBxp99BgWbMr"
-  }, {
     "id" : "n6NP4_FQylpQj8sLu5oiq",
     "source" : "3m3q8W43Fyih57opvmspx$$cwBzNvNzNZBzcWB_sRxPV",
     "sourcePort" : "C2oXMOuQnraxEqpwk9U96$$ehNwGcSVz4bp4gA6jygaE",
@@ -132,27 +126,21 @@
     "target" : "TNYwAW2yHI9S_Hgz76Rcx$$05lj5g4WgLvV_PIj_Q5Vd",
     "targetPort" : "QooEdAmF-J1U_Ywc5q8pt$$UW6kIgIV19gtTeTtyY7Zx"
   }, {
-    "id" : "ih0uHPqQzKyDElTGozpOT",
-    "source" : "ddQl4x6Rmj1lcsAk2ls15$$fwiFLOezcguZi7VqQVKa0",
-    "sourcePort" : "_IfC9NlQcHqSiPVlZGP-t$$zjQUJ2UI4tAG5WBR_ePuH",
-    "target" : "lY1ipeyL0qp-q6zYCHYJu$$CV_jVFOrbKnWleADY49RS",
-    "targetPort" : "_WE07P5rL9xDnr8KVK7GW$$qq4fB6VmH3i-L4ZkzwNvo"
-  }, {
-    "id" : "eD2m2372HgaRU3Fl-Fc3r$$RQuIB7h0DVqZwyDJjR2NN",
-    "source" : "nLIeU1vq5Y1haW-6Z5SHm$$bTVNtL8ujdRPnsmrmSeF8",
-    "sourcePort" : "-DKYPXr6cpyCf0m3aYm9R$$ekx_RsHVb4LM-Y1iIieoW",
-    "target" : "RV8UrM03Opi1MsP5OA2ai$$WUaF5oV_huJciB2vUFspf",
-    "targetPort" : "c4TQTd-5n9KQe06SCPJpK$$8QVFgoFv9BHbzgMmbyKVM"
-  }, {
     "id" : "sS2ItOR-3kGaI38qKjAp4",
     "source" : "KhKGpWIjs4Cl8SPLZTLfq$$-POKihJ5Q8C6wyL38xNAA",
     "sourcePort" : "8dhc6TDyIigVGNa5lrrVF$$z2LiDxgpPswa2reGpVW0x",
     "target" : "AAgn-5OHZb03YRNiLBKlY$$FtiRYhdJB5Tlr_mVxkchu",
     "targetPort" : "wn7HPHcwCEO1fw4giBtpl$$tbec6GEQOqXQHYbytVXyO"
   }, {
-    "id" : "azaMGs2iujDC85f2dL4VG",
-    "source" : "nLIeU1vq5Y1haW-6Z5SHm$$bTVNtL8ujdRPnsmrmSeF8",
-    "sourcePort" : "-DKYPXr6cpyCf0m3aYm9R$$ekx_RsHVb4LM-Y1iIieoW",
+    "id" : "loYaNhIXgKOgDh9zlJ_uw",
+    "source" : "N6nXjNxoMWy6i4Av0WOE0$$M8e_l-YUjezOKR_eVGJ1Z",
+    "sourcePort" : "fK7eCK8Hm0cxpL2C6PvQT$$-S_Zen0m-MUPs4tUCSdUm",
+    "target" : "3m3q8W43Fyih57opvmspx$$cwBzNvNzNZBzcWB_sRxPV",
+    "targetPort" : "nVUfXaIPsaDP9gYywCmLp$$x-aJOXq75CBxp99BgWbMr"
+  }, {
+    "id" : "gRqati2FLdzyxeOnJQYYv",
+    "source" : "bQKwvQWyTBmCYUT5nc8YA$$zdkxyG8d7vWG3Vcd7rRZv",
+    "sourcePort" : "7Iuz6PY5yaZawwC_SD9vF$$EfdP5cGfPOJTO90ougkt0",
     "target" : "TNYwAW2yHI9S_Hgz76Rcx$$05lj5g4WgLvV_PIj_Q5Vd",
     "targetPort" : "AN04Ol2gVwqedqd3ng8TO$$9sn2ssT3wpjmhngk6Vm-_"
   } ],
@@ -378,192 +366,6 @@
         "scriptMethodFooter" : "    return "
       }
     },
-    "lY1ipeyL0qp-q6zYCHYJu$$CV_jVFOrbKnWleADY49RS" : {
-      "id" : "lY1ipeyL0qp-q6zYCHYJu$$CV_jVFOrbKnWleADY49RS",
-      "component" : "Target",
-      "metadata" : {
-        "label" : "LexisNexisData",
-        "slug" : "LexisNexisData",
-        "x" : 460,
-        "y" : 700,
-        "phase" : 0,
-        "cache" : false,
-        "detailedStats" : false,
-        "isImported" : false
-      },
-      "ports" : {
-        "inputs" : [ {
-          "id" : "_WE07P5rL9xDnr8KVK7GW$$qq4fB6VmH3i-L4ZkzwNvo",
-          "slug" : "in0",
-          "schema" : {
-            "type" : "struct",
-            "fields" : [ {
-              "name" : "BNPL_data",
-              "type" : {
-                "type" : "array",
-                "elementType" : {
-                  "type" : "struct",
-                  "fields" : [ {
-                    "name" : "balance",
-                    "type" : "long",
-                    "nullable" : true,
-                    "metadata" : {
-                      "description" : "",
-                      "mappings" : [ ],
-                      "tags" : [ ]
-                    }
-                  }, {
-                    "name" : "lender_name",
-                    "type" : "string",
-                    "nullable" : true,
-                    "metadata" : {
-                      "description" : "",
-                      "mappings" : [ ],
-                      "tags" : [ ]
-                    }
-                  }, {
-                    "name" : "loan_id",
-                    "type" : "long",
-                    "nullable" : true,
-                    "metadata" : {
-                      "description" : "",
-                      "mappings" : [ ],
-                      "tags" : [ ]
-                    }
-                  }, {
-                    "name" : "monthly_loan_amount",
-                    "type" : "long",
-                    "nullable" : true,
-                    "metadata" : {
-                      "description" : "",
-                      "mappings" : [ ],
-                      "tags" : [ ]
-                    }
-                  }, {
-                    "name" : "name",
-                    "type" : "string",
-                    "nullable" : true,
-                    "metadata" : {
-                      "description" : "",
-                      "mappings" : [ ],
-                      "tags" : [ ]
-                    }
-                  }, {
-                    "name" : "past_due",
-                    "type" : "long",
-                    "nullable" : true,
-                    "metadata" : {
-                      "description" : "",
-                      "mappings" : [ ],
-                      "tags" : [ ]
-                    }
-                  }, {
-                    "name" : "processor",
-                    "type" : "string",
-                    "nullable" : true,
-                    "metadata" : {
-                      "description" : "",
-                      "mappings" : [ ],
-                      "tags" : [ ]
-                    }
-                  }, {
-                    "name" : "term",
-                    "type" : "string",
-                    "nullable" : true,
-                    "metadata" : {
-                      "description" : "",
-                      "mappings" : [ ],
-                      "tags" : [ ]
-                    }
-                  } ]
-                },
-                "containsNull" : true
-              },
-              "nullable" : true,
-              "metadata" : {
-                "description" : "",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            } ]
-          },
-          "isStreaming" : false
-        } ],
-        "outputs" : [ ],
-        "selectedInputFields" : [ ],
-        "isCustomOutputSchema" : false
-      },
-      "properties" : {
-        "datasetId" : "datasets/LexisNexisData"
-      }
-    },
-    "RV8UrM03Opi1MsP5OA2ai$$WUaF5oV_huJciB2vUFspf" : {
-      "id" : "RV8UrM03Opi1MsP5OA2ai$$WUaF5oV_huJciB2vUFspf",
-      "component" : "Target",
-      "metadata" : {
-        "label" : "Income",
-        "slug" : "Income",
-        "x" : 460,
-        "y" : 0,
-        "phase" : 0,
-        "cache" : false,
-        "detailedStats" : false,
-        "isImported" : false
-      },
-      "ports" : {
-        "inputs" : [ {
-          "id" : "c4TQTd-5n9KQe06SCPJpK$$8QVFgoFv9BHbzgMmbyKVM",
-          "slug" : "in0",
-          "schema" : {
-            "type" : "struct",
-            "fields" : [ {
-              "name" : "CUSTOMER_ID",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "CUSTOMER_NAME",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "REPORTED_INCOME",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "DOB",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            } ]
-          },
-          "isStreaming" : false
-        } ],
-        "outputs" : [ ],
-        "selectedInputFields" : [ ],
-        "isCustomOutputSchema" : false
-      },
-      "properties" : {
-        "datasetId" : "datasets/Income"
-      }
-    },
     "YrSKxHsmlSh_dqYaITZ9o$$QzMhUL3qaTck61GywsvIS" : {
       "id" : "YrSKxHsmlSh_dqYaITZ9o$$QzMhUL3qaTck61GywsvIS",
       "component" : "Target",
@@ -694,38 +496,12 @@
         "datasetId" : "datasets/Gold_Credit_DTI_SCD1_CatalogTable"
       }
     },
-    "ddQl4x6Rmj1lcsAk2ls15$$fwiFLOezcguZi7VqQVKa0" : {
-      "id" : "ddQl4x6Rmj1lcsAk2ls15$$fwiFLOezcguZi7VqQVKa0",
-      "component" : "Source",
-      "metadata" : {
-        "label" : "LexisNexis.json",
-        "slug" : "LexisNexis_json",
-        "x" : 320,
-        "y" : 520,
-        "phase" : 0,
-        "cache" : false,
-        "detailedStats" : false,
-        "isImported" : false
-      },
-      "ports" : {
-        "inputs" : [ ],
-        "outputs" : [ {
-          "id" : "_IfC9NlQcHqSiPVlZGP-t$$zjQUJ2UI4tAG5WBR_ePuH",
-          "slug" : "out"
-        } ],
-        "selectedInputFields" : [ ],
-        "isCustomOutputSchema" : false
-      },
-      "properties" : {
-        "datasetId" : "datasets/LexisNexis_json"
-      }
-    },
     "bQKwvQWyTBmCYUT5nc8YA$$zdkxyG8d7vWG3Vcd7rRZv" : {
       "id" : "bQKwvQWyTBmCYUT5nc8YA$$zdkxyG8d7vWG3Vcd7rRZv",
       "component" : "Source",
       "metadata" : {
-        "label" : "Income_1",
-        "slug" : "Income_1",
+        "label" : "Income",
+        "slug" : "Income",
         "x" : 320,
         "y" : 140,
         "phase" : 0,
@@ -1269,32 +1045,6 @@
       },
       "properties" : {
         "datasetId" : "datasets/Gold_Credit_DTI_SCD2_CatalogTable"
-      }
-    },
-    "nLIeU1vq5Y1haW-6Z5SHm$$bTVNtL8ujdRPnsmrmSeF8" : {
-      "id" : "nLIeU1vq5Y1haW-6Z5SHm$$bTVNtL8ujdRPnsmrmSeF8",
-      "component" : "Source",
-      "metadata" : {
-        "label" : "Income_OG",
-        "slug" : "Income_OG",
-        "x" : 320,
-        "y" : 0,
-        "phase" : 0,
-        "cache" : false,
-        "detailedStats" : false,
-        "isImported" : false
-      },
-      "ports" : {
-        "inputs" : [ ],
-        "outputs" : [ {
-          "id" : "-DKYPXr6cpyCf0m3aYm9R$$ekx_RsHVb4LM-Y1iIieoW",
-          "slug" : "out"
-        } ],
-        "selectedInputFields" : [ ],
-        "isCustomOutputSchema" : false
-      },
-      "properties" : {
-        "datasetId" : "datasets/CustIncomeCSV"
       }
     },
     "PljjcJUf8ZVdCz2i6m6-Q$$ov3rbKk-hmWOZ957Ea8mk" : {
@@ -2272,6 +2022,32 @@
         "importString" : "",
         "activeTab" : "expressions",
         "columnsSelector" : [ "mmQYQPGgQXAcL827IM6JY$$cwtoYHdjEbHTC-jRJqyGs##name", "mmQYQPGgQXAcL827IM6JY$$cwtoYHdjEbHTC-jRJqyGs##balance", "mmQYQPGgQXAcL827IM6JY$$cwtoYHdjEbHTC-jRJqyGs##monthly_loan_amount" ]
+      }
+    },
+    "N6nXjNxoMWy6i4Av0WOE0$$M8e_l-YUjezOKR_eVGJ1Z" : {
+      "id" : "N6nXjNxoMWy6i4Av0WOE0$$M8e_l-YUjezOKR_eVGJ1Z",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "LexisNexisData_1",
+        "slug" : "LexisNexisData_1",
+        "x" : 320,
+        "y" : 520,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "fK7eCK8Hm0cxpL2C6PvQT$$-S_Zen0m-MUPs4tUCSdUm",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/LexisNexisData"
       }
     },
     "AAgn-5OHZb03YRNiLBKlY$$FtiRYhdJB5Tlr_mVxkchu" : {

@@ -22,19 +22,16 @@ pipelines:
     artefactID: ''
     language: python
     createdAt: '2023-01-25 19:43:31'
-    modifiedAt: '2023-03-24 15:45:27'
+    modifiedAt: '2023-03-24 16:18:32'
     datasets:
       inputs:
-      - datasets/CustIncomeCSV
       - datasets/Income
-      - datasets/LexisNexis_json
+      - datasets/LexisNexisData
       - datasets/TransUnionFICOyear_xml
       outputs:
       - datasets/Gold_Credit_DTI_SCD1_CatalogTable
       - datasets/Gold_Credit_DTI_SCD2_CatalogTable
       - datasets/Gold_Credit_DTI_SCD3_CatalogTable
-      - datasets/Income
-      - datasets/LexisNexisData
     subgraphs: []
     dependencies: {}
 datasets:
@@ -718,7 +715,7 @@ datasets:
     description: ''
     author: sparklearner123@gmail.com
     createdAt: '2023-03-24 14:56:43'
-    modifiedAt: '2023-03-24 15:29:08'
+    modifiedAt: '2023-03-24 15:46:46'
     mode: batch
     physicalDatasets:
       UnityCatalogClusters:

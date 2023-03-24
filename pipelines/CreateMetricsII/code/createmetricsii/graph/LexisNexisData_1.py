@@ -5,5 +5,5 @@ from prophecy.libs import typed_lit
 from createmetricsii.config.ConfigStore import *
 from createmetricsii.udfs.UDFs import *
 
-def LexisNexisData(spark: SparkSession, in0: DataFrame):
-    in0.write.format("delta").mode("error").saveAsTable(f"lineage_data.default.LexisNexisData")
+def LexisNexisData_1(spark: SparkSession) -> DataFrame:
+    return spark.read.table(f"lineage_data.default.LexisNexisData")
