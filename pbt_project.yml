@@ -4,7 +4,14 @@ description: 'Integrate buy now pay later data, tradelines, and reported income 
 version: 1.0.5
 author: sparklearner123@gmail.com
 language: python
-buildSystem: wheel
+buildSystem: ''
+buildSystemDetails:
+  artefactID: creditdecisioningv1
+  parentArtefactID: sparklearner123gmail.com_team
+  buildSystem: wheel
+  author: null
+  createdAt: '2023-03-24 14:23:04'
+  modifiedAt: '2023-03-24 14:23:04'
 pipelines:
   pipelines/CreateMetricsII:
     name: DecisionAndAudit
@@ -12,17 +19,23 @@ pipelines:
       types 1, 2, and 3.
     author: sparklearner123@gmail.com
     mode: batch
+    artefactID: ''
     language: python
     createdAt: '2023-01-25 19:43:31'
+    modifiedAt: '2023-03-24 15:45:27'
     datasets:
       inputs:
       - datasets/CustIncomeCSV
+      - datasets/Income
       - datasets/LexisNexis_json
       - datasets/TransUnionFICOyear_xml
       outputs:
       - datasets/Gold_Credit_DTI_SCD1_CatalogTable
       - datasets/Gold_Credit_DTI_SCD2_CatalogTable
       - datasets/Gold_Credit_DTI_SCD3_CatalogTable
+      - datasets/Income
+      - datasets/LexisNexisData
+    subgraphs: []
     dependencies: {}
 datasets:
   datasets/creditReportXMLingest:
@@ -30,6 +43,7 @@ datasets:
     description: ''
     author: sparklearner123@gmail.com
     createdAt: '2023-01-20 17:01:42'
+    modifiedAt: '2023-01-20 17:01:42'
     mode: batch
     physicalDatasets:
       dev:
@@ -38,11 +52,13 @@ datasets:
         description: ''
         author: sparklearner123@gmail.com
         createdAt: '2023-01-20 17:01:42'
+        modifiedAt: '2023-01-20 17:01:42'
   datasets/ReportSCD3:
     name: ReportSCD3
     description: ''
     author: sparklearner123@gmail.com
     createdAt: '2023-01-30 00:53:44'
+    modifiedAt: '2023-01-30 00:53:44'
     mode: batch
     physicalDatasets:
       dev:
@@ -51,11 +67,13 @@ datasets:
         description: ''
         author: sparklearner123@gmail.com
         createdAt: '2023-01-30 00:53:44'
+        modifiedAt: '2023-01-30 00:53:44'
   datasets/Bureau_XML:
     name: Bureau_XML
     description: ''
     author: sparklearner123@gmail.com
     createdAt: '2023-01-18 20:54:36'
+    modifiedAt: '2023-01-18 20:54:36'
     mode: batch
     physicalDatasets:
       dev:
@@ -64,11 +82,13 @@ datasets:
         description: ''
         author: sparklearner123@gmail.com
         createdAt: '2023-01-18 20:54:36'
+        modifiedAt: '2023-01-18 20:54:36'
   datasets/loan_data:
     name: loan_data
     description: ''
     author: sparklearner123@gmail.com
     createdAt: '2022-12-21 21:29:18'
+    modifiedAt: '2022-12-21 21:29:18'
     mode: batch
     physicalDatasets:
       Photon:
@@ -77,11 +97,13 @@ datasets:
         description: ''
         author: sparklearner123@gmail.com
         createdAt: '2022-12-21 21:29:18'
+        modifiedAt: '2022-12-21 21:29:18'
   datasets/Report:
     name: Report
     description: ''
     author: sparklearner123@gmail.com
     createdAt: '2023-01-27 18:57:47'
+    modifiedAt: '2023-01-27 18:57:47'
     mode: batch
     physicalDatasets:
       dev:
@@ -90,11 +112,13 @@ datasets:
         description: ''
         author: sparklearner123@gmail.com
         createdAt: '2023-01-27 18:57:47'
+        modifiedAt: '2023-01-27 18:57:47'
   datasets/TransUnionFico_xml:
     name: TransUnionFico.xml
     description: ''
     author: sparklearner123@gmail.com
     createdAt: '2023-01-27 18:05:18'
+    modifiedAt: '2023-01-27 18:05:18'
     mode: batch
     physicalDatasets:
       dev:
@@ -103,11 +127,13 @@ datasets:
         description: ''
         author: sparklearner123@gmail.com
         createdAt: '2023-01-27 18:05:18'
+        modifiedAt: '2023-01-27 18:05:18'
   datasets/CreditXML:
     name: CreditXML
     description: ''
     author: sparklearner123@gmail.com
     createdAt: '2023-01-19 22:03:37'
+    modifiedAt: '2023-01-19 22:03:37'
     mode: batch
     physicalDatasets:
       dev:
@@ -116,11 +142,13 @@ datasets:
         description: ''
         author: sparklearner123@gmail.com
         createdAt: '2023-01-19 22:03:38'
+        modifiedAt: '2023-01-19 22:03:38'
   datasets/2020:
     name: '2020'
     description: ''
     author: sparklearner123@gmail.com
     createdAt: '2023-01-30 04:46:11'
+    modifiedAt: '2023-01-30 04:46:11'
     mode: batch
     physicalDatasets:
       dev:
@@ -129,11 +157,13 @@ datasets:
         description: ''
         author: sparklearner123@gmail.com
         createdAt: '2023-01-30 04:46:11'
+        modifiedAt: '2023-01-30 04:46:11'
   datasets/CreditReportDTI:
     name: CreditReportDTI
     description: ''
     author: sparklearner123@gmail.com
     createdAt: '2023-01-25 21:52:28'
+    modifiedAt: '2023-01-25 21:52:28'
     mode: batch
     physicalDatasets:
       dev:
@@ -142,11 +172,13 @@ datasets:
         description: ''
         author: sparklearner123@gmail.com
         createdAt: '2023-01-25 21:52:28'
+        modifiedAt: '2023-01-25 21:52:28'
   datasets/ReportLatest:
     name: ReportLatest
     description: ''
     author: sparklearner123@gmail.com
     createdAt: '2023-01-29 05:21:37'
+    modifiedAt: '2023-01-29 05:21:37'
     mode: batch
     physicalDatasets:
       dev:
@@ -155,11 +187,13 @@ datasets:
         description: ''
         author: sparklearner123@gmail.com
         createdAt: '2023-01-29 05:21:37'
+        modifiedAt: '2023-01-29 05:21:37'
   datasets/testConfig:
     name: testConfig
     description: ''
     author: sparklearner123@gmail.com
     createdAt: '2023-01-29 23:31:43'
+    modifiedAt: '2023-01-29 23:31:43'
     mode: batch
     physicalDatasets:
       dev:
@@ -168,11 +202,13 @@ datasets:
         description: ''
         author: sparklearner123@gmail.com
         createdAt: '2023-01-29 23:31:43'
+        modifiedAt: '2023-01-29 23:31:43'
   datasets/LexisNexisJSON:
     name: LexisNexisJSON
     description: ''
     author: sparklearner123@gmail.com
     createdAt: '2023-01-19 22:05:12'
+    modifiedAt: '2023-01-19 22:05:12'
     mode: batch
     physicalDatasets:
       dev:
@@ -181,11 +217,13 @@ datasets:
         description: ''
         author: sparklearner123@gmail.com
         createdAt: '2023-01-19 22:05:12'
+        modifiedAt: '2023-01-19 22:05:12'
   datasets/credit_report_and_tradelines_v2:
     name: credit_report_and_tradelines_v2
     description: ''
     author: sparklearner123@gmail.com
     createdAt: '2022-12-16 19:36:23'
+    modifiedAt: '2022-12-16 19:36:23'
     mode: batch
     physicalDatasets:
       dev:
@@ -194,11 +232,13 @@ datasets:
         description: ''
         author: sparklearner123@gmail.com
         createdAt: '2022-12-16 19:36:23'
+        modifiedAt: '2022-12-16 19:36:23'
   datasets/Profile:
     name: Profile
     description: ''
     author: sparklearner123@gmail.com
     createdAt: '2023-01-29 04:12:42'
+    modifiedAt: '2023-01-29 04:12:42'
     mode: batch
     physicalDatasets:
       dev:
@@ -207,11 +247,13 @@ datasets:
         description: ''
         author: sparklearner123@gmail.com
         createdAt: '2023-01-29 04:12:42'
+        modifiedAt: '2023-01-29 04:12:42'
   datasets/reportDTI:
     name: reportDTI
     description: ''
     author: sparklearner123@gmail.com
     createdAt: '2023-01-23 23:21:08'
+    modifiedAt: '2023-01-23 23:21:08'
     mode: batch
     physicalDatasets:
       dev:
@@ -220,11 +262,13 @@ datasets:
         description: ''
         author: sparklearner123@gmail.com
         createdAt: '2023-01-23 23:21:08'
+        modifiedAt: '2023-01-23 23:21:08'
   datasets/ReportMetrics:
     name: ReportMetrics
     description: ''
     author: sparklearner123@gmail.com
     createdAt: '2023-01-11 04:05:26'
+    modifiedAt: '2023-01-11 04:05:26'
     mode: batch
     physicalDatasets:
       dev:
@@ -233,11 +277,13 @@ datasets:
         description: ''
         author: sparklearner123@gmail.com
         createdAt: '2023-01-11 04:05:26'
+        modifiedAt: '2023-01-11 04:05:26'
   datasets/DTIlong:
     name: DTIlong
     description: ''
     author: sparklearner123@gmail.com
     createdAt: '2023-01-25 22:26:24'
+    modifiedAt: '2023-01-25 22:26:24'
     mode: batch
     physicalDatasets:
       dev:
@@ -246,11 +292,13 @@ datasets:
         description: ''
         author: sparklearner123@gmail.com
         createdAt: '2023-01-25 22:26:24'
+        modifiedAt: '2023-01-25 22:26:24'
   datasets/TransUnionFICO2018_xml:
     name: TransUnionFICO2018.xml
     description: ''
     author: sparklearner123@gmail.com
     createdAt: '2023-01-29 03:37:13'
+    modifiedAt: '2023-01-29 03:37:13'
     mode: batch
     physicalDatasets:
       dev:
@@ -259,11 +307,13 @@ datasets:
         description: ''
         author: sparklearner123@gmail.com
         createdAt: '2023-01-29 03:37:13'
+        modifiedAt: '2023-01-29 03:37:13'
   datasets/CustIncomeCSV:
     name: CustIncomeCSV
     description: ''
     author: sparklearner123@gmail.com
     createdAt: '2023-01-19 22:08:24'
+    modifiedAt: '2023-01-19 22:08:24'
     mode: batch
     physicalDatasets:
       dev:
@@ -272,11 +322,13 @@ datasets:
         description: ''
         author: sparklearner123@gmail.com
         createdAt: '2023-01-19 22:08:24'
+        modifiedAt: '2023-01-19 22:08:24'
   datasets/2019:
     name: '2019'
     description: ''
     author: sparklearner123@gmail.com
     createdAt: '2023-01-30 04:45:34'
+    modifiedAt: '2023-01-30 04:45:34'
     mode: batch
     physicalDatasets:
       dev:
@@ -285,11 +337,13 @@ datasets:
         description: ''
         author: sparklearner123@gmail.com
         createdAt: '2023-01-30 04:45:34'
+        modifiedAt: '2023-01-30 04:45:34'
   datasets/CreditReportXML:
     name: CreditReportXML
     description: ''
     author: sparklearner123@gmail.com
     createdAt: '2023-01-18 21:12:37'
+    modifiedAt: '2023-01-18 21:12:37'
     mode: batch
     physicalDatasets:
       dev:
@@ -298,11 +352,13 @@ datasets:
         description: ''
         author: sparklearner123@gmail.com
         createdAt: '2023-01-18 21:12:37'
+        modifiedAt: '2023-01-18 21:12:37'
   datasets/FICO_table_history:
     name: FICO_table_history
     description: ''
     author: sparklearner123@gmail.com
     createdAt: '2023-01-11 16:07:03'
+    modifiedAt: '2023-01-11 16:07:03'
     mode: batch
     physicalDatasets:
       dev:
@@ -311,11 +367,13 @@ datasets:
         description: ''
         author: sparklearner123@gmail.com
         createdAt: '2023-01-11 16:07:03'
+        modifiedAt: '2023-01-11 16:07:03'
   datasets/TransUnionFICO2018:
     name: TransUnionFICO2018
     description: ''
     author: sparklearner123@gmail.com
     createdAt: '2023-01-29 03:31:17'
+    modifiedAt: '2023-01-29 03:31:17'
     mode: batch
     physicalDatasets:
       dev:
@@ -324,11 +382,13 @@ datasets:
         description: ''
         author: sparklearner123@gmail.com
         createdAt: '2023-01-29 03:31:17'
+        modifiedAt: '2023-01-29 03:31:17'
   datasets/BNPL_LexisNexis_v1:
     name: BNPL_LexisNexis_v1
     description: ''
     author: sparklearner123@gmail.com
     createdAt: '2022-12-16 20:29:33'
+    modifiedAt: '2022-12-16 20:29:33'
     mode: batch
     physicalDatasets:
       dev:
@@ -337,11 +397,13 @@ datasets:
         description: ''
         author: sparklearner123@gmail.com
         createdAt: '2022-12-16 20:29:33'
+        modifiedAt: '2022-12-16 20:29:33'
   datasets/BNPLjson:
     name: BNPLjson
     description: ''
     author: sparklearner123@gmail.com
     createdAt: '2023-01-18 21:14:55'
+    modifiedAt: '2023-01-18 21:14:55'
     mode: batch
     physicalDatasets:
       dev:
@@ -350,11 +412,13 @@ datasets:
         description: ''
         author: sparklearner123@gmail.com
         createdAt: '2023-01-18 21:14:55'
+        modifiedAt: '2023-01-18 21:14:55'
   datasets/2018:
     name: '2018'
     description: ''
     author: sparklearner123@gmail.com
     createdAt: '2023-01-30 04:44:16'
+    modifiedAt: '2023-01-30 04:44:16'
     mode: batch
     physicalDatasets:
       dev:
@@ -363,11 +427,13 @@ datasets:
         description: ''
         author: sparklearner123@gmail.com
         createdAt: '2023-01-30 04:44:16'
+        modifiedAt: '2023-01-30 04:44:16'
   datasets/BNPLjsonIngest:
     name: BNPLjsonIngest
     description: ''
     author: sparklearner123@gmail.com
     createdAt: '2023-01-20 16:52:01'
+    modifiedAt: '2023-01-20 16:52:01'
     mode: batch
     physicalDatasets:
       dev:
@@ -376,11 +442,13 @@ datasets:
         description: ''
         author: sparklearner123@gmail.com
         createdAt: '2023-01-20 16:52:01'
+        modifiedAt: '2023-01-20 16:52:01'
   datasets/CreditXMLingest:
     name: CreditXMLingest
     description: ''
     author: sparklearner123@gmail.com
     createdAt: '2023-01-20 16:37:53'
+    modifiedAt: '2023-01-20 16:37:53'
     mode: batch
     physicalDatasets:
       dev:
@@ -389,11 +457,13 @@ datasets:
         description: ''
         author: sparklearner123@gmail.com
         createdAt: '2023-01-20 16:37:53'
+        modifiedAt: '2023-01-20 16:37:53'
   datasets/ReportDebtIncome:
     name: ReportDebtIncome
     description: ''
     author: sparklearner123@gmail.com
     createdAt: '2023-01-25 22:12:55'
+    modifiedAt: '2023-01-25 22:12:55'
     mode: batch
     physicalDatasets:
       dev:
@@ -402,11 +472,13 @@ datasets:
         description: ''
         author: sparklearner123@gmail.com
         createdAt: '2023-01-25 22:12:55'
+        modifiedAt: '2023-01-25 22:12:55'
   datasets/customer_info_v1:
     name: customer_info_v1
     description: ''
     author: sparklearner123@gmail.com
     createdAt: '2022-12-16 20:24:38'
+    modifiedAt: '2022-12-16 20:24:38'
     mode: batch
     physicalDatasets:
       dev:
@@ -415,11 +487,13 @@ datasets:
         description: ''
         author: sparklearner123@gmail.com
         createdAt: '2022-12-16 20:24:38'
+        modifiedAt: '2022-12-16 20:24:38'
   datasets/ReportWithHistory:
     name: ReportWithHistory
     description: ''
     author: sparklearner123@gmail.com
     createdAt: '2023-01-29 03:00:18'
+    modifiedAt: '2023-01-29 03:00:18'
     mode: batch
     physicalDatasets:
       dev:
@@ -428,11 +502,13 @@ datasets:
         description: ''
         author: sparklearner123@gmail.com
         createdAt: '2023-01-29 03:00:18'
+        modifiedAt: '2023-01-29 03:00:18'
   datasets/TransUnionFICO2019_xml:
     name: TransUnionFICO2019.xml
     description: ''
     author: sparklearner123@gmail.com
     createdAt: '2023-01-29 04:26:01'
+    modifiedAt: '2023-01-29 04:26:01'
     mode: batch
     physicalDatasets:
       dev:
@@ -441,11 +517,13 @@ datasets:
         description: ''
         author: sparklearner123@gmail.com
         createdAt: '2023-01-29 04:26:01'
+        modifiedAt: '2023-01-29 04:26:01'
   datasets/TransUnionFICOyear_xml:
     name: TransUnionFICOyear.xml
     description: ''
     author: sparklearner123@gmail.com
     createdAt: '2023-01-31 18:42:54'
+    modifiedAt: '2023-01-31 18:42:54'
     mode: batch
     physicalDatasets:
       dev:
@@ -454,11 +532,13 @@ datasets:
         description: ''
         author: sparklearner123@gmail.com
         createdAt: '2023-01-31 18:42:54'
+        modifiedAt: '2023-01-31 18:42:54'
   datasets/ReportSCD2:
     name: ReportSCD2
     description: ''
     author: sparklearner123@gmail.com
     createdAt: '2023-01-31 18:54:54'
+    modifiedAt: '2023-01-31 18:54:54'
     mode: batch
     physicalDatasets:
       dev:
@@ -467,11 +547,13 @@ datasets:
         description: ''
         author: sparklearner123@gmail.com
         createdAt: '2023-01-31 18:54:54'
+        modifiedAt: '2023-01-31 18:54:54'
   datasets/ProfilehardcodeEmail:
     name: ProfilehardcodeEmail
     description: ''
     author: sparklearner123@gmail.com
     createdAt: '2023-02-03 21:07:04'
+    modifiedAt: '2023-02-03 21:07:04'
     mode: batch
     physicalDatasets:
       dev:
@@ -480,11 +562,13 @@ datasets:
         description: ''
         author: sparklearner123@gmail.com
         createdAt: '2023-02-03 21:07:04'
+        modifiedAt: '2023-02-03 21:07:04'
   datasets/ReportPrevScoreSCD3:
     name: ReportPrevScoreSCD3
     description: ''
     author: sparklearner123@gmail.com
     createdAt: '2023-02-09 23:00:04'
+    modifiedAt: '2023-02-09 23:00:04'
     mode: batch
     physicalDatasets:
       myFabric:
@@ -493,11 +577,13 @@ datasets:
         description: ''
         author: sparklearner123@gmail.com
         createdAt: '2023-02-09 23:00:04'
+        modifiedAt: '2023-02-09 23:00:04'
   datasets/SCD3Report:
     name: SCD3Report
     description: ''
     author: sparklearner123@gmail.com
     createdAt: '2023-02-10 00:07:23'
+    modifiedAt: '2023-02-10 00:07:23'
     mode: batch
     physicalDatasets:
       myFabric:
@@ -506,11 +592,13 @@ datasets:
         description: ''
         author: sparklearner123@gmail.com
         createdAt: '2023-02-10 00:07:23'
+        modifiedAt: '2023-02-10 00:07:23'
   datasets/LexisNexis_json:
     name: LexisNexis.json
     description: ''
     author: sparklearner123@gmail.com
     createdAt: '2023-02-17 21:39:15'
+    modifiedAt: '2023-02-17 21:39:15'
     mode: batch
     physicalDatasets:
       UnityCatalogClusters:
@@ -519,11 +607,13 @@ datasets:
         description: ''
         author: sparklearner123@gmail.com
         createdAt: '2023-02-17 21:39:15'
+        modifiedAt: '2023-02-17 21:39:15'
   datasets/ReportSCD3_UC:
     name: ReportSCD3_UC
     description: ''
     author: sparklearner123@gmail.com
     createdAt: '2023-02-18 00:56:32'
+    modifiedAt: '2023-02-18 00:56:32'
     mode: batch
     physicalDatasets:
       UnityCatalogClusters:
@@ -532,11 +622,13 @@ datasets:
         description: ''
         author: sparklearner123@gmail.com
         createdAt: '2023-02-18 00:56:32'
+        modifiedAt: '2023-02-18 00:56:32'
   datasets/gold_credit_dti_SCD3_UC_test:
     name: gold_credit_dti_SCD3_UC_test
     description: ''
     author: sparklearner123@gmail.com
     createdAt: '2023-02-18 05:26:38'
+    modifiedAt: '2023-02-18 05:26:38'
     mode: batch
     physicalDatasets:
       UnityCatalogClusters:
@@ -545,11 +637,13 @@ datasets:
         description: ''
         author: sparklearner123@gmail.com
         createdAt: '2023-02-18 05:26:38'
+        modifiedAt: '2023-02-18 05:26:38'
   datasets/gold_credit_dti_SCD3_UC_test2:
     name: gold_credit_dti_SCD3_UC_test2
     description: ''
     author: sparklearner123@gmail.com
     createdAt: '2023-02-18 05:37:18'
+    modifiedAt: '2023-02-18 05:37:18'
     mode: batch
     physicalDatasets:
       UnityCatalogClusters:
@@ -558,11 +652,13 @@ datasets:
         description: ''
         author: sparklearner123@gmail.com
         createdAt: '2023-02-18 05:37:18'
+        modifiedAt: '2023-02-18 05:37:18'
   datasets/Gold_Credit_DTI_SCD1_CatalogTable:
     name: Gold_Credit_DTI_SCD1_CatalogTable
     description: ''
     author: sparklearner123@gmail.com
     createdAt: '2023-02-21 22:39:33'
+    modifiedAt: '2023-03-24 15:42:42'
     mode: batch
     physicalDatasets:
       UnityCatalogClusters:
@@ -571,11 +667,13 @@ datasets:
         description: ''
         author: sparklearner123@gmail.com
         createdAt: '2023-02-21 22:39:33'
+        modifiedAt: '2023-02-21 22:39:33'
   datasets/Gold_Credit_DTI_SCD2_CatalogTable:
     name: Gold_Credit_DTI_SCD2_CatalogTable
     description: ''
     author: sparklearner123@gmail.com
     createdAt: '2023-02-21 22:43:09'
+    modifiedAt: '2023-03-24 15:37:37'
     mode: batch
     physicalDatasets:
       UnityCatalogClusters:
@@ -584,11 +682,13 @@ datasets:
         description: ''
         author: sparklearner123@gmail.com
         createdAt: '2023-02-21 22:43:09'
+        modifiedAt: '2023-02-21 22:43:09'
   datasets/Gold_Credit_DTI_SCD3_CatalogTable:
     name: Gold_Credit_DTI_SCD3_CatalogTable
     description: ''
     author: sparklearner123@gmail.com
     createdAt: '2023-02-21 22:46:09'
+    modifiedAt: '2023-03-24 15:42:24'
     mode: batch
     physicalDatasets:
       UnityCatalogClusters:
@@ -597,6 +697,67 @@ datasets:
         description: ''
         author: sparklearner123@gmail.com
         createdAt: '2023-02-21 22:46:09'
+        modifiedAt: '2023-02-21 22:46:09'
+  datasets/test:
+    name: test
+    description: ''
+    author: sparklearner123@gmail.com
+    createdAt: '2023-03-24 14:55:47'
+    modifiedAt: '2023-03-24 14:55:47'
+    mode: batch
+    physicalDatasets:
+      UnityCatalogClusters:
+        fabricId: 1609
+        datasetType: Database
+        description: ''
+        author: sparklearner123@gmail.com
+        createdAt: '2023-03-24 14:55:47'
+        modifiedAt: '2023-03-24 14:55:47'
+  datasets/Income:
+    name: Income
+    description: ''
+    author: sparklearner123@gmail.com
+    createdAt: '2023-03-24 14:56:43'
+    modifiedAt: '2023-03-24 15:29:08'
+    mode: batch
+    physicalDatasets:
+      UnityCatalogClusters:
+        fabricId: 1609
+        datasetType: Database
+        description: ''
+        author: sparklearner123@gmail.com
+        createdAt: '2023-03-24 14:56:43'
+        modifiedAt: '2023-03-24 14:56:43'
+  datasets/LexisNexisData:
+    name: LexisNexisData
+    description: ''
+    author: sparklearner123@gmail.com
+    createdAt: '2023-03-24 15:05:28'
+    modifiedAt: '2023-03-24 15:05:29'
+    mode: batch
+    physicalDatasets:
+      UnityCatalogClusters:
+        fabricId: 1609
+        datasetType: Database
+        description: ''
+        author: sparklearner123@gmail.com
+        createdAt: '2023-03-24 15:05:29'
+        modifiedAt: '2023-03-24 15:05:29'
+  datasets/TransUnionData:
+    name: TransUnionData
+    description: ''
+    author: sparklearner123@gmail.com
+    createdAt: '2023-03-24 15:06:43'
+    modifiedAt: '2023-03-24 15:06:43'
+    mode: batch
+    physicalDatasets:
+      UnityCatalogClusters:
+        fabricId: 1609
+        datasetType: Database
+        description: ''
+        author: sparklearner123@gmail.com
+        createdAt: '2023-03-24 15:06:43'
+        modifiedAt: '2023-03-24 15:06:43'
 templates: {}
 jobs:
   jobs/DTIjob:
@@ -622,52 +783,72 @@ jobs:
       clusterId: null
     enabled: false
     createdAt: '2023-01-18 02:30:06'
+    modifiedAt: '2023-01-18 02:30:06'
     author: sparklearner123@gmail.com
-libraries: []
+functions:
+  author: null
+  createdAt: '2023-03-24 14:23:04'
+  modifiedAt: '2023-03-24 14:23:04'
+  gems: {}
+  udfs: {}
+  udafs: {}
+  expressions: {}
 subgraphs:
   subgraphs/BNPL_API:
     name: BNPL_API
     description: ''
     author: sparklearner123@gmail.com
     language: python
+    artefactID: ''
     mode: batch
     createdAt: '2023-01-18 01:53:19'
+    modifiedAt: '2023-01-18 01:53:19'
   subgraphs/CreateDTIMetrics:
     name: CreateDTIMetrics
     description: ''
     author: sparklearner123@gmail.com
     language: python
+    artefactID: ''
     mode: batch
     createdAt: '2023-01-11 16:35:29'
+    modifiedAt: '2023-01-11 16:35:29'
   subgraphs/CalculateDebtAndIncome:
     name: CalculateDebtAndIncome
     description: ''
     author: sparklearner123@gmail.com
     language: python
+    artefactID: ''
     mode: batch
     createdAt: '2023-01-11 03:28:24'
+    modifiedAt: '2023-01-11 03:28:24'
   subgraphs/TestAuditPrepGraph:
     name: TestAuditPrepGraph
     description: ''
     author: sparklearner123@gmail.com
     language: python
+    artefactID: ''
     mode: batch
     createdAt: '2023-01-19 18:53:13'
+    modifiedAt: '2023-01-19 18:53:13'
   subgraphs/PrepDTI:
     name: PrepDTI
     description: 'A standard pattern we use for parsing and unioning data from TransUnion,
       LexisNexis, and self-reported credit. '
     author: sparklearner123@gmail.com
     language: python
+    artefactID: ''
     mode: batch
     createdAt: '2023-01-19 00:59:26'
+    modifiedAt: '2023-01-19 00:59:26'
   subgraphs/CreditDecisionLogic:
     name: CreditDecisionLogic
     description: ''
     author: sparklearner123@gmail.com
     language: python
+    artefactID: ''
     mode: batch
     createdAt: '2023-01-31 22:46:53'
+    modifiedAt: '2023-01-31 22:46:53'
 sqlModels: {}
 sqlPipeline: null
 dependencies: []

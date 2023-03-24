@@ -5,13 +5,9 @@ from prophecy.libs import typed_lit
 from createmetricsii.config.ConfigStore import *
 from createmetricsii.udfs.UDFs import *
 
-def Income(spark: SparkSession) -> DataFrame:
-    return spark.read\
-        .schema(
-          StructType([
-            StructField("CUSTOMER_ID", StringType(), True), StructField("CUSTOMER_NAME", StringType(), True), StructField("REPORTED_INCOME", StringType(), True), StructField("DOB", StringType(), True)
-        ])
-        )\
-        .option("header", True)\
-        .option("sep", "|")\
-        .csv("dbfs:/Prophecy/finserv/ingest/customer/customer.csv")
+def Income(spark: SparkSession, in0: DataFrame):
+    in0.write\
+        .format("delta")\
+        .option("path", "/Filestore/delta/sparklearner/DecisionAndAudit/Income")\
+        .mode("error")\
+        .saveAsTable(f"lineage_data.default.income")

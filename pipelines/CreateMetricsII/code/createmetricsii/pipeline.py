@@ -8,10 +8,10 @@ from createmetricsii.graph import *
 
 def pipeline(spark: SparkSession) -> None:
     IngestData(spark)
-    df_Income = Income(spark)
     df_TransUnionFico = TransUnionFico(spark)
     df_EncryptPII = EncryptPII(spark, df_TransUnionFico)
-    df_ByCustomerID = ByCustomerID(spark, df_Income, df_EncryptPII)
+    df_Income_OG = Income_OG(spark)
+    df_ByCustomerID = ByCustomerID(spark, df_Income_OG, df_EncryptPII)
     df_ParseLoanAmount = ParseLoanAmount(spark, df_ByCustomerID)
     df_ParseLoanAmount = df_ParseLoanAmount.cache()
     df_LexisNexis_json = LexisNexis_json(spark)
@@ -20,8 +20,10 @@ def pipeline(spark: SparkSession) -> None:
     df_ByName = ByName(spark, df_ParseLoanAmount, df_Refine)
     df_ByName = df_ByName.cache()
     df_SetTypes = SetTypes(spark, df_ByName)
+    LexisNexisData(spark, df_LexisNexis_json)
+    Income(spark, df_Income_OG)
     Gold_Credit_DTI_SCD1_CatalogTable(spark, df_SetTypes)
-    df_Reformat_1 = Reformat_1(spark, df_EncryptPII)
+    df_Income_1 = Income_1(spark)
     Gold_Credit_DTI_SCD2_CatalogTable(spark, df_SetTypes)
     Gold_Credit_DTI_SCD3_CatalogTable(spark, df_SetTypes)
 

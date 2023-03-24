@@ -6,13 +6,13 @@ from createmetricsii.config.ConfigStore import *
 from createmetricsii.udfs.UDFs import *
 
 def Gold_Credit_DTI_SCD3_CatalogTable(spark: SparkSession, in0: DataFrame):
-    if spark.catalog._jcatalog.tableExists(f"{Config.database_name}.gold_credit_dti_SCD3_UC"):
+    if spark.catalog._jcatalog.tableExists(f"FSIdemos.gold.Credit_DTI_SCD3"):
         from delta.tables import DeltaTable, DeltaMergeBuilder
         matched_expr = {}
         matched_expr["previousFicoScore"] = col("target.FicoScore")
         matched_expr["FicoScore"] = col("source.FicoScore")
         DeltaTable\
-            .forName(spark, f"{Config.database_name}.gold_credit_dti_SCD3_UC")\
+            .forName(spark, f"FSIdemos.gold.Credit_DTI_SCD3")\
             .alias("target")\
             .merge(in0.alias("source"), (col("target.Name") == col("source.Name")))\
             .whenMatchedUpdate(
@@ -26,4 +26,4 @@ def Gold_Credit_DTI_SCD3_CatalogTable(spark: SparkSession, in0: DataFrame):
             .format("delta")\
             .option("overwriteSchema", True)\
             .mode("overwrite")\
-            .saveAsTable(f"{Config.database_name}.gold_credit_dti_SCD3_UC")
+            .saveAsTable(f"FSIdemos.gold.Credit_DTI_SCD3")
