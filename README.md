@@ -56,3 +56,7 @@ Adds encryption for the PII column
 *** Release notes for version: 1.0.6 ***
 
 writes to a specific catalog so lineage can be demonstrated in unity catalog
+
+*** Release notes for version: 1.0.7 ***
+
+Updated Income and TransUnion data to start in UnityCatalog
