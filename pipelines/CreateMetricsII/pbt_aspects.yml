@@ -6,3 +6,5 @@ configurations:
 - '2021'
 - default
 dependencies: []
+pipelineVersion:
+  version: '2'

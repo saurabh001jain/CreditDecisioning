@@ -1,23 +1,21 @@
 from pyspark.sql import *
 from pyspark.sql.functions import *
 from pyspark.sql.types import *
+from prophecy.utils import *
 from prophecy.libs import typed_lit
 from createmetricsii.config.ConfigStore import *
 from createmetricsii.udfs.UDFs import *
 
 def Gold_Credit_DTI_SCD3_CatalogTable(spark: SparkSession, in0: DataFrame):
-    if spark.catalog._jcatalog.tableExists(f"FSIdemos.gold.Credit_DTI_SCD3"):
+    if spark.catalog._jcatalog.tableExists("`FSIdemos.gold`.`Credit_DTI_SCD3`"):
         from delta.tables import DeltaTable, DeltaMergeBuilder
-        matched_expr = {}
-        matched_expr["previousFicoScore"] = col("target.FicoScore")
-        matched_expr["FicoScore"] = col("source.FicoScore")
         DeltaTable\
-            .forName(spark, f"FSIdemos.gold.Credit_DTI_SCD3")\
+            .forName(spark, "`FSIdemos.gold`.`Credit_DTI_SCD3`")\
             .alias("target")\
             .merge(in0.alias("source"), (col("target.Name") == col("source.Name")))\
             .whenMatchedUpdate(
               condition = (col("source.FicoValidFrom").cast(DateType()) > col("target.FicoValidFrom").cast(DateType())),
-              set = matched_expr
+              set = {"previousFicoScore" : col("target.FicoScore"), "FicoScore" : col("source.FicoScore")}
             )\
             .whenNotMatchedInsertAll()\
             .execute()
@@ -26,4 +24,4 @@ def Gold_Credit_DTI_SCD3_CatalogTable(spark: SparkSession, in0: DataFrame):
             .format("delta")\
             .option("overwriteSchema", True)\
             .mode("overwrite")\
-            .saveAsTable(f"FSIdemos.gold.Credit_DTI_SCD3")
+            .saveAsTable("`FSIdemos.gold`.`Credit_DTI_SCD3`")

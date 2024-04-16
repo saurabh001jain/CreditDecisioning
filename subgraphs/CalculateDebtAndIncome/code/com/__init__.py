@@ -1,1 +1,0 @@
-from .mybank import *

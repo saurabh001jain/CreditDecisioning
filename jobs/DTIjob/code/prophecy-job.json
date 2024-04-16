@@ -28,8 +28,8 @@
       }
     },
     "availableFabrics" : [ {
-      "id" : "1609",
-      "name" : "UnityCatalogClusters",
+      "id" : "990",
+      "name" : "dev",
       "clusterSizes" : {
         "default" : "small",
         "availableClusterSizes" : [ "small" ]
@@ -41,8 +41,73 @@
         "PublicCentral" : { }
       }
     }, {
-      "id" : "990",
-      "name" : "dev",
+      "id" : "5589",
+      "name" : "LearningsWorkspace",
+      "clusterSizes" : {
+        "default" : "LearningCluster",
+        "availableClusterSizes" : [ "LearningCluster" ]
+      },
+      "pylibsResolutionMode" : {
+        "PublicCentral" : { }
+      },
+      "scalalibsResolutionMode" : {
+        "PublicCentral" : { }
+      }
+    }, {
+      "id" : "5591",
+      "name" : "MyDatabricksFabric",
+      "clusterSizes" : {
+        "default" : "Small",
+        "availableClusterSizes" : [ "Small" ]
+      },
+      "pylibsResolutionMode" : {
+        "PublicCentral" : { }
+      },
+      "scalalibsResolutionMode" : {
+        "PublicCentral" : { }
+      }
+    }, {
+      "id" : "3595",
+      "name" : "ConnectionToDatabricks",
+      "clusterSizes" : {
+        "default" : "Small",
+        "availableClusterSizes" : [ "Small" ]
+      },
+      "pylibsResolutionMode" : {
+        "PublicCentral" : { }
+      },
+      "scalalibsResolutionMode" : {
+        "PublicCentral" : { }
+      }
+    }, {
+      "id" : "4254",
+      "name" : "testConnections",
+      "clusterSizes" : {
+        "default" : "SparkLearner",
+        "availableClusterSizes" : [ "SparkLearner" ]
+      },
+      "pylibsResolutionMode" : {
+        "PublicCentral" : { }
+      },
+      "scalalibsResolutionMode" : {
+        "PublicCentral" : { }
+      }
+    }, {
+      "id" : "5595",
+      "name" : "MyDatabricksFabricWithSparkProvider2",
+      "clusterSizes" : {
+        "default" : "MyDatabricksSparkProvider",
+        "availableClusterSizes" : [ "MyDatabricksSparkProvider" ]
+      },
+      "pylibsResolutionMode" : {
+        "PublicCentral" : { }
+      },
+      "scalalibsResolutionMode" : {
+        "PublicCentral" : { }
+      }
+    }, {
+      "id" : "1609",
+      "name" : "Team_UnityCatalogClusters",
       "clusterSizes" : {
         "default" : "small",
         "availableClusterSizes" : [ "small" ]
@@ -67,11 +132,24 @@
         "PublicCentral" : { }
       }
     }, {
-      "id" : "1557",
-      "name" : "myFabric",
+      "id" : "5593",
+      "name" : "MyDatabricksFabricWithSparkProvider",
       "clusterSizes" : {
-        "default" : "Small",
-        "availableClusterSizes" : [ "Small" ]
+        "default" : "MyDatabricksSparkProvider",
+        "availableClusterSizes" : [ "MyDatabricksSparkProvider" ]
+      },
+      "pylibsResolutionMode" : {
+        "PublicCentral" : { }
+      },
+      "scalalibsResolutionMode" : {
+        "PublicCentral" : { }
+      }
+    }, {
+      "id" : "3698",
+      "name" : "UnityCatalogClusters",
+      "clusterSizes" : {
+        "default" : "UC_SparkLearner",
+        "availableClusterSizes" : [ "UC_SparkLearner" ]
       },
       "pylibsResolutionMode" : {
         "PublicCentral" : { }
@@ -93,10 +171,12 @@
       },
       "ports" : {
         "inputs" : [ {
-          "id" : "_apmnjaKB0b5lmzvIdBpC$$FM6wyp3TWhsZb63t7K0_0"
+          "id" : "_apmnjaKB0b5lmzvIdBpC$$FM6wyp3TWhsZb63t7K0_0",
+          "slug" : ""
         } ],
         "outputs" : [ {
-          "id" : "v13o2Pr8sp6tv6UGe_6Fb$$6j4xLwKHTQN6w7A3EoCwa"
+          "id" : "v13o2Pr8sp6tv6UGe_6Fb$$6j4xLwKHTQN6w7A3EoCwa",
+          "slug" : ""
         } ]
       },
       "settings" : {
@@ -113,18 +193,40 @@
         "configurations" : {
           "schema" : [ {
             "name" : "Year",
+            "optional" : false,
             "kind" : {
               "type" : "long",
               "value" : 2018
             },
-            "optional" : false
+            "isReferenced" : false,
+            "isWorkflowNodeConfiguration" : false
           }, {
             "name" : "user_email",
+            "optional" : false,
             "kind" : {
               "type" : "string",
               "value" : "sparklearner123@gmail.com"
             },
-            "optional" : false
+            "isReferenced" : false,
+            "isWorkflowNodeConfiguration" : false
+          }, {
+            "name" : "database_name",
+            "optional" : false,
+            "kind" : {
+              "type" : "string",
+              "value" : "sparklearnerdev"
+            },
+            "isReferenced" : false,
+            "isWorkflowNodeConfiguration" : false
+          }, {
+            "name" : "Encryption",
+            "optional" : false,
+            "kind" : {
+              "type" : "record",
+              "fields" : [ ]
+            },
+            "isReferenced" : false,
+            "isWorkflowNodeConfiguration" : true
           } ],
           "instances" : {
             "CreditDecisioningAndAudit" : [ "2020", "2018", "2019", "2021", "default" ]

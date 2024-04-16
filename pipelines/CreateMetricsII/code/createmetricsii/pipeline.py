@@ -8,10 +8,10 @@ from createmetricsii.graph import *
 
 def pipeline(spark: SparkSession) -> None:
     IngestData(spark)
-    df_TransUnionFico = TransUnionFico(spark)
-    df_EncryptPII = EncryptPII(spark, df_TransUnionFico)
     df_Income = Income(spark)
-    df_ByCustomerID = ByCustomerID(spark, df_Income, df_EncryptPII)
+    df_TransUnionFico = TransUnionFico(spark)
+    df_Encryption = Encryption(spark, Config.Encryption, df_TransUnionFico)
+    df_ByCustomerID = ByCustomerID(spark, df_Income, df_Encryption)
     df_ParseLoanAmount = ParseLoanAmount(spark, df_ByCustomerID)
     df_ParseLoanAmount = df_ParseLoanAmount.cache()
     df_LexisNexisData_1 = LexisNexisData_1(spark)
@@ -30,14 +30,12 @@ def main():
                 .config("spark.sql.legacy.allowUntypedScalaUDF", "true")\
                 .enableHiveSupport()\
                 .appName("Prophecy Pipeline")\
-                .getOrCreate()\
-                .newSession()
+                .getOrCreate()
     Utils.initializeFromArgs(spark, parse_args())
     spark.conf.set("prophecy.metadata.pipeline.uri", "pipelines/CreateMetricsII")
+    registerUDFs(spark)
     
-    MetricsCollector.start(spark = spark, pipelineId = "pipelines/CreateMetricsII")
-    pipeline(spark)
-    MetricsCollector.end(spark)
+    MetricsCollector.instrument(spark = spark, pipelineId = "pipelines/CreateMetricsII", config = Config)(pipeline)
 
 if __name__ == "__main__":
     main()

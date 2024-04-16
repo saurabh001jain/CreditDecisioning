@@ -1,0 +1,502 @@
+{
+  "id" : "s-eV3-lRKLJ8qtAXv-X35",
+  "component" : "Subgraph",
+  "metadata" : {
+    "label" : "",
+    "slug" : "",
+    "x" : 0,
+    "y" : 0,
+    "phase" : 0,
+    "cache" : false,
+    "detailedStats" : false,
+    "isImported" : false,
+    "configuration" : {
+      "common" : {
+        "type" : "record",
+        "fields" : [ ]
+      }
+    }
+  },
+  "ports" : {
+    "inputs" : [ {
+      "id" : "kPaJGvU9YKydW7i9yy7OZ",
+      "slug" : "in0",
+      "isStreaming" : false
+    } ],
+    "outputs" : [ {
+      "id" : "zOrU0hMwPKbOKglM8wZYx",
+      "slug" : "out0",
+      "isStreaming" : false
+    } ],
+    "selectedInputFields" : [ ],
+    "isCustomOutputSchema" : false,
+    "autoUpdateOnRun" : false
+  },
+  "properties" : {
+    "packageName" : "com.demo"
+  },
+  "connections" : [ {
+    "id" : "Q9C-j-fnJYgQ0aYUUriPn",
+    "source" : "s-eV3-lRKLJ8qtAXv-X35",
+    "sourcePort" : "kPaJGvU9YKydW7i9yy7OZ",
+    "target" : "MdfqnaJ4Lu__4RnaXuCd7",
+    "targetPort" : "I1z1ul29vU7SG-Fm54z9G"
+  }, {
+    "id" : "b9TMi9TYULqxAKkMrjFvM",
+    "source" : "MdfqnaJ4Lu__4RnaXuCd7",
+    "sourcePort" : "9JEAlNP2r2Rqi8FdHusu3",
+    "target" : "s-eV3-lRKLJ8qtAXv-X35",
+    "targetPort" : "zOrU0hMwPKbOKglM8wZYx"
+  } ],
+  "processes" : {
+    "MdfqnaJ4Lu__4RnaXuCd7" : {
+      "id" : "MdfqnaJ4Lu__4RnaXuCd7",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "Encrypt",
+        "slug" : "Encrypt",
+        "x" : 240,
+        "y" : 120,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "I1z1ul29vU7SG-Fm54z9G",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "9JEAlNP2r2Rqi8FdHusu3",
+          "slug" : "out",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "Address",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "FICO",
+              "type" : {
+                "type" : "struct",
+                "fields" : [ {
+                  "name" : "Score",
+                  "type" : "long",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "ValidFrom",
+                  "type" : "date",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "ValidTo",
+                  "type" : "date",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                } ]
+              },
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Score",
+              "type" : "long",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ValidFrom",
+              "type" : "date",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ValidTo",
+              "type" : "date",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Name",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "SSN",
+              "type" : "binary",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Trades",
+              "type" : {
+                "type" : "struct",
+                "fields" : [ {
+                  "name" : "Trade",
+                  "type" : {
+                    "type" : "array",
+                    "elementType" : {
+                      "type" : "struct",
+                      "fields" : [ {
+                        "name" : "AccountNumber",
+                        "type" : "string",
+                        "nullable" : true,
+                        "metadata" : {
+                          "description" : "",
+                          "mappings" : [ ],
+                          "tags" : [ ]
+                        }
+                      }, {
+                        "name" : "Balance",
+                        "type" : "long",
+                        "nullable" : true,
+                        "metadata" : {
+                          "description" : "",
+                          "mappings" : [ ],
+                          "tags" : [ ]
+                        }
+                      }, {
+                        "name" : "DateOpened",
+                        "type" : "date",
+                        "nullable" : true,
+                        "metadata" : {
+                          "description" : "",
+                          "mappings" : [ ],
+                          "tags" : [ ]
+                        }
+                      }, {
+                        "name" : "PastDue",
+                        "type" : "long",
+                        "nullable" : true,
+                        "metadata" : {
+                          "description" : "",
+                          "mappings" : [ ],
+                          "tags" : [ ]
+                        }
+                      }, {
+                        "name" : "Terms",
+                        "type" : "string",
+                        "nullable" : true,
+                        "metadata" : {
+                          "description" : "",
+                          "mappings" : [ ],
+                          "tags" : [ ]
+                        }
+                      } ]
+                    },
+                    "containsNull" : true
+                  },
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                } ]
+              },
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Trade",
+              "type" : {
+                "type" : "array",
+                "elementType" : {
+                  "type" : "struct",
+                  "fields" : [ {
+                    "name" : "AccountNumber",
+                    "type" : "string",
+                    "nullable" : true,
+                    "metadata" : {
+                      "description" : "",
+                      "mappings" : [ ],
+                      "tags" : [ ]
+                    }
+                  }, {
+                    "name" : "Balance",
+                    "type" : "long",
+                    "nullable" : true,
+                    "metadata" : {
+                      "description" : "",
+                      "mappings" : [ ],
+                      "tags" : [ ]
+                    }
+                  }, {
+                    "name" : "DateOpened",
+                    "type" : "date",
+                    "nullable" : true,
+                    "metadata" : {
+                      "description" : "",
+                      "mappings" : [ ],
+                      "tags" : [ ]
+                    }
+                  }, {
+                    "name" : "PastDue",
+                    "type" : "long",
+                    "nullable" : true,
+                    "metadata" : {
+                      "description" : "",
+                      "mappings" : [ ],
+                      "tags" : [ ]
+                    }
+                  }, {
+                    "name" : "Terms",
+                    "type" : "string",
+                    "nullable" : true,
+                    "metadata" : {
+                      "description" : "",
+                      "mappings" : [ ],
+                      "tags" : [ ]
+                    }
+                  } ]
+                },
+                "containsNull" : true
+              },
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "AccountNumber",
+              "type" : {
+                "type" : "array",
+                "elementType" : "string",
+                "containsNull" : true
+              },
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Balance",
+              "type" : {
+                "type" : "array",
+                "elementType" : "long",
+                "containsNull" : true
+              },
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "DateOpened",
+              "type" : {
+                "type" : "array",
+                "elementType" : "date",
+                "containsNull" : true
+              },
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "PastDue",
+              "type" : {
+                "type" : "array",
+                "elementType" : "long",
+                "containsNull" : true
+              },
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Terms",
+              "type" : {
+                "type" : "array",
+                "elementType" : "string",
+                "containsNull" : true
+              },
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : true,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "importLanguage" : "python",
+        "expressions" : [ {
+          "target" : "Address",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Address"
+          },
+          "description" : "",
+          "_row_id" : "1233030336"
+        }, {
+          "target" : "FICO",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "FICO"
+          },
+          "description" : "",
+          "_row_id" : "952682850"
+        }, {
+          "target" : "Score",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "FICO.Score"
+          },
+          "description" : "",
+          "_row_id" : "374512864"
+        }, {
+          "target" : "ValidFrom",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "FICO.ValidFrom"
+          },
+          "description" : "",
+          "_row_id" : "2115017303"
+        }, {
+          "target" : "ValidTo",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "FICO.ValidTo"
+          },
+          "description" : "",
+          "_row_id" : "1402843673"
+        }, {
+          "target" : "Name",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Name"
+          },
+          "description" : "",
+          "_row_id" : "1707165097"
+        }, {
+          "target" : "SSN",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "call_func (\n  'aes_encrypt',\n  SSN,\n  secret ('anyascopeUC', 'AESkey')\n)"
+          },
+          "description" : "",
+          "_row_id" : "1020414257"
+        }, {
+          "target" : "Trades",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Trades"
+          },
+          "description" : "",
+          "_row_id" : "334630286"
+        }, {
+          "target" : "Trade",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Trades.Trade"
+          },
+          "description" : "",
+          "_row_id" : "1367707211"
+        }, {
+          "target" : "AccountNumber",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Trades.Trade.AccountNumber"
+          },
+          "description" : "",
+          "_row_id" : "387483373"
+        }, {
+          "target" : "Balance",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Trades.Trade.Balance"
+          },
+          "description" : "",
+          "_row_id" : "765744520"
+        }, {
+          "target" : "DateOpened",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Trades.Trade.DateOpened"
+          },
+          "description" : "",
+          "_row_id" : "1508725919"
+        }, {
+          "target" : "PastDue",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Trades.Trade.PastDue"
+          },
+          "description" : "",
+          "_row_id" : "2145373247"
+        }, {
+          "target" : "Terms",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Trades.Trade.Terms"
+          },
+          "description" : "",
+          "_row_id" : "1644093557"
+        } ],
+        "importString" : "",
+        "activeTab" : "expressions",
+        "columnsSelector" : [ "I1z1ul29vU7SG-Fm54z9G$$q1FolZ0g7zcukvlgVslUu##Trades.Trade.PastDue", "I1z1ul29vU7SG-Fm54z9G$$q1FolZ0g7zcukvlgVslUu##Trades.Trade.AccountNumber", "I1z1ul29vU7SG-Fm54z9G$$q1FolZ0g7zcukvlgVslUu##FICO.ValidFrom", "I1z1ul29vU7SG-Fm54z9G$$q1FolZ0g7zcukvlgVslUu##Trades.Trade", "I1z1ul29vU7SG-Fm54z9G$$q1FolZ0g7zcukvlgVslUu##Trades.Trade.Terms", "I1z1ul29vU7SG-Fm54z9G$$q1FolZ0g7zcukvlgVslUu##FICO.ValidTo", "I1z1ul29vU7SG-Fm54z9G$$q1FolZ0g7zcukvlgVslUu##SSN", "I1z1ul29vU7SG-Fm54z9G$$q1FolZ0g7zcukvlgVslUu##Trades", "I1z1ul29vU7SG-Fm54z9G$$q1FolZ0g7zcukvlgVslUu##FICO.Score", "I1z1ul29vU7SG-Fm54z9G$$q1FolZ0g7zcukvlgVslUu##Trades.Trade.Balance", "I1z1ul29vU7SG-Fm54z9G$$q1FolZ0g7zcukvlgVslUu##Address", "I1z1ul29vU7SG-Fm54z9G$$q1FolZ0g7zcukvlgVslUu##Trades.Trade.DateOpened", "I1z1ul29vU7SG-Fm54z9G$$q1FolZ0g7zcukvlgVslUu##Name", "I1z1ul29vU7SG-Fm54z9G$$q1FolZ0g7zcukvlgVslUu##FICO" ]
+      },
+      "componentInfo" : {
+        "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.0.4&projectSubscriptionProjectId=12654&path=gems/Reformat",
+        "projectId" : "12654",
+        "projectName" : "ProphecySparkBasicsPython",
+        "version" : "0.0.4"
+      }
+    }
+  }
+}
