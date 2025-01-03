@@ -13,5 +13,5 @@ setup(
 'main = createmetricsii.pipeline:main'], },
     data_files = [(".prophecy", [".prophecy/workflow.latest.json"])],
     extras_require = {
-'test' : ['pytest', 'pytest-html'], }
+'test' : ['pytest', 'pytest-html', 'pytest-cov'], }
 )

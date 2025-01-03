@@ -3,6 +3,7 @@
     "migrationVersions" : {
       "gemBuilderVersion" : "v1"
     },
+    "functions" : { },
     "codeGenConfiguration" : {
       "editableConfig" : false,
       "plibVersion" : {
@@ -13,7 +14,7 @@
     "id" : "1",
     "uri" : "pipelines/CreateMetricsII",
     "language" : "python",
-    "fabricId" : "3698",
+    "fabricId" : "2460",
     "frontEndLanguage" : "sql",
     "mode" : "batch",
     "udfs" : {
@@ -1325,6 +1326,31 @@
         "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.0.4&projectSubscriptionProjectId=12654&path=gems/Join",
         "projectName" : "ProphecySparkBasicsPython"
       }
+    },
+    "vV2LZdv6B7IKN2cKyMqb8$$eakhIt0VpjUPmeeud_KGo" : {
+      "id" : "vV2LZdv6B7IKN2cKyMqb8$$eakhIt0VpjUPmeeud_KGo",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "Source_1",
+        "slug" : "Source_1",
+        "x" : 160,
+        "y" : 580,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "NwOvHTh_Kg1GCIrMiIk8e$$2bxmV8dQvlAMT2N8_RCCw",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : { }
     },
     "3m3q8W43Fyih57opvmspx$$cwBzNvNzNZBzcWB_sRxPV" : {
       "id" : "3m3q8W43Fyih57opvmspx$$cwBzNvNzNZBzcWB_sRxPV",
@@ -3049,5 +3075,22 @@
     "selectedInputFields" : [ ],
     "isCustomOutputSchema" : false,
     "autoUpdateOnRun" : false
-  }
+  },
+  "diagnostics" : [ {
+    "property" : "$.workflow.processes.vV2LZdv6B7IKN2cKyMqb8$$eakhIt0VpjUPmeeud_KGo.properties.datasetId",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 1,
+    "message" : "dataset id missing",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  } ]
 }

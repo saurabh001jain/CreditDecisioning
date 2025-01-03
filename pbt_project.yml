@@ -671,6 +671,8 @@ jobs:
     enabled: false
     createdAt: '2023-01-18 02:30:06'
     author: sparklearner123@gmail.com
+    models: []
+    sqlProjects: []
 gemContainer:
   languageVersion: '3.10'
   gemLibsVersion: 1.3.4.0
@@ -683,6 +685,7 @@ functions:
   udafs: {}
   expressions: {}
   airflowFunctions: {}
+  businessRules: {}
 subgraphs:
   subgraphs/Encryption:
     name: Encryption
@@ -693,6 +696,8 @@ subgraphs:
     mode: batch
     createdAt: '2023-03-30 16:06:20'
 sqlModels: {}
+sqlSnapshots: {}
+sqlTests: {}
 sqlMacros: {}
 sqlSeeds: {}
 sqlSources: {}
